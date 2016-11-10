@@ -31,18 +31,23 @@ The Malaria Resistance Surveillance or MaRS pipline, is an attempt at standardiz
 ## Directory structure:
 
 1. fq
+
   * Contains all the input fastq files
 
 2. lib
+
   * Contains the binaries for all the tools that MaRS can run
 
 3. local
+
   * Local output folder
 
 4. pyamd
+
   * Contains all the MaRS classes.
 
 5. ref
+
   * Contains reference sequences. For the current version, the ref folder must also contain the alignment indicies.
 
 ## Creating alignment indicies:
