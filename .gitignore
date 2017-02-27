@@ -1,7 +1,5 @@
 #Ignore directory with fastq files
 fq
-#Ignore folder containing third party tools
-lib
 #Ignore output directory
 local
 #Ignore reference folder
