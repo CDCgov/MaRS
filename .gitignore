@@ -3,9 +3,9 @@ fq
 #Ignore output directory
 local
 #Ignore reference folder
-ref
-!ref/mdr.fa
-!ref/mdr.bed
+#ref
+#!ref/mdr.fa
+#!ref/mdr.bed
 #Ignore pycache
 __pycache__
 pyamd/__pycache__
