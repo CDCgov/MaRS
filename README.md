@@ -1,4 +1,3 @@
-#11/14/2017
 
 # MaRS (Malaria Resistance Surveillance)
 
