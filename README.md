@@ -1,4 +1,6 @@
 
+
+
 # MaRS (Malaria Resistance Surveillance)
 
 The Malaria Resistance Surveillance or MaRS pipline, is an attempt at standardizing the workflow for identifying variants in parasite genomes conferring drug resistance. By streamlinging the data QC, alignment, and variant calling process, MaRS hopes to reduce time of analysis, as well allow for flexibilty of protocol used for the BGS analysis. The modular structure of the MaRS pipeline enables the user to build their own pipeline using the tools of their preference. The tools that MaRS is able to run are listed below, however, adding a custom tool the workflow is very simple. 
