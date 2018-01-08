@@ -5,7 +5,7 @@ The emergence of resistance to all currently available antimalarial drugs in mul
 
 Data for this project can be found at https://submit.ncbi.nlm.nih.gov/subs/bioproject/SUB3441145/overview. Collaborators are encouraged to submit their data using this BioProject. 
 
-The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at standardizing the workflow for identifying both known and new polymorhisms in *P.falciparum* genes associated with drug resistance. By streamlinging the data QC, alignment, and variant calling process, MaRS hopes to reduce time of analysis, as well allow for flexibilty of protocol used for the analysis.  
+The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at standardizing the workflow for identifying both known and new polymorhisms in *P.falciparum* genes associated with drug resistance. By streamlinging the data QC, alignment, and variant calling process, MaRS aims to standardize the data analysis and final allele calls.  
 
 
 ## Tools avaiable:
