@@ -13,10 +13,11 @@ The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at s
     * Fastq samples detected from directory
     * Reference and dependencies for analysis on P.falciparum provided with the git bundle
     * BBDuk used to trim reads
-    * Ability to run BWA, Bowtie2, BBMap, SNAP for read alignment
+    * BWA used for read alignment
     * Variant calling using Samtools and GATK
     * Summary tables for samples with separate tables for known and novel variants
     * Summary heatmaps and frequency graphs generated
+    * The framework has been tested to work on Ubuntu 16.04 and RedHat Enterprise Linux Server Edition 6.8
 
 # Setup
 
@@ -39,6 +40,12 @@ However, make sure that the Python and Java versions and packages are installed 
 Follow the directory structure listed below and use the run script included with the bundle to run your first analysis.
 ```{sh}
 sh run.sh <path to experiment folder> <path to output folder>
+```
+
+For example if you have stored your fastq files in ```fq/``` folder and you want to store the results in the folder ```local/```. You can run the following command from the MaRS directory. 
+
+```{sh}
+sh run.sh fq/ local/
 ```
 
 ## Depdencies:
