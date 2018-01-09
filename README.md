@@ -88,28 +88,34 @@ sh run.sh fq/ local/
 
 ## Creating alignment indicies:
 
-1. Bowtie2:
-  ```{sh}
-bowtie2-build <refernce-fasta.fa> <reference-fasta.fa>
-  ```
-
-2. BWA:
+1. BWA:
   ```{sh}
 bwa index <reference-fasta.fa>
   ```
 
-3. Snap:
-  ```{sh}
-snap-aligner index <reference-fasta.fa> <output_directory>
-  ```
 
 ## Output directory structure:
-1. CleanedFastq: Folder containing adapter trimmed and quality filtered fastq files
-2. output.sam : Contains reads aligned to reference genome
-3. output_sorted.bam : Sorted BAM containing aligned reads
-4. output_sorted_RG.bam : Read gtroup added BAM file
-5. outout_fixmate.bam : Final BAM file, with mate information corrected
-6. variants.vcf : Variant calls from samtools
-7. variants_gatk.vcf : Variant calls from GATK HaplotypeCaller
-8. variants_samtools.bed : Annotated variant calls from samtools, in tab delimited format
-9. variants_gatk.bed : Annotated variant calls from GATK, in tab delimited format
+* For each sample
+
+  1. CleanedFastq: Folder containing adapter trimmed and quality filtered fastq files
+  2. output.sam : Contains reads aligned to reference genome
+  3. output_sorted.bam : Sorted BAM containing aligned reads
+  4. output_sorted_RG.bam : Read gtroup added BAM file
+  5. outout_fixmate.bam : Final BAM file, with mate information corrected
+  6. variants.vcf : Variant calls from samtools
+  7. variants_gatk.vcf : Variant calls from GATK HaplotypeCaller
+  8. variants_samtools.bed : Annotated variant calls from samtools, in tab delimited format
+  9. variants_gatk.bed : Annotated variant calls from GATK, in tab delimited format
+
+* For the study
+
+  1. Study_variants.xlsx : Summary table of all known variants that confer drug resistance, for all samples in the study
+  2. Study_depth.xlsx : Summary of depth of coverage for codon correponding to variants that confer drug resistance
+  3. Study_al_freq.xlsx : Summary of allele frequency of variants that confer drug resistance
+  4. Study_novel_exonic_variants.xlsx : Summary of all novel variants found in exonic regions, for all samples in the study
+  5. Study_novel_intronic_variants.xlsx : Summary of all novel variants found in intronic regions, for all samples in the study
+  6. Study_novel_var_af.xlsx : Summary of allele frequency of novel variants for all samples
+  7. Study_novel_var_depth.xlsx : Summary of depth of coverage for codon correponding to novel variants for all samples
+  8. voi_af_heatmap.jpg : Heatmap showing the allele frequency across all samples for variants known to confer drug resistance
+  9. voi_dp_heatmap.jpg : Heatmap showing the codon coverage across all samples for variants known to confer drug resistance
+  10. voi_frequency.jpg : Count plot showing frequency variants conferring drug resistance across all the samples in the study
