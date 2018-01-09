@@ -8,31 +8,54 @@ Data for this project can be found at the following link [NCBI BioProject](https
 The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at standardizing the workflow for identifying both known and new polymorhisms in *P.falciparum* genes associated with drug resistance. 
 
 
-## Tools avaiable:
+## Version Histroy
+  * Version 1.1.1 (1/9/2018)
+    * Fastq samples detected from directory
+    * Reference and dependencies for analysis on P.falciparum provided with the git bundle
+    * BBDuk used to trim reads
+    * Ability to run BWA, Bowtie2, BBMap, SNAP for read alignment
+    * Variant calling using Samtools and GATK
+    * Summary tables for samples with separate tables for known and novel variants
+    * Summary heatmaps and frequency graphs generated
 
-### Data quality analysis:
-1. BBDuk
+# Setup
 
-### Alignment methods:
-1. BWA
-2. Bowtie2
-3. BBMap
-4. Snap
+## Getting started
 
-### Variant calling:
-1. Samtools
-2. GATK
+1. Download git repository:
+
+Clone the master branch of this repository.
+```{sh}
+git clone https://github.com/CDCgov/MaRS.git
+```
+
+2. Download dependencies:
+
+Download dependencies listed below. All the tools that are required to run MaRS included in the lib directory of the repository.
+However, make sure that the Python and Java versions and packages are installed on the system.
+
+3. Your first analysis:
+
+Follow the directory structure listed below and use the run script included with the bundle to run your first analysis.
+```{sh}
+sh run.sh <path to experiment folder> <path to output folder>
+```
 
 ## Depdencies:
 
 1. [Python3.4 ](https://www.python.org/download/releases/3.4.0/)
-2. [BBMap](https://sourceforge.net/projects/bbmap/)
-3. [BWA](http://bio-bwa.sourceforge.net/)
-4. [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
-5. [Snap](http://snap.cs.berkeley.edu/)
-6. [Samtools](http://www.htslib.org/)
-7. [Bctools](http://www.htslib.org/)
-8. [GATK](https://software.broadinstitute.org/gatk/download/)
+2. [Java (Version : 9.0.1)](http://download.oracle.com/otn-pub/java/jdk/9.0.1+11/jre-9.0.1_linux-x64_bin.tar.gz)
+3. [Pandas (Version : 0.22.0)](http://pandas.pydata.org/pandas-docs/stable/)
+4. [Numpy (Version : 1.13.3)](https://www.scipy.org/install.html)
+5. [Seaborn (Version : 0.8.1)](https://seaborn.pydata.org/)
+6. [Openpyxl (Version : 2.4.9)](https://pypi.python.org/pypi/openpyxl)
+3. [BBMap (Version : v35.x)](https://sourceforge.net/projects/bbmap/)
+4. [BWA (Version : 0.7.12)](http://bio-bwa.sourceforge.net/)
+5. [Bowtie2 (Version : 2.3.3.1)](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+6. [Snap (Version : 1.0beta23)](http://snap.cs.berkeley.edu/)
+7. [Samtools (Version : 1.3.1)](http://www.htslib.org/)
+8. [Bctools (Version : 1.3.1)](http://www.htslib.org/)
+9. [GATK (Version : 3.6-0-g89b7209)](https://software.broadinstitute.org/gatk/download/)
 
 ## Directory structure:
 
@@ -83,7 +106,3 @@ snap-aligner index <reference-fasta.fa> <output_directory>
 7. variants_gatk.vcf : Variant calls from GATK HaplotypeCaller
 8. variants_samtools.bed : Annotated variant calls from samtools, in tab delimited format
 9. variants_gatk.bed : Annotated variant calls from GATK, in tab delimited format
-
-
-
-
