@@ -5,19 +5,8 @@ The emergence of resistance to all currently available antimalarial drugs in mul
 
 Data for this project can be found at the following link [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490). Collaborators are encouraged to submit their own data using this [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490)
 
-The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at standardizing the workflow for identifying both known and new polymorhisms in *P.falciparum* genes associated with drug resistance. 
+The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at standardizing the workflow for identifying both known and new polymorhisms in *P.falciparum* genes associated with drug resistance.
 
-
-## Version Histroy
-  * Version 1.1.1 (1/9/2018)
-    * Fastq samples detected from directory
-    * Reference and dependencies for analysis on P.falciparum provided with the git bundle
-    * BBDuk used to trim reads
-    * BWA used for read alignment
-    * Variant calling using Samtools and GATK
-    * Summary tables for samples with separate tables for known and novel variants
-    * Summary heatmaps and frequency graphs generated
-    * The framework has been tested to work on Ubuntu 16.04 and RedHat Enterprise Linux Server Edition 6.8
 
 # Setup
 
@@ -30,19 +19,36 @@ Clone the master branch of this repository.
 git clone https://github.com/CDCgov/MaRS.git
 ```
 
-2. Download dependencies:
+2. Setup virtualenv for Python3:
 
-Download dependencies listed below. All the tools that are required to run MaRS included in the lib directory of the repository.
-However, make sure that the Python and Java versions and packages are installed on the system.
+MaRS requires python3 to be installed with pip available. Please make sure this is available on the system.
+To avoid clashes with system version of required python modules, we recommend using a virtualenv
+Run the following command to install virtualenv, if you already have virtualenv installed
 
-3. Your first analysis:
+```{sh}
+python3 -m pip install virtualenv
+virtualenv mars_env                   # Setup mars virtual environment
+source mars_env/bin/activate          # Activate virtual environment
+```
+> If successfully activated, you should see now (mars_venv) in front of your terminal username.
+
+3. Installing python dependencies and downloading third party libraries:
+
+MaRS uses many python modules
+Run the following command to install the dependencies
+```{sh}
+pip3 install pyvcf pysam matplotlib seaborn pandas numpy xlrd openpyxl
+pip3 list --format=columns
+```
+
+4. Your first analysis:
 
 Follow the directory structure listed below and use the run script included with the bundle to run your first analysis.
 ```{sh}
 sh run.sh <path to experiment folder> <path to output folder>
 ```
 
-For example if you have stored your fastq files in ```fq/``` folder and you want to store the results in the folder ```local/```. You can run the following command from the MaRS directory. 
+For example if you have stored your fastq files in ```fq/``` folder and you want to store the results in the folder ```local/```. You can run the following command from the MaRS directory.
 
 ```{sh}
 sh run.sh fq/ local/
@@ -52,60 +58,58 @@ sh run.sh fq/ local/
 
 1. [Python3.4 ](https://www.python.org/download/releases/3.4.0/)
 2. [Java (Version : 9.0.1)](http://download.oracle.com/otn-pub/java/jdk/9.0.1+11/jre-9.0.1_linux-x64_bin.tar.gz)
-3. [Pandas (Version : 0.22.0)](http://pandas.pydata.org/pandas-docs/stable/)
-4. [Numpy (Version : 1.13.3)](https://www.scipy.org/install.html)
-5. [Seaborn (Version : 0.8.1)](https://seaborn.pydata.org/)
-6. [Openpyxl (Version : 2.4.9)](https://pypi.python.org/pypi/openpyxl)
-3. [BBMap (Version : v35.x)](https://sourceforge.net/projects/bbmap/)
+3. [Pandas (Version : > 0.22.0)](http://pandas.pydata.org/pandas-docs/stable/)
+4. [Numpy (Version : > 1.13.3)](https://www.scipy.org/install.html)
+5. [Seaborn (Version : > 0.8.1)](https://seaborn.pydata.org/)
+6. [Openpyxl (Version : > 2.4.9)](https://pypi.python.org/pypi/openpyxl)
+3. [BBMap (Version : v35.92)](https://sourceforge.net/projects/bbmap/)
 4. [BWA (Version : 0.7.12)](http://bio-bwa.sourceforge.net/)
 5. [Bowtie2 (Version : 2.3.3.1)](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 6. [Snap (Version : 1.0beta23)](http://snap.cs.berkeley.edu/)
 7. [Samtools (Version : 1.3.1)](http://www.htslib.org/)
-8. [Bctools (Version : 1.3.1)](http://www.htslib.org/)
+8. [Bcftools (Version : 1.3.1)](http://www.htslib.org/)
 9. [GATK (Version : 3.6-0-g89b7209)](https://software.broadinstitute.org/gatk/download/)
+
+
+## Version Histroy
+
+  * Version 1.2.0 (2/28/2018)
+    * Annotation script modified to account for MT genes.
+  * Version 1.1.1 (1/9/2018)
+    * Fastq samples detected from directory
+    * Reference and dependencies for analysis on _P.falciparum_ provided with the Git bundle
+    * BBDuk used to trim reads
+    * BWA used for read alignment
+    * Variant calling using Samtools and GATK
+    * Summary tables for samples with separate tables for known and novel variants
+    * Summary heatmaps and frequency graphs generated
+    * The framework has been tested to work on Ubuntu 16.04 and RedHat Enterprise Linux Server Edition 6.8
+
 
 ## Directory structure:
 
 1. fq
-
   * Contains all the input fastq files
-
 2. lib
-
   * Contains the binaries for all the tools that MaRS can run
-
 3. local
-
   * Local output folder
-
 4. pyamd
-
   * Contains all the MaRS classes.
-
 5. ref
-
   * Contains reference sequences. For the current version, the ref folder must also contain the alignment indicies.
-
-## Creating alignment indicies:
-
-1. BWA:
-  ```{sh}
-bwa index <reference-fasta.fa>
-  ```
-
 
 ## Output directory structure:
 * For each sample
 
-  1. CleanedFastq: Folder containing adapter trimmed and quality filtered fastq files
+  1. CleanedFastq: Folder containing adapter trimmed and quality filtered Fastq files
   2. output.sam : Contains reads aligned to reference genome
   3. output_sorted.bam : Sorted BAM containing aligned reads
-  4. output_sorted_RG.bam : Read gtroup added BAM file
+  4. output_sorted_RG.bam : Read group added BAM file
   5. outout_fixmate.bam : Final BAM file, with mate information corrected
-  6. variants.vcf : Variant calls from samtools
-  7. variants_gatk.vcf : Variant calls from GATK HaplotypeCaller
-  8. variants_samtools.bed : Annotated variant calls from samtools, in tab delimited format
-  9. variants_gatk.bed : Annotated variant calls from GATK, in tab delimited format
+  6. _Sample-name_\_variants_samtools_annotated.vcf : Annotated variant calls from Samtools
+  7. _Sample-name_\_variants_gatk_annotated.vcf : Annotated variant calls from GATK HaplotypeCaller
+  8. _Sample-name_\_variants_merge_annotated.vcf : Merged and annotated variant calls from GATK HaplotypeCaller and Samtools
 
 * For the study
 
