@@ -5,7 +5,7 @@ The emergence of resistance to all currently available antimalarial drugs in mul
 
 Data for this project can be found at the following link [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490). Collaborators are encouraged to submit their own data using this [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490)
 
-The Malaria Resistance Surveillance or MaRS analysis pipline, is an attempt at standardizing the workflow for identifying both known and new polymorhisms in *P.falciparum* genes associated with drug resistance.
+The Malaria Resistance Surveillance or MaRS analysis pipeline, is an attempt at standardizing the workflow for identifying both known and new polymorphisms in *P.falciparum* genes associated with drug resistance.
 
 *If you end up using MaRS in your workflow, please cite this [study](https://www.ncbi.nlm.nih.gov/pubmed/29439965):*
 
@@ -64,7 +64,7 @@ For example if you have stored your fastq files in ```fq/``` folder and you want
 sh run.sh fq/ local/
 ```
 
-## Depdencies:
+## Dependencies:
 
 1. [Python3.4 ](https://www.python.org/download/releases/3.4.0/)
 2. [Java (Version : 9.0.1)](http://download.oracle.com/otn-pub/java/jdk/9.0.1+11/jre-9.0.1_linux-x64_bin.tar.gz)
@@ -81,7 +81,7 @@ sh run.sh fq/ local/
 9. [GATK (Version : 3.6-0-g89b7209)](https://software.broadinstitute.org/gatk/download/)
 
 
-## Version Histroy
+## Version History
 
   * Version 1.2.0 (2/28/2018)
     * Annotation script modified to account for MT genes.
@@ -107,7 +107,7 @@ sh run.sh fq/ local/
 4. pyamd
   * Contains all the MaRS classes.
 5. ref
-  * Contains reference sequences. For the current version, the ref folder must also contain the alignment indicies.
+  * Contains reference sequences. For the current version, the ref folder must also contain the alignment indices.
 
 ## Output directory structure:
 * For each sample
