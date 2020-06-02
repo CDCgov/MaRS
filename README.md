@@ -125,3 +125,8 @@ Madison-Antenucci S, Arguin PM, Lucchi NW, Vannberg F, Udhayakumar V.
 
 Antimicrob Agents Chemother. 2018 Mar 27;62(4). pii: e02474-17. doi: 10.1128/AAC.02474-17. Print 2018 Apr.
 ```
+
+## To do by Je-Hoon
+1. Organize the haplotype dataset for input for the Bayesian algorithm
+2. For now I will be using the given example dataset from eukaryotyping. However, I will need to figure out how to 
+adjust the output from NeST as input halotype dataset for the Bayesian algorith. 
