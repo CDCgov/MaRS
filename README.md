@@ -35,7 +35,7 @@ The figure outlines the four key blocks of NeST and the steps performed by each 
 
    Clone the master branch of this repository.
    ```
-   git clone https://github.com/shashidhar22/NeST
+   git clone git@github.com:CDCgov/MaRS.git
    ```
 
 2. Installing Python modules for NeST:
