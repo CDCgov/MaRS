@@ -4,6 +4,6 @@ The emergence of resistance to all currently available antimalarial drugs in mul
 
 Data for this project can be found at the following link [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490). Collaborators are encouraged to submit their own data using this [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490)
 
-The[NeST](https://github.com/CDCgov/NeST) analysis framework was developed as the analysis framework for the MaRS project, to standardizing the workflow for the identification both known and new polymorphisms in P.falciparum genes associated with drug resistance.
+The [NeST](https://github.com/CDCgov/NeST) analysis framework was developed as the analysis framework for the MaRS project, to standardizing the workflow for the identification both known and new polymorphisms in P.falciparum genes associated with drug resistance.
 
 
