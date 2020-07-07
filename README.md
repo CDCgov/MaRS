@@ -11,7 +11,7 @@ Please see [Lab Protocol](https://github.com/CDCgov/MaRS/tree/master/lab_sop) fo
 
 ### Data Analysis
 
-The [NeST](https://github.com/CDCgov/NeST) analysis framework was developed for the MaRS project, to standardizing the workflow for the identification of both known and new polymorphisms in _P. falciparum_ genes associated with anti-malarial drug resistance.  
+The [NeST](https://github.com/CDCgov/NeST) analysis framework was developed for the MaRS project, to standardize the workflow for the identification of both known and new polymorphisms in _P. falciparum_ genes associated with anti-malarial drug resistance.  
 
 ### Data Sharing
 
