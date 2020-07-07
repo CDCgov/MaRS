@@ -17,7 +17,6 @@ The [NeST](https://github.com/CDCgov/NeST) analysis framework was developed for 
 
 Data for this project can be found at the following link [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490). Collaborators are encouraged to submit their own data using this [NCBI BioProject](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA428490)
 
-
 ### Citing MaRS
 
 *If you end up using any of the MaRS project workflows, please cite this [study](https://www.ncbi.nlm.nih.gov/pubmed/29439965):*
