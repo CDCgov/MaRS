@@ -3,16 +3,11 @@
 
 ## Background ##
 
-The workflow described herein uses [nextflow](https://www.nextflow.io/docs/latest/index.html) to analyze Illumina targeted deep amplicon (TADS) data for variants (SNPs) in drug resistance associated genes: `k13, dhfr, dhps, mdr1, crt, and cytb`. Target audience are advanced bioinformaticans :man_technologists:
-
-[Learn README formatting using Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The [nf-NeST](https://github.com/CDCgov/Nf-NeST) workflow uses [nextflow](https://www.nextflow.io/docs/latest/index.html) to analyze Illumina targeted deep amplicon (TADS) data for variants (SNPs) in drug resistance associated genes: `k13, dhfr, dhps, mdr1, crt, and cytb`. Target audience are advanced Bioinformaticans. :octocat::computer:
 
 ## What is this repo for? ##
 
-* This README will document all the steps necessary to get [nextflow](https://www.nextflow.io/docs/latest/index.html)
-up and running using the [NeST](https://github.com/CDCgov/NeST) pipeline, including how to maintain and further
-develop it.
-* Version: 0.1
+* Help with setting up [nextflow](https://www.nextflow.io/docs/latest/index.html) to run the automated [nf-NeST](https://github.com/CDCgov/Nf-NeST) pipeline.
 
 #### Nextflow ####
 
@@ -21,19 +16,16 @@ develop it.
 #### Resources ####
 * [Nextflow documentation](https://www.nextflow.io/docs/latest/basic.html)
 * [Nextflow trainings ](https://nf-co.re/usage/nextflow)
+* [Nextflow step by step tutorial](https://carpentries-incubator.github.io/workflows-nextflow/)
 
 ## How do I get set up? ##
-* [Installation of code editor](#Code_Editor)
-* [Installation of nextflow ](#Nextflow)
 
-<a id="Code_Editor"></a>
-## Code Editor Installation ##
+#### Code Editor Installation ####
 * Recommend to use [atom](https://atom.io) text editor
   * Download atom and install locally
   * Install from `Preferences > Packages` the `language-nextflow` package to enable nextflow syntax highlighting
 
-<a id="Nextflow"></a>
-## Nextflow Installation ##
+#### Nextflow Installation ####
 
 * [Install java](https://www.oracle.com/java/technologies/downloads/)
   * Check version `java --version` (Java 17.x.x)
@@ -64,51 +56,8 @@ PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
   Encoding: UTF-8 (UTF-8)
   ```
 
-<a id="Nextflow Script"></a>
-## Run an example Nextflow script ##
-Below is a well documented nextflow script that takes as input `fastq.gz` files and counts the number
-of lines in each `fastq.gz`
-
-```java
-{nextflow codeblock}
-```
-
-<a id="Nextflow Processes"></a>
-## Nextflow Tutorial ##
-
-See [Nextflow step by step tutorial](https://carpentries-incubator.github.io/workflows-nextflow/).
-
-To control inputs, outputs and how a command is executed a process may contain five definition blocks:
-
-- `directives`: allow the definition of optional settings that affect the execution of the current process e.g. the number of cpus a task uses and the amount of memory allocated.
-- `inputs`: Define the input dependencies, usually channels, which determines the number of times a process is executed.
-- `outputs`: Defines the output channels used by the process to send results/data produced by the process.
-- `when clause`: Allows you to define a condition that must be verified in order to execute the process.
-- `script block`: A statement within quotes that defines the commands that are executed by the process to carry out its task.
-
-The syntax is defined as follows:
-```java
-    process < NAME > {
-     [ directives ]        
-     input:                
-     < process inputs >
-     output:               
-     < process outputs >
-     when:                 
-     < condition >
-     [script|shell|exec]:  
-     < user script to be executed >
-    }
-```
-The `input` qualifier declares the type of data to be received. Types of  qualifiers:
-
-- `val`: Lets you access the received input value by its name in the process script.
-- `env`: Lets you use the received value to set an environment variable named as > the specified input name.
-- `path`: Lets you handle the received value as a path, staging the file properly in the execution context.
-- `stdin`: Lets you forward the received value to the process stdin special file.
-- `tuple`: Lets you handle a group of input values having one of the above qualifiers.
-each: Lets you execute the process for each entry in the input collection.
-
+## Running nf-NeST pipeline ##
+Head over to [nf-NeST](https://github.com/CDCgov/Nf-NeST) and try to run it.
 
 [To main page](https://github.com/CDCgov/MaRS) :back:  
 
