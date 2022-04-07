@@ -1,6 +1,16 @@
 > Author: @ ET updated 4/4/22 :goat:  
 > version 0.2
 
+----
+>#### TODO ####
+>#### Activity Name ####
+- [ ] Add readme to each of the steps @ET :goat:
+- [ ] Add gitter link @ET :goat:  
+
+>#### Completed Activity ✓ ####
+>- [x] Add links to each of the steps @ET :goat:
+------
+
 ## Background ##
 
 The workflow described herein provides a step by step guide on how to analyze Illumina targeted deep amplicon (TADS) data for variants (SNPs) in drug resistance associated genes: `k13, dhfr, dhps, mdr1, crt, and cytb`. Target audience are biologist or beginner bioinformaticans :beginner: :computer:
@@ -13,11 +23,12 @@ The workflow described herein provides a step by step guide on how to analyze Il
 * Additional required dependencies will be listed in each jupyter-lab notebook
 
 ### How do I get started ###
-The workflow is split into :four: steps:
-* [Sample ID QC](placeholder)
-* [Geneious Analysis](placeholder)
-* [Report Generation](placeholder)
-* [NCBI submission](placeholder)
+The workflow is split into :five: steps:
+* [Sample ID QC](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/01_sample_ID_QC)
+* [Geneious Analysis](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis)
+* [Summary tables](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_tables)
+* [Data visualization](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/04_data_viz)
+* [NCBI submission](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/05_ncbi_submission)
 
 ### Contribution guidelines ###
 
