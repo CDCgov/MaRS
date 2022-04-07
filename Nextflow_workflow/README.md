@@ -71,7 +71,7 @@ of lines in each `fastq.gz`
 <a id="Nextflow Processes"></a>
 ## Nextflow Tutorial ##
 
-See [Nextflow step by step tutorial](https://carpentries-incubator.github.io/workflows-nextflow/). 
+See [Nextflow step by step tutorial](https://carpentries-incubator.github.io/workflows-nextflow/).
 
 To control inputs, outputs and how a command is executed a process may contain five definition blocks:
 
