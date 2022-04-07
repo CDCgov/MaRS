@@ -26,7 +26,7 @@ The workflow is split into :four: steps:
 * Changes will be reviewed and tested before implementation
 * We recommend setting up [git](https://www.atlassian.com/git) extension in jupyter-lab:
 >   * Option 1: start `jupyter-lab`, click on jigsaw icon and enable extensions
->    * Option 2: `pip3 install --upgrade jupyterlab-git`, restart `jupyter-lab`
+>   * Option 2: `pip3 install --upgrade jupyterlab-git`, restart `jupyter-lab`
 
 
 ### Who do I talk to? ###
@@ -35,5 +35,6 @@ The workflow is split into :four: steps:
 [![Gitter](https://badges.gitter.im/placeholder.svg)](https://gitter.im/placeholder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 * We are a small group, however, we will do our best to respond in a timely fashion.  
 
+:back:[Return to previous page](https://github.com/CDCgov/MaRS) 
 
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
