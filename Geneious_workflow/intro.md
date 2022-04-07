@@ -35,6 +35,6 @@ The workflow is split into :four: steps:
 [![Gitter](https://badges.gitter.im/placeholder.svg)](https://gitter.im/placeholder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 * We are a small group, however, we will do our best to respond in a timely fashion.  
 
-:back:[Return to previous page](https://github.com/CDCgov/MaRS) 
+[:back:](https://github.com/CDCgov/MaRS) 
 
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
