@@ -26,7 +26,7 @@ The workflow is split into :four: steps:
 * Changes will be reviewed and tested before implementation
 * We recommend setting up [git](https://www.atlassian.com/git) extension in jupyter-lab:
 >   * Option 1: start `jupyter-lab`, click on jigsaw icon and enable extensions
-    * Option 2: `pip3 install --upgrade jupyterlab-git`, restart `jupyter-lab`
+>    * Option 2: `pip3 install --upgrade jupyterlab-git`, restart `jupyter-lab`
 
 
 ### Who do I talk to? ###
