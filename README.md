@@ -16,7 +16,7 @@ This projects aims to:
 
 ### Lab Protocol :microscope: ###
 
-Please see [Lab Protocol](https://github.com/CDCgov/MaRS/tree/master/lab_sop) for the most up to date standard operating procedures (SOPs).
+Please see [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSsop.md) for the most up to date standard operating procedures (SOPs).
 
 ### Data Analysis :computer: ###
 
@@ -40,3 +40,5 @@ If you would like to contribute to this project, please [Contact Us](mailto:wrj5
 > Talundzic E, Ravishankar S, Kelley J, Patel D, Plucinski M, Schmedes S, Ljolje D, Clemons B,
 > Madison-Antenucci S, Arguin PM, Lucchi NW, Vannberg F, Udhayakumar V.
 > Antimicrob Agents Chemother. 2018 Mar 27;62(4). pii: e02474-17. doi: 10.1128/AAC.02474-17. Print 2018 April
+
+> [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
