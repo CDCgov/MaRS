@@ -1,0 +1,723 @@
+<geneiousWorkflows>
+  <XMLSerialisableRootElement name="test" author="adminuser" geneiousVersion="2022.0.2" uniqueId="69076b4d-6cf9-482b-a418-634f130025f0" revisionNumber="43" description="&lt;html&gt;Need bbmap plugin, bowtie plugin, and bbmap plugin&lt;/html&gt;" bundledIconName="plugin">
+    <workflowElement type="com.biomatters.plugins.workflows.WorkflowElementForEach" />
+    <workflowElement id="BBDuk" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="true" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="trimAdapters">true</option>
+        <option name="qualityTrim">true</option>
+        <option name="trimPairedOverlap">true</option>
+        <option name="trimLowEntropy">false</option>
+        <option name="discardShortReads">true</option>
+        <option name="keepOrder">true</option>
+        <option name="memoryToAllocate">1000</option>
+        <option name="additionalOptions" />
+        <option name="customComponent1" />
+        <childOption name="adapterTrimming">
+          <option name="adapters">inMemoryDocument__|urn:local:BBDukOptions:adapters.fa|All Truseq, Nextera and PhiX adapters___</option>
+          <option name="customComponent1" />
+          <option name="adapterTrimDirection">r</option>
+          <option name="adapterKMer">27</option>
+          <option name="maximumSubstitutions">1</option>
+          <option name="maximumEdits">0</option>
+          <option name="shortTrim">false</option>
+          <option name="shortTrimLength">4</option>
+        </childOption>
+        <childOption name="qualityTrimming">
+          <option name="qualityTrimEnds">rl</option>
+          <option name="minimumQuality">35</option>
+        </childOption>
+        <childOption name="overlapOptions">
+          <option name="pairOverlap">24</option>
+        </childOption>
+        <childOption name="entropyOptions">
+          <option name="minimumEntropy">0.1</option>
+          <option name="windowSize">50</option>
+          <option name="entropyKmerSize">5</option>
+        </childOption>
+        <childOption name="minimumLengthOptions">
+          <option name="minLength">150</option>
+        </childOption>
+      </Options>
+      <optionToExpose optionName="trimAdapters" label="" />
+    </workflowElement>
+    <workflowElement id="Map reads then find variations_SNPs Copy_0b420908-cb5c-429d-9eac-0732e54acc87" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="divider_1" />
+        <childOption name="0">
+          <option name="button">Options</option>
+          <childOption name="com.biomatters.plugins.alignment.AssemblyOperation_Reference">
+            <option name="assemblerId">bowtie2</option>
+            <option name="assemblerVersion">7.2.1</option>
+            <option name="assemblyNamePrefixOrFolder">&lt;font color='red'&gt;No Documents&lt;/font&gt; </option>
+            <childOption name="data">
+              <option name="reassemble">true</option>
+              <option name="useReferenceSequence">true</option>
+              <option name="referenceSequenceName">urn:local:.:305-eg6eiub</option>
+              <option name="customComponent1" />
+              <option name="customComponent2" />
+              <option name="customComponent3" />
+              <option name="assembleByDocumentFields">false</option>
+              <option name="groupAssemblies">false</option>
+              <option name="namePart">0</option>
+              <option name="nameSeparator" extra="">- (Hyphen)</option>
+              <option name="customComponent4" />
+              <option name="assembleListsSeparately">true</option>
+            </childOption>
+            <childOption name="method">
+              <childOption name="algorithm">
+                <option name="deNovoAssembly">dummy</option>
+                <option name="customComponent1" />
+                <option name="referenceAssembly">bowtie2</option>
+                <option name="customComponent2" />
+              </childOption>
+              <childOption name="bowtie2">
+                <option name="type">global</option>
+                <option name="preset">true</option>
+                <option name="sensitivity">sensitive</option>
+                <childOption name="normal">
+                  <option name="packRef">false</option>
+                  <option name="commandLine" />
+                  <option name="customComponent1" />
+                </childOption>
+                <childOption name="algorithmOptions">
+                  <option name="multiThreading">true</option>
+                  <option name="misMatchSeed">0</option>
+                  <option name="seedLength">22</option>
+                  <option name="minInsertMatch">0</option>
+                  <option name="maxInsertMatch">800</option>
+                </childOption>
+                <childOption name="reporting">
+                  <option name="reporting">best</option>
+                  <option name="reportUpTo">5</option>
+                </childOption>
+              </childOption>
+              <childOption name="bowtie">
+                <childOption name="normal">
+                  <option name="packRef">false</option>
+                  <option name="commandLine" />
+                  <option name="customComponent1" />
+                </childOption>
+                <childOption name="algorithmOptions">
+                  <option name="multiThreading">true</option>
+                  <option name="misMatchSeed">2</option>
+                  <option name="seedLength">28</option>
+                  <option name="minInsertMatch">0</option>
+                  <option name="maxInsertMatch">800</option>
+                </childOption>
+                <childOption name="reporting">
+                  <option name="reporting">best</option>
+                  <option name="reportUpTo">5</option>
+                </childOption>
+              </childOption>
+              <childOption name="Geneious.reference">
+                <option name="sensitivity">medium</option>
+                <option name="customComponent1" />
+                <option name="findStructuralVariants">false</option>
+                <option name="customComponent2" />
+                <option name="findDeletions">false</option>
+                <option name="maximumDeletionSize">1000</option>
+                <option name="fineTune">iterate_5</option>
+                <option name="customComponent3" />
+                <option name="customComponent4" />
+                <option name="expansionWordLength">14</option>
+                <option name="indexWordLength">12</option>
+                <option name="filterRepeatsReference">true</option>
+                <option name="filterRepeatsSizeReference">20</option>
+                <option name="allowGaps">true</option>
+                <option name="maxGapsPerRead">15</option>
+                <option name="maxGapSize">50</option>
+                <option name="maxMismatches">30</option>
+                <option name="maxAmbiguity">4</option>
+                <option name="applyMinOverlap">false</option>
+                <option name="minOverlap">25</option>
+                <option name="applyMinOverlapPercentageIdentical">false</option>
+                <option name="minOverlapPercentageIdentical">80</option>
+                <option name="doMoreThoroughSearching">false</option>
+                <option name="multipleBestMatches">mapRandomly</option>
+                <option name="applyMinimumMappingQuality">false</option>
+                <option name="minimumMappingQuality">30</option>
+                <option name="accuratelyMapReadsWithErrorsToRepeatRegions">true</option>
+                <option name="trimPairedOverhangs">true</option>
+                <option name="includeInsertionsInStructuralVariants">false</option>
+                <option name="minimumJunctionSupport">2</option>
+                <option name="reanalyzeSequencesThreshold">8</option>
+                <option name="onlyUsePairedHitsDeNovo">false</option>
+                <option name="onlyMapPairedHitsReference">false</option>
+                <option name="onlyMapPairedHitsReferenceCombobox">mapNearby</option>
+              </childOption>
+              <childOption name="GeneiousRNA.reference">
+                <option name="sensitivity">medium</option>
+                <option name="customComponent1" />
+                <option name="RNASeqMethod">spanAnnotations</option>
+                <option name="intronType">mRNA</option>
+                <option name="maximumNovelIntronSize">500000</option>
+                <option name="customComponent2" />
+                <option name="fineTune">iterate_5</option>
+                <option name="customComponent3" />
+                <option name="expansionWordLength">14</option>
+                <option name="indexWordLength">12</option>
+                <option name="filterRepeatsReference">true</option>
+                <option name="filterRepeatsSizeReference">20</option>
+                <option name="allowGaps">true</option>
+                <option name="maxGapsPerRead">15</option>
+                <option name="maxGapSize">50</option>
+                <option name="maxMismatches">30</option>
+                <option name="maxAmbiguity">4</option>
+                <option name="applyMinOverlap">false</option>
+                <option name="minOverlap">25</option>
+                <option name="applyMinOverlapPercentageIdentical">false</option>
+                <option name="minOverlapPercentageIdentical">80</option>
+                <option name="doMoreThoroughSearching">false</option>
+                <option name="multipleBestMatches">mapRandomly</option>
+                <option name="applyMinimumMappingQuality">false</option>
+                <option name="minimumMappingQuality">30</option>
+                <option name="accuratelyMapReadsWithErrorsToRepeatRegions">true</option>
+                <option name="trimPairedOverhangs">true</option>
+                <option name="includeInsertionsInStructuralVariants">false</option>
+                <option name="minimumJunctionSupport">2</option>
+                <option name="reanalyzeSequencesThreshold">8</option>
+                <option name="onlyUsePairedHitsDeNovo">false</option>
+                <option name="onlyMapPairedHitsReference">false</option>
+                <option name="onlyMapPairedHitsReferenceCombobox">mapNearby</option>
+              </childOption>
+              <childOption name="BBMap">
+                <option name="sensitivity">normal</option>
+                <option name="multipleBestMatches">random</option>
+                <option name="kmer">13</option>
+                <option name="maximumIndelSize">16000</option>
+                <option name="usemodulo">false</option>
+                <option name="pacBio">false</option>
+                <option name="memoryToAllocate">28000</option>
+                <option name="additionalOptions" />
+                <option name="customComponent1" />
+              </childOption>
+            </childOption>
+            <childOption name="trimOptions">
+              <option name="method">noTrim</option>
+              <option name="trimOptionsButton">Options</option>
+              <option name="customComponent1" />
+              <childOption name="trimOptions">
+                <option name="action">annotate</option>
+                <childOption name="vectorTrim">
+                  <option name="vectorScreening">false</option>
+                  <option name="minHit">16</option>
+                  <multiOption name="vectorDatabaseOption">
+                    <value>
+                      <option name="vectorDatabaseOption">UniVec</option>
+                    </value>
+                  </multiOption>
+                </childOption>
+                <childOption name="primerTrim">
+                  <option name="primerScreening">false</option>
+                  <childOption name="primerTrim">
+                    <option name="primers" />
+                    <option name="allowMismatches">true</option>
+                    <option name="maxMismatches">5</option>
+                    <option name="minLength">5</option>
+                  </childOption>
+                </childOption>
+                <childOption name="errorProbability">
+                  <option name="errorProbability">true</option>
+                  <option name="errorLimit">0.05</option>
+                </childOption>
+                <childOption name="lowQualityTrim">
+                  <option name="lowQuality">false</option>
+                  <option name="lowQualityLimit">0</option>
+                </childOption>
+                <childOption name="ambiguityTrim">
+                  <option name="ambiguity">false</option>
+                  <option name="ambiguityLimit">2</option>
+                </childOption>
+                <childOption name="trimStart">
+                  <option name="startTrim">true</option>
+                  <option name="startTrimAtLeast">false</option>
+                  <option name="startTrimMinimum">0</option>
+                </childOption>
+                <childOption name="trimEnd">
+                  <option name="endTrim">true</option>
+                  <option name="endTrimAtLeast">false</option>
+                  <option name="endTrimMinimum">0</option>
+                </childOption>
+                <childOption name="minLength">
+                  <option name="use">false</option>
+                  <option name="minLength">20</option>
+                </childOption>
+                <childOption name="maxLength">
+                  <option name="use">false</option>
+                  <option name="maxLength">1000</option>
+                </childOption>
+              </childOption>
+            </childOption>
+            <childOption name="results">
+              <option name="nameDeNovo">{Reads Name} Assembly</option>
+              <option name="addNameVariableDeNovo">...</option>
+              <option name="nameReference">{Reads Name}</option>
+              <option name="addNameVariableReference">...</option>
+              <option name="saveReport">false</option>
+              <option name="customComponent1" />
+              <option name="saveUnusedReads">false</option>
+              <option name="customComponent2" />
+              <option name="saveUsedReads">false</option>
+              <option name="saveUsedReadsIncludeMates">false</option>
+              <option name="customComponent3" />
+              <option name="resultsInSubfolder">false</option>
+              <option name="customComponent4" />
+              <option name="generateContigs">true</option>
+              <option name="limitGeneratedContigs">true</option>
+              <option name="generatedContigsLimit">10000</option>
+              <option name="saveConsensusSequencesAsList">true</option>
+              <option name="customComponent5" />
+              <option name="generateConsensusSequencesReference">false</option>
+              <option name="consensusOptionsButtonReference">Options</option>
+              <option name="customComponent6" />
+              <option name="customComponent7" />
+              <option name="generateConsensusSequencesDeNovo">false</option>
+              <option name="consensusOptionsButtonDeNovo">Options</option>
+              <option name="customComponent8" />
+              <option name="customComponent9" />
+              <childOption name="consensus">
+                <option name="consensusSource">generateFromContig</option>
+                <childOption name="consensusOptionsReference">
+                  <option name="thresholdPercent">weighted_60</option>
+                  <option name="thresholdPercentNoQuality">75</option>
+                  <option name="noConsensusGaps">false</option>
+                  <option name="mapQuality">true</option>
+                  <option name="mapQualityMethod">mapSummed</option>
+                  <option name="noCoverageCharacterDeNovo">gap</option>
+                  <option name="noCoverageCharacterReference">unknown</option>
+                  <option name="applyLowCoverageOrQualityCall">false</option>
+                  <option name="lowCoverageOrQualityCharacter">unknown</option>
+                  <option name="coverageOrQuality">coverage</option>
+                  <option name="qualityThreshold">20</option>
+                  <option name="coverageThreshold">2</option>
+                  <option name="splitAroundQuestionMarks">false</option>
+                  <option name="noConsensusEndGaps">true</option>
+                  <option name="trimToReference">false</option>
+                  <option name="ignoreReadsMappedToMultipleLocations">false</option>
+                  <option name="callWhenGapInBestStates" />
+                  <option name="callChromatogramHeterozygotes">true</option>
+                  <option name="chromatogramHeterozygotePercentage">50</option>
+                  <option name="howToStoreSequences">AskUser</option>
+                </childOption>
+                <childOption name="consensusOptionsDeNovo">
+                  <option name="thresholdPercent">weighted_60</option>
+                  <option name="thresholdPercentNoQuality">75</option>
+                  <option name="noConsensusGaps">false</option>
+                  <option name="mapQuality">true</option>
+                  <option name="mapQualityMethod">mapSummed</option>
+                  <option name="noCoverageCharacterDeNovo">gap</option>
+                  <option name="noCoverageCharacterReference">unknown</option>
+                  <option name="applyLowCoverageOrQualityCall">false</option>
+                  <option name="lowCoverageOrQualityCharacter">unknown</option>
+                  <option name="coverageOrQuality">coverage</option>
+                  <option name="qualityThreshold">20</option>
+                  <option name="coverageThreshold">2</option>
+                  <option name="splitAroundQuestionMarks">false</option>
+                  <option name="noConsensusEndGaps">true</option>
+                  <option name="trimToReference">false</option>
+                  <option name="ignoreReadsMappedToMultipleLocations">false</option>
+                  <option name="callWhenGapInBestStates" />
+                  <option name="callChromatogramHeterozygotes">true</option>
+                  <option name="chromatogramHeterozygotePercentage">50</option>
+                  <option name="howToStoreSequences">AskUser</option>
+                </childOption>
+              </childOption>
+            </childOption>
+          </childOption>
+        </childOption>
+        <childOption name="4">
+          <option name="button">Options</option>
+          <childOption name="Operation_com.biomatters.plugins.mutationFinder.MutationFinderAnnotationGenerator">
+            <option name="ignoreTrims">true</option>
+            <option name="calculatePValues">false</option>
+            <option name="applyToReferencedSequences">false</option>
+            <childOption name="findPolymorphisms">
+              <option name="applyMinimumCoverage">false</option>
+              <option name="minimumCoverage">5</option>
+              <option name="applyMinimumFrequency">true</option>
+              <option name="minimumFrequency">0.05</option>
+              <option name="maximumPValueApply">false</option>
+              <option name="customComponent1" />
+              <option name="maximumPValue">6</option>
+              <option name="customComponent2" />
+              <option name="customComponent3" />
+              <option name="standBiasMinimumValueApply">false</option>
+              <option name="customComponent4" />
+              <option name="standBiasMinimumValue">5</option>
+              <option name="customComponent5" />
+              <option name="threshold">65</option>
+              <option name="customComponent6" />
+              <option name="findWhere">everywhere</option>
+              <option name="findInSelectedRegionOnly">false</option>
+            </childOption>
+            <childOption name="analyzeTranslations">
+              <option name="analyzeTranslationEffects">true</option>
+              <option name="defaultGeneticCode">universal</option>
+            </childOption>
+            <childOption name="advanced">
+              <option name="snpsOnly">false</option>
+              <option name="mergeAdjacentVariations">false</option>
+              <option name="ignoreReferenceSequence">false</option>
+              <option name="excludeDistantPairedReads">false</option>
+              <option name="excludeDistantPairedReadsPercent">30</option>
+              <option name="separateAnnotationsForEachVariation">true</option>
+              <option name="recordSequenceNames">true</option>
+              <option name="ignoreReadsMappedToMultipleLocations">false</option>
+              <option name="isIgnoreAnnotationTypes">false</option>
+              <option name="ignoreAnnotationTypes">Coverage - High</option>
+              <option name="isOnlyInAnnotationTypes">true</option>
+              <option name="onlyInAnnotationTypes">TrackerSNP</option>
+              <option name="onlyFindInRange">0</option>
+              <option name="qualifiersToCopy">gene, product, protein_id, locus_tag, note</option>
+            </childOption>
+            <childOption name="pValue">
+              <option name="defaultQuality">20</option>
+              <option name="pValueMethod">pValueMethodApproximate</option>
+              <option name="applyHomoPolymerQualityReductionPercentage">false</option>
+              <option name="homoPolymerQualityReductionPercentage">30</option>
+              <option name="customComponent1" />
+            </childOption>
+          </childOption>
+        </childOption>
+      </Options>
+      <optionToExpose optionName="divider_1" label="" />
+    </workflowElement>
+    <workflowElement id="Operation_com.biomatters.plugins.coverage.CoverageAnnotationGenerator" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="TrackerSN" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="applyToReferencedSequences">false</option>
+        <childOption name="findInOptions">
+          <option name="onlyFindInSelectedRegion">false</option>
+          <option name="annotationsOnly">true</option>
+          <option name="annotationsOnlyType">TrackerSNP</option>
+          <option name="cdsOnlyType">coverageType</option>
+        </childOption>
+        <childOption name="lowCoverageOptions">
+          <option name="findIt">false</option>
+          <option name="system">standardDeviationBased</option>
+          <option name="limit">1</option>
+          <option name="standardDeviations">2.0</option>
+          <option name="applyMergeTolerance">true</option>
+          <option name="mergeTolerance">2</option>
+          <option name="applyMergeDistance">true</option>
+          <option name="mergeDistance">5</option>
+        </childOption>
+        <childOption name="highCoverageOptions">
+          <option name="findIt">true</option>
+          <option name="system">numberOfSequences</option>
+          <option name="limit">0</option>
+          <option name="standardDeviations">2.0</option>
+          <option name="applyMergeTolerance">true</option>
+          <option name="mergeTolerance">2</option>
+          <option name="applyMergeDistance">true</option>
+          <option name="mergeDistance">5</option>
+        </childOption>
+      </Options>
+      <optionToExpose optionName="applyToReferencedSequences" label="" />
+    </workflowElement>
+  </XMLSerialisableRootElement>
+  <XMLSerialisableRootElement name="Map reads then find variations/SNPs Copy" geneiousVersion="2022.0.2" uniqueId="0b420908-cb5c-429d-9eac-0732e54acc87" revisionNumber="29" description="&lt;html&gt;&lt;center&gt;Maps reads to a reference sequence, then calls variations/SNPs&lt;/center&gt;&lt;/html&gt;" bundledIconName="mappingAlignment">
+    <workflowElement id="com.biomatters.plugins.alignment.AssemblyOperation_Reference" exposeNoOptions="false" exposeAllOptions="true" suppressErrors="false" showButtonForExposedGroup="true" groupNameForExposedOptions="Map To Reference" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="assemblerId">Geneious.reference</option>
+        <option name="assemblerVersion">3.7.777</option>
+        <option name="assemblyNamePrefixOrFolder">{Reference Sequence Name} Reference Assembly</option>
+        <childOption name="data">
+          <option name="useReferenceSequence">true</option>
+          <option name="referenceSequenceName">inMemoryDocument__|urn:local:AssemblyOptions:automaticRefSeq|Automatic___Automatically choose the most likely reference sequence from the selected documents</option>
+          <option name="customComponent1" />
+          <option name="customComponent2" />
+          <option name="customComponent3" />
+          <option name="groupAssemblies">false</option>
+          <option name="namePart">0</option>
+          <option name="nameSeparator" extra="">- (Hyphen)</option>
+          <option name="customComponent4" />
+          <option name="assembleListsSeparately">false</option>
+        </childOption>
+        <childOption name="method">
+          <childOption name="algorithm">
+            <option name="deNovoAssembly">dummy</option>
+            <option name="customComponent1" />
+            <option name="referenceAssembly">Geneious.reference</option>
+            <option name="customComponent2" />
+          </childOption>
+          <childOption name="Geneious.reference">
+            <option name="sensitivity">medium</option>
+            <option name="customComponent1" />
+            <option name="findStructuralVariants">false</option>
+            <option name="customComponent2" />
+            <option name="findDeletions">false</option>
+            <option name="maximumDeletionSize">1000</option>
+            <option name="fineTune">iterate_5</option>
+            <option name="customComponent3" />
+            <option name="customComponent4" />
+            <option name="expansionWordLength">14</option>
+            <option name="indexWordLength">12</option>
+            <option name="filterRepeatsReference">true</option>
+            <option name="filterRepeatsSizeReference">20</option>
+            <option name="allowGaps">true</option>
+            <option name="maxGapsPerRead">15</option>
+            <option name="maxGapSize">50</option>
+            <option name="maxMismatches">30</option>
+            <option name="maxAmbiguity">4</option>
+            <option name="applyMinOverlap">false</option>
+            <option name="minOverlap">25</option>
+            <option name="applyMinOverlapPercentageIdentical">false</option>
+            <option name="minOverlapPercentageIdentical">80</option>
+            <option name="doMoreThoroughSearching">false</option>
+            <option name="multipleBestMatches">mapRandomly</option>
+            <option name="applyMinimumMappingQuality">false</option>
+            <option name="minimumMappingQuality">30</option>
+            <option name="accuratelyMapReadsWithErrorsToRepeatRegions">true</option>
+            <option name="trimPairedOverhangs">true</option>
+            <option name="minimumJunctionSupport">2</option>
+            <option name="reanalyzeSequencesThreshold">8</option>
+            <option name="onlyUsePairedHitsDeNovo">false</option>
+            <option name="onlyMapPairedHitsReference">false</option>
+            <option name="onlyMapPairedHitsReferenceCombobox">mapNearby</option>
+          </childOption>
+          <childOption name="GeneiousRNA.reference">
+            <option name="sensitivity">medium</option>
+            <option name="customComponent1" />
+            <option name="RNASeqMethod">spanAnnotations</option>
+            <option name="intronType">mRNA</option>
+            <option name="maximumNovelIntronSize">500000</option>
+            <option name="customComponent2" />
+            <option name="fineTune">iterate_5</option>
+            <option name="customComponent3" />
+            <option name="expansionWordLength">14</option>
+            <option name="indexWordLength">12</option>
+            <option name="filterRepeatsReference">true</option>
+            <option name="filterRepeatsSizeReference">20</option>
+            <option name="allowGaps">true</option>
+            <option name="maxGapsPerRead">15</option>
+            <option name="maxGapSize">50</option>
+            <option name="maxMismatches">30</option>
+            <option name="maxAmbiguity">4</option>
+            <option name="applyMinOverlap">false</option>
+            <option name="minOverlap">25</option>
+            <option name="applyMinOverlapPercentageIdentical">false</option>
+            <option name="minOverlapPercentageIdentical">80</option>
+            <option name="doMoreThoroughSearching">false</option>
+            <option name="multipleBestMatches">mapRandomly</option>
+            <option name="applyMinimumMappingQuality">false</option>
+            <option name="minimumMappingQuality">30</option>
+            <option name="accuratelyMapReadsWithErrorsToRepeatRegions">true</option>
+            <option name="trimPairedOverhangs">true</option>
+            <option name="minimumJunctionSupport">2</option>
+            <option name="reanalyzeSequencesThreshold">8</option>
+            <option name="onlyUsePairedHitsDeNovo">false</option>
+            <option name="onlyMapPairedHitsReference">false</option>
+            <option name="onlyMapPairedHitsReferenceCombobox">mapNearby</option>
+          </childOption>
+        </childOption>
+        <childOption name="trimOptions">
+          <option name="method">noTrim</option>
+          <option name="trimOptionsButton">Options</option>
+          <childOption name="trimOptions">
+            <option name="action">annotate</option>
+            <childOption name="vectorTrim">
+              <option name="vectorScreening">false</option>
+              <option name="minHit">16</option>
+              <multiOption name="vectorDatabaseOption">
+                <value>
+                  <option name="vectorDatabaseOption">UniVec</option>
+                </value>
+              </multiOption>
+            </childOption>
+            <childOption name="primerTrim">
+              <option name="primerScreening">false</option>
+              <childOption name="primerTrim">
+                <option name="primers" />
+                <option name="allowMismatches">true</option>
+                <option name="maxMismatches">5</option>
+                <option name="minLength">5</option>
+              </childOption>
+            </childOption>
+            <childOption name="errorProbability">
+              <option name="errorProbability">true</option>
+              <option name="errorLimit">0.05</option>
+            </childOption>
+            <childOption name="lowQualityTrim">
+              <option name="lowQuality">false</option>
+              <option name="lowQualityLimit">0</option>
+            </childOption>
+            <childOption name="ambiguityTrim">
+              <option name="ambiguity">false</option>
+              <option name="ambiguityLimit">2</option>
+            </childOption>
+            <childOption name="trimStart">
+              <option name="startTrim">true</option>
+              <option name="startTrimAtLeast">false</option>
+              <option name="startTrimMinimum">0</option>
+            </childOption>
+            <childOption name="trimEnd">
+              <option name="endTrim">true</option>
+              <option name="endTrimAtLeast">false</option>
+              <option name="endTrimMinimum">0</option>
+            </childOption>
+            <childOption name="maxLength">
+              <option name="use">false</option>
+              <option name="maxLength">1000</option>
+            </childOption>
+          </childOption>
+        </childOption>
+        <childOption name="results">
+          <option name="nameDeNovo">{Reads Name} Assembly</option>
+          <option name="addNameVariableDeNovo">...</option>
+          <option name="nameReference">{Reads Name} assembled to {Reference Name}</option>
+          <option name="addNameVariableReference">...</option>
+          <option name="saveReport">false</option>
+          <option name="customComponent1" />
+          <option name="saveUnusedReads">false</option>
+          <option name="customComponent2" />
+          <option name="saveUsedReads">false</option>
+          <option name="saveUsedReadsIncludeMates">false</option>
+          <option name="customComponent3" />
+          <option name="resultsInSubfolder">false</option>
+          <option name="customComponent4" />
+          <option name="generateContigs">true</option>
+          <option name="limitGeneratedContigs">true</option>
+          <option name="generatedContigsLimit">10000</option>
+          <option name="customComponent5" />
+          <option name="generateConsensusSequencesReference">false</option>
+          <option name="consensusOptionsButtonReference">Options</option>
+          <option name="customComponent6" />
+          <option name="generateConsensusSequencesDeNovo">false</option>
+          <option name="consensusOptionsButtonDeNovo">Options</option>
+          <option name="customComponent7" />
+          <childOption name="consensus">
+            <option name="consensusSource">generateFromContig</option>
+            <childOption name="consensusOptionsReference">
+              <option name="thresholdPercent">weighted_60</option>
+              <option name="customComponent1" />
+              <option name="thresholdPercentNoQuality">75</option>
+              <option name="noConsensusGaps">false</option>
+              <option name="mapQuality">true</option>
+              <option name="mapQualityMethod">mapSummed</option>
+              <option name="noCoverageCharacterDeNovo">gap</option>
+              <option name="noCoverageCharacterReference">unknown</option>
+              <option name="applyLowCoverageOrQualityCall">false</option>
+              <option name="lowCoverageOrQualityCharacter">unknown</option>
+              <option name="coverageOrQuality">coverage</option>
+              <option name="qualityThreshold">20</option>
+              <option name="coverageThreshold">2</option>
+              <option name="splitAroundQuestionMarks">false</option>
+              <option name="noConsensusEndGaps">true</option>
+              <option name="trimToReference">false</option>
+              <option name="ignoreReadsMappedToMultipleLocations">false</option>
+              <option name="callWhenGapInBestStates" />
+              <option name="howToStoreSequences">AskUser</option>
+            </childOption>
+            <childOption name="consensusOptionsDeNovo">
+              <option name="thresholdPercent">weighted_60</option>
+              <option name="customComponent1" />
+              <option name="thresholdPercentNoQuality">75</option>
+              <option name="noConsensusGaps">false</option>
+              <option name="mapQuality">true</option>
+              <option name="mapQualityMethod">mapSummed</option>
+              <option name="noCoverageCharacterDeNovo">gap</option>
+              <option name="noCoverageCharacterReference">unknown</option>
+              <option name="applyLowCoverageOrQualityCall">false</option>
+              <option name="lowCoverageOrQualityCharacter">unknown</option>
+              <option name="coverageOrQuality">coverage</option>
+              <option name="qualityThreshold">20</option>
+              <option name="coverageThreshold">2</option>
+              <option name="splitAroundQuestionMarks">false</option>
+              <option name="noConsensusEndGaps">true</option>
+              <option name="trimToReference">false</option>
+              <option name="ignoreReadsMappedToMultipleLocations">false</option>
+              <option name="callWhenGapInBestStates" />
+              <option name="howToStoreSequences">AskUser</option>
+            </childOption>
+          </childOption>
+        </childOption>
+      </Options>
+      <optionToExpose optionName="data.referenceSequenceName" label="" />
+    </workflowElement>
+    <workflowElement id="FilterOperation" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="match">all</option>
+        <multiOption name="filter">
+          <value>
+            <option name="field">referenceSequenceIndex</option>
+            <option name="condition">is</option>
+            <option name="value" />
+          </value>
+        </multiOption>
+      </Options>
+      <optionToExpose optionName="match" label="" />
+    </workflowElement>
+    <workflowElement type="com.biomatters.plugins.workflows.WorkflowElementSaveAndContinue">
+      <options>
+        <option name="back">2</option>
+        <option name="saveInSubFolder">false</option>
+        <option name="subFolderName" />
+        <option name="selectDocuments">false</option>
+      </options>
+    </workflowElement>
+    <workflowElement id="FilterOperation" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="match">all</option>
+        <multiOption name="filter">
+          <value>
+            <option name="field">referenceSequenceIndex</option>
+            <option name="condition">is_not</option>
+            <option name="value" />
+          </value>
+        </multiOption>
+      </Options>
+      <optionToExpose optionName="match" label="" />
+    </workflowElement>
+    <workflowElement id="Operation_com.biomatters.plugins.mutationFinder.MutationFinderAnnotationGenerator" exposeNoOptions="false" exposeAllOptions="true" suppressErrors="false" showButtonForExposedGroup="true" groupNameForExposedOptions="Find Variations/SNPs" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+      <Options>
+        <option name="ignoreTrims">true</option>
+        <option name="calculatePValues">false</option>
+        <childOption name="findPolymorphisms">
+          <option name="applyMinimumCoverage">false</option>
+          <option name="minimumCoverage">5</option>
+          <option name="applyMinimumFrequency">true</option>
+          <option name="minimumFrequency">0.25</option>
+          <option name="maximumPValueApply">true</option>
+          <option name="customComponent1" />
+          <option name="maximumPValue">6</option>
+          <option name="customComponent2" />
+          <option name="customComponent3" />
+          <option name="standBiasMinimumValueApply">true</option>
+          <option name="customComponent4" />
+          <option name="standBiasMinimumValue">5</option>
+          <option name="customComponent5" />
+          <option name="threshold">65</option>
+          <option name="customComponent6" />
+          <option name="findWhere">everywhere</option>
+          <option name="findInSelectedRegionOnly">false</option>
+        </childOption>
+        <childOption name="analyzeTranslations">
+          <option name="analyzeTranslationEffects">true</option>
+          <option name="defaultGeneticCode">universal</option>
+        </childOption>
+        <childOption name="advanced">
+          <option name="snpsOnly">false</option>
+          <option name="mergeAdjacentVariations">true</option>
+          <option name="ignoreReferenceSequence">false</option>
+          <option name="separateAnnotationsForEachVariation">true</option>
+          <option name="recordSequenceNames">false</option>
+          <option name="ignoreReadsMappedToMultipleLocations">false</option>
+          <option name="isIgnoreAnnotationTypes">false</option>
+          <option name="ignoreAnnotationTypes">Coverage - High</option>
+          <option name="isOnlyInAnnotationTypes">false</option>
+          <option name="onlyInAnnotationTypes">motif</option>
+          <option name="onlyFindInRange">0</option>
+          <option name="qualifiersToCopy">gene, product, protein_id, locus_tag, note</option>
+        </childOption>
+        <childOption name="pValue">
+          <option name="defaultQuality">20</option>
+          <option name="pValueMethod">pValueMethodApproximate</option>
+          <option name="applyHomoPolymerQualityReductionPercentage">false</option>
+          <option name="homoPolymerQualityReductionPercentage">30</option>
+          <option name="customComponent1" />
+        </childOption>
+      </Options>
+      <optionToExpose optionName="calculatePValues" label="" />
+    </workflowElement>
+  </XMLSerialisableRootElement>
+</geneiousWorkflows>

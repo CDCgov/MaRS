@@ -2,7 +2,7 @@
 
 ### Vision ###
 
-##### Disrupt the way :microscope: :computer: science is done and in the process save lives. #####
+#### Disrupt the way :microscope: :computer: science is done and in the process save lives. #####
 
 ### Background ###
 The emergence of resistance to all currently available antimalarial drugs in multiple regions of the world represents a global public health challenge. In order to monitor and address this situation, faster and more effective surveillance tools are required to track and monitor the emergence and evolution of drug resistance in malaria. The Malaria Resistance Surveillance (MaRS) project aims to address this challenge by collating and mapping genetic polymorphisms associated with drug resistance in _P. falciparum_ malaria around the world.
@@ -21,7 +21,7 @@ Please see [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSso
 ### Data Analysis :computer: ###
 
 Two analysis workflows are available and actively being developed:  
-* [For beginner Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/intro.md)
+* [Beginner/Intermediate Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/intro.md)
 * [Advanced Bioinformaticans and Data Scientists](https://github.com/CDCgov/Nf-NeST)
 
 ### Data Sharing ###
