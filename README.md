@@ -21,7 +21,7 @@ Please see [Lab Protocol](https://github.com/CDCgov/MaRS/tree/master/lab_sop) fo
 ### Data Analysis :computer: ###
 
 Two analysis workflows are available and actively being developed:  
-* [For beginner Bioinformaticans and Biologists](placeholder)
+* [For beginner Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/intro.md)
 * [Advanced Bioinformaticans and Data Scientists](https://github.com/CDCgov/Nf-NeST)
 
 ### Data Sharing ###
