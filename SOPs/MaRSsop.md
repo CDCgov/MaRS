@@ -10,7 +10,7 @@
   - [ ] Remove sequel Prep & add bead clean up @PM
 
 > #### Completed Activity ✓ ####
-- [x] Update symlinks @ET 4/4/22
+> - [x] Update symlinks @ET 4/4/22
 
 ---------
 
