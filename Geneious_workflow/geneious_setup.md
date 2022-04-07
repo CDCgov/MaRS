@@ -26,9 +26,9 @@ The workflow described herein provides a step by step guide on how to analyze Il
 The workflow is split into :five: steps:
 * [Sample ID QC](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/01_sample_ID_QC)
 * [Geneious Analysis](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis)
-* [Summary tables](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_tables)
-* [Data visualization](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/04_data_viz)
-* [NCBI submission](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/05_ncbi_submission)
+* [Summary Tables](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_tables)
+* [Data Visualization](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/04_data_viz)
+* [NCBI Submission](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/05_ncbi_submission)
 
 ### Contribution guidelines ###
 
