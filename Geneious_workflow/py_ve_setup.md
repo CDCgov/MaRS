@@ -63,5 +63,5 @@ Once initialized, the _virtual environment_ will create a new directory with all
 ```bash
 ## Make sure to deactivate the ve once done working in jupyter ##
 deactivate    # exit the virtual env
-
 ```
+:back: [To set up page](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/geneious_setup.md)
