@@ -33,7 +33,7 @@ The workflow described herein provides a step by step guide on how to analyze Il
 
 ### How do I get started ###
 The workflow is split into :five: steps:
-* [Sample ID QC](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/01_sample_ID_QC)
+* [Sample ID QC](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/01_sample_ID_QC/sampleQC.md)
 * [Geneious Analysis](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis)
 * [Summary Tables](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_tables)
 * [Data Visualization](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/04_data_viz)
