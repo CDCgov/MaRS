@@ -16,7 +16,8 @@
 The workflow described herein provides a step by step guide on how to analyze Illumina targeted deep amplicon (TADS) data for variants (SNPs) in drug resistance associated genes: `k13, dhfr, dhps, mdr1, crt, and cytb`. Target audience are biologist or beginner bioinformaticans :beginner: :computer:
 
 ### How do I get set up? ###
-* Required: [Geneious Prime](https://www.geneious.com/prime/)
+* [Geneious Prime](https://www.geneious.com/prime/)
+* [Virtual environment set up](placeholder)
 * Basic scripting using [python](https://realpython.com/learning-paths/writing-pythonic-code/)
 * Basis understanding of working in a [terminal](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/) and [bash shell](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 * Understanding of [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
@@ -46,4 +47,4 @@ The workflow is split into :five: steps:
 [![Gitter](https://badges.gitter.im/placeholder.svg)](https://gitter.im/placeholder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 * We are a small group, however, we will do our best to respond in a timely fashion.  
 
-:back: [To main page](https://github.com/CDCgov/MaRS) 
+:back: [To main page](https://github.com/CDCgov/MaRS)
