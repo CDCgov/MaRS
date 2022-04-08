@@ -1,9 +1,14 @@
 > Author:
 >> Edited:
+----
+>#### TODO ####
+>#### Activity Name ####
+ - [ ] Task title ~3d #type @name yyyy-mm-dd
+    - [ ] Sub-task description
+>#### Completed Activity ✓ ####
+- [ ] Task title ~3d #type @name yyyy-mm-dd
 
-
-* [Placeholder](#Placeholder)
-### _Template Markdown_ ###
+------
 
 ### What is this repository for? Background ###
 
@@ -30,13 +35,3 @@
 
 * Repo owner or admin
 * Other community or team contact
-
-#### Task ####
- _Template_
-
-#### Activity Name ####
- - [ ] Task title ~3d #type @name yyyy-mm-dd
-    - [ ] Sub-task description
-
-#### Completed Activity ✓ ####
-- [ ] Task title ~3d #type @name yyyy-mm-dd

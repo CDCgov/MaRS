@@ -21,8 +21,8 @@ Please see the Illumina TADS [Lab Protocol](https://github.com/CDCgov/MaRS/blob/
 ### Data Analysis :computer: ###
 
 Two analysis workflows are available and actively being developed:  
-* [Beginner/Intermediate Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/geneious_setup.md)
-* [Advanced Bioinformaticans and Data Scientists](https://github.com/CDCgov/MaRS/blob/master/Nextflow_workflow/nf_setup.md)
+* [Beginner/Intermediate Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/readme.md)
+* [Advanced Bioinformaticans and Data Scientists](https://github.com/CDCgov/MaRS/blob/master/Nextflow_workflow/readme.md)
 
 ### Data Sharing ###
 
