@@ -17,7 +17,7 @@ The workflow described herein provides a step by step guide on how to analyze Il
 
 ### How do I get set up? ###
 * [Geneious Prime](https://www.geneious.com/prime/)
-* [Virtual environment set up](placeholder)
+* [Virtual environment set up](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
 * Basic scripting using [python](https://realpython.com/learning-paths/writing-pythonic-code/)
 * Basis understanding of working in a [terminal](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/) and [bash shell](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
 * Understanding of [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
