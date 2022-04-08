@@ -20,7 +20,7 @@ The workflow described herein provides a step by step guide on how to analyze Il
 * You will need some basic understanding of:
   * Scripting using [python](https://realpython.com/learning-paths/writing-pythonic-code/)
   * Working in a [terminal](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/) and [bash shell](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
-  * Working in [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
+  * Working with [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
 
 
 * Required bioinformatics software:   
@@ -28,12 +28,13 @@ The workflow described herein provides a step by step guide on how to analyze Il
 
 
 * Setting up your working environment:
-  * [Virtual and python environment set up](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
-  * Additional required dependencies will be listed in each jupyter-lab notebook
+  * [Virtual and python environment](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
+  * Additional required dependencies and modules will be listed in each jupyter-lab notebook
+    * These you install in the terminal by `python3 -m pip install <module name>`
 
 ### How do I get started ###
 The workflow is split into :five: steps:
-* [Sample ID QC](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/01_sample_ID_QC/sampleQC.md) 
+* [Sample ID QC](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/01_sample_ID_QC/sampleQC.md)
 * [Geneious Analysis](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis)
 * [Summary Tables](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_tables)
 * [Data Visualization](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/04_data_viz)

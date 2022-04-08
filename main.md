@@ -14,9 +14,9 @@ This projects aims to:
 * :white_check_mark: Transfer these methods where they are most needed (malaria endemic countries)
 * :white_check_mark: Standardize the entire process, from sample collection to report generation  
 
-### Lab Protocol :microscope: ###
+### Lab Protocols :microscope: ###
 
-Please see [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSsop.md) for the most up to date standard operating procedures (SOPs).
+Please see the Illumina TADS [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSsop.md) for the most up to date standard operating procedures (SOPs).
 
 ### Data Analysis :computer: ###
 
