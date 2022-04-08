@@ -28,7 +28,7 @@ The workflow described herein provides a step by step guide on how to analyze Il
 
 
 * Setting up your working environment:
-  * [Virtual environment set up](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
+  * [Virtual and python environment set up](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
   * Additional required dependencies will be listed in each jupyter-lab notebook
 
 ### How do I get started ###
