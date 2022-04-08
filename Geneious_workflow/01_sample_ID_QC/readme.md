@@ -4,7 +4,13 @@
 >#### TODO ####
 >#### Activity Name ####
  - [ ] Update readme
- - [ ] Info on how to set up jupyter within conda env  
+    - [ ] add info on naming schema for AMD_IDs  
+    - [ ] instructions on how to generate AMD_IDs
+    - [ ] test links to images  
+ - [ ] Jupyter-lab set up
+    - [ ] How to install?
+    - [ ] How to start up, run quick test
+ - [ ] Add example input data 
 
 >#### Completed Activity ✓ ####
 
