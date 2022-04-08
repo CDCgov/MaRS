@@ -9,6 +9,7 @@
 
 >#### Completed Activity ✓ ####
 >- [x] Add links to each of the steps @ET :goat:
+>- [x] Update README: add python, pyenv, ven set up  @ET :goat:
 ------
 
 ## Background ##
@@ -16,12 +17,19 @@
 The workflow described herein provides a step by step guide on how to analyze Illumina targeted deep amplicon (TADS) data for variants (SNPs) in drug resistance associated genes: `k13, dhfr, dhps, mdr1, crt, and cytb`. Target audience are biologist or beginner bioinformaticans :beginner: :computer:
 
 ### How do I get set up? ###
-* [Geneious Prime](https://www.geneious.com/prime/)
-* [Virtual environment set up](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
-* Basic scripting using [python](https://realpython.com/learning-paths/writing-pythonic-code/)
-* Basis understanding of working in a [terminal](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/) and [bash shell](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
-* Understanding of [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
-* Additional required dependencies will be listed in each jupyter-lab notebook
+* You will need some basic understanding of:
+  * Scripting using [python](https://realpython.com/learning-paths/writing-pythonic-code/)
+  * Working in a [terminal](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/) and [bash shell](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+  * Working in [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
+
+
+* Required bioinformatics software:   
+  * [Geneious Prime](https://www.geneious.com/prime/)
+
+
+* Setting up your working environment:
+  * [Virtual environment set up](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/py_ve_setup.md)
+  * Additional required dependencies will be listed in each jupyter-lab notebook
 
 ### How do I get started ###
 The workflow is split into :five: steps:
@@ -37,7 +45,7 @@ The workflow is split into :five: steps:
 * Please fork :arrow_forward: make changes :arrow_forward: pull request
 * Changes will be reviewed and tested before implementation
 * We recommend setting up [git](https://www.atlassian.com/git) extension in jupyter-lab:
->   * Option 1: start `jupyter-lab`, click on jigsaw icon and enable extensions
+>   * Option 1: start `jupyter-lab`, click on jigsaw icon and enable extensions > search git > enable
 >   * Option 2: `pip3 install --upgrade jupyterlab-git`, restart `jupyter-lab`
 
 
