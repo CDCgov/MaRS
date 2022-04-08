@@ -59,6 +59,5 @@ PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ## Running nf-NeST pipeline ##
 Head over to [nf-NeST](https://github.com/CDCgov/Nf-NeST) and try to run it.
 
-[To main page](https://github.com/CDCgov/MaRS) :back:  
-
+:back: [To main page](https://github.com/CDCgov/MaRS)
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
