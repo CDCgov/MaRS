@@ -34,10 +34,10 @@ The [nf-NeST](https://github.com/CDCgov/Nf-NeST) workflow uses [nextflow](https:
 
   * On OSX, add the below to your `.zhrc`  
 
-  ```bash
+```bash
 # Check local/bin dependencies before system system/bin dependencies
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-  ```
+```
 
 * [Install nextflow](https://www.nextflow.io/docs/latest/getstarted.html#installation)
   * `curl -s https://get.nextflow.io | bash`
