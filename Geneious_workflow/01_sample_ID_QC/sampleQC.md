@@ -1,18 +1,18 @@
-> Author: @ET 4/5/22 :goat: 
+> Author: @ET 4/5/22 :goat:
 >> Edited:
 ----
 >#### TODO ####
 >#### Activity Name ####
- - [ ] Task title ~3d #type @name yyyy-mm-dd
-    - [ ] Sub-task description
+ - [ ] Update readme
+ - [ ] Info on how to set up jupyter within conda env  
+
 >#### Completed Activity ✓ ####
-- [ ] Task title ~3d #type @name yyyy-mm-dd
 
 ------
 
-### What is this repository for? Background ###
+### Background ###
 
-* Quick summary
+
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
