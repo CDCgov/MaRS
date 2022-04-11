@@ -19,10 +19,10 @@
 ### Background ###
 
 <img
-src='/images/ind_sample_ID.png'
-alt="Individual Sample"
-title="AMD ID"
-style="display": inline-block; margin:0 auto; max-width: 200px">
+  src="/images/ind_sample_ID.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 <![Test](/images/ind_sample_ID.png)
 
