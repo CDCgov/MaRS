@@ -10,7 +10,7 @@
  - [ ] Jupyter-lab set up
     - [ ] How to install?
     - [ ] How to start up, run quick test
- - [ ] Add example input data 
+ - [ ] Add example input data
 
 >#### Completed Activity ✓ ####
 
@@ -18,6 +18,7 @@
 
 ### Background ###
 
+[AMD_ID](/images/ind_sample_ID.png)
 
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
