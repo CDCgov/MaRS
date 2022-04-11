@@ -30,13 +30,13 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
   src="/images/ind_sample_ID.png"
   align="left"
   width="620"
-  style="display: inline-block">
+  style="display: block">
 
   <img
     src="/images/pooled_sample_ID.png"
     align="left"
     width="620"
-    style="display: inline-block">
+    style="display: block">
 </p>
 
 <p>
