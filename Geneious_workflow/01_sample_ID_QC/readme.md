@@ -24,8 +24,6 @@
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-<![Test](/images/ind_sample_ID.png)
-
 
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
