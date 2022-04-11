@@ -25,6 +25,7 @@ The CDC MB AMD genomics lab currently uses two sequencing methods: `individulal`
 
 The `pooled` samples are combined (e.g. pooling of individual samples) either as filter blot spots or DNA  based on parsitemia pror to molecular marker amplifcation and then pooling (e.g. pooling of molecular markers per sample pool). See recent publication for more info [here](https://pubmed.ncbi.nlm.nih.gov/35030215/).
 
+<div>
 <p float="left">
 <img
   src="/images/ind_sample_ID.png"
@@ -36,6 +37,7 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
     align="left"
     width="520">
 </p>
+</div>
 
 <p>
 
