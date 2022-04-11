@@ -28,15 +28,13 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
 <p float="left">
 <img
   src="/images/ind_sample_ID.png"
-  alt="AMD ID: individual"
-  title="Individual Sample ID"
-  style="display: inline-block; margin: 0 auto; width="50px"/>
+  align="left"
+  width="100">
 
   <img
     src="/images/pooled_sample_ID.png"
-    alt="AMD ID: individual"
-    title="Individual Sample ID"
-    style="display: inline-block; margin: 0 auto; width=50px; height="/>
+    align="left"
+    width="100">
 </p>
 
 * Version
