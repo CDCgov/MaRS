@@ -18,7 +18,12 @@
 
 ### Background ###
 
-[AMD_ID](/images/ind_sample_ID.png)
+<img
+src='/images/ind_sample_ID.png'
+alt="Individual Sample"
+title="AMD ID"
+styel="display": inline-block; margin:0 auto; max-width: 200px">
+
 
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
