@@ -18,12 +18,26 @@
 
 ### Background ###
 
+
+The CDC MB AMD genomics lab currently uses two sequencing methods: `individulal` and `pooled`.
+
+`Individual` are samples are tagged using unique indices prior to sequencing to allow de-multiplexing at the individual sample level. The individual samples often have more than one molecular marker included (e.g. pooled molecular markers).
+
+The `pooled` samples are combined (e.g. pooling of individual samples) either as filter blot spots or DNA  based on parsitemia pror to molecular marker amplifcation and then pooling (e.g. pooling of molecular markers per sample pool). See recent publication for more info [here](https://pubmed.ncbi.nlm.nih.gov/35030215/).
+
+<p float="left">
 <img
   src="/images/ind_sample_ID.png"
-  alt="Alt text"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  alt="AMD ID: individual"
+  title="Individual Sample ID"
+  style="display: inline-block; margin: 0 auto; max-width: 200px"/>
 
+  <img
+    src="/images/pooled_sample_ID.png"
+    alt="AMD ID: individual"
+    title="Individual Sample ID"
+    style="display: inline-block; margin: 0 auto; max-width: 200px"/>
+</p>
 
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
