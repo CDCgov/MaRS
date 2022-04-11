@@ -29,13 +29,13 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
 <img
   src="/images/ind_sample_ID.png"
   align="left"
-  width="700"
+  width="620"
   style="display: inline-block">
 
   <img
     src="/images/pooled_sample_ID.png"
     align="left"
-    width="700"
+    width="620"
     style="display: inline-block">
 </p>
 
@@ -44,6 +44,8 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
 * Version
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 </p>
+
+
 
 ### How do I get set up? ###
 
