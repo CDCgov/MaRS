@@ -16,7 +16,7 @@ This projects aims to:
 
 ### Lab Protocols :microscope: ###
 
-Please see the Illumina TADS [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSsop.md) for the most up to date standard operating procedures (SOPs).
+Please see the Illumina TADS [Lab Protocol](https://github.com/CDCgov/MaRS/blob/goat_dev/SOPs/MaRSsop_v51.md) for the most up to date standard operating procedures (SOPs).
 
 ### Data Analysis :computer: ###
 

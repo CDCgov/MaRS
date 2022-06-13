@@ -49,4 +49,4 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
 * To run a test, start a `jupyter-lab notebook` in your terminal `cd` to location of downloaded **MaRS project directory**
   * Then run: `jupyter-lab MaRS/`
     * This will open up `jupyter-lab notebok` and show the full directory structure of the **MaRS project**
-* Next navigate to: `Geneious_workflow/01_sample_ID_QC` and open `AMDID_QC_final.ipynb`
+* Next navigate to: `Geneious_workflow/01_sample_ID_QC` and open `AMDID_QC_fastq.ipynb`
