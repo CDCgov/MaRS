@@ -2,15 +2,15 @@
 ---------
 > #### TODO ####
 > #### Activity Name ####
-- [x] Update symlinks @MB
-- [x] Proof read @MB
+- [ ] Combine into single github pages doc  
 
 > #### Completed Activity ✓ ####
 > - [x] Update symlinks @ET 4/4/22
 - [x] Update based on Flex protocol @PM & @ET 6/8/22
  - [x] Remove sequel Prep & add bead clean up @PM & @ET 6/8/22
  - [x] Polish markdown for readability @ET 6/8/22
-
+- [x] Update symlinks @MB 6/10/22
+- [x] Proof read @MB 6/10/11
 ---------
 
 
