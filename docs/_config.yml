@@ -1,1 +1,7 @@
+title: Laboratory Standard Operating Procedure (SOP)  
+description: Targeted deep amplicon sequencing of P. falciparum drug resistance associated full-length genes  
+show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
+google_analytics: G-S8XG5V75W1
+
 theme: jekyll-theme-leap-day
+gem "github-pages", group: :jekyll_plugins
