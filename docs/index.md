@@ -1,8 +1,6 @@
 
 # Lab Protocol
 
-
-
 **Targeted Amplicon Deep Sequencing of _Plasmodium falciparum (Pf)_ molecular markers of resistance**
 
 Preparing full length _P. falciparum_ genes for amplicon sequencing on the Illumina MiSeq.
