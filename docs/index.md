@@ -1,15 +1,13 @@
 
-**Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
+Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.
 
-Current genes included in this panel include:
-* _kelch 13_ (_k13_)
-* _chloroquine resistant transporter_ (_crt_)
-* _multidrug resistant protein 1_ (_mdr1_)
-* _bifunctional dihydrofolate reductase-thymidylate synthase_ (_dhfr_)
-* _dihydropteroate synthase_ (_dhps_)
-* _cytochrome b_ (_cytb_)
+* kelch 13 (_k13_)
+* chloroquine resistant transporter (_crt_)
+* multidrug resistant protein 1 (_mdr1_)
+* bifunctional dihydrofolate reductase-thymidylate synthase (_dhfr_)
+* dihydropteroate synthase (_dhps_)
+* cytochrome b (_cytb_)
 
-<!--
 **Table of contents**  
 * [Introduction/General Overview](#intro)
 * [Materials and Equipment](#materials)
@@ -24,7 +22,6 @@ Current genes included in this panel include:
 * [Library Pooling, Quantification, and Normalization](#lib_norm)
 * [Library Denaturing and MiSeq Sample Loading](#sample_loading)
 * [Supporting Information](#supporting_info)
--->
 
 **IMPORTANT NOTICE**
 
@@ -49,7 +46,9 @@ Below is a table of the major molecular markers and their respective amino acid 
 
 **Table 1. Molecular Markers and amino acid polymorphisms**
 
-<img src="/assets/images/Table1.png" width="1000">
+![Table 1](/assets/images/Table1.png)
+
+<img src="Table1.png" width="1000">
 
 **\*C350R** _results in a reduction of chloroquine resistance._
 
