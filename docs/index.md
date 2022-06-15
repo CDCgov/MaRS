@@ -1,12 +1,8 @@
 
-Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.
+June 10th, 2022 version 5.0 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
+> Version 5.1: Major update in library prep from NexteraXT to Flex protocol.
 
-* kelch 13 (_k13_)
-* chloroquine resistant transporter (_crt_)
-* multidrug resistant protein 1 (_mdr1_)
-* bifunctional dihydrofolate reductase-thymidylate synthase (_dhfr_)
-* dihydropteroate synthase (_dhps_)
-* cytochrome b (_cytb_)
+This protocol format was adapted from the 16S Metagenomics Sequencing Library Preparation [protocol](http://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf) from Illumina, and the [Illlumina DNA Prep Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/illumina_prep/illumina-dna-prep-reference-guide-1000000025416-09.pdf).
 
 <!--
 **Table of contents**  
@@ -27,16 +23,38 @@ Standard Operating Procedure (SOP) describing how to prepare and sequence the fu
 
 **IMPORTANT NOTICE**
 
-This document provides information for an application for Illumina technology that has been demonstrated internally and may be of interest to customers. This information is provided as‐is and is not an Illumina product and is not accompanied by any rights or warranties. Customers using or adapting this information should obtain any licenses required and materials from authorized vendors. Illumina products mentioned herein are for research use only unless marked otherwise. While customer feedback is welcomed, this application is not supported by Illumina Technical Support and Field Application Scientists.
+This document provides information for an application for Illumina technology that has been demonstrated internally and may be of interest to external groups. This information is provided as‐is and is not an Illumina or CDC endorsed product and is not accompanied by any rights or warranties.
 
-June 10th, 2022 version 5.0 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
-> Version 5.1: Major update in library prep from NexteraXT to Flex protocol.
+----
+<details>
+  <summary><strong>Legal Notices</strong></summary>
 
-This protocol format was adapted from the 16S Metagenomics Sequencing Library Preparation [protocol](http://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf) from Illumina, and the [Illlumina DNA Prep Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/illumina_prep/illumina-dna-prep-reference-guide-1000000025416-09.pdf).
+#### Public Domain
+
+This repository constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105. This repository is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/). All contributions to this repository will be released under the CC0 dedication. By submitting a pull request you are agreeing to comply with this waiver of copyright interest.
+
+#### Records Management
+
+This repository is not a source of government records, but is a copy to increase collaboration and collaborative potential. All government records will be published through the [CDC web site](https://www.cdc.gov/).
+
+#### Privacy
+
+This repository contains only non-sensitive, publicly available data and information. All material and community participation is covered by the [Disclaimer](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md) and [Code of Conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md). For more information about CDC's privacy policy, please visit http://www.cdc.gov/other/privacy.html.
+</details>
+
 
 <a id="intro"></a>
 
 ## **Introduction and General Workflow** ##
+
+**Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
+
+* kelch 13 (_k13_)
+* chloroquine resistant transporter (_crt_)
+* multidrug resistant protein 1 (_mdr1_)
+* bifunctional dihydrofolate reductase-thymidylate synthase (_dhfr_)
+* dihydropteroate synthase (_dhps_)
+* cytochrome b (_cytb_)
 
 Human malaria is caused by four parasite species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. ovale (Po)* and *P. malariae (Pm)*. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2020, there were an estimated 241 million malaria cases in 85 malaria endemic countries, causing an estimated 627,000 deaths.. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
 
