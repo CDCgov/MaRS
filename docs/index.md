@@ -297,7 +297,8 @@ This step uses a real time PCR assay to assess the quality and quantity of start
 The table below shows the primers and PCR conditions for a multiplex reaction- Genus and P. falciparum:
 
 **Table 5. _Multiplexing genus and P. falciparum species specific primers_**
-<img src="Table5.png" width="1000">
+
+![Table 5](/assets/images/Table5.png | width=1000)
 
 **Primers:**<br>
 **Genus 18sFor (5' to 3'):** 5'-GGC CTA ACA TGG CTA TGA CG-3'<br>
@@ -391,7 +392,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 **Table 6.1.  _Pfcrt_**
 
-<img src="Table6p1.png" width="1000">
+![Table 6.1](/assets/images/Table6p1.png | width=1000)
 
 **Amplicon size:** 3,109 bp<br>
 **Primers:  Pfcrt_F1 Sequence (5' to 3'):** _TTACATATAACAAAATGAAATTCGC_ <br>
@@ -399,7 +400,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 **Table 6.2.  _Pfk13_**
 
-<img src="Table6p2.png" width="1000">
+![Table 6.2](/assets/images/Table6p2.png | width=1000)
 
 **Amplicon size:** 2,181 bp<br>
 **Primers:  Pfk13_F1_ETn2 Sequence (5' to 3'):** _CTATGACGTATGATAGGGAATCTGG_ <br>
@@ -407,7 +408,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 **Table 6.3. _Mitochondrial genome_**
 
-<img src="Table6p3.png" width="1000">
+![Table 6.3](/assets/images/Table6p3.png | width=1000)
 
 **Amplicon size:** 5,967 bp<br>
 **Primers:  Mitochondrion_F1 Sequence (5’ to 3’):** _AAGCTTTTGGTATCTCGTAAT_<br>
@@ -416,15 +417,16 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 **NOTE:** If experiencing issues with amplifying the full-length mitochondrial genome, consider amplifying only the _cyt-b_ gene instead for characterizing molecular markers associated with Malarone (atovaquone/proguanil) resistance. See Table 6.3a below.
 
 **Table 6.3a. _Cytochrome b_**
-<img src="Table6point3a.png" width="1000">
+
+![Table 6.3](/assets/images/Table6point3a.png | width=1000)
 
 **Amplicon size:** 937 bp<br>
 **Primers:  CytB_F1_Sequence (5' to 3'):** _CTATTAATTTAGTTAAAGCACAC_ <br>
 **CytB_R1_Sequence (5' to 3'):** _ACAGAATAATCTCTAGCACCA_
 
 **Table 6.4. _mdr1_**
+![Table 6.4](/assets/images/Table6p4.png | width=1000)
 
-<img src="Table6p4.png" width="1000">
 
 **Amplicon size:** 4,155 bp<br>
 **Primers:  Pfmdr1_F1_Sequence (5' to 3'):** _TGGTAACCTCAGTATCAAAG_ <br>
@@ -432,7 +434,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 **Table 6.5. _dhfr_**
 
-<img src="Table6p5.png" width="1000">
+![Table 6.5](/assets/images/Table6p5.png | width=1000)
 
 **Amplicon size:** 2,067 bp<br>
 **Primers:  Pfdhfr_F1 Sequence (5' to 3'):** _TTTTTACTAGCCATTTTTGTATTCC_<br>
@@ -440,10 +442,9 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 **\*Primers adapted from: SC, Carlton JM.** 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
 
-
 **Table 6.6. _dhps_**
 
-<img src="Table6p6.png" width="1000">
+![Table 6.6](/assets/images/Table6p6.png | width=1000)
 
 **Amplicon size:** 2,817 bp<br>
 **Primers:  Pfdhps_F Sequence (5' to 3'):** _AATATTTGCGCCAAACTTTTTA_<br>
@@ -453,7 +454,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 **Table 6.7. _Pfs47_- Geographic Determination**
 
-<img src="Table6p7.png" width="1000">
+![Table 6.7](/assets/images/Table6p7.png | width=1000)
 
 **Amplicon size:** 1,320bp<br>
 **Primers:  Pfs47_F Sequence (5' to 3'):** *ATGTGTATGGGAAGAATGATCAG*<br>
@@ -462,8 +463,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 
 Table 6.8. *Pfcpmp - Recrudescence vs Reinfection*
-
-<img src="Table6p8.png" width="1000">
+![Table 6.8](/assets/images/Table6p8.png | width=1000)
 
 **Amplicon size:** 805 bp<br>
 **Primers:  Pfcpmp_F Sequence (5' to 3'):** *GTCATTAAAATTTATGGATTATATATGG*<br>
@@ -595,9 +595,7 @@ NOTE: 70% ethanol is hygroscopic. That is, when opened the ethanol will both eva
 
 To maximize recovery of smaller fragments from the bead cleanup step, use the following conditions (AMPure XP volume calculations in the table below are based on 50 μl sample volume):
 
-<img src="AMPureVolumes.png" width="1000">
-
-
+![AMPure Volumes](/assets/images/AMPureVolumes.png | width=1000)
 
 4. Using a multichannel pipette, add an appropriate volume of beads per sample based on your input size. Change tips between columns.
 
@@ -653,8 +651,7 @@ If you do not plan to proceed to *Tagment Genomic DNA and Tagmentation Clean-Up*
 
 The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. This process fragments and tags the DNA with adapter sequences. The Post Tagmentation Clean up step washes the adapter-tagged DNA on the BLT before PCR amplification.
 
-<img src="TagmentationIndexing.png" width="1000">
-
+![Tagmentation Indexing](/assets/images/TagmentationIndexing.png | width=300)
 
 **Consumables**
 
@@ -800,7 +797,8 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 **Thermocycler Program: "Flex 3" with reaction volume set to 50ul and choose the preheat lid option set to 100°C:**
 
-<img src="Flex3.png" width="300">
+![Flex](/assets/images/Flex3.png.png | width=300)
+
 
 **Procedure**
 
@@ -837,7 +835,9 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 9. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 μl and lid heated option at 100°C:
 
-<img src="Flex3.png" width="300"><br>
+![Flex](/assets/images/Flex3.png | width=300)
+
+<br>
 
 10. Centrifuge plate for at 280 x g for 1 minute.
 
@@ -964,8 +964,7 @@ It is important to consider library size when preparing samples for cluster gene
 
 **Library Denaturing and MiSeq Sample Loading**
 
-<img src="OptimalClusterDensity.png" width="600">
-
+![Clustering](/assets/images/OptimalClusterDensity.png | width=600)
 
 <a id="lib_norm"></a>
 
@@ -994,7 +993,8 @@ After determining the fragment size and concentration of your pooled product, yo
 |(concentration in ng/μl) * (10^6) / (660g/mol) * (average library size) = concentration in nM|
 | --- |
 
-For example:<br>
+For example:
+<br>
 (15 ng/μl) * (10^6) / (660g/mol) * (500bp) = 45 nM
 <br>
 <br>
@@ -1225,12 +1225,14 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 7. Place the denatured DNA on ice until you are ready to proceed to final dilution.
 
 **Quick Review/Guide for denaturing 4nM library:**
-<img src="Denaturing4nmLibrary.png" width="700"><br>
+![Denature](assets/images/Denaturing4nmLibrary.png | width=700)
+
 
 **NOTE: If you have to start with a lower concentration library, follow the below protocol for denaturing a 2nM library.**
 
 **Quick Review/Guide for denaturing 2nM library:**
-<img src="DenauringTWOnmLibrary.png" width="700"><br>
+![Denature 2](assets/images/DenauringTWOnmLibrary.png | width=700)
+
 
 **Dilution chart for 10pM library:**
 
@@ -1244,8 +1246,8 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 1. Dilute the denatured DNA to the desired concentration using the following example:
 
   **NOTE:** Illumina recommends targeting 1000–1200 K/mm² raw cluster densities using MiSeq v2 reagents.
+![Clustering](assets/images/IlluminaLibClustering.png | width=900)
 
-<img src="IlluminaLibClustering.png" width="900"><br>
 
 2. Invert several times to mix and then pulse centrifuge the DNA solution.
 
@@ -1281,7 +1283,7 @@ Use the following instructions to denature and dilute the 10 nM PhiX library to 
 
 7. Dilute the denatured 20 pM PhiX library to the same loading concentration as the Amplicon library as follows.
 
-<img src="IlluminaLibClustering.png" width="900"><br>
+![Clustering 2](assets/images/IlluminaLibClustering.png | width=900)
 
 8. Invert several times to mix and then pulse centrifuge the DNA solution.
 
@@ -1373,7 +1375,7 @@ Below options from index 1 can be used in various combinations with options from
 
 These strategies represent only some of the acceptable combinations. Alternatively, check the real sequences of each index in the tables to make sure that each base position has a signal in both color channels for the index read:
 
-<img src="IndexColorCoded.png" width="1000">
+![Index Color](assets/images/IndexColorCoded.png | width=1000)
 
 √=signal in both color<br>
 x=signal missing in one color channel
