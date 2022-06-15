@@ -8,6 +8,7 @@ Standard Operating Procedure (SOP) describing how to prepare and sequence the fu
 * dihydropteroate synthase (_dhps_)
 * cytochrome b (_cytb_)
 
+<!--
 **Table of contents**  
 * [Introduction/General Overview](#intro)
 * [Materials and Equipment](#materials)
@@ -22,6 +23,7 @@ Standard Operating Procedure (SOP) describing how to prepare and sequence the fu
 * [Library Pooling, Quantification, and Normalization](#lib_norm)
 * [Library Denaturing and MiSeq Sample Loading](#sample_loading)
 * [Supporting Information](#supporting_info)
+-->
 
 **IMPORTANT NOTICE**
 
