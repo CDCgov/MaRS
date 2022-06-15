@@ -162,7 +162,7 @@ Real-time PCR hands-on time 30 min / 96 samples; Cycle time 1.2 hours<br>
 Reagents: Primers, 2X ABI TaqMan buffer, DNase PCR free water
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![Arrow](/assets/images/Arrow.png)
+![Arrow](/assets/images/Arrow.png = 50x50)
 
 **PCR reaction to generate amplicons [Amplification]** <br>
 PCR hands-on time 30 min / 96 samples; Cycle time 2.5 hours<br>
