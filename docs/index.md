@@ -1,15 +1,13 @@
 
-# Lab Protocol
+Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.
 
-**Targeted Amplicon Deep Sequencing of _Plasmodium falciparum (Pf)_ molecular markers of resistance**
-
-Preparing full length _P. falciparum_ genes for amplicon sequencing on the Illumina MiSeq.
-* kelch 13 (_k13_)
-* chloroquine resistant transporter (_crt_)
-* multidrug resistant protein 1 (_mdr1_)
-* bifunctional dihydrofolate reductase-thymidylate synthase (_dhfr_)
-* dihydropteroate synthase (_dhps_)
-* cytochrome b (_cytb_)
+Current genes included in this panel include:
+* _kelch 13_ (_k13_)
+* _chloroquine resistant transporter_ (_crt_)
+* _multidrug resistant protein 1_ (_mdr1_)
+* _bifunctional dihydrofolate reductase-thymidylate synthase_ (_dhfr_)
+* _dihydropteroate synthase_ (_dhps_)
+* _cytochrome b_ (_cytb_)
 
 **Table of contents**  
 * [Introduction/General Overview](#intro)
