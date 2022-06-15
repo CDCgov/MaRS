@@ -1,5 +1,7 @@
 
-# Lab Protocol #
+# Lab Protocol
+
+
 
 **Targeted Amplicon Deep Sequencing of _Plasmodium falciparum (Pf)_ molecular markers of resistance**
 
