@@ -1,5 +1,5 @@
 
-June 17th, 2022 version 5.0.1 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
+June 21st, 2022 version 5.1.1 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
 > Version 5.0: Major update in library prep from NexteraXT to Flex protocol.
 
 This protocol format was adapted from the 16S Metagenomics Sequencing Library Preparation [protocol](http://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf) from Illumina, and the [Illlumina DNA Prep Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/illumina_prep/illumina-dna-prep-reference-guide-1000000025416-09.pdf).
@@ -29,7 +29,7 @@ This document provides information for an application for Illumina technology th
 
 <a id="intro"></a>
 
-## **Introduction and General Workflow** ##
+# Introduction #
 
 **Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
 
@@ -58,7 +58,7 @@ The method described in this SOP provides an integrated advanced molecular detec
 
 <a id="materials"></a>
 
-**Material and Equipment**
+# Material and Equipment #
 
 Please ensure all the necessary user‐supplied consumables and equipment are available before proceeding to sample preparation.
 
@@ -137,7 +137,7 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 
 <a id="workflow"></a>
 
-## Protocol Workflow ##
+# Protocol Workflow #
 
 **NOTE:** The hands-on times are based on using 96-well format plates for each step.
 
@@ -188,14 +188,14 @@ Method: MaRS analysis pipeline
 11. **Standardized SNPs reports generated**
 
 
+# Laboratory Procedures #
+
 <a id="pet_pcr"></a>
+## Sample QC ##
 
-## PET-PCR Sample QC ##
+This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0179178),  to assess the quality and quantity of starting DNA material. The readout includes an estimation of _all_ DNA in the sample, host and parasite.
 
-
-This step uses a real time PCR assay to assess the quality and quantity of starting DNA material. The readout includes an estimation of _all_ DNA in the sample, host and parasite.
-
-* **NOTE:** This assay is used to identify which samples should be included and/or excluded for downstream procedures. Any sample with a CT value greater than 34, should be excluded. We recommend grouping all samples with a CT > 34 and performing separate amplicon PCRs and electrophoresis for these samples. If the electrophoresis yields positive results (e.g. positive and clear bands on gel) you may procced with downstream procedures. Samples with a CT > 34 have either very low and/or no parasite DNA.
+- **NOTE:** This assay is used to identify which samples should be included and/or excluded for downstream procedures. Any sample with a CT value greater than 34, should be excluded. We recommend grouping all samples with a CT > 34 and performing separate amplicon PCRs and electrophoresis for these samples. If the electrophoresis yields positive results (e.g. positive and clear bands on gel) you may procced with downstream procedures. Samples with a CT > 34 have either very low and/or no parasite DNA.
 
 **Consumables**
 
@@ -245,36 +245,50 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 **Adding the DNA Samples**
 
 1. Mix the prepared master-mix well by vortexing briefly.
+
 2. Centrifuge the tubes for 5 seconds to remove any solution trapped in the cap.
+
 3. Arrange the optically clear PCR tubes on a PCR-tube rack following the PCR sample sheet. Add 18 μL of the PET-PCR master mix prepared above to each PCR well. Loosely put on the lids of the wells filled with master mix solution.
+
 4. Return all reagents to the freezer and refrigerator before proceeding to the next step.
+
 5. Take the assembled plate containing the tubes with PCR master mix solution to the PCR template area.
+
 6. Add 2 μL of the unknown DNA samples to the wells with the master-mix according to the sample sheet. Cap the well tightly after adding the sample. The total volume of PCR reaction is 20.0 μL after addition of the template.
+
 7. Add positive control DNA to each positive control well with master-mix. Cap the wells after each positive control is added.
+
 8. Add 2.0 μL of DNase-free H2O to the wells designated as the no-template control (NTC) and close that well tightly.
+
 9. Make sure each sample has been added to the correct well and that all wells are tightly capped.
+
 10. Briefly centrifuge your strip tubes to remove any solution trapped on the walls of the wells.
+
 11. Make sure there are no bubbles in the well.
 
-* **NOTE:** _The amount of template DNA to be used can be as low as 2uL, but it is not uncommon to use 5uL. This can be adjusted appropriately depending on the sample parasitemia. The change should be discussed before it is implemented._
-
+- **NOTE:** _The amount of template DNA to be used can be as low as 2uL, but it is not uncommon to use 5uL. This can be adjusted appropriately depending on the sample parasitemia. The change should be discussed before it is implemented._
 
 **PCR-Cycling Parameters**
 
 1. Start the real-time PCR thermocycler according to the manufacturer's guidelines.
+
 2. Program the software to detect fluorescence through FAM, HEX and ROX filters all wells. ROX is to be detected as a reference dye.
+
 3. Program the software to run the cycling conditions shown under table 5.
+
 4. Fluorescence data should be collected at the amplification plateau.
 
 **Interpreting Results**
 
 1. Interpret the results using standard settings in the software.
+
 2. If the calculated thresholds are located within the background noise, they should be manually set to a level slightly higher than the background. Such alterations should be done with only one dye displayed at the time.
+
 3. Positive specimens are those that yield a fluorescence signal above the threshold value in the wells where samples or controls were loaded
   * Positive PCR: A positive sample produces a fluorescence signal above the threshold/noise level. Positive samples are designated a Ct value below 40.0.
   * Negative PCR: No fluorescence signal above the threshold/noise level. Negative samples have no Ct or have a Ct value above 40.0.
 
-* **NOTE:** _The negative controls must be negative (no Ct or above 40.0). The positive controls must be positive (designated by Ct value below 40.0). The test should be repeated if the NTC has a positive Ct value, or if the positive control yields no positive results._
+- **NOTE:** _The negative controls must be negative (no Ct or above 40.0). The positive controls must be positive (designated by Ct value below 40.0). The test should be repeated if the NTC has a positive Ct value, or if the positive control yields no positive results._
 
 **For more information, please see:**
 Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron transfer fluorogenic primers: PET-PCR._ PLoS One, 2013. 8 (2): p. e56677.
@@ -288,7 +302,7 @@ This step uses PCR to amplify template from a DNA sample using region of interes
 
 User‐defined forward and reverse primers are used to amplify templates from genomic DNA. A subsequent limited‐cycle amplification step is performed to add multiplexing indices and Illumina sequencing adapters. Libraries are normalized and pooled, and sequenced on the MiSeq system using v2 reagents.
 
-**Procedure**
+**Preperation**
 
 **Initial Set up**
 
@@ -302,7 +316,7 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 - Get the appropriate number EppendorfPCR Cooler plates from the freezer, wipe down with 70% ethanol and place them in the UV hoods (one or more sets each in the no-DNA and DNA-only UV stations). Turn on the UV stations for another 30 min.
 - Be sure to reserve the appropriate number of thermocyclers and have the appropriate cycling conditions set up **(Table 6)**.
 
-**Step by step procedure**
+**Pre-PCR master mix prep**
 
 - Let Primers, dNTPs, and GC Buffer defrost at room temperature (10-15 min). Once defrosted, mix gently _(vortexed)_ and centrifuge briefly prior to use. **_DO NOT thaw and/or vortex or mix the HF Taq._**
 - All PCR reactions **must be assembled on the** Eppendorf PCR Cooler plates
@@ -310,11 +324,11 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 - If you forget to return any of the reagents, especially the Taq, to its appropriate storage conditions (i.e., leave it out at room temperature), record the date and time of when it happened, and discard.
 
 **PCR plate set up**
-* Calculate appropriate volumes for master mix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% pf total number of samples (for user pipetting errors)
+- Calculate appropriate volumes for master mix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% pf total number of samples (for user pipetting errors)
+- Final volume of master mix is given in **Tables 6.1 - 6.6**
+- **NOTE:**  _If the number of samples is >5, make a master mix for at least 6 samples to avoid pipetting volume errors._
 
-* Final volume of master mix is given in **Tables 6.1 - 6.6**
-
-* **NOTE:**  _If the number of samples is >5, make a master mix for at least 6 samples to avoid pipetting volume errors._
+**Procedure**
 
 1. Set up PCR reaction consisting of water, GC Buffer, dNTPs, primers, HF Taq Phusion, and DNA in the order given in **Tables 6.1 – 6.6:**
 
@@ -547,9 +561,9 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 11. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
 
-12. Carefully remove excess ethanol using a P20 multichannel pipette. **Note:** The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.
+12. Carefully remove excess ethanol using a P20 multichannel pipette. **NOTE: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.**
 
-13. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. **NOTE:** Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.
+13. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. **NOTE: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.**
 
 14. Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 52.5 μl RSB to each well of the Amplicon PCR plate.
 
@@ -609,7 +623,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 • Set up thermal cycler and choose preheat lid option:
 
-**_Thermocycler Program: "Flex 1" with reaction volume set to 50ul and choose the preheat lid option set to 100°C_**
+**Thermocycler Program: "Flex 1" with reaction volume set to 50ul and choose the preheat lid option set to 100°C**
 
 | Flex 1 |
 | --- |
@@ -620,21 +634,26 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 • Set up thermal cycler and choose preheat lid option:
 
-**_Thermocycler Program: "Flex 2" with reaction volume set to 60ul and choose the preheat lid option set to 100°C_**
+**Thermocycler Program: "Flex 2" with reaction volume set to 60ul and choose the preheat lid option set to 100°C**
 
 | Flex 2 |
 | --- |
 |37°C for 15 min|
 |10°C for ∞|
 
-**Procedure: Tagment Genomic DNA**
 
-1. Prepare tagmentation mastermix:
+**PCR Tagmentation Master Mix Table 9a**
 
 | **Reagent** | **Volume (μl) per sample** |
 | --- | --- |
-| **TB1** | 10 |
-| **BLT** | 10 |
+| TB1 | 10 μl |
+| BLT | 10 μl |
+
+
+
+**Procedure: Tagment Genomic DNA**
+
+1. Prepare tagmentation master mix based on Table 9a above.
 
 2. Vortex the tagmentation master mix well.
 
@@ -649,7 +668,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 |55°C for 15 min|
 |10°C for ∞|
 
-**NOTE:** This is **not** a recommended stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
+- **NOTE:** **PLEASE PROCEED TO NEXT PROCEDURE** This is **not** a recommended stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
 
 ## Procedure: Post Tagmentation Clean-Up ##
 
@@ -663,28 +682,26 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 | Flex 2 |
 | --- |
-|37°C for 15 min|
+|37°C for 15:00 min|
 |10°C for ∞|
 
-**NOTE:** This is **not** a recommended stopping point in the procedure and it is recommended to proceed to the washing steps after samples have reached 10°C.
+- **NOTE:** **PLEASE PROCEED TO NEXT STEPS** This is **not** a recommended stopping point in the procedure and it is recommended to proceed to the washing steps after samples have reached 10°C.
 
-5. While samples are incubating, thaw EPM on ice and thaw indices at room temperature.
+1. While samples are incubating, thaw EPM on ice and thaw indices at room temperature.
 
-6. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
+2. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
 
-7. Using a multichannel pipette set at 100 μl, remove and discard supernatant.
+3. Using a multichannel pipette set at 100 μl, remove and discard supernatant.
 
-8. Complete steps **A** - **D** below two times:
+4. Complete steps **A** - **D** below two times:
 
-      A. Remove the sample plate from the magnetic stand and add 100 μl TWB directly onto the beads.
+5. Remove the sample plate from the magnetic stand and add 100 μl TWB directly onto the beads.
 
-      B. Set multichannel pipet to 90 μl and pipette slowly until beads are fully resuspended. If necessary, scrape the side of the well with the pipette tips to resuspend the beads.
+6. Set multichannel pipet to 90 μl and pipette slowly until beads are fully resuspended. If necessary, scrape the side of the well with the pipette tips to re-suspend the beads.
 
-      C. Place the plate on the magnetic stand and wait until the solution is clear (~3 minutes).
+7. Place the plate on the magnetic stand and wait until the solution is clear (~3 minutes).
 
-      D. Using a multichannel pipette set at 110 μl, remove and discard supernatant.
-
-**NOTE:** _To minimize the potential of TWB foaming during the tagmentation wash, use a deliberately slow pipetting technique to avoid incorrect volume aspiration and incomplete mixing._
+8. Using a multichannel pipette set at 110 μl, remove and discard supernatant. **NOTE:** _To minimize the potential of TWB foaming during the tagmentation wash, use a deliberately slow pipetting technique to avoid incorrect volume aspirauion and incomplete mixing._
 
 9. Remove the plate from the magnetic stand and add 100 μl TWB.
 
@@ -692,7 +709,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 11. Seal the plate and place on the magnetic stand until the solution is clear (~3 minutes). Allow TWB to remain in the wells (to prevent drying of beads) and proceed to amplification steps.
 
-**THIS IS NOT A RECOMMENDED SAFE STOPPING POINT. Please proceed to Ampification of Tagmented DNA.**
+**PLEASE PROCEED TO NEXT PROCEDURE (Amplification of Tagmented DNA). THIS IS NOT A RECOMMENDED SAFE STOPPING POINT.**
 
 
 <a id="lib_indexing"></a>
@@ -715,53 +732,53 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 **Preparation**
 
-•Using the samples suspended in the 100 μl of TWB from the Post Tagmentation Clean-Up step, follow the procedure outlined below.
+- Using the samples suspended in the 100 μl of TWB from the Post Tagmentation Clean-Up step, follow the procedure outlined below.
 
-•Set up thermal cycler and choose preheat lid option:
+- Set up thermal cycler and choose preheat lid option:
 
 **Thermocycler Program: "Flex 3" with reaction volume set to 50ul and choose the preheat lid option set to 100°C:**
 
 | Flex 3 |
-| |
-|55°C for 15 min|
+|--- |
+| Step 1 |
+|68°C for 3:00 min|
+|98°C for 3:00 min|
+| Step 2: run 5X |
+|98°C for 0:45 min|
+|62°C for 0:30 min|
+|68°C for 2:00 min|
+| Step 3 |
+|68°C for 1:00 min|
 |10°C for ∞|
 
+**PCR Master Mix Table 10a**
 
-
-![Flex](/assets/images/Flex3.png.png)
-
+| **Reagent** | **Volume (μl) per sample** |
+| --- | --- |
+| EPM | 20 μl |
+| Molecular Grade Water | 20 μl |
 
 **Procedure**
 
 1. Briefly vortex the thawed EPM immediately before use.
-2. Prepare the PCR master mix:
-| **Reagent** | **Volume (μl) per sample** |
-| --- | --- |
-| **EPM** | 20 |
-| **Molecular grade water** | 20 |
-  - **NOTE:** _It is recommended to increase number of samples during master mix calculation by 1-2 to ensure sufficient master mix volume_.
+
+2. Prepare the PCR master mix based on **Table 10a** above. **NOTE:** _It is recommended to increase number of samples during master mix calculation by 1-2 to ensure sufficient master mix volume_.
+
 3. Vortex and quick spin the PCR master mix.
-4. Using a multichannel pipette set at 200 μl remove TWB from beads. Use a small volume pipette to ensure removal of residual TWB before proceeding.
-  - **NOTE:** _Removal of TWB is crucial, as it can impede PCR. However, any foam remaining on the wells will not negatively impact the library._
+
+4. Using a multichannel pipette set at 200 μl remove TWB from beads. Use a small volume pipette to ensure removal of residual TWB before proceeding. **NOTE:** _Removal of TWB is crucial, as it can impede PCR. However, any foam remaining on the wells will not negatively impact the library._
+
 5. Remove from the magnet and immediately add 40 μl of PCR master mix to each sample.
+
 6. Using a multichannel pipette set at 30 μl gently pipet to mix, re-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads
-7. Add 10 μl of appropriate index pair from indices plate to each sample well.
 
-     **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 μl pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use.
+10. Add 10 μl of appropriate index pair from indices plate to each sample well. **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 μl pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use. Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate. **NOTE:** Index should be added as next available down the columns
 
-     Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate.
+11. Using a multichannel pipette set at 40 μl mix by pipetting a minimum of 10 times1
 
-**NOTE:** Index should be added as next available down the columns
+12. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 μl and lid heated option at 100°C.
 
-8. Using a multichannel pipette set at 40 μl mix by pipetting a minimum of 10 times.
-
-9. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 μl and lid heated option at 100°C:
-
-![Flex](/assets/images/Flex3.png)
-
-<br>
-
-10. Centrifuge plate for at 280 x g for 1 minute.
+13. Centrifuge plate for at 280 x g for 1 minute.
 
 **SAFE STOPPING POINT**
 
@@ -792,27 +809,27 @@ This step uses Sample purification beads to clean up the final library before qu
 
 **Preparation**
 
-* Thaw RSB at room temperature and vortex to mix. For future use, it is recommended to aliquot RSB into a smaller volume container (such as a 1.5 mL tube) to reduce thawing times.
+- Thaw RSB at room temperature and vortex to mix. For future use, it is recommended to aliquot RSB into a smaller volume container (such as a 1.5 mL tube) to reduce thawing times.
 
-* Bring the SPB to room temperature- wait at least 30 minutes. Once at room temperature, vortex and invert the beads several times to re-suspend any particles that may have settled. Ensure magnetic beads are well (evenly) distributed before adding them to samples.
+- Bring the SPB to room temperature- wait at least 30 minutes. Once at room temperature, vortex and invert the beads several times to re-suspend any particles that may have settled. Ensure magnetic beads are well (evenly) distributed before adding them to samples.
 
-  **NOTE:** Proceed very cautiously during this procedure and take your time to ensure as little bubble formation as possible.
+- **NOTE:** Proceed very cautiously during this procedure and take your time to ensure as little bubble formation as possible.
 
-*  Prepare a fresh dilution stock of 80% ethanol sufficient for all samples:
+-  Prepare a fresh dilution stock of 80% ethanol sufficient for all samples:
 
 | **Reagent** | **Volume (ml) per sample** | **Example: 20 samples** |
 | --- | --- | --- |
 | **100% ethanol** | 0.4 | 8ml |
 | **Molecular grade water** | 0.1 | 2ml |
 
-
-**NOTE:** 80% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 80% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
+- **NOTE:** 80% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 80% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
 
 **Procedure**
 
 1. Centrifuge the Library Amplification and Index PCR plate at 280 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
 
 2. Prepare SPB master mix in a 2 mL tube:
+
 
 | **Reagent** | **Volume (μl) per sample** |
 | --- | --- |
