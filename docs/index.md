@@ -309,13 +309,18 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 - **Always add the Taq last when making your master mix and DO NOT vortex and/or pipette after adding Taq.**
 - If you forget to return any of the reagents, especially the Taq, to its appropriate storage conditions (i.e., leave it out at room temperature), record the date and time of when it happened, and discard.
 
-1. Set up the following reaction of water, GC Buffer, dNTPs, primers, HF Taq Phusion, and DNA in the order given in **Tables 6.1 – 6.6:**
-  * Calculate appropriate volumes for mastermix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% pf total number of samples (for user pipetting errors)
-  * Final volume of master mix is given in **Tables 6.1 - 6.6**
-  * **NOTE:**  _If the number of samples is >5, make a mastermix for at least 6 samples to avoid pipetting volume errors._
-2. Seal plates and/or PCR tubes.
-3. Once tubes and/or plates are sealed, keep them in the EppendorfPCR Cooler plates. **Pre-heat** the thermal cycler to 98C prior to placing PCR plates and/or PCR tubes into the thermal cycler. Pre-heating to 98&deg;C should take 0:30 of the 3:00 min.
+**PCR plate set up**
+* Calculate appropriate volumes for master mix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% pf total number of samples (for user pipetting errors)
 
+* Final volume of master mix is given in **Tables 6.1 - 6.6**
+
+* **NOTE:**  _If the number of samples is >5, make a master mix for at least 6 samples to avoid pipetting volume errors._
+
+1. Set up PCR reaction consisting of water, GC Buffer, dNTPs, primers, HF Taq Phusion, and DNA in the order given in **Tables 6.1 – 6.6:**
+
+2. Seal plates and/or PCR tubes.
+
+3. Once tubes and/or plates are sealed, keep them in the Eppendorf PCR Cooler plates. **Pre-heat** the thermal cycler to 98C prior to placing PCR plates and/or PCR tubes into the thermal cycler. Pre-heating to 98&deg;C should take 0:30 of the 3:00 min.
 
 
 **Primers and PCR Conditions**
@@ -425,15 +430,16 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 **Preparation**
 
-• Create a 1X solution of 10X TBE Buffer and deionized water before you start.
+ * Create a 1X solution of 10X TBE Buffer and deionized water before you start.
+ * For a 1% agarose gel, 1.0 gram of agarose + 100mL of buffer will fill a medium gel chamber
+ * For a 1.5% agarose gel, 1.5 gram of agarose + 100mL of buffer will fill a medium gel chamber
 
 **Procedure**
 
 1. Choose an Erlenmeyer flask that is 2-4 times the volume of the solution and place a stirring rod into the flask.
 
 2. Weigh the agar to the desired concentration
- * For a 1% agarose gel, 1.0 gram of agarose + 100mL of buffer will fill a medium gel chamber
- * For a 1.5% agarose gel, 1.5 gram of agarose + 100mL of buffer will fill a medium gel chamber
+
 3. Add the appropriate amount of buffer for the desired concentration.
 
 4. Dissolve the agar in the microwave by heating the solution on high power until it comes to a boil. Watch the solution closely; **DO NOT** allow solution to boil over.
@@ -464,7 +470,9 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 17. Once amplification is confirmed, if only one gene has been amplfied proceed to PCR amplicon clean-up. However, if working with multiple genes go to the next step.
 
-18. Using table below combine (pool) each PCR gene amplicon based on number of genes. Importantly, we know the PCR efficiency for each of the genes varies (k13 > dhfr > dhps > mdr1 > crt; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to the pool. Using the gel, use the [gel analyzer](http://www.gelanalyzer.com/?i=1) to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5uL* from each gene PCR amplicon to the final pool.
+18. Using **table 7b** below combine (pool) each PCR gene amplicon based on number of genes. Importantly, we know the PCR efficiency for each of the genes varies (k13 > dhfr > dhps > mdr1 > crt; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to the pool. Using the gel, use the [gel analyzer](http://www.gelanalyzer.com/?i=1) to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5uL* from each gene PCR amplicon to the final pool.
+
+19. Vortex briefly the pooled PCR gene amplicons before proceeding to PCR amplicon clean up.
 
 **Table 7b. Amounts for pooling PCR amplicons**
 
@@ -476,8 +484,6 @@ Of the 25% total samples, ensure to select representative samples of varying par
 | 5 or more genes | combine 10 uL each  | 2° to 8°C  |
 
 > This should yield a total of 50 uL of combined PCR gene product for subsequent clean up.
-
-19. Vortex briefly the pooled PCR gene amplicons before proceeding to PCR amplicon clean up.
 
 
 
@@ -501,15 +507,21 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 **Preparation**
 
-• Determine whether or not a plate transfer is necessary.  If the PCR reaction volume multiplied by 2.8 exceeds the volume of the PCR plate, a transfer to a 300 μL round bottom plate or a 1.2 mL deep-well plate is required.
+- Determine whether or not a plate transfer is necessary.  If the PCR reaction volume multiplied by 2.8 exceeds the volume of the PCR plate, a transfer to a 300 μL round bottom plate or a 1.2 mL deep-well plate is required.
 
-• Bring the AMPure XP beads to room temperature- **wait at least 30 minutes**.
+- Bring the AMPure XP beads to room temperature- **wait at least 30 minutes**.
 
-• Once at room temperature, shake the Agencourt AMPure XP bottle to re-suspend any magnetic particles that may have settled. Ensure magnetic beads are well (evenly) distributed before adding them to samples.
+- Once at room temperature, shake the Agencourt AMPure XP bottle to re-suspend any magnetic particles that may have settled. Ensure magnetic beads are well (evenly) distributed before adding them to samples.
 
-NOTE: Proceed very cautiously during this procedure and take your time.
+- **NOTE**: Proceed very cautiously during this procedure and take your time.
 
-NOTE: 70% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 70% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
+- **NOTE**: 70% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 70% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
+
+- **NOTE:** Transfer the sample to a 96‐well MIDI plate if planning to use a shaker for mixing. If mixing by pipette, the sample can remain in the 96‐well PCR plate.
+
+- **NOTE** To maximize recovery of smaller fragments from the bead cleanup step, use the following conditions (AMPure XP volume calculations in the table below are based on 50 μl sample volume):
+
+![AMPure Volumes](/assets/images/AMPureVolumes.png)
 
 **Procedure**
 
@@ -517,13 +529,7 @@ NOTE: 70% ethanol is hygroscopic. That is, when opened the ethanol will both eva
 
 2. Using a multichannel pipette, transfer the entire 50 μl of PCR product from the Library Amplification plate to the MIDI plate. Change tips between samples.
 
-**NOTE:** Transfer the sample to a 96‐well MIDI plate if planning to use a shaker for mixing. If mixing by pipette, the sample can remain in the 96‐well PCR plate.
-
 3. Gently shake the AMPure XP beads for 30 seconds to make sure that the beads are evenly dispersed. Add an appropriate volume of beads to a trough depending on the number of samples being processed and desired fragment selection. The Illumina DNA Prep library kits typically yield insert sizes around the 500 bp range.
-
-To maximize recovery of smaller fragments from the bead cleanup step, use the following conditions (AMPure XP volume calculations in the table below are based on 50 μl sample volume):
-
-![AMPure Volumes](/assets/images/AMPureVolumes.png)
 
 4. Using a multichannel pipette, add an appropriate volume of beads per sample based on your input size. Change tips between columns.
 
@@ -533,40 +539,29 @@ To maximize recovery of smaller fragments from the bead cleanup step, use the fo
 
 7. Place the Library amplification plate on a magnetic stand for 2 minutes. WAIT for the solution to clear before proceeding.
 
-8. With the Amplicon PCR plate on the magnetic stand, use a multichannel pipette to _carefully_ remove and discard all the supernatant. Change tips between samples.
-
-**DO NOT disturb the ring of separated magnetic beads.**
+8. With the Amplicon PCR plate on the magnetic stand, use a multichannel pipette to _carefully_ remove and discard all the supernatant. Change tips between samples. **DO NOT disturb the ring of separated magnetic beads.**
 
 9. With the Library amplification plate on the magnetic stand, wash the beads with freshly prepared 70% ethanol as follows:
 
-A. Using a multichannel pipette, add 200 μl of freshly prepared 70% ethanol to each sample well.
-B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
-C. Carefully remove and discard the ethanol.
+10. Using a multichannel pipette, add 200 μl of freshly prepared 70% ethanol to each sample well.
 
-Note: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.
+11. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
 
-10. With the Library amplification plate on the magnetic stand, perform a second ethanol wash as follows:
+12. Carefully remove excess ethanol using a P20 multichannel pipette. **Note:** The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.
 
-A. Using a multichannel pipette, add 180 μl of freshly prepared 70% ethanol to each sample well.
-B. Incubate the plate on the magnetic stand for 30 seconds.
-C. Carefully remove and discard all the ethanol.
-D. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
+13. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. **NOTE:** Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.
 
-11. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains.
+14. Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 52.5 μl RSB to each well of the Amplicon PCR plate.
 
-**NOTE:** Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.
+15. Gently pipette mix up and down 10 times, or seal plate and shake at 1800 for 2 minutes if using a MIDI plate. Change tips after each column.
 
-12. Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 52.5 μl RSB to each well of the Amplicon PCR plate.
+16. Incubate at room temperature for 2 minutes.
 
-13. Gently pipette mix up and down 10 times, or seal plate and shake at 1800 for 2 minutes if using a MIDI plate. Change tips after each column.
+17. Place the plate back on the magnetic stand for 2 minutes or until the supernatant has cleared.
 
-14. Incubate at room temperature for 2 minutes.
+18. Using a multichannel pipette, carefully transfer 50 μl of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
 
-15. Place the plate back on the magnetic stand for 2 minutes or until the supernatant has cleared.
-
-16. Using a multichannel pipette, carefully transfer 50 μl of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
-
-17. Pool each drug resistance gene (purified PCR amplicon) for each sample in equal volumes until the volume reaches at least 30 ul. For example, if you pool 5 ul of each amplicon (cytob, k13, md1, dhfr, dhps, crt, pfs47, and cpmp), you will have 40 ul of pooled, purified amplicon product ready to complete the tagmentation step.
+19. Pool each drug resistance gene (purified PCR amplicon) for each sample in equal volumes until the volume reaches at least 30 ul. For example, if you pool 5 ul of each amplicon (cytob, k13, md1, dhfr, dhps, crt, pfs47, and cpmp), you will have 40 ul of pooled, purified amplicon product ready to complete the tagmentation step.
 
 
 **SAFE STOPPING POINT**
