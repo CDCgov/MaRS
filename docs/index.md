@@ -908,11 +908,11 @@ This step uses Sample purification beads to clean up the final library before qu
 
 17. With multichannel pipette set to 200 μl, remove and discard supernatant (DNA is now bound to the beads).
 
-18. With the Library amplification plate on the magnetic stand, perform the steps below twice (for a total of two washes):
+18. With the Library amplification plate on the magnetic stand, perform the steps below twice (for a total of two washes): 
 
-A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
-B. Incubate the plate on the magnetic stand for 30 seconds.
-C. Carefully remove and discard all the ethanol.
+   A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
+   B. Incubate the plate on the magnetic stand for 30 seconds.
+   C. Carefully remove and discard all the ethanol.
 
 19. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
@@ -1063,7 +1063,7 @@ Standard and Sample Preparation
 
 1. Prepare the tubes:
 
-    A. Set up two 0.5-mL tubes for standards, and the required number of tubes for samples.
+   A. Set up two 0.5-mL tubes for standards, and the required number of tubes for samples.
 
    Note Use only the thin-wall, clear, 0.5-mL PCR tubes (described in **Table 2** User‐Supplied Consumables)
 
