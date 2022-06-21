@@ -910,9 +910,9 @@ This step uses Sample purification beads to clean up the final library before qu
 
 18. With the Library amplification plate on the magnetic stand, perform the steps below twice (for a total of two washes):
 
-        A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
-        B. Incubate the plate on the magnetic stand for 30 seconds.
-        C. Carefully remove and discard all the ethanol.
+A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
+B. Incubate the plate on the magnetic stand for 30 seconds.
+C. Carefully remove and discard all the ethanol.
 
 19. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
