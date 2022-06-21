@@ -1,6 +1,6 @@
 
-June 10th, 2022 version 5.0 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
-> Version 5.1: Major update in library prep from NexteraXT to Flex protocol.
+June 17th, 2022 version 5.0.1 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
+> Version 5.0: Major update in library prep from NexteraXT to Flex protocol.
 
 This protocol format was adapted from the 16S Metagenomics Sequencing Library Preparation [protocol](http://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf) from Illumina, and the [Illlumina DNA Prep Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/illumina_prep/illumina-dna-prep-reference-guide-1000000025416-09.pdf).
 
@@ -414,7 +414,7 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 
 
 
-Table 6.8. *Pfcpmp - Recrudescence vs Reinfection*
+**Table 6.8. _Pfcpmp_ - Recrudescence vs Reinfection**
 ![Table 6.8](/assets/images/Table6p8.png)
 
 **Amplicon size:** 805 bp<br>
@@ -563,17 +563,18 @@ To maximize recovery of smaller fragments from the bead cleanup step, use the fo
 
 9. With the Library amplification plate on the magnetic stand, wash the beads with freshly prepared 70% ethanol as follows:
 
-        A. Using a multichannel pipette, add 200 μl of freshly prepared 70% ethanol to each sample well.
-        B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
-        C. Carefully remove and discard the ethanol.
-        Note: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.
+A. Using a multichannel pipette, add 200 μl of freshly prepared 70% ethanol to each sample well.
+B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
+C. Carefully remove and discard the ethanol.
+
+Note: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.
 
 10. With the Library amplification plate on the magnetic stand, perform a second ethanol wash as follows:
 
-        A. Using a multichannel pipette, add 180 μl of freshly prepared 70% ethanol to each sample well.
-        B. Incubate the plate on the magnetic stand for 30 seconds.
-        C. Carefully remove and discard all the ethanol.
-        D. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
+A. Using a multichannel pipette, add 180 μl of freshly prepared 70% ethanol to each sample well.
+B. Incubate the plate on the magnetic stand for 30 seconds.
+C. Carefully remove and discard all the ethanol.
+D. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
 11. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains.
 
@@ -706,7 +707,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
       A. Remove the sample plate from the magnetic stand and add 100 μl TWB directly onto the beads.
 
-      B. Set multichannel pipet to 90 μl and pipette slowly until beads are fully resuspended. If necessary, scrape the side of the well with the pipette tips to resuspend the beads.
+      B. Set multichannel pipet to 90 μl and pipette slowly until beads are fully resuspended. If necessary, scrape the side of the well with the pipette tips to re-suspend the beads.
 
       C. Place the plate on the magnetic stand and wait until the solution is clear (~3 minutes).
 
@@ -747,10 +748,23 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 •Set up thermal cycler and choose preheat lid option:
 
-**Thermocycler Program: "Flex 3" with reaction volume set to 50ul and choose the preheat lid option set to 100°C:**
+**Thermocycler Program: "Flex 3" with reaction volume set to 50ul and choose the pre-heat lid option set to 100°C:**
 
-![Flex](/assets/images/Flex3.png.png)
+| Step 1 |
+| --- |
+| 68°C  for 3:00 min |
+| 98°C  for 3:00 min |
 
+| Step 2: _run 5X_  |  
+| --- |
+| **98°C for 3:00 min** |    
+| **62°C for 0:30 min** |
+| **68°C for 2:00 min** |     
+
+| Step 3 |
+| --- |
+| 68°C for 1:00 min |
+| 10°C  for ∞       |
 
 **Procedure**
 
@@ -777,9 +791,9 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 7. Add 10 μl of appropriate index pair from indices plate to each sample well.
 
-     **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 μl pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use.
+**NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 μl pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use.
 
-     Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate.
+Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate.
 
 **NOTE:** Index should be added as next available down the columns
 
@@ -787,7 +801,21 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 9. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 μl and lid heated option at 100°C:
 
-![Flex](/assets/images/Flex3.png)
+| Step 1 |
+| --- |
+| 68°C  for 3:00 min |
+| 98°C  for 3:00 min |
+
+| Step 2: _run 5X_  |  
+| --- |
+| **98°C for 3:00 min** |    
+| **62°C for 0:30 min** |
+| **68°C for 2:00 min** |     
+
+| Step 3 |
+| --- |
+| 68°C for 1:00 min |
+| 10°C  for ∞       |
 
 <br>
 
