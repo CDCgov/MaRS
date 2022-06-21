@@ -26,22 +26,6 @@ This protocol format was adapted from the 16S Metagenomics Sequencing Library Pr
 This document provides information for an application for Illumina technology that has been demonstrated internally and may be of interest to external groups. This information is provided as‐is and is not an Illumina or CDC endorsed product and is not accompanied by any rights or warranties.
 
 ----
-<details>
-  <summary><strong>Legal Notices</strong></summary>
-
-#### Public Domain
-
-This repository constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105. This repository is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/). All contributions to this repository will be released under the CC0 dedication. By submitting a pull request you are agreeing to comply with this waiver of copyright interest.
-
-#### Records Management
-
-This repository is not a source of government records, but is a copy to increase collaboration and collaborative potential. All government records will be published through the [CDC web site](https://www.cdc.gov/).
-
-#### Privacy
-
-This repository contains only non-sensitive, publicly available data and information. All material and community participation is covered by the [Disclaimer](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md) and [Code of Conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md). For more information about CDC's privacy policy, please visit http://www.cdc.gov/other/privacy.html.
-</details>
-
 
 <a id="intro"></a>
 
@@ -326,13 +310,10 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 - If you forget to return any of the reagents, especially the Taq, to its appropriate storage conditions (i.e., leave it out at room temperature), record the date and time of when it happened, and discard.
 
 1. Set up the following reaction of water, GC Buffer, dNTPs, primers, HF Taq Phusion, and DNA in the order given in **Tables 6.1 – 6.6:**
-
   * Calculate appropriate volumes for mastermix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% pf total number of samples (for user pipetting errors)
   * Final volume of master mix is given in **Tables 6.1 - 6.6**
   * **NOTE:**  _If the number of samples is >5, make a mastermix for at least 6 samples to avoid pipetting volume errors._
-
 2. Seal plates and/or PCR tubes.
-
 3. Once tubes and/or plates are sealed, keep them in the EppendorfPCR Cooler plates. **Pre-heat** the thermal cycler to 98C prior to placing PCR plates and/or PCR tubes into the thermal cycler. Pre-heating to 98&deg;C should take 0:30 of the 3:00 min.
 
 
@@ -451,10 +432,8 @@ Of the 25% total samples, ensure to select representative samples of varying par
 1. Choose an Erlenmeyer flask that is 2-4 times the volume of the solution and place a stirring rod into the flask.
 
 2. Weigh the agar to the desired concentration
-
  * For a 1% agarose gel, 1.0 gram of agarose + 100mL of buffer will fill a medium gel chamber
  * For a 1.5% agarose gel, 1.5 gram of agarose + 100mL of buffer will fill a medium gel chamber
-
 3. Add the appropriate amount of buffer for the desired concentration.
 
 4. Dissolve the agar in the microwave by heating the solution on high power until it comes to a boil. Watch the solution closely; **DO NOT** allow solution to boil over.
