@@ -1,4 +1,4 @@
-
+micro centrifuge
 June 21st, 2022 version 5.1.1 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
 > Version 5.0: Major update in library prep from NexteraXT to Flex protocol.
 
@@ -824,10 +824,11 @@ This step uses Sample purification beads to clean up the final library before qu
 - **NOTE:** 80% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 80% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
 
 **Table 11a. SPB Master Mix**
+
 | **Reagent** | **Volume (μl) per sample** |
 | --- | --- |
-| **SPB** | **40.8** |
-| **Molecular grade water** | **44.2** |
+| **SPB** | 40.8 |
+| **Molecular grade water** | 44.2 |
 
 **NOTE:** _It is recommended to increase the number of samples 3-4 to ensure sufficient volume of master mix._
 
@@ -868,31 +869,35 @@ This step uses Sample purification beads to clean up the final library before qu
 
 17. With multichannel pipette set to 200 μl, remove and discard supernatant (DNA is now bound to the beads).
 
-18. With the Library amplification plate on the magnetic stand, perform the steps below **twice (for a total of two washes)**:
+18. With the Library amplification plate on the magnetic stand, perform steps 19-21 below **twice (for a total of two washes)**:
 
- A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
- B. Incubate the plate on the magnetic stand for 30 seconds.
- C. Carefully remove and discard all the ethanol.
-19. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
+**19. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)**
 
-20. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes.
+**20. Incubate the plate on the magnetic stand for 30 seconds.**
 
-**NOTE**: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried. If cracking is observed, immediately re-suspend beads as described below regardless of drying time.
+**21. Carefully remove and discard all the ethanol.**
 
-21. Remove the plate from the magnetic stand and add 32 μl RSB to each well of the plate.
+22. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
-22. With a multichannel pipette set at 25 μl, gently pipet a minimum of 10 times to thoroughly mix.
+23. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes. **NOTE**: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried. If cracking is observed, immediately re-suspend beads as described below regardless of drying time.
 
-23. Incubate at room temperature for 2-5 minutes.
+24. Remove the plate from the magnetic stand and add 32 μl RSB to each well of the plate.
 
-24. Place the plate back on the magnetic stand for 3 minutes or until the supernatant has cleared.
+25. With a multichannel pipette set at 25 μl, gently pipet a minimum of 10 times to thoroughly mix.
 
-25. Using a multichannel pipette, carefully transfer 25 μl of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
+26. Incubate at room temperature for 2-5 minutes.
+
+27. Place the plate back on the magnetic stand for 3 minutes or until the supernatant has cleared.
+
+28. Using a multichannel pipette, carefully transfer 25 μl of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
 
 **SAFE STOPPING POINT**
+> If you do plan to stop here, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
 
-If you do not plan to proceed to _Library Clustering_, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
 
+<a id="lib_norm"></a>
+
+## Library Pooling, Quantification, and Normalization ##
 
 **Library Clustering**
 
@@ -902,40 +907,37 @@ It is important to consider library size when preparing samples for cluster gene
 
 ![Clustering](/assets/images/OptimalClusterDensity.png)
 
-<a id="lib_norm"></a>
+This step consists of three parts:
 
-## Library Pooling, Quantification, and Normalization ##
+**Part I:** Pool libraries
 
-This step requires three parts:<br>
-**Part I:** Pool libraries<br>
-**Part II:** Quantification of fragment size and concentration to determine library concentration in nM<br>
+**Part II:** Quantification of fragment size and concentration to determine library concentration in nM
+
 **Part III:** Diluting your final library in Resuspension Buffer (RSB) or fresh 10 mM Tris pH 8.5 to a 4 nM solution.
 
-**Part I:** Pooling
+**Procedure**
 
-Aliquot 5 μl of diluted DNA from each library into a 1.5 microcentrifuge tube and mix aliquots for pooling libraries with unique indices. Depending on coverage needs, up to 384 libraries can be pooled for one MiSeq run.
+**Part I: Pooling**
 
-**Part II:** Quanitification
+1. Aliquot 5 μl of diluted DNA from each library into a 1.5 microcentrifuge tube and mix aliquots for pooling libraries with unique indices. Depending on coverage needs, up to 384 libraries can be pooled for one MiSeq run.
 
+**Part II: Quantification**
+
+**Background**
 Illumina recommends quantifying your libraries using a fluorometric quantification method that uses dsDNA binding dyes.
 
-- In order to determine the fragment size, this laboratory adopted the Agilent D5000 ScreenTape System Quick Guide protocol from Agilent Technologies.
-- In order to determine the library concentration, this laboratory adopted the Qubit® dsDNA HS Assay Kits protocol from Life Technologies.
+- Our laboratory uses the Agilent D5000 ScreenTape System Quick Guide protocol from Agilent Technologies to determine the fragment size of our libraries.
+- Our laboratory uses the Qubit® dsDNA HS Assay Kits protocol from Life Technologies to determine the conentration of our libraries.
 
 **DNA Concentration in nM**
 
-After determining the fragment size and concentration of your pooled product, you will calculate the DNA concentration in nM, based on the size of DNA amplicons as determined by an Agilent Technologies 2100 Bioanalyzer trace and concentration by Qubit:
+After determining the fragment size and concentration of your pooled product, you will calculate the DNA concentration in nM, based on the size of DNA amplicons as determined by an Agilent Technologies 2100 Bioanalyzer trace and concentration by Qubit as follows:
 
-|(concentration in ng/μl) * (10^6) / (660g/mol) * (average library size) = concentration in nM|
-| --- |
+$(concentration in ng/μl) * $(10^6) / (660g/mol) * (average library size)$ = concentration in nM
 
 For example:
-<br>
-(15 ng/μl) * (10^6) / (660g/mol) * (500bp) = 45 nM
-<br>
-<br>
-<br>
-**Part II (continued): Procedure for determining fragment size**
+$(15 ng/μl) * (10^6) / (660g/mol) * (500bp)$ = 45 nM
+
 
 **Agilent Technologies Agilent D5000 ScreenTape System**
 
@@ -953,13 +955,15 @@ This SOP format was adapted from the Agilent D5000 ScreenTape System Quick Guide
 
 **Prepare TapeStation System D5000**
 
-* Launch the 4150 TapeStation Controller Software.
+- Launch the 4150 TapeStation Controller Software.
 
-* Load single D5000 ScreenTape device and loading tips into the 4150 TapeStation instrument.
+- Load single D5000 ScreenTape device and loading tips into the 4150 TapeStation instrument.
+
+**Procedure:** _Determine fragment size_
 
 **Sample Preparation D5000 ScreenTape Assay**
 
-1. Allow reagents to equilibrate at room temperature for 30 minutes.
+1. Allow reagents to reach equilibrium at room temperature for 30 minutes.
 
 2. Vortex mix before use.
 
@@ -971,26 +975,23 @@ This SOP format was adapted from the Agilent D5000 ScreenTape System Quick Guide
 
 6. Spin down to position the sample at the bottom of the tube.
 
-**Sample Analysis**
+**Sample Fragment Size Analysis**
 
-1. Load samples into the 4150 TapeStation instrument
+1. Load samples into the 4150 TapeStation instrument.
 
 2. Select the required samples on the 4150 TapeStation Controller Software.
 
 3. Click Start and specify a filename with which to save your results.
 
 **SAFE STOPPING POINT**
+> If you do not plan to proceed to _Part II Qubit Flurometer 3.0 dsDNA HS Assay_, leave your sample in 4°C for maximum of a week.
 
-If you do not plan to proceed to _Part II Qubit Flurometer 3.0 dsDNA HS Assay_, leave your sample in 4°C.
-
-
-**Part II (continued): Procedure for determining library concentration**
 
 **Qubit Fluorometer 3.0 dsDNA HS Assay**
 
 This SOP format was adapted from the Qubit® dsDNA HS Assay Kits [protocol](https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf) from Life Technologies.
 
-#### Consumables:
+**Consumables:**
 
 **Table 13. Qubit 3.0 Fluorometer Consumables**
 
@@ -1004,63 +1005,45 @@ This SOP format was adapted from the Qubit® dsDNA HS Assay Kits [protocol](http
 
 **Before you begin**
 
-• The final volume in each tube must be 200 μl.
+- The final volume in each tube must be 200 μl.
 
-• Each standard tube requires 190 μl of Qubit working solution + 10 μl of the standard
+- Each standard tube requires 190 μl of Qubit working solution + 10 μl of the standard
 
-• Each sample tube requires anywhere from 180–199 μl + the corresponding volume to complete the necessary 200 μl
-
+- Each sample tube requires anywhere from 180–199 μl + the corresponding volume to complete the necessary 200 μl
   - This laboratory uses 195 μl working solution + 5 μl of sample
 
-• Careful pipetting is critical to ensure that the exact volume is added to the working solution—work SLOWLY
+- Careful pipetting is critical to ensure that the exact volume is added to the working solution—work SLOWLY
 
-• Be sure to use a clean plastic tube each time you prepare Qubit working solution. Do not mix the working solution in a glass container
+- Be sure to use a clean plastic tube each time you prepare Qubit working solution. Do not mix the working solution in a glass container
 
-**Procedure**
+**Procedure:** _Determine library concentration_
 
 Standard and Sample Preparation
 
-1. Prepare the tubes:
+1. Prepare the tubes: Set up two 0.5-mL tubes for standards, and the required number of tubes for samples. **Note** Use only the thin-wall, clear, 0.5-mL PCR tubes (described in **Table 2** User‐Supplied Consumables)
 
-    A. Set up two 0.5-mL tubes for standards, and the required number of tubes for samples.
+2. Label the tube lids. _Do not label the side of the tube as this could interfere with the sample read._
 
-   Note Use only the thin-wall, clear, 0.5-mL PCR tubes (described in **Table 2** User‐Supplied Consumables)
+3. Prepare sufficient Qubit working solution to accommodate all standards and samples by diluting the Qubit dsDNA HS Reagent 1:200 in Qubit dsDNA HS Buffer. 1 μl Qubit dsDNA HS Reagent + 199 μl Qubit dsDNA HS Buffer. For example, for 8 samples, prepare enough working solution for the samples and two standards: ~200 μl per tube in 10 tubes yields 2 mL of working solution (10 μl of Qubit reagent plus 1990 μl of Qubit buffer).
 
-   B. Label the tube lids- do not label the side of the tube as this could interfere with the sample read
+3. Prepare the standards by adding 190 μl of Qubit working solution to each of the tubes used for standards. Add 10 μl of each Qubit standard to the appropriate tube, then mix by vortexing 2–3 seconds. Be careful not to create bubbles.
 
-2. Prepare the Qubit working solution:
+4. Prepare the samples by adding Qubit working solution to individual assay tubes so that the final volume in each tube after adding the sample is 200 μl. **NOTE:** Your sample added should be between 1–20 μl and Qubit working solution between 180–199 μl (**See Table 13a** below).
 
-    A. Prepare sufficient Qubit working solution to accommodate all standards and samples by diluting the Qubit dsDNA HS Reagent 1:200 in Qubit dsDNA HS Buffer.
+5. Add each sample to the assay tubes containing the correct volume of Qubit working solution, then mix by vortexing 2–3 seconds. The final volume in each tube should be 200 μl.
 
-    - 1 μl Qubit dsDNA HS Reagent + 199 μl Qubit dsDNA HS Buffer
-    - For example, for 8 samples, prepare enough working solution for the samples and two standards: ~200 μl per tube in 10 tubes yields 2 mL of working solution (10 μl of Qubit reagent plus 1990 μl of Qubit buffer).
+6. Allow all tubes to incubate at room temperature for 2 minutes.
 
-3. Prepare the standards:
+**Table 13a:**  
 
-   A. Add 190 μl of Qubit working solution to each of the tubes used for standards.
+| Working Solution Volume | 199 μl | 195 μl | 190 μl | 185 μl | 180 μl |
+| --- | --- | --- | --- | --- | --- |
+| Sample Volume | 1 μl | 5 μl | 10 μl | 15 μl | 20 μl |
 
-   B. Add 10 μl of each Qubit standard to the appropriate tube, then mix by vortexing 2–3 seconds. Be careful not to create bubbles.
-
-4. Prepare the samples:
-
-    A. Add Qubit working solution to individual assay tubes so that the final volume in each tube after adding the sample is 200 μl.
-
-   **Note:** Your sample can be anywhere from 1–20 μl. Add a corresponding volume of Qubit working solution to each assay tube: anywhere from 180–199 μl.
-
-
-   | Working Solution Volume | 199 μl | 195 μl | 190 μl | 185 μl | 180 μl |
-   | --- | --- | --- | --- | --- | --- |
-   | Sample Volume | 1 μl | 5 μl | 10 μl | 15 μl | 20 μl |
-
-   B. Add each sample to the assay tubes containing the correct volume of Qubit working solution, then mix by vortexing 2–3 seconds. The final volume in each tube should be 200 μl.
-
-5. Allow all tubes to incubate at room temperature for 2 minutes.
 
 **Standard and Sample Reading**
 
-1. On the home screen of the Qubit 3.0 Fluorometer, select " **dsDNA**", then " **High Sensitivity**", and then " **Read Standards**."
-
-**Note:** If you have already performed a calibration for the selected assay, the instrument prompts you to choose between reading new standards and running samples using the previous calibration. If you wish to use the previous calibration, disregard step 3 in the Standard and Sample Preparation step, and skip to step 4 below. Otherwise, continue with step 2 below.
+1. On the home screen of the Qubit 3.0 Fluorometer, select "**dsDNA**", then "**High Sensitivity**", and then "**Read Standards**." **NOTE:** If you have already performed a calibration for the selected assay, the instrument prompts you to choose between reading new standards and running samples using the previous calibration. If you wish to use the previous calibration, disregard step 3 in the Standard and Sample Preparation step, and skip to step 4 below. Otherwise, continue with step 2 below.
 
 2. Insert the tube containing Standard #1 into the sample chamber, close the lid, and then press **Read standard**. When the reading is complete (~3 seconds), remove Standard #1.
 
@@ -1078,11 +1061,11 @@ Standard and Sample Preparation
 
 Dilute concentrated final library using Resuspension Buffer (RSB) or fresh 10 mM Tris pH 8.5 to **4 nM.**
 
-Example:<br>
-Given a calculated concentration of 45nM, use C1V1=C2V2 to calculate how much RSB and sample to mix to create a 4nM concentration:
+For example:
+Given a calculated concentration of 45nM, use $(C1)(V1) = (C2)(V2)$ to calculate how much RSB and sample to mix to create a 4nM concentration:
 
-45nM (V1 )= 4nM (20 μl)<br>
-V1 = 1.78 μl of sample + 18.22 μl of RSB produces 20ul of a 4nM concentration
+$45nM(V1) = 4nM(20 μl)$
+$V1 = 1.78 μl of sample + 18.22 μl of RSB = 20ul$ of a 4nM concentration
 
 **SAFE STOPPING POINT**
 
