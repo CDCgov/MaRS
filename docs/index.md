@@ -607,21 +607,21 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 **Preparation**
 
-• If not completed already, **carefully** pool an equal amount of each gene's corresponding sample into the same well of a half skirt plate to reach a total of 30 μl before continuing
+- If not completed already, **carefully** pool an equal amount of each gene's corresponding sample into the same well of a half skirt plate to reach a total of 30 μl before continuing
 
-• Add appropriate volume of DNA as obtained from gDNA dilution calculator to each well of a 96-well PCR plate so that the total input amount (100 - 1000 ng) is within the desired range. If DNA volume <30 μl, add nuclease-free molecular grade water to the DNA samples to bring the total volume to 30 μl. Add DNA to the molecular-grade water and mix well by gently pipetting approximately 5-10 times
+- Add appropriate volume of DNA as obtained from gDNA dilution calculator to each well of a 96-well PCR plate so that the total input amount (100 - 1000 ng) is within the desired range. If DNA volume <30 μl, add nuclease-free molecular grade water to the DNA samples to bring the total volume to 30 μl. Add DNA to the molecular-grade water and mix well by gently pipetting approximately 5-10 times
 
-• Vortex BLT for a minimum of 10 seconds and ensure proper suspension of beads, repeat if necessary. Do not centrifuge
+- Vortex BLT for a minimum of 10 seconds and ensure proper suspension of beads, repeat if necessary. Do not centrifuge
 
-• Be sure all samples are mixed thoroughly by pipetting gently 10 times.
+- Be sure all samples are mixed thoroughly by pipetting gently 10 times.
 
-• Bring BLT (from refrigerator) and TB1 (from freezer) to room temperature.
+- Bring BLT (from refrigerator) and TB1 (from freezer) to room temperature.
 
 **NOTE:** _Ensure that BLT is stored upright at all times, so that the beads remain submerged in the buffer. BLT must be stored at temperatures above 2°C. Do not use BLT that has been stored below 2°C and ensure that it is never frozen._
 
-• Label a 96-well PCR plate, or equivalent, with Run ID
+- Label a 96-well PCR plate, or equivalent, with Run ID
 
-• Set up thermal cycler and choose preheat lid option:
+- Set up thermal cycler and choose preheat lid option:
 
 **Thermocycler Program: "Flex 1" with reaction volume set to 50ul and choose the preheat lid option set to 100°C**
 
@@ -630,9 +630,9 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 |55°C for 15 min|
 |10°C for ∞|
 
-• Check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature
+- Check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature
 
-• Set up thermal cycler and choose preheat lid option:
+- Set up thermal cycler and choose preheat lid option:
 
 **Thermocycler Program: "Flex 2" with reaction volume set to 60ul and choose the preheat lid option set to 100°C**
 
@@ -648,7 +648,6 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 | --- | --- |
 | TB1 | 10 μl |
 | BLT | 10 μl |
-
 
 
 **Procedure: Tagment Genomic DNA**
@@ -739,14 +738,14 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 **Thermocycler Program: "Flex 3" with reaction volume set to 50ul and choose the preheat lid option set to 100°C:**
 
 | Flex 3 |
-|--- |
+|--- |--- |
 | Step 1 |
 |68°C for 3:00 min|
 |98°C for 3:00 min|
-| Step 2: run 5X |
-|98°C for 0:45 min|
-|62°C for 0:30 min|
-|68°C for 2:00 min|
+|**Step 2: run 5X** |
+|**98°C for 0:45 min**|
+|**62°C for 0:30 min**|
+|**68°C for 2:00 min**|
 | Step 3 |
 |68°C for 1:00 min|
 |10°C for ∞|
@@ -824,19 +823,20 @@ This step uses Sample purification beads to clean up the final library before qu
 
 - **NOTE:** 80% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 80% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
 
-**Procedure**
-
-1. Centrifuge the Library Amplification and Index PCR plate at 280 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
-
-2. Prepare SPB master mix in a 2 mL tube:
-
-
+**Table 11a. SPB Master Mix**
 | **Reagent** | **Volume (μl) per sample** |
 | --- | --- |
 | **SPB** | **40.8** |
 | **Molecular grade water** | **44.2** |
 
 **NOTE:** _It is recommended to increase the number of samples 3-4 to ensure sufficient volume of master mix._
+
+
+**Procedure**
+
+1. Centrifuge the Library Amplification and Index PCR plate at 280 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
+
+2. Prepare SPB master mix in a 2 mL tube based on **Table 11a** above.
 
 3. Place sample plate on the magnet for 5 minutes (or until beads have formed a tight pellet).
 
@@ -848,9 +848,7 @@ This step uses Sample purification beads to clean up the final library before qu
 
 7. Using a multichannel pipette mix briefly and add 85 μl of SPB master mix to each sample.
 
-8. Pipet to mix a minimum of 10 times using a multichannel pipet.
-
-**NOTE:** _Use caution when mixing as the volume will be >100 μl._
+8. Pipet to mix a minimum of 10 times using a multichannel pipet. **NOTE:** _Use caution when mixing as the volume will be >100 μl._
 
 9. Incubate at room temperature for 5 minutes **.**
 
@@ -870,12 +868,11 @@ This step uses Sample purification beads to clean up the final library before qu
 
 17. With multichannel pipette set to 200 μl, remove and discard supernatant (DNA is now bound to the beads).
 
-18. With the Library amplification plate on the magnetic stand, perform the steps below twice (for a total of two washes):
+18. With the Library amplification plate on the magnetic stand, perform the steps below **twice (for a total of two washes)**:
 
-        A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
-        B. Incubate the plate on the magnetic stand for 30 seconds.
-        C. Carefully remove and discard all the ethanol.
-
+ A. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)
+ B. Incubate the plate on the magnetic stand for 30 seconds.
+ C. Carefully remove and discard all the ethanol.
 19. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
 20. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes.
