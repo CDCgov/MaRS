@@ -933,11 +933,10 @@ Illumina recommends quantifying your libraries using a fluorometric quantificati
 
 After determining the fragment size and concentration of your pooled product, you will calculate the DNA concentration in nM, based on the size of DNA amplicons as determined by an Agilent Technologies 2100 Bioanalyzer trace and concentration by Qubit as follows:
 
-$(concentration in ng/μl) * $(10^6) / (660g/mol) * (average library size)$ = concentration in nM
+(concentration in ng/μl)(10^6) / (660g/mol)(average library size) = concentration in nM
 
 For example:
-$(15 ng/μl) * (10^6) / (660g/mol) * (500bp)$ = 45 nM
-
+(15 ng/μl)(10^6) / (660g/mol)(500bp) = 45 nM
 
 **Agilent Technologies Agilent D5000 ScreenTape System**
 
@@ -1034,7 +1033,7 @@ Standard and Sample Preparation
 
 6. Allow all tubes to incubate at room temperature for 2 minutes.
 
-**Table 13a:**  
+**Table 13a: Sample and Quibit Working Solution**  
 
 | Working Solution Volume | 199 μl | 195 μl | 190 μl | 185 μl | 180 μl |
 | --- | --- | --- | --- | --- | --- |
@@ -1062,10 +1061,10 @@ Standard and Sample Preparation
 Dilute concentrated final library using Resuspension Buffer (RSB) or fresh 10 mM Tris pH 8.5 to **4 nM.**
 
 For example:
-Given a calculated concentration of 45nM, use $(C1)(V1) = (C2)(V2)$ to calculate how much RSB and sample to mix to create a 4nM concentration:
+Given a calculated concentration of 45nM, use (C1)(V1) = (C2)(V2) to calculate how much RSB and sample to mix to create a 4nM concentration:
 
-$45nM(V1) = 4nM(20 μl)$
-$V1 = 1.78 μl of sample + 18.22 μl of RSB = 20ul$ of a 4nM concentration
+45nM(V1) = 4nM(20 μl)
+V1 = 1.78 μl of sample + 18.22 μl of RSB = 20ul of a 4nM concentration
 
 **SAFE STOPPING POINT**
 
