@@ -58,7 +58,7 @@ The method described in this SOP provides an integrated advanced molecular detec
 
 <a id="materials"></a>
 
-# Material and Equipment #
+# Materials and Equipment #
 
 Please ensure all the necessary user‐supplied consumables and equipment are available before proceeding to sample preparation.
 
@@ -871,11 +871,11 @@ This step uses Sample purification beads to clean up the final library before qu
 
 18. With the Library amplification plate on the magnetic stand, perform steps 19-21 below **twice (for a total of two washes)**:
 
-**19. Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)**
+19. **Add 170 μl of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)**
 
-**20. Incubate the plate on the magnetic stand for 30 seconds.**
+20. **Incubate the plate on the magnetic stand for 30 seconds.**
 
-**21. Carefully remove and discard all the ethanol.**
+21. **Carefully remove and discard all the ethanol.**
 
 22. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
@@ -1067,8 +1067,8 @@ Given a calculated concentration of 45nM, use (C1)(V1) = (C2)(V2) to calculate h
 V1 = 1.78 μl of sample + 18.22 μl of RSB = 20ul of a 4nM concentration
 
 **SAFE STOPPING POINT**
+>If you do not plan to proceed to _Library Denaturing and MiSeq Sample Loading_, leave your sample in 4°C for a maximum of one week.
 
-If you do not plan to proceed to _Library Denaturing and MiSeq Sample Loading_, leave your sample in 4°C.
 
 <a id="sample_loading"></a>
 
@@ -1093,64 +1093,48 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 **Preparation**
 
-1. Begin thawing the reagent cartridge and HT1 before denaturing and diluting libraries by placing them in a room temperature water bath for about an hour
+1. Begin thawing the reagent cartridge and HT1 before denaturing and diluting libraries by placing them in a room temperature water bath for about an hour.
 
-    A. Once thawed, store the cartridge and HT1 in the ice bucket until ready for sample loading.
+2. Once thawed, store the cartridge and HT1 in the ice bucket until ready for sample loading.
 
-2. Obtain an ice bucket for your thawed cartridge, freshly made reagents, and sample.
-3. Check pH of the stock 1.0N NaOH and the resulting 0.2N NaOH dilution using pH reader.
+3. Obtain an ice bucket for your thawed cartridge, freshly made reagents, and sample.
 
-    **Note:** CO2 in the room will acidify NaOH over time. It is absolutely **critical** that the NaOH has a minimum pH \&gt;12.5.
+4. Check pH of the stock 1.0N NaOH and the resulting 0.2N NaOH dilution using pH reader. **NOTE:** CO2 in the room will acidify NaOH over time. It is absolutely **critical** that the NaOH has a minimum pH \&gt;12.5.
 
-4. Prepare a fresh dilution of 0.2 N NaOH [this is a critical step; NaOH must be prepared fresh every time]
+5. Prepare a fresh dilution of 0.2 N NaOH. **NOTE: this is a critical step; NaOH must be prepared fresh every time.**
 
-    A. Using a 1000ul pipette, measure out 800uL of laboratory-grade water.
+6. Using a 1000ul pipette, measure out 800uL of laboratory-grade water.
 
-    B. In a separate microcentrifuge tube, measure 200uL of stock 1.0N NaOH.
+7. In a separate microcentrifuge tube, measure 200uL of stock 1.0N NaOH.
 
-    C. Combine the two volumes and then invert several times to mix
+8. Combine the two volumes and then invert several times to mix. **NOTE:** This results in a 1mL of 0.2N NaOH solution; the resulting solution cannot be stored and must be used within 6 hours. **NOTE:** The final concentration of NaOH cannot exceed 0.001 (1mM). _Higher NaOH concentrations will inhibit library hybridization to the flow cell and result in very low cluster density._
 
-    **Note:** This results in a 1mL of 0.2N NaOH solution; the resulting solution cannot be stored and must be used within 6 hours
+9. If you have not already done so, prepare a 200mM stock of Tris-HCl pH7.0 by combining 800 μl of Laboratory-grade water and 200 μl of Tris-HCl 1M.
 
-    **Note:** The final concentration of NaOH cannot exceed 0.001 (1mM). Higher NaOH concentrations will inhibit library hybridization to the flow cell and result in very low cluster density.
-
-5. If you have not already done so, prepare a 200mM stock of Tris-HCl pH7.0 by combining 800 μl of Laboratory-grade water and 200 μl of Tris-HCl 1M.
 
 **Denature DNA**
 
-1. Combine the following volumes of pooled final DNA library and freshly diluted 0.2 N NaOH in a microcentrifuge tube:
-
-  * 4 nM pooled library (5 μl)
-
-  * 0.2 N NaOH (5 μl)
+1. Combine the 4nM pooled library (5 μl) and 0.2N NaOH (5 μl) in a microcentrifuge tube:
 
 2. Set aside the remaining dilution of 0.2 N NaOH to prepare a PhiX control within the next 12 hours.
 
 3. Vortex briefly to mix the sample solution, and then centrifuge the sample solution at 280 × g (or about 1500rpm) at 20°C for 1 minute.
 
-4.  Incubate for 5 minutes at room temperature to denature the DNA into single strands.
+4. Incubate for 5 minutes at room temperature to denature the DNA into single strands.
 
 5. To the 10 μl of denatured library, add 5 μl of 200mM Tris-HCl pH7.0 to neutralize the NaOH.
 
-6.  Add the following volume of pre‐chilled HT1 to the tube containing denatured DNA:
-
-  *  Denatured DNA + Tris-HCl (15 μl)
-
-  * Pre‐chilled HT1 (985 μl)
-
-      Adding the HT1 results in a 20 pM denatured library in 1 mM NaOH.
+6.  Add pre-chilled HT1 (985 μl) to the denatured DNA + Tris-HCl (15 μl). Adding the HT1 results in a 20 pM denatured library in 1 mM NaOH.
 
 7. Place the denatured DNA on ice until you are ready to proceed to final dilution.
 
 **Quick Review/Guide for denaturing 4nM library:**
 ![Denature](assets/images/Denaturing4nmLibrary.png)
 
-
 **NOTE: If you have to start with a lower concentration library, follow the below protocol for denaturing a 2nM library.**
 
 **Quick Review/Guide for denaturing 2nM library:**
 ![Denature 2](assets/images/DenauringTWOnmLibrary.png)
-
 
 **Dilution chart for 10pM library:**
 
@@ -1161,31 +1145,22 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 **Dilute Denatured DNA**
 
-1. Dilute the denatured DNA to the desired concentration using the following example:
-
   **NOTE:** Illumina recommends targeting 1000–1200 K/mm² raw cluster densities using MiSeq v2 reagents.
 ![Clustering](assets/images/IlluminaLibClustering.png)
 
+1. Dilute the denatured DNA to the desired concentration using the following example:
 
 2. Invert several times to mix and then pulse centrifuge the DNA solution.
 
 3. Place the denatured and diluted DNA on ice.
 
-**Denature and Dilution of PhiX Control**
+**Denature and Dilute of PhiX Control**
 
 Use the following instructions to denature and dilute the 10 nM PhiX library to the same loading concentration as the Amplicon library. The final library mixture must contain at least 5% PhiX.
 
-1. Combine the following volumes to dilute the PhiX library to 4 nM:
+1. Combine 10 nM PhiX library (2 μl) and RSB (3 μl) to dilute the PhiX library to 4 nM:
 
-  * 10 nM PhiX library (2 μl)
-
-  * RSB (3 μl)
-
-3. Combine the following volumes of 4 nM PhiX and 0.2 N NaOH in a microcentrifuge tube:
-
-  * 4 nM PhiX library (5 μl)
-
-  * 0.2 N NaOH (5 μl)
+2. Combine 4 nM PhiX library (5 μl) and 0.2 N NaOH (5 μl) of 4 nM PhiX and 0.2 N NaOH in a microcentrifuge tube.
 
 3. Vortex briefly to mix the 2 nM PhiX library solution.
 
@@ -1193,29 +1168,23 @@ Use the following instructions to denature and dilute the 10 nM PhiX library to 
 
 5. To the 10 μl of denatured library, add 5 μl of 200mM Tris-HCl pH7.0 to neutralize the NaOH.
 
-6. Add the following volumes of pre‐chilled HT1 to the tube containing denatured PhiX library to result in a 20 pM PhiX library:
+6. Add denatured PhiX library (15 μl) and Pre‐chilled HT1 (985 μl) to make a 20 pM PhiX library:
 
-  * Denatured PhiX library (15 μl)
-
-  * Pre‐chilled HT1 (985 μl)
-
-7. Dilute the denatured 20 pM PhiX library to the same loading concentration as the Amplicon library as follows.
-
-![Clustering 2](assets/images/IlluminaLibClustering.png)
+7. Dilute the denatured 20 pM PhiX library to the same loading concentration as the Amplicon library as shown in **Table 14a** below.  
 
 8. Invert several times to mix and then pulse centrifuge the DNA solution.
 
 9. Place the denatured and diluted PhiX on ice.
 
+**Table 14a: Clustering Library**
+![Clustering 2](assets/images/IlluminaLibClustering.png)
+
+
 **Combine Amplicon Library and PhiX Control**
 
-**Note:** The recommended PhiX control spike‐in of ≥ 5% for low diversity libraries is possible with RTA v1.17.28 or later, which is bundled with MCS v2.2. For optimal performance, update to v3 software (MCS 2.3). If you are using an older version of the MiSeq software or sequencing these libraries on the GA or HiSeq, Illumina recommends using ≥ 25% PhiX control spike‐in.
+**NOTE:** The recommended PhiX control spike‐in of ≥ 5% for low diversity libraries is possible with RTA v1.17.28 or later, which is bundled with MCS v2.2. For optimal performance, update to v3 software (MCS 2.3). If you are using an older version of the MiSeq software or sequencing these libraries on the GA or HiSeq, Illumina recommends using ≥ 25% PhiX control spike‐in.
 
-1. Combine the following volumes of denatured PhiX control library and your denatured amplicon library in a microcentrifuge tube, which results in a 5% spike-in of PhiX:
-
-  * Denatured and diluted PhiX control (30 μl)
-
-  * Denatured and diluted amplicon library (570 μl)
+1. Combine denatured and diluted PhiX control (30 μl) and denatured and diluted amplicon library (570 μl). This will result in a 5% PhiX spike-in.  
 
 2. Set the combined sample library and PhiX control aside on ice until you are ready to load the mixture into the MiSeq v2 reagent cartridge.
 
