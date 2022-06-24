@@ -1,10 +1,6 @@
-micro centrifuge
 June 21st, 2022 version 5.1.1 updated by Eldin Talundzic ([etalundzic@cdc.gov)](mailto:etalundzic@cdc.gov)), Pragat Muthu, Julia Kelley and Marko Bajic.
 > Version 5.0: Major update in library prep from NexteraXT to Flex protocol.
 
-This protocol format was adapted from the 16S Metagenomics Sequencing Library Preparation [protocol](http://support.illumina.com/documents/documentation/chemistry_documentation/16s/16s-metagenomic-library-prep-guide-15044223-b.pdf) from Illumina, and the [Illlumina DNA Prep Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/illumina_prep/illumina-dna-prep-reference-guide-1000000025416-09.pdf).
-
-<!--
 **Table of contents**  
 * [Introduction/General Overview](#intro)
 * [Materials and Equipment](#materials)
@@ -19,7 +15,7 @@ This protocol format was adapted from the 16S Metagenomics Sequencing Library Pr
 * [Library Pooling, Quantification, and Normalization](#lib_norm)
 * [Library Denaturing and MiSeq Sample Loading](#sample_loading)
 * [Supporting Information](#supporting_info)
--->
+
 
 **IMPORTANT NOTICE**
 
