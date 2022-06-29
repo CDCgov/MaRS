@@ -154,7 +154,7 @@ _If <20 samples, run all samples on the gel; If >20 samples, pick 20 samples wit
 
 4. **PCR amplicons clean up [Purification]**
 Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
-Reagents: AMPure XP beads, fresh 70% EtOH
+Reagents: AMPure XP beads, fresh 70% EtOH, Nuclease-free water
 
 5. **Tagment Genomic DNA and Tagmentation Clean-Up**
 Hands on time 30 min / 96 samples; Total time 17 min / 8 samples
@@ -478,7 +478,7 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 16. Remove the gel from the chamber and take to the gel reading station for analysis.
 
-17. Once amplification is confirmed, if only one gene has been amplfied proceed to PCR amplicon clean-up. However, if working with multiple genes go to the next step.
+17. Once amplification is confirmed, if only one gene has been amplified proceed to PCR amplicon clean-up. However, if working with multiple genes go to the next step.
 
 18. Using **table 7b** below combine (pool) each PCR gene amplicon based on number of genes. Importantly, we know the PCR efficiency for each of the genes varies (k13 > dhfr > dhps > mdr1 > crt; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to the pool. Using the gel, use the [gel analyzer](http://www.gelanalyzer.com/?i=1) to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5uL* from each gene PCR amplicon to the final pool.
 
@@ -501,7 +501,7 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 ## PCR amplicons clean up ##
 
-This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use [here](https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs)
+This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use. **PLEASE SEE VENDOR PROTOCOL [HERE]**(https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs).
 
 **Consumables**
 
@@ -511,9 +511,11 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 | --- | --- | --- |
 | AMPure XP beads | 90 μl per 50 μl of sample  | 2° to 8°C  |
 | Freshly Prepared 70% Ethanol (EtOH)  | 400 μl per sample  | Room temperature  |
+| Nuclease free water (H20); # 25-055-CM, Cell Culture Grade Water, Sterile | 40 uL per sample | Room temperature |
 | 96‐well 0.2 ml PCR plate  | 1 plate  |   |
 | [Optional] Microseal 'B' film  |   |   |
 | 96‐well MIDI plate | 1 plate  |   |
+
 
 **Preparation**
 
@@ -561,7 +563,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 13. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. **NOTE: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.**
 
-14. Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 52.5 μl RSB to each well of the Amplicon PCR plate.
+14. Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 40 μl nuclease free H20 (# 25-055-CM, Cell Culture Grade Water, Sterile) to each well of the Amplicon PCR plate.
 
 15. Gently pipette mix up and down 10 times, or seal plate and shake at 1800 for 2 minutes if using a MIDI plate. Change tips after each column.
 
@@ -569,7 +571,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 17. Place the plate back on the magnetic stand for 2 minutes or until the supernatant has cleared.
 
-18. Using a multichannel pipette, carefully transfer 50 μl of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
+18. Using a multichannel pipette, carefully transfer 38 μl of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
 
 19. Pool each drug resistance gene (purified PCR amplicon) for each sample in equal volumes until the volume reaches at least 30 ul. For example, if you pool 5 ul of each amplicon (cytob, k13, md1, dhfr, dhps, crt, pfs47, and cpmp), you will have 40 ul of pooled, purified amplicon product ready to complete the tagmentation step.
 
