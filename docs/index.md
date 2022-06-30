@@ -54,6 +54,8 @@ The method described in this SOP provides an integrated advanced molecular detec
 
 <a id="materials"></a>
 
+
+
 #### Materials and Equipment ####
 
 Please ensure all the necessary user‐supplied consumables and equipment are available before proceeding to sample preparation.
@@ -130,8 +132,11 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 | **Agilent D4150 TapeStation System (or equivalent)** | Agilent Technologies, Catalog #G2992AA |
 | **MiSeq Desktop Sequencer**| Illumina Inc. |
 
-
 <a id="workflow"></a>
+
+
+
+
 
 #### Protocol Workflow ####
 
@@ -183,9 +188,13 @@ Method: MaRS analysis pipeline
 
 11. **Standardized SNPs reports generated**
 
-
-
 <a id="pet_pcr"></a>
+
+
+
+
+
+
 ## Sample QC ##
 
 This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0179178),  to assess the quality and quantity of starting DNA material. The readout includes an estimation of _all_ DNA in the sample, host and parasite.
