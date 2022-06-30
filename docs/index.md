@@ -12,7 +12,7 @@ June 29th, 2022 version 5.2.1 updated by Eldin Talundzic ([etalundzic@cdc.gov)](
 * [Tagmentation of PCR Amplicon and Tagmentation Clean Up​](#tagmentation)
 * [Amplification of Tagmented DNA (Library Indexing)](#lib_indexing)
 * [Library PCR Clean up](#lib_cleanup)
-* [Library Pooling, Quantification, and Normalization](#lib_norm)
+* [Library Pooling, Quantification, and Normalization](#lib_clustering)
 * [Library Denaturing and MiSeq Sample Loading](#sample_loading)
 * [Supporting Information](#supporting_info)
 
@@ -25,7 +25,7 @@ This document provides information for an application for Illumina technology th
 
 <a id="intro"></a>
 
-# Intro, Materials & Workflow #
+# Introduction #
 
 **Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
 
@@ -288,11 +288,11 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 **For more information, please see:**
 Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron transfer fluorogenic primers: PET-PCR._ PLoS One, 2013. 8 (2): p. e56677.
 
-## Gene Enrichment, QC & Clean-up ##
+## Gene Enrichment & QC ##
 
 <a id="gene_enrichment"></a>
 
-#### Gene PCR Enrichment ####
+#### Gene PCR Amplification ####
 
 This step uses PCR to amplify template from a DNA sample using region of interest-specific primers.
 
@@ -495,10 +495,9 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 > This should yield a total of 50 uL of combined PCR gene product for subsequent clean up.
 
-
 <a id="pcr_cleanup"></a>
 
-#### PCR amplicons clean up ####
+## Gene clean up ##
 
 This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use. **PLEASE SEE VENDOR PROTOCOL [HERE]**(https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs).
 
@@ -583,9 +582,14 @@ If you do not plan to proceed to *Tagment Genomic DNA and Tagmentation Clean-Up*
 
 ## NGS Library Prep ##
 
+#### [I: Tagment Genomic DNA](#tagmentation) ####
+#### [II: Post Tagmentation Clean-Up](#tag_cleanup) ####
+#### [III: Amplification of Tagmented DNA (Index PCR)](#lib_indexing) ####
+#### [IV: NGS Library Clean‐Up](#lib_cleanup") ####
+
 <a id="tagmentation"></a>
 
-#### Tagment Genomic DNA ####
+#### I: Tagment Genomic DNA ####
 
 The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. This process fragments and tags the DNA with adapter sequences. The Post Tagmentation Clean up step washes the adapter-tagged DNA on the BLT before PCR amplification.
 
@@ -669,7 +673,9 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 - **NOTE:** **PLEASE PROCEED TO NEXT PROCEDURE** This is **not** a recommended stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
 
-#### Procedure: Post Tagmentation Clean-Up ####
+<a id="tag_cleanup"></a>
+
+#### II: Post Tagmentation Clean-Up ####
 
 1. Again, check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature.
 
@@ -713,7 +719,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 <a id="lib_indexing"></a>
 
-#### Amplification of Tagmented DNA (Index PCR) ####
+#### III: Amplification of Tagmented DNA (Index PCR) ####
 
 This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR step adds Index 1 (i7) adapters, Index 2 (i5) adapters, and sequences required for sequencing cluster generation.
 
@@ -786,7 +792,7 @@ The plate may be sealed with Microseal B or equivalent and stored at 2°C to 8°
 
 <a id="lib_cleanup"></a>
 
-#### NGS Library Clean‐Up ####
+#### IV: NGS Library Clean‐Up ####
 
 This step uses Sample purification beads to clean up the final library before quantification.
 
@@ -894,13 +900,15 @@ This step uses Sample purification beads to clean up the final library before qu
 **SAFE STOPPING POINT**
 > If you do plan to stop here, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
 
-## Library Pooling, Quantification, and Normalization ##
 
 
-<a id="lib_norm"></a>
+<a id="lib_clustering"></a>
 
+## Library Clustering ##
 
-**Library Clustering**
+#### [Part I: Library Pooling](#lib_pool) ####
+#### [Part II: Library Quantification](#lib_quant) ####
+#### [Part III: Library Normalization](#lib_norm) ####
 
 It is important to consider library size when preparing samples for cluster generation. Because the clustering process preferentially amplifies shorter libraries in a mixture of fragments, large libraries tend to cluster less efficiently than small libraries. The DNA concentration used for clustering can be adjusted to increase the cluster density of larger libraries. Consider table 1 below:
 
@@ -908,25 +916,22 @@ It is important to consider library size when preparing samples for cluster gene
 
 ![Clustering](/assets/images/OptimalClusterDensity.png)
 
-This step consists of three parts:
-
-**Part I:** Pool libraries
-
-**Part II:** Quantification of fragment size and concentration to determine library concentration in nM
-
-**Part III:** Diluting your final library in Resuspension Buffer (RSB) or fresh 10 mM Tris pH 8.5 to a 4 nM solution.
 
 **Procedure**
+
+<a id="lib_pool"></a>
 
 #### Part I: Library Pooling ####
 
 1. Aliquot 5 μl of diluted DNA from each library into a 1.5 microcentrifuge tube and mix aliquots for pooling libraries with unique indices. Depending on coverage needs, up to 384 libraries can be pooled for one MiSeq run.
 
 
+<a id="lib_quant"></a>
+
 #### Part II: Library Quantification ####
 
 **Background**
-Illumina recommends quantifying your libraries using a fluorometric quantification method that uses dsDNA binding dyes.
+Quantification of fragment size and concentration to determine library concentration in nM. Illumina recommends quantifying your libraries using a fluorometric quantification method that uses dsDNA binding dyes.
 
 - Our laboratory uses the Agilent D5000 ScreenTape System Quick Guide protocol from Agilent Technologies to determine the fragment size of our libraries.
 - Our laboratory uses the Qubit® dsDNA HS Assay Kits protocol from Life Technologies to determine the conentration of our libraries.
@@ -1058,7 +1063,10 @@ Standard and Sample Preparation
 
 7. Insert a sample tube into the sample chamber, close the lid, and press Read tube. When the reading is complete (~3 seconds), remove the sample tube and repeat until all samples have been read.
 
-#### Part II: Library Normalization ####
+
+<a id="lib_norm"></a>
+
+#### Part III: Library Normalization ####
 
 Dilute concentrated final library using Resuspension Buffer (RSB) or fresh 10 mM Tris pH 8.5 to **4 nM.**
 
@@ -1271,7 +1279,7 @@ These strategies represent only some of the acceptable combinations. Alternative
 √=signal in both color<br>
 x=signal missing in one color channel
 
-## Prevent PCR Product Contamination ##
+## Prevent PCR Contamination ##
 
 The PCR process is commonly used in the laboratory to amplify specific DNA sequences. Unless proper laboratory hygiene is used, PCR products can contaminate reagents, instrumentation, and genomic DNA samples, causing inaccurate and unreliable results. PCR product contamination can shut down lab processes and significantly delay normal operations.
 
