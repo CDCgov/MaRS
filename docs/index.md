@@ -290,9 +290,12 @@ Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron 
 
 ## Gene Enrichment & QC ##
 
+#### [I: Gene PCR Amplification](#gene_amp) ####
+#### [II: QC by Electrophoresis](#electrophoresis) ####
+
 <a id="gene_enrichment"></a>
 
-#### Gene PCR Amplification ####
+#### I: Gene PCR Amplification ####
 
 This step uses PCR to amplify template from a DNA sample using region of interest-specific primers.
 
