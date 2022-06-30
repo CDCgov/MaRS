@@ -25,7 +25,7 @@ This document provides information for an application for Illumina technology th
 
 <a id="intro"></a>
 
-# Introduction #
+# Intro, Materials & Workflow #
 
 **Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
 
@@ -54,7 +54,7 @@ The method described in this SOP provides an integrated advanced molecular detec
 
 <a id="materials"></a>
 
-# Materials and Equipment #
+#### Materials and Equipment ####
 
 Please ensure all the necessary user‐supplied consumables and equipment are available before proceeding to sample preparation.
 
@@ -133,7 +133,7 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 
 <a id="workflow"></a>
 
-# Protocol Workflow #
+#### Protocol Workflow ####
 
 **NOTE:** The hands-on times are based on using 96-well format plates for each step.
 
@@ -184,7 +184,6 @@ Method: MaRS analysis pipeline
 11. **Standardized SNPs reports generated**
 
 
-# Laboratory Procedures #
 
 <a id="pet_pcr"></a>
 ## Sample QC ##
@@ -289,10 +288,11 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 **For more information, please see:**
 Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron transfer fluorogenic primers: PET-PCR._ PLoS One, 2013. 8 (2): p. e56677.
 
+## Gene Enrichment, QC & Clean-up ##
 
 <a id="gene_enrichment"></a>
 
-## Gene PCR Enrichment ##
+#### Gene PCR Enrichment ####
 
 This step uses PCR to amplify template from a DNA sample using region of interest-specific primers.
 
@@ -421,7 +421,7 @@ If you do not immediately proceed to Electrophoresis, seal plate with adhesive s
 
 <a id="electrophoresis"></a>
 
-## Electrophoresis ##
+#### Electrophoresis ####
 
 This step is necessary to ensure successful amplification of amplicons. It is recommended to run at least 25% of the total samples, all no-template and negative controls on the gel to confirm amplification was successful and no contamination occurred. Please note PCR amplification can be affected by numerous factors, including but not limited to, DNA quality and quantity.
 
@@ -496,10 +496,9 @@ Of the 25% total samples, ensure to select representative samples of varying par
 > This should yield a total of 50 uL of combined PCR gene product for subsequent clean up.
 
 
-
 <a id="pcr_cleanup"></a>
 
-## PCR amplicons clean up ##
+#### PCR amplicons clean up ####
 
 This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use. **PLEASE SEE VENDOR PROTOCOL [HERE]**(https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs).
 
@@ -581,9 +580,12 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 If you do not plan to proceed to *Tagment Genomic DNA and Tagmentation Clean-Up*, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
 
 
+
+## NGS Library Prep ##
+
 <a id="tagmentation"></a>
 
-## Tagment Genomic DNA and Tagmentation Clean-Up ##
+#### Tagment Genomic DNA ####
 
 The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. This process fragments and tags the DNA with adapter sequences. The Post Tagmentation Clean up step washes the adapter-tagged DNA on the BLT before PCR amplification.
 
@@ -667,7 +669,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 - **NOTE:** **PLEASE PROCEED TO NEXT PROCEDURE** This is **not** a recommended stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
 
-## Procedure: Post Tagmentation Clean-Up ##
+#### Procedure: Post Tagmentation Clean-Up ####
 
 1. Again, check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature.
 
@@ -711,7 +713,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 <a id="lib_indexing"></a>
 
-## Amplification of Tagmented DNA (Index PCR) ##
+#### Amplification of Tagmented DNA (Index PCR) ####
 
 This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR step adds Index 1 (i7) adapters, Index 2 (i5) adapters, and sequences required for sequencing cluster generation.
 
@@ -784,7 +786,7 @@ The plate may be sealed with Microseal B or equivalent and stored at 2°C to 8°
 
 <a id="lib_cleanup"></a>
 
-## Library PCR Clean‐Up ##
+#### NGS Library Clean‐Up ####
 
 This step uses Sample purification beads to clean up the final library before quantification.
 
@@ -892,10 +894,11 @@ This step uses Sample purification beads to clean up the final library before qu
 **SAFE STOPPING POINT**
 > If you do plan to stop here, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
 
+## Library Pooling, Quantification, and Normalization ##
+
 
 <a id="lib_norm"></a>
 
-## Library Pooling, Quantification, and Normalization ##
 
 **Library Clustering**
 
@@ -915,11 +918,12 @@ This step consists of three parts:
 
 **Procedure**
 
-**Part I: Pooling**
+#### Part I: Library Pooling ####
 
 1. Aliquot 5 μl of diluted DNA from each library into a 1.5 microcentrifuge tube and mix aliquots for pooling libraries with unique indices. Depending on coverage needs, up to 384 libraries can be pooled for one MiSeq run.
 
-**Part II: Quantification**
+
+#### Part II: Library Quantification ####
 
 **Background**
 Illumina recommends quantifying your libraries using a fluorometric quantification method that uses dsDNA binding dyes.
@@ -1054,7 +1058,7 @@ Standard and Sample Preparation
 
 7. Insert a sample tube into the sample chamber, close the lid, and press Read tube. When the reading is complete (~3 seconds), remove the sample tube and repeat until all samples have been read.
 
-**Part III: Normalization**
+#### Part II: Library Normalization ####
 
 Dilute concentrated final library using Resuspension Buffer (RSB) or fresh 10 mM Tris pH 8.5 to **4 nM.**
 
@@ -1068,9 +1072,11 @@ V1 = 1.78 μl of sample + 18.22 μl of RSB = 20ul of a 4nM concentration
 >If you do not plan to proceed to _Library Denaturing and MiSeq Sample Loading_, leave your sample in 4°C for a maximum of one week.
 
 
+## Sample sequencing ##
+
 <a id="sample_loading"></a>
 
-**Library Denaturing and MiSeq Sample Loading**
+#### Library Denaturing and MiSeq Sample Loading ####
 
 In preparation for cluster generation and sequencing, pooled libraries are denatured with NaOH, diluted with hybridization buffer, and then heat denatured before MiSeq sequencing. Each run must include a minimum of 5% PhiX to serve as an internal control for these low-diversity libraries. Illumina recommends using MiSeq v2 reagent kits for improved run metrics.
 
@@ -1264,7 +1270,6 @@ These strategies represent only some of the acceptable combinations. Alternative
 
 √=signal in both color<br>
 x=signal missing in one color channel
-
 
 ## Prevent PCR Product Contamination ##
 
