@@ -27,7 +27,7 @@ This document provides information for an application for Illumina technology th
 
 # Introduction #
 
-**Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
+**Standard Operating Procedure (SOP) describing how to prepare afnd sequence the full length _P. falciparum_ genes on the Illumina MiSeq.**
 
 * kelch 13 (_k13_)
 * chloroquine resistant transporter (_crt_)
