@@ -142,22 +142,22 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 
 **NOTE:** The hands-on times are based on using 96-well format plates for each step.
 
-1. **PET-PCR Sample Quality Check [Sample QC]**
+1. **PET-PCR Sample Quality Check **
 Real-time PCR hands-on time 30 min / 96 samples; Cycle time 1.2 hours
 Reagents: Primers, 2X ABI TaqMan buffer, DNase PCR free water
 
 
-2. **PCR reaction to generate amplicons [Amplification]**
+2. **PCR reaction to generate amplicons **
 PCR hands-on time 30 min / 96 samples; Cycle time 2.5 hours
 Reagents: 10uM Primers, HF Phusion Taq, 5X GC Buffer, 10mM dNTPs, DNase PCR free water
 
 
-3. **Analysis of PCR amplicons [Electrophoresis]**
+3. **Analysis of PCR amplicons **
 PCR amplicon electrophoresis hands-on time 10 min / 8 samples; Gel running time 30 min
 Reagents: Agarose, DNA loading dye, 1kb DNA ladder, 1X TBE Buffer
 _If <20 samples, run all samples on the gel; If >20 samples, pick 20 samples with varying CT values and run on the gel_
 
-4. **PCR amplicons clean up [Purification]**
+4. **PCR amplicons clean up **
 Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
 Reagents: AMPure XP beads, fresh 70% EtOH, Nuclease-free water
 
@@ -170,7 +170,7 @@ _[optional]_ To assess tagmentation, run 1 μl sample on Agilent Bioanalyzer 2X 
 Hands on time 35 min / 96 samples; Cycle time 38 min / 96 samples
 Reagents: EPM, Nuclease-free water, Index 1 and 2 primers
 
-7. **Library PCR Clean-up [Purification]**
+7. **Library PCR Clean-up **
 Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
 Reagents: SPB, RSB, Nuclease-free water, fresh 80% EtOH
 
@@ -182,7 +182,7 @@ Reagents: Sample Buffer, D5000 Ladder, ScreenTape; Qubit dsDNA HS Buffer and Rea
 Hands on time 30 min / pooled samples; Total time 30 min / pooled samples
 Reagents: Resuspension Buffer, HT1, 0.2N NaOH, PhiX Control Kit v3, 200mM Tris-HCl pH7.0
 
-10. **Analysis of NGS data [Analysis]**
+10. **Analysis of NGS data **
 Hands on time 5 min / 96 samples; Total time 15-25 min / 96 samples
 Method: MaRS analysis pipeline
 
