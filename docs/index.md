@@ -36,7 +36,7 @@ This document provides information for an application for Illumina technology th
 * dihydropteroate synthase (_dhps_)
 * cytochrome b (_cytb_)
 
-Human malaria is caused by four parasite species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. ovale (Po)* and *P. malariae (Pm)*. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2020, there were an estimated 241 million malaria cases in 85 malaria endemic countries, causing an estimated 627,000 deaths.. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
+Human malaria is caused by four parasite species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. ovale (Po)* and *P. malariae (Pm)*. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2020, there were an estimated 241 million malaria cases in 85 malaria endemic countries, causing an estimated 627,000 deaths. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
 
 Previously effective anti-malarial treatments, chloroquine (CQ) and sulfadoxine/pyrimethamine (SP), are ineffective in many regions. Even more alarming, resistance to the least effective class of anti-malarial drugs, called artemisinins, has now emerged and spread in Southeast Asia, threatening malaria control and prevention programs globally.
 
@@ -142,22 +142,22 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 
 **NOTE:** The hands-on times are based on using 96-well format plates for each step.
 
-1. **PET-PCR Sample Quality Check **
+1. **PET-PCR Sample Quality Check**
 Real-time PCR hands-on time 30 min / 96 samples; Cycle time 1.2 hours
 Reagents: Primers, 2X ABI TaqMan buffer, DNase PCR free water
 
 
-2. **PCR reaction to generate amplicons **
+2. **PCR reaction to generate amplicons**
 PCR hands-on time 30 min / 96 samples; Cycle time 2.5 hours
 Reagents: 10uM Primers, HF Phusion Taq, 5X GC Buffer, 10mM dNTPs, DNase PCR free water
 
 
-3. **Analysis of PCR amplicons **
+3. **Analysis of PCR amplicons**
 PCR amplicon electrophoresis hands-on time 10 min / 8 samples; Gel running time 30 min
 Reagents: Agarose, DNA loading dye, 1kb DNA ladder, 1X TBE Buffer
 _If <20 samples, run all samples on the gel; If >20 samples, pick 20 samples with varying CT values and run on the gel_
 
-4. **PCR amplicons clean up **
+4. **PCR amplicons clean up**
 Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
 Reagents: AMPure XP beads, fresh 70% EtOH, Nuclease-free water
 
@@ -170,7 +170,7 @@ _[optional]_ To assess tagmentation, run 1 μl sample on Agilent Bioanalyzer 2X 
 Hands on time 35 min / 96 samples; Cycle time 38 min / 96 samples
 Reagents: EPM, Nuclease-free water, Index 1 and 2 primers
 
-7. **Library PCR Clean-up **
+7. **Library PCR Clean-up**
 Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
 Reagents: SPB, RSB, Nuclease-free water, fresh 80% EtOH
 
@@ -182,7 +182,7 @@ Reagents: Sample Buffer, D5000 Ladder, ScreenTape; Qubit dsDNA HS Buffer and Rea
 Hands on time 30 min / pooled samples; Total time 30 min / pooled samples
 Reagents: Resuspension Buffer, HT1, 0.2N NaOH, PhiX Control Kit v3, 200mM Tris-HCl pH7.0
 
-10. **Analysis of NGS data **
+10. **Analysis of NGS data**
 Hands on time 5 min / 96 samples; Total time 15-25 min / 96 samples
 Method: MaRS analysis pipeline
 
@@ -199,7 +199,7 @@ Method: MaRS analysis pipeline
 
 This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0179178),  to assess the quality and quantity of starting DNA material. The readout includes an estimation of _all_ DNA in the sample, host and parasite.
 
-- **NOTE:** This assay is used to identify which samples should be included and/or excluded for downstream procedures. Any sample with a CT value greater than 34, should be excluded. We recommend grouping all samples with a CT > 34 and performing separate amplicon PCRs and electrophoresis for these samples. If the electrophoresis yields positive results (e.g. positive and clear bands on gel) you may procced with downstream procedures. Samples with a CT > 34 have either very low and/or no parasite DNA.
+- **NOTE:** This assay is used to identify which samples should be included and/or excluded for downstream procedures. Any sample with a CT value greater than 34, should be excluded. We recommend grouping all samples with a CT > 34 and performing separate amplicon PCRs and electrophoresis for these samples. If the electrophoresis yields positive results (e.g. positive and clear bands on gel) you may procced with downstream procedures. Samples with a CT > 34 have lower  parasite DNA and subsequent gene amplification success rates are variable.
 
 **Consumables**
 
@@ -234,9 +234,9 @@ This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/ploson
 
 **Primers and PCR Conditions**
 
-The table below shows the primers and PCR conditions for a multiplex reaction- Genus and P. falciparum:
+The table below shows the Genus and _P.falciparum_ primers and PCR conditions for a multiplex reaction:  
 
-**Table 5. _Multiplexing genus and P. falciparum species specific primers_**
+**Table 5. _Multiplexing Genus and P. falciparum species specific primers_**
 
 ![Table 5](/assets/images/Table5.png)
 
@@ -262,7 +262,7 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 
 7. Add positive control DNA to each positive control well with master-mix. Cap the wells after each positive control is added.
 
-8. Add 2.0 μL of DNase-free H2O to the wells designated as the no-template control (NTC) and close that well tightly.
+8. Add 2.0 μL of DNase-free water to the wells designated as the no-template control (NTC) and close that well tightly.
 
 9. Make sure each sample has been added to the correct well and that all wells are tightly capped.
 
@@ -270,7 +270,7 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 
 11. Make sure there are no bubbles in the well.
 
-- **NOTE:** _The amount of template DNA to be used can be as low as 2uL, but it is not uncommon to use 5uL. This can be adjusted appropriately depending on the sample parasitemia. The change should be discussed before it is implemented._
+- **NOTE:** _The recommended minimum amount of template DNA is 2.0 uL. This can be adjusted appropriately depending on the sample parasitemia._
 
 **PCR-Cycling Parameters**
 
@@ -284,7 +284,7 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 
 **Interpreting Results**
 
-1. Interpret the results using standard settings in the software.
+1. Use default settings to set the dye thresholds.  
 
 2. If the calculated thresholds are located within the background noise, they should be manually set to a level slightly higher than the background. Such alterations should be done with only one dye displayed at the time.
 
@@ -326,15 +326,16 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 
 **Pre-PCR master mix prep**
 
-- Let Primers, dNTPs, and GC Buffer defrost at room temperature (10-15 min). Once defrosted, mix gently _(vortexed)_ and centrifuge briefly prior to use. **_DO NOT thaw and/or vortex or mix the HF Taq._**
+- Let Primers, dNTPs, and GC Buffer defrost at room temperature (10-15 min). Once defrosted, mix gently _(vortexed)_ and centrifuge briefly prior to use.
+- **_DO NOT thaw and/or vortex or mix the HF Taq._**
 - All PCR reactions **must be assembled on the** Eppendorf PCR Cooler plates
 - **Always add the Taq last when making your master mix and DO NOT vortex and/or pipette after adding Taq.**
-- If you forget to return any of the reagents, especially the Taq, to its appropriate storage conditions (i.e., leave it out at room temperature), record the date and time of when it happened, and discard.
+- If you forget to return any of the reagents, especially the Taq, to its appropriate storage conditions (i.e., leave it out at room temperature), record the date and time of when it happened in your lab notebook, and discard the Taq.
 
 **PCR plate set up**
-- Calculate appropriate volumes for master mix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% pf total number of samples (for user pipetting errors)
+- Calculate appropriate volumes for master mix based on number of samples to be included in reaction; multiply each reagent volume times the total number of samples + 10% total number of samples (to have enough mix for all samples)
 - Final volume of master mix is given in **Tables 6.1 - 6.6**
-- **NOTE:**  _If the number of samples is >5, make a master mix for at least 6 samples to avoid pipetting volume errors._
+- **NOTE:**  _If the number of samples is >5, make a master mix for at least 6 samples to avoid not having enough mix._
 
 **Procedure**
 
@@ -342,7 +343,9 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 
 2. Seal plates and/or PCR tubes.
 
-3. Once tubes and/or plates are sealed, keep them in the Eppendorf PCR Cooler plates. **Pre-heat** the thermal cycler to 98C prior to placing PCR plates and/or PCR tubes into the thermal cycler. Pre-heating to 98&deg;C should take 0:30 of the 3:00 min.
+3. Once tubes and/or plates are sealed, keep them in the Eppendorf PCR Cooler plates.
+
+4. **Pre-heat** the thermal cycler to 98C prior to placing PCR plates and/or PCR tubes into the thermal cycler. Pre-heating to 98&deg;C should take 0:30 of the 3:00 min.
 
 
 **Primers and PCR Conditions**
@@ -437,7 +440,12 @@ If you do not immediately proceed to Electrophoresis, seal plate with adhesive s
 
 This step is necessary to ensure successful amplification of amplicons. It is recommended to run at least 25% of the total samples, all no-template and negative controls on the gel to confirm amplification was successful and no contamination occurred. Please note PCR amplification can be affected by numerous factors, including but not limited to, DNA quality and quantity.
 
-Of the 25% total samples, ensure to select representative samples of varying parasitemia levels (based on PET-PCR CTs).
+- **First run only the positive, no-template and negative controls**.
+- If unexpected results are obtained, record the time and information in your notebook, then toss the samples. **Amplification will need to be repeated** [I: Gene PCR Amplification](#gene_amp)
+
+- If expected results are obtained, move on to running at minimum 25% of the samples along with the positive, NTC and NC.
+
+Of the 25% total samples, ensure to select representative samples of varying parasitemia levels (based on PET-PCR CTs or microsopy data).
 
 **Consumables**
 
@@ -460,7 +468,7 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 1. Choose an Erlenmeyer flask that is 2-4 times the volume of the solution and place a stirring rod into the flask.
 
-2. Weigh the agar to the desired concentration
+2. Weigh the agar to the desired concentration.
 
 3. Add the appropriate amount of buffer for the desired concentration.
 
@@ -474,25 +482,25 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 8. Using a 10 μl pipette, add nucleic acid gel stain to the solution. For every 100 mL of buffer, add 5 μl of gel stain. Swirl solution to mix, making sure as little bubbles as possible are created.
 
-9. Pour the cooled solution into the gel form- ensure no bubbles are present. Place the comb into the gel and allow the gel to sit undisturbed for at least 15 minutes or until the gel has become firm (the color will change from clear to slightly milky in color).
+9. Pour the cooled solution into the gel device and ensure no bubbles are present. Place the comb into the gel and allow the gel to sit undisturbed for at least 15 minutes or until the gel has become firm (the color will change from clear to slightly milky in color).
 
-10. When gel has solidified, ensure the wells are aligned with the black (negative) nodes on the electrophoresis chamber and fill with buffer until it covers about a centimeter above the gel. Remove the comb.
+10. When gel has solidified, ensure the wells are aligned with the black (negative) nodes on the electrophoresis chamber and fill with buffer until it covers about a centimeter above the gel. Remove the comb by pulling it gently into an upward direction.
 
 11. Combine a mixture of 2 μl of orange dye and 8 μl of each sample and load 8uL of that mixture into each well.
 
-12. Be sure to include reference ladders (no orange dye necessary).
+12. Be sure to include a 1kb and 100bp reference dye ladders, one on each side of the gel (no orange dye necessary).
 
 13. Place the lid on the chamber box and connect the black node to the negative terminal and the red node to the positive terminal. Turn on the power supply and adjust the voltage to 100-130 volts.
 
-14. Run gel for about 45 minutes -until the samples nearly reach the end of the gel. **DO NOT** allow samples to run off the gel.
+14. Run gel for 40-45 minutes; check the gel at 40 min; the samples should nearly reach the end of the gel. **DO NOT** allow samples to run off the gel.
 
-15. Turn off the power supply, disconnect the electrodes, and remove the lid.
+15. Turn off the power supply, disconnect the electrodes, and remove the lid from the gel device.
 
 16. Remove the gel from the chamber and take to the gel reading station for analysis.
 
-17. Once amplification is confirmed, if only one gene has been amplified proceed to PCR amplicon clean-up. However, if working with multiple genes go to the next step.
+17. Once amplification is confirmed. If only working with one gene proceed to [PCR amplicon Clean-Up](#pcr_cleanup). However, if working with multiple genes go to the next step.
 
-18. Using **table 7b** below combine (pool) each PCR gene amplicon based on number of genes. Importantly, we know the PCR efficiency for each of the genes varies (k13 > dhfr > dhps > mdr1 > crt; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to the pool. Using the gel, use the [gel analyzer](http://www.gelanalyzer.com/?i=1) to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5uL* from each gene PCR amplicon to the final pool.
+18. Using **table 7b** below combine (pool) each PCR gene amplicon based on number of genes. Importantly, we know the PCR efficiency for each of the genes varies (k13 > dhfr > dhps > mdr1 > crt; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel, use the [gel analyzer](http://www.gelanalyzer.com/?i=1) to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5uL* from each gene PCR amplicon to the final pool.
 
 19. Vortex briefly the pooled PCR gene amplicons before proceeding to PCR amplicon clean up.
 
