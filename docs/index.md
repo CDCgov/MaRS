@@ -1,4 +1,4 @@
-July 6th, 2022 version 5.2.2 updated by [Eldin Talundzic](mailto:etalundzic@cdc.gov), Pragat Muthu, Julia Kelley and Marko Bajic.
+November 9th, 2022 version 5.2.3 updated by [Eldin Talundzic](mailto:etalundzic@cdc.gov), Pragat Muthu, Julia Kelley and Marko Bajic.
 > Version 5.0: Major update in library prep from NexteraXT to Flex protocol.
 
 **Table of contents**  
