@@ -297,10 +297,37 @@ _**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA A
 **For more information, please see:**
 Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron transfer fluorogenic primers: PET-PCR._ PLoS One, 2013. 8 (2): p. e56677.
 
+
+
+
+
 ## Gene Enrichment & QC ##
 
 #### [I: Gene PCR Amplification](#gene_amp) ####
 #### [II: QC by Electrophoresis](#electrophoresis) ####
+
+### Recommended Positive Controls and Expected SNPs ###
+
+We highly recommend using at least **three positive controls** with known SNP profiles. These will be first analyzed to confirm the known SNPs and ensure the rest of the sequencing run was successful.
+
+We routinely use the following controls:
+
+| Control strain | _crt_ | _mdr1_ | _dhfr_ | _dhps_ | _k13_ |
+| --- | --- | --- | --- | --- | --- |
+| 7G8 | **S**VMN**T** | NED**FCDY** | C**I**C**N**I | S**G**KAA | _wild type_ |
+| DD2 | CV**IET** | **Y/F**EDFCDY | C**IRN**I | S**G**KAA | _wild type_ |
+| HB3 | CVMNK | **Y/F**EDFCDY | C**I**C**T**I | S**G**KAA | _wild type_ |
+
+> **BOLD** indicates codon position with mutations
+
+> Codon positions:
+  _crt_ :72-76
+  _mdr1_ :86,130, 144, 184, 1034, 1042, 1109, 1246
+  _dhfr_ : 50, 51, 59, 108, 164
+  _k13_ : 18 - 715
+
+Controls can be ordered directly through BEI: https://www.beiresources.org/
+
 
 <a id="gene_enrichment"></a>
 
@@ -357,24 +384,24 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 ![Table 6.1](/assets/images/Table6p1.png)
 
 **Amplicon size:** 3,109 bp<br>
-**Primers:  Pfcrt_F1 Sequence (5' to 3'):** _TTACATATAACAAAATGAAATTCGC_ <br>
-**Pfcrt_R1 Sequence (5' to 3'):** _TATTGTGTAATAATTGAATCGACG_
+Primers:  Pfcrt_F1 Sequence (5' to 3'): _TTACATATAACAAAATGAAATTCGC_ <br>
+Pfcrt_R1 Sequence (5' to 3'): _TATTGTGTAATAATTGAATCGACG_
 
 **Table 6.2.  _Pfk13_**
 
 ![Table 6.2](/assets/images/Table6p2.png)
 
 **Amplicon size:** 2,181 bp<br>
-**Primers:  Pfk13_F1_ETn2 Sequence (5' to 3'):** _CTATGACGTATGATAGGGAATCTGG_ <br>
-**Pfk13_R1_ETn2 Sequence (5' to 3'):** _CTGGGAACTAATAAAGATGGGCC_
+Primers:  Pfk13_F1_ETn2 Sequence (5' to 3'): _CTATGACGTATGATAGGGAATCTGG_ <br>
+Pfk13_R1_ETn2 Sequence (5' to 3'): _CTGGGAACTAATAAAGATGGGCC_
 
 **Table 6.3. _Mitochondrial genome_**
 
 ![Table 6.3](/assets/images/Table6p3.png)
 
 **Amplicon size:** 5,967 bp<br>
-**Primers:  Mitochondrion_F1 Sequence (5’ to 3’):** _AAGCTTTTGGTATCTCGTAAT_<br>
-**Mitochondrion_R1 Sequence (5’ to 3’):** _TATTATAATATAACTCTACAAAGTTGAAC_
+Primers:  Mitochondrion_F1 Sequence (5’ to 3’): _AAGCTTTTGGTATCTCGTAAT_<br>
+Mitochondrion_R1 Sequence (5’ to 3’): _TATTATAATATAACTCTACAAAGTTGAAC_
 
 **NOTE:** If experiencing issues with amplifying the full-length mitochondrial genome, consider amplifying only the _cyt-b_ gene instead for characterizing molecular markers associated with Malarone (atovaquone/proguanil) resistance. See Table 6.3a below.
 
@@ -383,24 +410,24 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 ![Table 6.3](/assets/images/Table6point3a.png)
 
 **Amplicon size:** 937 bp<br>
-**Primers:  CytB_F1_Sequence (5' to 3'):** _CTATTAATTTAGTTAAAGCACAC_ <br>
-**CytB_R1_Sequence (5' to 3'):** _ACAGAATAATCTCTAGCACCA_
+Primers:  CytB_F1_Sequence (5' to 3'): _CTATTAATTTAGTTAAAGCACAC_ <br>
+CytB_R1_Sequence (5' to 3'): _ACAGAATAATCTCTAGCACCA_
 
 **Table 6.4. _mdr1_**
 ![Table 6.4](/assets/images/Table6p4.png)
 
 
 **Amplicon size:** 4,155 bp<br>
-**Primers:  Pfmdr1_F1_Sequence (5' to 3'):** _TGGTAACCTCAGTATCAAAG_ <br>
-**Pfmdr1_R1_Sequence (5' to 3'):** _CATCTTGTGCTGATAATAATTC_
+Primers:  Pfmdr1_F1_Sequence (5' to 3'): _TGGTAACCTCAGTATCAAAG_ <br>
+Pfmdr1_R1_Sequence (5' to 3'): _CATCTTGTGCTGATAATAATTC_
 
 **Table 6.5. _dhfr_**
 
 ![Table 6.5](/assets/images/Table6p5.png)
 
 **Amplicon size:** 2,067 bp<br>
-**Primers:  Pfdhfr_F1 Sequence (5' to 3'):** _TTTTTACTAGCCATTTTTGTATTCC_<br>
-**Pfdhfr_R1 Sequence (5' to 3'):** _TTAACCGTTCAGGTAATTTTGTCA_
+Primers:  Pfdhfr_F1 Sequence (5' to 3'): _TTTTTACTAGCCATTTTTGTATTCC_<br>
+Pfdhfr_R1 Sequence (5' to 3'): _TTAACCGTTCAGGTAATTTTGTCA_
 
 **\*Primers adapted from: SC, Carlton JM.** 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
 
@@ -409,8 +436,8 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 ![Table 6.6](/assets/images/Table6p6.png)
 
 **Amplicon size:** 2,817 bp<br>
-**Primers:  Pfdhps_F Sequence (5' to 3'):** _AATATTTGCGCCAAACTTTTTA_<br>
-**Pfdhps_R Sequence (5' to 3'):** *TTTATTTCGTAATAGTCCACTTTTGAT*
+Primers:  Pfdhps_F Sequence (5' to 3'): _AATATTTGCGCCAAACTTTTTA_<br>
+Pfdhps_R Sequence (5' to 3'): _TTTATTTCGTAATAGTCCACTTTTGAT_
 
 **\*Primers adapted from:** SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
 
@@ -419,16 +446,16 @@ The tables below show primers and PCR conditions for _Pfcrt (6.1), Pfk13 (6.2), 
 ![Table 6.7](/assets/images/Table6p7.png)
 
 **Amplicon size:** 1,320bp<br>
-**Primers:  Pfs47_F Sequence (5' to 3'):** *ATGTGTATGGGAAGAATGATCAG*<br>
-**Pfs47_R Sequence (5' to 3'):**  *TCATATGCTAACATACATGTAAAAAATTAC*
+Primers:  Pfs47_F Sequence (5' to 3'): _ATGTGTATGGGAAGAATGATCAG_<br>
+Pfs47_R Sequence (5' to 3'):  _TCATATGCTAACATACATGTAAAAAATTAC_
 
 
 **Table 6.8. _Pfcpmp_
 ![Table 6.8](/assets/images/Table6p8.png)
 
 **Amplicon size:** 805 bp<br>
-**Primers:  Pfcpmp_F Sequence (5' to 3'):** *GTCATTAAAATTTATGGATTATATATGG*<br>
-**Pfcpmp_R Sequence (5' to 3'):** *GTTACTATCCAAGATCGTTAATATC*
+Primers:  Pfcpmp_F Sequence (5' to 3'): _GTCATTAAAATTTATGGATTATATATGG_<br>
+Pfcpmp_R Sequence (5' to 3'): _GTTACTATCCAAGATCGTTAATATC_
 
 **SAFE STOPPING POINT**
 If you do not immediately proceed to Electrophoresis, seal plate with adhesive seal and store it at 2° to 8°C for up to a week.
@@ -519,7 +546,7 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 ## Gene clean up ##
 
-This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use. **PLEASE SEE VENDOR PROTOCOL [HERE]**(https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs).
+This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use. **PLEASE SEE VENDOR PROTOCOL [HERE](https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs).**
 
 **Consumables**
 
