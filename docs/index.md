@@ -50,14 +50,14 @@ Below is a table of the major antimalarials and their associated with resistance
 
 **Table 1. Antimalarials and associated resistance molecular markers**
 
-|Antimalarial | Molecular Marker (Gene)                                                       | Location     |
-|----                                |----                                                    |----          |
-| Chloroquine                        | _crt_ (chloroquine resistance transporter)             | Chr 7        |
-| Artemisinin                        | _k13_ (kelch 13)                                       | Chr 13       |
-| Atovaquone                         | _cytb_ (cytochrome b)                                  | Mitochondria |
-| Amodiaquine, lumefantrine, quinine | _mdr1_ (multidrug resistance protein 1)                | Chr 5 |
-| Pyrimethamine                      | _dhfr_ (bifunctional dihydrofolate reductase thymidylate synthase) | Chr 4 |
-| Sulfadoxine                        | _dhps_ (hydroxymethyldihydropterin pyrophosphokinase-dihydropteroate synthase) | Chr 8 |
+|Antimalarial  | Molecular Marker (Gene)                                               | Location     |
+|----          |----                                                                   |----          |
+| Chloroquine  | _crt_ (chloroquine resistance transporter)                            | Chr 7        |
+| Artemisinin  | _k13_ (kelch 13)                                                      | Chr 13       |
+| Atovaquone   | _cytb_ (cytochrome b)                                                 | Mitochondria |
+| Amodiaquine, lumefantrine, quinine | _mdr1_ (multidrug resistance protein 1)         | Chr 5        |
+| Pyrimethamine | _dhfr_ (bifunctional dihydrofolate reductase thymidylate synthase)   | Chr 4        |
+| Sulfadoxine | _dhps_ (hydroxymethyldihydropterin pyrophosphokinase-dihydropteroate synthase)| Chr 8 |
 > Chr = chromosome
 
 
