@@ -50,15 +50,15 @@ Below is a table of the major antimalarials and their associated with resistance
 
 **Table 1. Antimalarials and associated resistance molecular markers**
 
-|Antimalarial  | Molecular Marker (Gene)                                               | Location     |
-|----          |----                                                                   |----          |
-| Chloroquine  | _crt_ (chloroquine resistance transporter)                            | Chr 7        |
-| Artemisinin  | _k13_ (kelch 13)                                                      | Chr 13       |
-| Atovaquone   | _cytb_ (cytochrome b)                                                 | Mitochondria |
-| Amodiaquine, lumefantrine, quinine | _mdr1_ (multidrug resistance protein 1)         | Chr 5        |
-| Pyrimethamine | _dhfr_ (bifunctional dihydrofolate reductase thymidylate synthase)   | Chr 4        |
-| Sulfadoxine | _dhps_ (hydroxymethyldihydropterin pyrophosphokinase-dihydropteroate synthase)| Chr 8 |
-> Chr = chromosome
+|Antimalarial                            | Molecular Marker (Gene)  | Location     |
+|----                                    |----                      |----          |
+| Chloroquine                            | _crt_                    | Chr 7        |
+| Artemisinin                            | _k13_                    | Chr 13       |
+| Atovaquone                             | _cytb_                   | Mitochondria |
+| Amodiaquine, lumefantrine, quinine     | _mdr1_                   | Chr 5        |
+| Pyrimethamine                          | _dhfr_                   | Chr 4        |
+| Sulfadoxine                            | _dhps_                   | Chr 8        |
+> Chr = chromosome; _crt_ = chloroquine resistance transporter; _k13_ = kelch 13; _cytb_ = cytochrome b; _mdr1_ = multidrug resistance protein 1; _dhfr_ = bifunctional dihydrofolate reductase thymidylate synthase; _dhps_ = dydroxymethyldihydropterin pyrophosphokinase-dihydropteroate synthase;
 
 
   * * *
