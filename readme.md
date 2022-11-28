@@ -16,7 +16,7 @@ This projects aims to:
 
 ### Lab Protocols :microscope: ###
 
-Please see the Illumina TADS [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSsop.md) for the most up to date standard operating procedures (SOPs).
+Please see the Illumina TADS [Lab Protocol](https://cdcgov.github.io/MaRS/) for the most up to date standard operating procedures (SOPs).
 
 ### Data Analysis :computer: ###
 
@@ -42,3 +42,31 @@ If you would like to contribute to this project, please [Contact Us](mailto:wrj5
 > Antimicrob Agents Chemother. 2018 Mar 27;62(4). pii: e02474-17. doi: 10.1128/AAC.02474-17. Print 2018 April
 
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+
+----
+<details>
+  <summary><strong>Legal Notices</strong></summary>
+
+#### License
+
+The repository utilizes code licensed under the terms of the Apache Software License and therefore is licensed under ASL v2 or later.
+
+This source code in this repository is free: you can redistribute it and/or modify it under the terms of the Apache Software License version 2, or (at your option) any later version.
+
+This source code in this repository is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the Apache Software License for more details.
+
+The source code forked from other open source projects will inherit its license.
+
+#### Public Domain
+
+This repository constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105. This repository is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/). All contributions to this repository will be released under the CC0 dedication. By submitting a pull request you are agreeing to comply with this waiver of copyright interest.
+
+#### Records Management
+
+This repository is not a source of government records, but is a copy to increase collaboration and collaborative potential. All government records will be published through the [CDC web site](https://www.cdc.gov/).
+
+#### Privacy
+
+This repository contains only non-sensitive, publicly available data and information. All material and community participation is covered by the [Disclaimer](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md) and [Code of Conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md). For more information about CDC's privacy policy, please visit http://www.cdc.gov/other/privacy.html.
+</details>
