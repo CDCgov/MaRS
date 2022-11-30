@@ -1,4 +1,4 @@
-November 21st, 2022; version 5.3.4; updated by [Eldin Talundzic](mailto:etalundzic@cdc.gov)
+November 30th, 2022; version 5.3.5; updated by [Eldin Talundzic](mailto:etalundzic@cdc.gov)
 
 > _Version 5.0: Major update made in library prep from NexteraXT to Flex protocol._
 
@@ -221,7 +221,7 @@ This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/ploson
 
 | Item | Quantity | Storage |
 | --- | --- | --- |
-| **Primers – FAM labled genus primers and HEX labeled _falciparum_ primers (see below)** | 0.25-0.5 uL per sample | 2° to 8°C |
+| **Primers – FAM labled genus and HEX labeled _falciparum_ (see below)** | 0.25-0.5 uL per sample | 2° to 8°C |
 | **TaqMan 2X Environmental buffer** | 10 uL per sample | 2° to 8°C |
 | **Nuclease-free water** | 6.25 uL per sample | Room temperature |
 | **Strip tubes 8X** | Up to 8 samples per strip | Room temperature |
@@ -250,21 +250,21 @@ This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/ploson
 
 The table below shows the Genus and _P.falciparum_ primers and PCR conditions for a multiplex reaction:  
 
-**Table 5. Multiplexing Genus and _P. falciparum_ species specific primers**
+**Table 5. Multiplexing Genus and _P. falciparum_ species specific primers at 10uM**
 
 | Master mix              | Reaction volume | x samples + 1 | Final [conc] |
 |----                     |----             |----           |----          |
 |  water                  | 6.25 uL         |               |              |
 |  2X ABI TaqMan buffer   | 10.00 uL        |               |    1x        |
-|  Genus F primer         | 0.50 uL         |               |    0.250 uM  |
-|  FAM-genus R primer     | 0.50 uL         |               |    0.250 uM  |
-|  P.f. F primer          | 0.50 uL         |               |    0.250 uM  |
-|  HEX-P.f. R primer      | 0.25 uL         |               |    0.125 uM  |
+|  Genus F                | 0.50 uL         |               |    0.250 uM  |
+|  FAM-genus R            | 0.50 uL         |               |    0.250 uM  |
+|  P.f. F                 | 0.50 uL         |               |    0.250 uM  |
+|  HEX-P.f. R             | 0.25 uL         |               |    0.125 uM  |
 |  **TOTAL**              | **18.0 uL**     |               |              |
 |  **Add last**           |                 |               |              |
 |  DNA                    | 2.0 uL          |               |              |
 
->Primers:
+>Primer (5' to 3'):
 
 >**Genus 18sFor (5' to 3'):** 5'-GGC CTA ACA TGG CTA TGA CG-3'
 
@@ -294,7 +294,7 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 **Adding the DNA Samples**
 
@@ -428,7 +428,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 **IMPORTANT**: While the master mix conditions will be the same for all genes, the thermocycling conditions will differ, specifically the annealing temperatures.  
 
 <a id="6.1"></a>
-**Table 6.1. Gene: _crt_ (3,109 bp)**
+**Table 6.1. Gene: _crt_ (3,109 bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -476,11 +476,11 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 <a id="6.2"></a>
-**Table 6.2.  _k13_ (2,181 bp)**
+**Table 6.2.  _k13_ (2,181 bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -502,7 +502,7 @@ Lastly, hold:
 
 >_mars_k13-rev_: _CTGGGAACTAATAAAGATGGGCC_
 
-**Thermocyclying conditions for _k13_**:
+**Thermocyclying conditions for _k13_ primers at 10uM**:
 
 For 1 cycle:
 
@@ -528,11 +528,11 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity      |
 
 
 <a id="6.3"></a>
-**Table 6.3. _Mitochondria_ (5,967 bp)**
+**Table 6.3. _Mitochondria_ (5,967 bp); Primers at 10uM**
 
 **NOTE:** If experiencing issues with amplifying the full-length mitochondrial genome, consider amplifying only the _cyt-b_ gene instead for characterizing molecular markers associated with Malarone (atovaquone/proguanil) resistance. See Table 6.3a below.
 
@@ -556,7 +556,7 @@ Lastly, hold:
 
 >_mars_mit-rev_: _TATTATAATATAACTCTACAAAGTTGAAC_
 
-**Thermocyclying conditions for _Mitochondria_**:
+**Thermocyclying conditions for _Mitochondria_ primers at 10uM**:
 
 For 1 cycle:
 
@@ -582,11 +582,11 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 <a id="6.3a"></a>
-**Table 6.3a. _Cytochrome b_ (937 bp)**
+**Table 6.3a. _Cytochrome b_ (937 bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -608,7 +608,7 @@ Lastly, hold:
 
 >_mars_cytb-rev_: _ACAGAATAATCTCTAGCACCA_
 
-**Thermocyclying conditions for _cytochrome b_**:
+**Thermocyclying conditions for _cytochrome b_ primers at 10uM**:
 
 For 1 cycle:
 
@@ -634,11 +634,11 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 <a id="6.4"></a>
-**Table 6.4. _mdr1_ (4,155bp)**
+**Table 6.4. _mdr1_ (4,155bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -660,7 +660,7 @@ Lastly, hold:
 
 >_mars_mdr1-rev_: _CATCTTGTGCTGATAATAATTC_
 
-**Thermocyclying conditions for _mdr1_**:
+**Thermocyclying conditions for _mdr1_ primers at 10uM**:
 
 For 1 cycle:
 
@@ -686,11 +686,11 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 <a id="6.5"></a>
-**Table 6.5. _dhfr_ (2,067bp)**
+**Table 6.5. _dhfr_ (2,067bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -738,14 +738,14 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 >Primers adapted from: SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
 
 
 <a id="6.6"></a>
-**Table 6.6. _dhps_ (2,817 bp)**
+**Table 6.6. _dhps_ (2,817 bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -793,14 +793,14 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 >Primers adapted from: SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
 
 
 <a id="6.7"></a>
-**Table 6.7. _Pfs47_ (1,320 bp)**
+**Table 6.7. _Pfs47_ (1,320 bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -848,11 +848,11 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C        | ∞             |
+| 4&deg;C        | Infinity             |
 
 
 <a id="6.8"></a>
-**Table 6.8. _Cpmp_ (805 bp)**
+**Table 6.8. _Cpmp_ (805 bp); Primers at 10uM**
 
 | Master mix      | Reaction volume | x samples + 1 | Final [conc] |
 |----             |----             |----           |----          |
@@ -900,7 +900,7 @@ Lastly, hold:
 
 | Temperature    | Time (min)    |
 |----            |----           |
-| 4&deg;C       | ∞              |
+| 4&deg;C       | Infinity              |
 
 
 **SAFE STOPPING POINT**
@@ -1133,7 +1133,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 | Flex 1             |
 | ---                |
 |55&deg;C for 15 min |
-|10&deg;C for ∞      |
+|10&deg;C for Infinity      |
 
 - Check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature
 
@@ -1144,7 +1144,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 | Flex 2             |
 | ---                |
 |37&deg;C for 15 min |
-|10&deg;C for ∞      |
+|10&deg;C for Infinity      |
 
 
 **PCR Tagmentation Master Mix Table 9a**
@@ -1170,7 +1170,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 | Flex 1             |
 | ---                |
 |55&deg;C for 15 min |
-|10&deg;C for ∞      |
+|10&deg;C for Infinity      |
 
 - **NOTE:** **PLEASE PROCEED TO NEXT PROCEDURE** This is **not** a safe stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
 
@@ -1189,7 +1189,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 | Flex 2                |
 | ---                   |
 |37&deg;C for 15:00 min |
-|10&deg;C for ∞         |
+|10&deg;C for Infinity         |
 
 - **NOTE:** **PLEASE PROCEED TO NEXT STEPS** This is **not** a safe stopping point in the procedure and it is recommended to proceed to the washing steps after samples have reached 10°C.
 
@@ -1271,7 +1271,7 @@ Lastly, hold:
 
 | Step 3                   | Time (min)   |  
 |---                       | --           |
-|10&deg;C                  |  ∞            |
+|10&deg;C                  |  Infinity            |
 
 **Table 10. PCR Master Mix**
 
