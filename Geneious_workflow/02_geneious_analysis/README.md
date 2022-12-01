@@ -1,6 +1,6 @@
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-> version 1.0.1 
+> version 1.0.2 
 
 ## Background ##
 
@@ -32,15 +32,15 @@ Molecular surveillance of anti-malarial resistance is an important public health
 If you plan to use test data, please download the [Test data directory](https://github.com/CDCgov/MaRS/tree/goat_dev/Geneious_workflow/Test_data), start up [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas) and follow the directions in the [data_download jupyter notebook](https://github.com/CDCgov/MaRS/blob/goat_dev/Geneious_workflow/Test_data/data_download.ipynb).   
 
 ####  1. Importing raw fastq files
-       1. First import the raw fastq files to geneious. 
-	✓Then, select all samples.
-    	✓Then click sequence on top menu; after clicking sequence, click set paired reads.
-        ✓Under option select paired reads and delete unpaired ones.
+    1. First import the raw fastq files to geneious. 
+    ✓Then, select all samples.
+    ✓Then click sequence on top menu; after clicking sequence, click set paired reads.
+    ✓Under option select paired reads and delete unpaired ones.
 
 ####  2. Geneious Workflow
-    	- Geneious Workflow contains mainly four steps for calling SNPs. 
-	- You select a samples then go to workflows and run the SNP_Coverage_Analysis.geneiousWorkflow. 
-		- This will  automatically runs all the below steps from a -> d.
+    - Geneious Workflow contains mainly four steps for calling SNPs. 
+    - You select a samples then go to workflows and run the SNP_Coverage_Analysis.geneiousWorkflow. 
+    - This will  automatically runs all the below steps from a -> d.
 
 ###### a. Trimming (Discard unnecessary reads that would cause noise to the data)
     Geneious uses BBduk for trimming raw sequences. The settings are
