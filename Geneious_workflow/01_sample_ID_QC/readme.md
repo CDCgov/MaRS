@@ -1,3 +1,5 @@
+> [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
 ### Background ###
 
 The AMD genomics lab uses a standardized samples naming schema, called `AMD ID`, to capture sample associated meta-data prior to sample prep and sequencing. By creating the `AMD ID` for each sample at this stage, the chances of erroneous linking of information post-sequencing are decreased and need to use multiple different databases for linking information eliminated. We highly encourage to use the [AMD create template](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/01_sample_ID_QC/files/AMD_ID_create_template.xlsx) to generate the `AMD ID` prior to starting any experiments. For additional details regarding the `AMD ID` see this [presentation](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/01_sample_ID_QC/files/AMD_ID_create_key.pptx).
@@ -27,7 +29,7 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
 
 
 * Clone a local copy of the **MaRS project**: `git clone https://github.com/CDCgov/MaRS.git`
-* Example data for four `AMD_ID.fastq` is in `MaRS/Geneious_workflow/02_geneious_analysis/example_data`
+* Example data can be downloaded using the [data_download jupyter notebook](https://github.com/CDCgov/MaRS/blob/goat_dev/Geneious_workflow/Test_data/data_download.ipynb) in the [Test data directory](https://github.com/CDCgov/MaRS/tree/goat_dev/Geneious_workflow/Test_data); please follow directions provided in the jupyter-lab notebook, including the steps to convert the SRAID to AMDID.  
 * To run a test, start a `jupyter-lab notebook` in your terminal `cd` to location of downloaded **MaRS project directory**
   * Then run: `jupyter-lab MaRS/`
     * This will open up `jupyter-lab notebok` and show the full directory structure of the **MaRS project**
@@ -38,22 +40,22 @@ The `pooled` samples are combined (e.g. pooling of individual samples) either as
 <details>
   <summary><strong>TODO</strong></summary>
 
-> Author: @ET 4/5/22 :goat:  
->> Edited: @ET 4/12/22
+
+> Author: :goat: ET @ 04/5/22
+>> Edited & Reviewed::goat: @ET 11/30/22 
 ----
 >#### TODO ####
 >#### Activity Name ####
 
- - [ ] Update readme to point to new example fastq (external)
-   - [ ] Add directions on how to download from SRA
-   - [ ] Write script to modify SRA_ID to AMD_ID based on SRA record  
-
 >#### Completed Activity ✓ ####
- - [x] Update readme
+  - [x] Update readme to point to new example fastq (external) @ET
+   - [x] Add directions on how to download from SRA @DP
+
+- [x] Update readme @ET
     - [x] add info on naming schema for AMD_IDs  
     - [x] instructions on how to generate AMD_IDs
     - [x] test links to images  
- - [x] Jupyter-lab set up
+ - [x] Jupyter-lab set up @ET 
     - [x] How to install?
     - [x] How to start up, run quick test
  - [x] Add example input data

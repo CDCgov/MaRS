@@ -1,8 +1,6 @@
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
->> Author: :baby_chick: JH  
->>> Edited: :goat: ET @ Date
 
-> version 0.2
+> version 1.0.2 
 
 ## Background ##
 
@@ -13,7 +11,7 @@ Molecular surveillance of anti-malarial resistance is an important public health
 * Basic scripting using [python](https://realpython.com/learning-paths/writing-pythonic-code/)
 * Understanding of [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas)
 * Required dependencies will be listed in each jupyter-lab notebook
-* Test data is provided in [placeholder]()
+* Test data will need to be downloaded using the [data_download jupyter notebook](https://github.com/CDCgov/MaRS/blob/goat_dev/Geneious_workflow/Test_data/data_download.ipynb) in the [Test data directory](https://github.com/CDCgov/MaRS/tree/goat_dev/Geneious_workflow/Test_data)  
 * Target audience are biologist or beginner bioinformaticans :beginner: :computer:
 
 ### Contribution guidelines ###
@@ -29,14 +27,20 @@ Molecular surveillance of anti-malarial resistance is an important public health
 * Other community or team contact
 
 
+## ReadMe for Geneious workflow and scripts for report generation 
 
-## ReadMe for Geneious workflow and scripts for reports for lab and EPI
+If you plan to use test data, please download the [Test data directory](https://github.com/CDCgov/MaRS/tree/goat_dev/Geneious_workflow/Test_data), start up [jupyter-lab](https://pandas.pydata.org/getting_started.html) and [pandas](https://realpython.com/search?q=pandas) and follow the directions in the [data_download jupyter notebook](https://github.com/CDCgov/MaRS/blob/goat_dev/Geneious_workflow/Test_data/data_download.ipynb).   
 
 ####  1. Importing raw fastq files
-        First import the raw fastq files to geneious. Then, select whole samples then click sequence on top menu. After clicking sequence, click set paired reads.
-        For the option select paired reads and delete unpaired ones.
+    1. First import the raw fastq files to geneious. 
+    ✓Then, select all samples.
+    ✓Then click sequence on top menu; after clicking sequence, click set paired reads.
+    ✓Under option select paired reads and delete unpaired ones.
+
 ####  2. Geneious Workflow
-    Geneious Workflow contains mainly four steps for processing raw sequences to variants and coverage. You select a samples then go to workflows and run the SNP_Coverage_Analysis.geneiousWorkflow. Then, it automatically runs all the below steps from a -> d.
+    - Geneious Workflow contains mainly four steps for calling SNPs. 
+    - You select a samples then go to workflows and run the SNP_Coverage_Analysis.geneiousWorkflow. 
+    - This will  automatically runs all the below steps from a -> d.
 
 ###### a. Trimming (Discard unnecessary reads that would cause noise to the data)
     Geneious uses BBduk for trimming raw sequences. The settings are
@@ -121,31 +125,22 @@ Molecular surveillance of anti-malarial resistance is an important public health
     link to naming schema is: https://cdc.sharepoint.com/:p:/r/teams/CGH-DPDM-AMD/Shared%20Documents/SOPs%20-%20Lab/Sample%20Naming/Sample%20Naming%20Standardization_20211207.pptx?d=w0e0c338aa3a840e19a36e4684065345b&csf=1&web=1&e=pspDgd
 
 
+----
+<details>
+  <summary><strong>TODO</strong></summary>
 
-    ### _Template Markdown_ ###
 
-    ### What is this repository for? ###
+> Author: :baby_chick: JH @ 04/7/22 
+>> Edited & Reviewed: :tiger: DP & :goat: @ET 11/30/22 
+----
+>#### TODO ####
+>#### Activity Name ####
 
-    * Quick summary
-    * Version
-    * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+  - [ ] template action @XX  
 
-    ### How do I get set up? ###
+>#### Completed Activity ✓ ####
+  - [x] Update readme to point to new example fastq (external) @ET
+   - [x] Add directions on how to download from SRA @DP
 
-    * Summary of set up
-    * Configuration
-    * Dependencies
-    * Database configuration
-    * How to run tests
-    * Deployment instructions
-
-    ### Contribution guidelines ###
-
-    * Writing tests
-    * Code review
-    * Other guidelines
-
-    ### Who do I talk to? ###
-
-    * Repo owner or admin
-    * Other community or team contact
+------
+</details>

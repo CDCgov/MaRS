@@ -1,17 +1,3 @@
-> Author: @ ET updated 4/4/22 :goat:  
-> version 0.2
-
-----
->#### TODO ####
->#### Activity Name ####
-- [ ] Add readme to each of the steps @ET :goat:
-- [ ] Add gitter link @ET :goat:  
-
->#### Completed Activity ✓ ####
->- [x] Add links to each of the steps @ET :goat:
->- [x] Update README: add python, pyenv, ven set up  @ET :goat:
-------
-
 ## Background ##
 
 The workflow described herein provides a step by step guide on how to analyze Illumina targeted deep amplicon (TADS) data for variants (SNPs) in drug resistance associated genes: `k13, dhfr, dhps, mdr1, crt, and cytb`. Target audience are biologist or beginner bioinformaticans :beginner: :computer:
@@ -57,3 +43,26 @@ The workflow is split into :five: steps:
 * We are a small group, however, we will do our best to respond in a timely fashion.  
 
 :back: [To main page](https://github.com/CDCgov/MaRS)
+
+
+
+----
+<details>
+  <summary><strong>TODO</strong></summary>
+
+> Author: @ET 4/5/22 :goat:  
+>> Edited: @ET 11/30/22
+----
+>#### TODO ####
+>#### Activity Name ####
+
+>#### Completed Activity ✓ ####
+
+- [x] Add readme to each of the steps @ET :goat:
+- [x] Add gitter link @ET :goat:  
+- [x] Add links to each of the steps @ET :goat:
+- [x] Update README: add python, pyenv, ven set up  @ET :goat:
+
+------
+</details>
+
