@@ -13,7 +13,7 @@ If you have python 3.x installed, [venv](https://docs.python.org/3/library/venv.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install pyenv and add to .zshrc
-brew install pyenv.      
+brew install pyenv     
 brew install 3.10.1        # change to latest version; this was 3.10.1 on 4/5/22   
 pyenv global 3.10.1    
 pyenv version              # check it worked and correct version is shown
