@@ -1,4 +1,4 @@
-November 30th, 2022; version 5.3.5; updated by [Eldin Talundzic](mailto:etalundzic@cdc.gov)
+February 13th, 2022; version 5.4.0; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
 
 > _Version 5.0: Major update made in library prep from NexteraXT to Flex protocol._
 
@@ -12,10 +12,10 @@ November 30th, 2022; version 5.3.5; updated by [Eldin Talundzic](mailto:etalundz
 * [PET PCR Sample QC](#pet_pcr)
 * [Gene PCR Enrichment](#gene_enrichment)
 * [Electrophoresis](#electrophoresis)
-* [PCR amplicon Clean-Up](#pcr_cleanup)
-* [Tagmentation of PCR Amplicon and Tagmentation Clean Up​](#tagmentation)
+* [PCR Amplicon Clean-Up](#pcr_cleanup)
+* [Tagmentation of PCR Amplicon and Tagmentation Clean-Up​](#tagmentation)
 * [Amplification of Tagmented DNA (Library Indexing)](#lib_indexing)
-* [Library PCR Clean up](#lib_cleanup)
+* [Library PCR Clean-Up](#lib_cleanup)
 * [Library Pooling, Quantification, and Normalization](#lib_clustering)
 * [Library Denaturing and MiSeq Sample Loading](#sample_loading)
 * [Supporting Information](#supporting_info)
@@ -40,7 +40,7 @@ This document provides information for an application for Illumina technology th
 * dihydropteroate synthase (_dhps_)
 * cytochrome b (_cytb_)
 
-Human malaria is caused by six _Plasmodium_ species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. malariae (Pm), P. ovale (Po) (P.o. curtisi and P.o. wallikeri)* and *P. knowlesi (Pk)*, which although zoonotic, can cause human infections in several South East Asian countries. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2020, there were an estimated 241 million malaria cases in 85 malaria endemic countries, causing an estimated 627,000 deaths. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
+Human malaria is caused by six _Plasmodium_ species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. malariae (Pm), P. ovale (Po) (P.o. curtisi and P.o. wallikeri)* and *P. knowlesi (Pk)*, which although zoonotic, can cause human infections in several South East Asian countries. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2021, there were an estimated 247 million malaria cases in 84 malaria endemic countries, causing an estimated 619,000 deaths. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
 
 Previously effective anti-malarial treatments, chloroquine (CQ) and sulfadoxine/pyrimethamine (SP), are ineffective in many regions. Even more alarming, resistance to the least effective class of anti-malarial drugs, called artemisinins, has now emerged and spread in Southeast Asia, threatening malaria control and prevention programs globally.
 
@@ -80,19 +80,19 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 | --- | --- |
 | **Non-powdered sterile gloves** | General lab supplier |
 | **Laboratory coat** | General lab supplier |
-| **1.7 ml microcentrifuge tubes** | General lab supplier |
-| **10 uL barrier pipette tips** | General lab supplier |
-| **10 uL multichannel pipettes** | General lab supplier |
-| **10 uL single channel pipettes** | General lab supplier |
-| **20 uL barrier pipette tips** | General lab supplier |
-| **20 uL multichannel pipettes** | General lab supplier |
-| **20 uL single channel pipettes** | General lab supplier |
-| **200 uL barrier pipette tips** | General lab supplier |
-| **200 uL multichannel pipettes** | General lab supplier |
-| **200 uL single channel pipettes** | General lab supplier |
-| **1000 uL barrier pipette tips** | General lab supplier |
-| **1000 uL multichannel pipettes** | General lab supplier |
-| **1000 uL single channel pipettes** | General lab supplier |
+| **1.7 mL microcentrifuge tubes** | General lab supplier |
+| **10 µL barrier pipette tips** | General lab supplier |
+| **10 µL multichannel pipettes** | General lab supplier |
+| **10 µL single channel pipettes** | General lab supplier |
+| **20 µL barrier pipette tips** | General lab supplier |
+| **20 µL multichannel pipettes** | General lab supplier |
+| **20 µL single channel pipettes** | General lab supplier |
+| **200 µL barrier pipette tips** | General lab supplier |
+| **200 µL multichannel pipettes** | General lab supplier |
+| **200 µL single channel pipettes** | General lab supplier |
+| **1000 µL barrier pipette tips** | General lab supplier |
+| **1000 µL multichannel pipettes** | General lab supplier |
+| **1000 µL single channel pipettes** | General lab supplier |
 | **PCR grade water** | General lab supplier |
 | **RNase/DNase‐free 8‐well PCR strip tubes and caps** | General lab supplier |
 | **[Optional] Disposable Polystyrene Reservoirs** | General lab supplier (Thomas Scientific Catalog #55501080) |
@@ -107,7 +107,7 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 | **Lonza SeaKem® LE Agarose** | Lonza Catalog #50004 |
 | **Nucleic Acid gel stain** | Biotum GelRed™ Nucleic Acid Gel Stain |
 | **DNA gel loading dye** | Yakva Scientific 6X Orange-G Gel Loading Buffer #YSG |
-| **Quick-Load 1kb DNA ladder** | NEB Catalog #N0468 |
+| **Quick-Load 1 kb DNA ladder** | NEB Catalog #N0468 |
 | **UltraPure™ 10X TBE Buffer** | Fisher Scientific Catalog #15581-044 |
 | **AMPure XP beads for PCR Purification** | Beckman Coulter Life Sciences, Catalog #A63881 |
 | **Illumina DNA Prep library kit** | Illumina, Catalog #20018705 (96 samples), or #20018704 (24 samples) |
@@ -115,7 +115,7 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 | **200 Proof Ethanol** | Decon Labs, Inc. Catalog #2716 |
 | **AlumaSeal II aluminum seals** | Excel Scientific, Inc. Catalog #AF100 |
 | **Clear, 8-strip PCR tubes domed caps** | LabSource, Catalog #T54-203-CS/10PK MFG# - 321-10-062 |
-| **[Optional] 96‐well storage plates, round well, 300 uL ("MIDI" plate)** | Fisher Scientific, Catalog #AB‐0859 |
+| **[Optional] 96‐well storage plates, round well, 300 µL ("MIDI" plate)** | Fisher Scientific, Catalog #AB‐0859 |
 | **Qubit® dsDNA HS Assay Kit** | Life Technologies Corporation Catalog #Q32854 |
 | **Qubit™ Assay Tubes** | Thermo Fisher Scientific Catalog #Q32856 |
 | **Agilent High Sensitivity D5000 ScreenTape** | Agilent Technologies, Catalog #5067-5592 |
@@ -156,51 +156,51 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 
 **NOTE:** The hands-on times are based on using 96-well format plates for each step.
 
-1. **PET-PCR Sample Quality Check**
-Real-time PCR hands-on time 30 min / 96 samples; Cycle time 1.2 hours
+1. [**PET-PCR Sample Quality Check**](#pet_pcr)<br />
+Real-time PCR hands-on time 30 min / 96 samples; Cycle time 1.2 hours<br />
 Reagents: Primers, 2X ABI TaqMan buffer, DNase PCR free water
 
 
-2. **PCR reaction to generate amplicons**
-PCR hands-on time 30 min / 96 samples; Cycle time 2.5 hours
-Reagents: 10uM Primers, HF Phusion Taq, 5X GC Buffer, 10mM dNTPs, DNase PCR free water
+2. [**PCR Reaction to Generate Amplicons**](#gene_enrichment)<br />
+PCR hands-on time 30 min / 96 samples; Cycle time 2.5 hours<br />
+Reagents: 10 µM Primers, HF Phusion Taq, 5X GC Buffer, 10 mM dNTPs, DNase PCR free water
 
 
-3. **Analysis of PCR amplicons**
-PCR amplicon electrophoresis hands-on time 10 min / 8 samples; Gel running time 30 min
-Reagents: Agarose, DNA loading dye, 1kb DNA ladder, 1X TBE Buffer
+3. [**Analysis of PCR Amplicons**](#electrophoresis)<br />
+PCR amplicon electrophoresis hands-on time 10 min / 8 samples; Gel running time 30 min<br />
+Reagents: Agarose, DNA loading dye, 1 kb DNA ladder, 1X TBE Buffer<br />
 _If <20 samples, run all samples on the gel; If >20 samples, pick 20 samples with varying CT values and run on the gel_
 
-4. **PCR amplicons clean up**
-Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
+4. [**PCR Amplicons Clean-Up**](#pcr_cleanup) <br />
+Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples<br />
 Reagents: AMPure XP beads, fresh 70% EtOH, Nuclease-free water
 
-5. **Tagment Genomic DNA and Tagmentation Clean-Up**
-Hands on time 30 min / 96 samples; Total time 17 min / 8 samples
-Reagents: BLT, TB1, TSB, TWB
-_[optional]_ To assess tagmentation, run 1 uL sample on Agilent Bioanalyzer 2X and/or TapeStation 2X using High Sensitivity DNA chip
+5. [**Tagment Genomic DNA and Tagmentation Clean-Up**](#tagmentation) <br />
+Hands on time 60 min / 96 samples; Total time 34 min / 8 samples<br />
+Reagents: BLT, TB1, TSB, TWB<br />
+_[optional]_ To assess tagmentation, run 1 µL sample on Agilent Bioanalyzer 2X and/or TapeStation 2X using High Sensitivity DNA chip
 
-6. **Amplification of Tagmented DNA (Index PCR)** <br>
-Hands on time 35 min / 96 samples; Cycle time 38 min / 96 samples
+6. [**Amplification of Tagmented DNA (Library Indexing)**](#lib_indexing) <br>
+Hands on time 35 min / 96 samples; Cycle time 38 min / 96 samples<br />
 Reagents: EPM, Nuclease-free water, Index 1 and 2 primers
 
-7. **Library PCR Clean-up**
-Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples
+7. [**Library PCR Clean-Up**](#lib_cleanup) <br />
+Hands on time 30 min / 96 samples; Total time 40+ min / 96 samples<br />
 Reagents: SPB, RSB, Nuclease-free water, fresh 80% EtOH
 
-8. **Library Pooling, Quantification, and Normalization**
-Hands on time 30+ min / 96 samples; Total time 40+ min / 96 samples
+8. [**Library Pooling, Quantification, and Normalization**](#lib_clustering) <br />
+Hands on time 30+ min / 96 samples; Total time 40+ min / 96 samples<br />
 Reagents: Sample Buffer, D5000 Ladder, ScreenTape; Qubit dsDNA HS Buffer and Reagent, Standard #1 and #2
 
-9. **Library Denaturing and MiSeq Sample Loading**
-Hands on time 30 min / pooled samples; Total time 30 min / pooled samples
-Reagents: Resuspension Buffer, HT1, 0.2N NaOH, PhiX Control Kit v3, 200mM Tris-HCl pH7.0
+9. [**Library Denaturing and MiSeq Sample Loading**](#sample_loading) <br />
+Hands on time 30 min / pooled samples; Total time 30 min / pooled samples<br />
+Reagents: Resuspension Buffer, HT1, 0.2N NaOH, PhiX Control Kit v3, 200 mM Tris-HCl pH7.0
 
-10. **Analysis of NGS data**
-Hands on time 5 min / 96 samples; Total time 15-25 min / 96 samples
-Method: MaRS analysis pipeline
+10. **Analysis of NGS data** <br />
+Hands on time 5 min / 96 samples; Total time 15-25 min / 96 samples<br />
+Method: [MaRS analysis pipeline](github.com/CDCgov/MaRS/tree/master/Geneious_workflow)
 
-11. **Standardized SNPs reports generated**
+11. **Standardized SNPs Reports Generated** 
 
 
 
@@ -221,18 +221,18 @@ This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/ploson
 
 | Item | Quantity | Storage |
 | --- | --- | --- |
-| **Primers – FAM labled genus and HEX labeled _falciparum_ (see below)** | 0.25-0.5 uL per sample | 2° to 8°C |
-| **TaqMan 2X Environmental buffer** | 10 uL per sample | 2° to 8°C |
-| **Nuclease-free water** | 6.25 uL per sample | Room temperature |
+| **Primers – FAM labled genus and HEX labeled _falciparum_ (see below)** | 0.25-0.5 µL per sample | 2° to 8°C |
+| **TaqMan 2X Environmental buffer** | 10 µL per sample | 2° to 8°C |
+| **Nuclease-free water** | 6.25 µL per sample | Room temperature |
 | **Strip tubes 8X** | Up to 8 samples per strip | Room temperature |
 | **Strip Optical caps 8X** | Up to 8 samples per strip | Room temperature |
 
 **Preparation**
 
-- All stock primers should be prepared at a 10uM concentration.<br>
-- DNA samples should be stored at 4C until testing or -20C for long term storage.<br>
-- Store all primer stocks at -20C for up to 1 year.<br>
-- Unopened tubes of ABI TaqMan Environmental Buffer should be stored at -20C for a maximum of six months. Once thawed, store at 4C for up to six months. The reagent must be used within the expiration date provided by the manufacturer.<br>
+- All stock primers should be prepared at a 10 µM concentration.<br>
+- DNA samples should be stored at 4&deg;C until testing or -20&deg;C for long term storage.<br>
+- Store all primer stocks at -20&deg;C for up to 1 year.<br>
+- Unopened tubes of ABI TaqMan Environmental Buffer should be stored at -20&deg;C for a maximum of six months. Once thawed, store at 4&deg;C for up to six months. The reagent must be used within the expiration date provided by the manufacturer.<br>
 - All samples should be tested in duplicates or triplicates in some special cases (e.g. very low density situations).<br>
 - Typically, the genus _P. falciparum_ multiplex assay should be run first on all samples. All genus-positive sample are subsequently tested for _P. ovale, P. malaria_ and _P. vivax_, in order to determine the species.
 
@@ -243,58 +243,45 @@ This step uses a real time PCR assay, [PET-PCR](https://journals.plos.org/ploson
 - The PET-PCR reaction mix is prepared by mixing the TaqMan environmental buffer, primers, and water as shown below.
 - Determine the number of reactions you need to run by multiplying the total number of samples you have to test (including your positive and negative controls) by two because every sample will be tested in duplicates.
   - For example, if you are testing 10 samples, you will multiple this by two to give you 20. Add two extra reactions to account for loss of solution during pipetting. This gives you a total number of 22 reactions. Multiply this number with the volumes below for each component to give you the total master-mix volume required for your experiment.
-- In a 1.5mL tube, prepare your master-mix by multiplying the volumes shown below with the total number of reactions you need to run (e.g. 22 as described above).
+- In a 1.5 mL tube, prepare your master-mix by multiplying the volumes shown below with the total number of reactions you need to run (e.g. 22 as described above).
 
 
 **Primers and PCR Conditions**
 
-The table below shows the Genus and _P.falciparum_ primers and PCR conditions for a multiplex reaction:  
+The table below shows the Genus and _P. falciparum_ primers and PCR conditions for a multiplex reaction:  
 
-**Table 5. Multiplexing Genus and _P. falciparum_ species specific primers at 10uM**
+**Table 5. Multiplexing Genus and _P. falciparum_ species specific primers at 10 µM**
 
-| Master mix              | Reaction volume | x samples + 1 | Final [conc] |
-|----                     |----             |----           |----          |
-|  water                  | 6.25 uL         |               |              |
-|  2X ABI TaqMan buffer   | 10.00 uL        |               |    1x        |
-|  Genus F                | 0.50 uL         |               |    0.250 uM  |
-|  FAM-genus R            | 0.50 uL         |               |    0.250 uM  |
-|  P.f. F                 | 0.50 uL         |               |    0.250 uM  |
-|  HEX-P.f. R             | 0.25 uL         |               |    0.125 uM  |
-|  **TOTAL**              | **18.0 uL**     |               |              |
-|  **Add last**           |                 |               |              |
-|  DNA                    | 2.0 uL          |               |              |
+| Master mix              | Reaction volume | x samples + 10% | Final [conc] |
+|----                     |----             |----             |----          |
+|  Water                  | 6.25 µL         |                 |              |
+|  2X ABI TaqMan buffer   | 10.00 µL        |                 |    1x        |
+|  Genus F                | 0.50 µL         |                 |    0.250 µM  |
+|  FAM-genus R            | 0.50 µL         |                 |    0.250 µM  |
+|  P.f. F                 | 0.50 µL         |                 |    0.250 µM  |
+|  HEX-P.f. R             | 0.25 µL         |                 |    0.125 µM  |
+|  **TOTAL**              | **18.0 µL**     |                 |              |
+|  **Add last**           |                 |                 |              |
+|  DNA                    | 2.0 µL          |                 |              |
 
->Primer (5' to 3'):
-
->**Genus 18sFor (5' to 3'):** 5'-GGC CTA ACA TGG CTA TGA CG-3'
-
->**Genus 18sRev (5' to 3'):** 5'-agg cgc ata gcg cct ggC TGC CTT CCT TAG ATG TGG TAG CT-3' (**FAM-labeled: based on the 18s rRNA gene)**
-
->_**P. falciparum**_ **For (5' to 3'):** 5'-ACC CCT CGC CTG GTG TTT TT-3'
-
->_**P. falciparum**_ **Rev (5' to 3'):** 5'-agg cgg ata ccg cct ggT CGG GCC CCA AAA ATA GGA A-3' **(HEX-labeled: based on the r364 target)**
+>Primer (5' to 3'):<br />
+>**Genus 18sFor (5' to 3'):** 5'-GGCCTAACATGGCTATGACG-3'<br />
+>**Genus 18sRev (5' to 3'):** 5'-aggcgcatagcgcctggCTGCCTTCCTTAGATGTGGTAGCT-3' (**FAM-labeled: based on the 18s rRNA gene)**<br />
+>_**P. falciparum**_ **For (5' to 3'):** 5'-ACCCCTCGCCTGGTGTTTTT-3'<br />
+>_**P. falciparum**_ **Rev (5' to 3'):** 5'-aggcggataccgcctggTCGGGCCCCAAAAATAGGAA-3' **(HEX-labeled: based on the r364 target)**<br />
 
 **Thermocyclying conditions**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 95&deg;C       | 15:00         |      
-
-Then, for 45 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **95&deg;C**   | **0:20**      |        
-| **63&deg;C**   | **0:40**      |        
-| **72&deg;C**   | **0:30**      |       
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 95&deg;C                           | 15:00      |  
+|        |                                    |            |
+| **2**  | **95&deg;C**                       | **0:20**   |      
+| **3**  | **63&deg;C**                       | **0:40**   |      
+| **4**  | **72&deg;C**                       | **0:30**   |    
+|        | **Repeat Steps 2-4 for 44 cycles<br /> (45 total)** |            |  
+|        |                                    |            | 
+| 5      | 4&deg;C                            | Infinity   |
 
 **Adding the DNA Samples**
 
@@ -302,17 +289,17 @@ Lastly, hold:
 
 2. Centrifuge the tubes for 5 seconds to remove any solution trapped in the cap.
 
-3. Arrange the optically clear PCR tubes on a PCR-tube rack following the PCR sample sheet. Add 18 uL of the PET-PCR master mix prepared above to each PCR well. Loosely put on the lids of the wells filled with master mix solution.
+3. Arrange the optically clear PCR tubes on a PCR-tube rack following the PCR sample sheet. Add 18 µL of the PET-PCR master mix prepared above to each PCR well. Loosely put on the lids of the wells filled with master mix solution.
 
 4. Return all reagents to the freezer and refrigerator before proceeding to the next step.
 
 5. Take the assembled plate containing the tubes with PCR master mix solution to the PCR template area.
 
-6. Add 2 uL of the unknown DNA samples to the wells with the master-mix according to the sample sheet. Cap the well tightly after adding the sample. The total volume of PCR reaction is 20.0 uL after addition of the template.
+6. Add 2 µL of the unknown DNA samples to the wells with the master-mix according to the sample sheet. Cap the well tightly after adding the sample. The total volume of PCR reaction is 20.0 µL after addition of the template.
 
 7. Add positive control DNA to each positive control well with master-mix. Cap the wells after each positive control is added.
 
-8. Add 2.0 uL of DNase-free water to the wells designated as the no-template control (NTC) and close that well tightly.
+8. Add 2.0 µL of DNase-free water to the wells designated as the no-template control (NTC) and close that well tightly.
 
 9. Make sure each sample has been added to the correct well and that all wells are tightly capped.
 
@@ -320,7 +307,7 @@ Lastly, hold:
 
 11. Make sure there are no bubbles in the well.
 
-- **NOTE:** _The recommended minimum amount of template DNA is 2.0 uL. This can be adjusted appropriately depending on the sample parasitemia._
+- **NOTE:** _The recommended minimum amount of template DNA is 2.0 µL. This can be adjusted appropriately depending on the sample parasitemia._
 
 **PCR-Cycling Parameters**
 
@@ -345,7 +332,7 @@ Lastly, hold:
 - **NOTE:** _The negative controls must be negative (no Ct or above 40.0). The positive controls must be positive (designated by Ct value below 40.0). The test should be repeated if the NTC has a positive Ct value, or if the positive control yields no positive results._
 
 **For more information, please see:**
-Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron transfer fluorogenic primers: PET-PCR._ PLoS One, 2013. 8 (2): p. e56677.
+[Lucchi, N.W., et al., _Molecular diagnosis of malaria by photo-induced electron transfer fluorogenic primers: PET-PCR._ PLoS One, 2013. 8 (2): p. e56677.](https://pubmed.ncbi.nlm.nih.gov/23437209/)
 
 
   * * *
@@ -368,8 +355,7 @@ We routinely use the following controls:
 | DD2            | CV**IET**     | **Y/F**EDFCDY | C**IRN**I     | S**G**KAA | _wild type_ |
 | HB3            | CVMNK         | **Y/F**EDFCDY | C**I**C**T**I | S**G**KAA | _wild type_ |
 
-> **BOLD** indicates codon position with mutations
-
+> **BOLD** indicates codon position with mutations<br />
 > Codon positions:_crt_ :72-76; _mdr1_ :86,130, 144, 184, 1034, 1042, 1109, 1246; _dhfr_ : 50, 51, 59, 108, 164; _k13_ : 18 - 715
 
 Controls can be ordered directly through BEI: https://www.beiresources.org/
@@ -390,7 +376,7 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 - Ensure that the No-DNA and DNA-only UV stations have all the appropriate pipettes and tip sizes.
 - Clean up all pipettes and lab bench area using using 10% bleach followed by 70% ethanol.
 - Turn on the No-DNA (PCR master mix) and DNA-only UV station for 30 minutes.
-- If you have not already done so, create a 10uM working stock solution of your primers, using C1V1 = C2V2 to calculate the appropriate volume needed to make a working stock solution.
+- If you have not already done so, create a 10 µM working stock solution of your primers, using C1V1 = C2V2 to calculate the appropriate volume needed to make a working stock solution.
 - Label all freshly made and newly opened items with the date and your name initials.
 - Get the appropriate number of PCR plates and/or PCR tubes and place them in the no-DNA UV station.
 - Label the PCR tubes (use a printout template for PCR plates) with sample IDs.
@@ -428,479 +414,334 @@ The tables below show primers and PCR conditions for the following antimalarial 
 **IMPORTANT**: While the master mix conditions will be the same for all genes, the thermocycling conditions will differ, specifically the annealing temperatures.  
 
 <a id="6.1"></a>
-**Table 6.1. Gene: _crt_ (3,109 bp); Primers at 10uM**
+**Table 6.1. Gene: _crt_ (3,109 bp); <ins>Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_crt-fwd_ | 1.25 uL         |               |    0.25 uM   |
-|  _mars_crt-rev_ | 1.25 uL         |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix      | Reaction volume | x samples + 10% | Final [conc] |
+|----             |----             |----             |----          |
+|  5X GC Buffer   | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)  | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_crt-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_crt-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water          | 32.0 µL         |                 |              |
+|  **Add last**   |                 |                 |              |
+|  HF Phusion Taq | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**      | **46.0 µL**     |                 |              |
+|  **Add**        |                 |                 |              |
+|  Template DNA   | 4.0 µL per well |                 |              |
+|  **TOTAL**      | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_crt-fwd_: _TTACATATAACAAAATGAAATTCGC_
-
+>Primers (5'to 3'):<br />
+>_mars_crt-fwd_: _TTACATATAACAAAATGAAATTCGC_<br />
 >_mars_crt-rev_: _TATTGTGTAATAATTGAATCGACG_
 
-**Thermocyclying conditions for _crt_**:
+**Thermocyclying conditions for _crt_; <ins> Primers at 10 µM</ins>**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **62&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
-
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **62&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 <a id="6.2"></a>
-**Table 6.2.  _k13_ (2,181 bp); Primers at 10uM**
+**Table 6.2.  _k13_ (2,181 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_k13-fwd_ | 1.25 uL         |               |    0.25 uM   |
-|  _mars_k13-rev_ | 1.25 uL         |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix      | Reaction volume | x samples + 10% | Final [conc] |
+|----             |----             |----             |----          |
+|  5X GC Buffer   | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)  | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_k13-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_k13-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water          | 32.0 µL         |                 |              |
+|  **Add last**   |                 |                 |              |
+|  HF Phusion Taq | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**      | **46.0 µL**     |                 |              |
+|  **Add**        |                 |                 |              |
+|  Template DNA   | 4.0 µL per well |                 |              |
+|  **TOTAL**      | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_k13-fwd_: _CTATGACGTATGATAGGGAATCTGG_
-
+>Primers (5'to 3'):<br />
+>_mars_k13-fwd_: _CTATGACGTATGATAGGGAATCTGG_<br />
 >_mars_k13-rev_: _CTGGGAACTAATAAAGATGGGCC_
 
-**Thermocyclying conditions for _k13_ primers at 10uM**:
+**Thermocyclying conditions for _k13_; <ins> Primers at 10 µM</ins>**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **58&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity      |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **58&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
 <a id="6.3"></a>
-**Table 6.3. _Mitochondria_ (5,967 bp); Primers at 10uM**
+**Table 6.3. _Mitochondria_ (5,967 bp); <ins> Primers at 10 µM</ins>**
 
 **NOTE:** If experiencing issues with amplifying the full-length mitochondrial genome, consider amplifying only the _cyt-b_ gene instead for characterizing molecular markers associated with Malarone (atovaquone/proguanil) resistance. See Table 6.3a below.
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_mit-fwd_ | 1.25 uL         |               |    0.25 uM   |
-|  _mars_mit-rev_ | 1.25 uL         |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix      | Reaction volume | x samples + 10% | Final [conc] |
+|----             |----             |----             |----          |
+|  5X GC Buffer   | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)  | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_mit-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_mit-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water          | 32.0 µL         |                 |              |
+|  **Add last**   |                 |                 |              |
+|  HF Phusion Taq | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**      | **46.0 µL**     |                 |              |
+|  **Add**        |                 |                 |              |
+|  Template DNA   | 4.0 µL per well |                 |              |
+|  **TOTAL**      | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_mit-fwd_: _AAGCTTTTGGTATCTCGTAAT_
-
+>Primers (5'to 3'):<br />
+>_mars_mit-fwd_: _AAGCTTTTGGTATCTCGTAAT_<br />
 >_mars_mit-rev_: _TATTATAATATAACTCTACAAAGTTGAAC_
 
-**Thermocyclying conditions for _Mitochondria_ primers at 10uM**:
+**Thermocyclying conditions for _Mitochondria_; <ins> Primers at 10 µM</ins>**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **50&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **50&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
 <a id="6.3a"></a>
-**Table 6.3a. _Cytochrome b_ (937 bp); Primers at 10uM**
+**Table 6.3a. _Cytochrome b_ (937 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_cytb-fwd_ | 1.25 uL         |               |    0.25 uM   |
-|  _mars_cytb-rev_ | 1.25 uL         |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix       | Reaction volume | x samples + 10% | Final [conc] |
+|----              |----             |----             |----          |
+|  5X GC Buffer    | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)   | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_cytb-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_cytb-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water           | 32.0 µL         |                 |              |
+|  **Add last**    |                 |                 |              |
+|  HF Phusion Taq  | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**       | **46.0 µL**     |                 |              |
+|  **Add**         |                 |                 |              |
+|  Template DNA    | 4.0 µL per well |                 |              |
+|  **TOTAL**       | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_cytb-fwd_: _CTATTAATTTAGTTAAAGCACAC_
-
+>Primers (5'to 3'):<br />
+>_mars_cytb-fwd_: _CTATTAATTTAGTTAAAGCACAC_<br />
 >_mars_cytb-rev_: _ACAGAATAATCTCTAGCACCA_
 
-**Thermocyclying conditions for _cytochrome b_ primers at 10uM**:
+**Thermocyclying conditions for _cytochrome b_; <ins> Primers at 10 µM</ins>**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **60&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **60&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
 <a id="6.4"></a>
-**Table 6.4. _mdr1_ (4,155bp); Primers at 10uM**
+**Table 6.4. _mdr1_ (4,155 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_mdr1-fwd_ | 1.25 uL        |               |    0.25 uM   |
-|  _mars_mdr1-rev_ | 1.25 uL        |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix       | Reaction volume | x samples + 10% | Final [conc] |
+|----              |----             |----             |----          |
+|  5X GC Buffer    | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)   | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_mdr1-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_mdr1-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water           | 32.0 µL         |                 |              |
+|  **Add last**    |                 |                 |              |
+|  HF Phusion Taq  | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**       | **46.0 µL**     |                 |              |
+|  **Add**         |                 |                 |              |
+|  Template DNA    | 4.0 µL per well |                 |              |
+|  **TOTAL**       | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_mdr1-fwd_: _TGGTAACCTCAGTATCAAAG_
-
+>Primers (5'to 3'):<br />
+>_mars_mdr1-fwd_: _TGGTAACCTCAGTATCAAAG_<br />
 >_mars_mdr1-rev_: _CATCTTGTGCTGATAATAATTC_
 
-**Thermocyclying conditions for _mdr1_ primers at 10uM**:
+**Thermocyclying conditions for _mdr1_; <ins> Primers at 10 µM**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **60&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **60&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
 <a id="6.5"></a>
-**Table 6.5. _dhfr_ (2,067bp); Primers at 10uM**
+**Table 6.5. _dhfr_ (2,067 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_dhfr-fwd_ | 1.25 uL        |               |    0.25 uM   |
-|  _mars_dhfr-rev_ | 1.25 uL        |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix       | Reaction volume | x samples + 10% | Final [conc] |
+|----              |----             |----             |----          |
+|  5X GC Buffer    | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)   | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_dhfr-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_dhfr-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water           | 32.0 µL         |                 |              |
+|  **Add last**    |                 |                 |              |
+|  HF Phusion Taq  | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**       | **46.0 µL**     |                 |              |
+|  **Add**         |                 |                 |              |
+|  Template DNA    | 4.0 µL per well |                 |              |
+|  **TOTAL**       | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_dhfr-fwd_: _TTTTTACTAGCCATTTTTGTATTCC_
-
+>Primers (5'to 3'):<br />
+>_mars_dhfr-fwd_: _TTTTTACTAGCCATTTTTGTATTCC_<br />
 >_mars_dhfr-rev_: _TTAACCGTTCAGGTAATTTTGTCA_
 
-**Thermocyclying conditions for _dhfr_**:
+**Thermocyclying conditions for _dhfr_; <ins> Primers at 10 µM**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **60&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **60&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
->Primers adapted from: SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
+>Primers adapted from: [SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.](https://pubmed.ncbi.nlm.nih.gov/27008882/)
 
 
 <a id="6.6"></a>
-**Table 6.6. _dhps_ (2,817 bp); Primers at 10uM**
+**Table 6.6. _dhps_ (2,817 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|  _mars_dhps-fwd_ | 1.25 uL         |               |    0.25 uM   |
-|  _mars_dhps-rev_ | 1.25 uL         |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix       | Reaction volume | x samples + 10% | Final [conc] |
+|----              |----             |----             |----          |
+|  5X GC Buffer    | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)   | 1.0 µL          |                 |    0.2 nM    |
+|  _mars_dhps-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+|  _mars_dhps-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water           | 32.0 µL         |                 |              |
+|  **Add last**    |                 |                 |              |
+|  HF Phusion Taq  | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**       | **46.0 µL**     |                 |              |
+|  **Add**         |                 |                 |              |
+|  Template DNA    | 4.0 µL per well |                 |              |
+|  **TOTAL**       | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_dhps-fwd_: _AATATTTGCGCCAAACTTTTTA_
-
+>Primers (5'to 3'): <br />
+>_mars_dhps-fwd_: _AATATTTGCGCCAAACTTTTTA_<br />
 >_mars_dhps-rev_: _TTTATTTCGTAATAGTCCACTTTTGAT_
 
-**Thermocyclying conditions for _dhps_**:
+**Thermocyclying conditions for _dhps_; <ins> Primers at 10 µM**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **60&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **60&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
->Primers adapted from: SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.
+>Primers adapted from: [SC, Carlton JM. 2016. A Method for Amplicon Deep Sequencing of Drug Resistance Genes in Plasmodium falciparum Clinical Isolates from India. J Clin Microbiol 54:1500–1511.](https://pubmed.ncbi.nlm.nih.gov/27008882/)
 
 
 <a id="6.7"></a>
-**Table 6.7. _Pfs47_ (1,320 bp); Primers at 10uM**
+**Table 6.7. _Pfs47_ (1,320 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|_mars_pfs47-fwd_ | 1.25 uL         |               |    0.25 uM   |
-|_mars_pfs47-rev_ | 1.25 uL         |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix       | Reaction volume | x samples + 10% | Final [conc] |
+|----              |----             |----             |----          |
+|  5X GC Buffer    | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)   | 1.0 µL          |                 |    0.2 nM    |
+| _mars_pfs47-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+| _mars_pfs47-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water           | 32.0 µL         |                 |              |
+|  **Add last**    |                 |                 |              |
+|  HF Phusion Taq  | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**       | **46.0 µL**     |                 |              |
+|  **Add**         |                 |                 |              |
+|  Template DNA    | 4.0 µL per well |                 |              |
+|  **TOTAL**       | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
+>Primers (5'to 3'):<br />
+>_mars_pfs47-fwd_: _ATGTGTATGGGAAGAATGATCAG_<br />
+>_mars_pfs47-rev_: _TCATATGCTAACATACATGTAAAAAATTAC_
 
->_mars_pfs47-fwd_: _ATGTGTATGGGAAGAATGATCAG_
+**Thermocyclying conditions for _pfs47_; <ins> Primers at 10 µM**:
 
->_mars_pfs47-rev_:_TCATATGCTAACATACATGTAAAAAATTAC_
-
-**Thermocyclying conditions for _pfs47_**:
-
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **58&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C        | Infinity             |
+| Step   | Temperature                        | Time (min) |
+| :--:   |:----:                              | :----:     |
+| 1      | 98&deg;C                           | 3:00       |  
+|        |                                    |            |
+| **2**  | **98&deg;C**                       | **0:30**   |      
+| **3**  | **58&deg;C**                       | **0:30**   |      
+| **4**  | **65&deg;C**                       | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
+|        |                                    |            | 
+| 5      | 65&deg;C                           | 10:00      |
+| 6      | 4&deg;C                            | Infinity   |
 
 
 <a id="6.8"></a>
-**Table 6.8. _Cpmp_ (805 bp); Primers at 10uM**
+**Table 6.8. _Cpmp_ (805 bp); <ins> Primers at 10 µM</ins>**
 
-| Master mix      | Reaction volume | x samples + 1 | Final [conc] |
-|----             |----             |----           |----          |
-|  5X GC Buffer   | 10.0 uL         |               |    1x        |
-|  dNTPs (10mM)   | 1.0 uL          |               |    0.2 nM    |
-|_mars_cpmp-fwd_ | 1.25 uL          |               |    0.25 uM   |
-|_mars_cpmp-rev_ | 1.25 uL          |               |    0.25 uM   |
-|  water          | 32.0 uL         |               |              |
-|  **Add last**   |                 |               |              |
-|  HF Phusion Taq | 0.5 uL          |               |    1 unit    |
-|  **TOTAL**      | **46.0 uL**     |               |              |
-|  **Add**        |                 |               |              |
-|  Template DNA   | 4.0 uL per well |               |              |
-|  **TOTAL**      | **50.0 uL**     |               | 50 - 250 ng  |
+| Master mix      | Reaction volume | x samples + 10% | Final [conc] |
+|----             |----             |----             |----          |
+|  5X GC Buffer   | 10.0 µL         |                 |    1x        |
+|  dNTPs (10 mM)  | 1.0 µL          |                 |    0.2 nM    |
+| _mars_cpmp-fwd_ | 1.25 µL         |                 |    0.25 µM   |
+| _mars_cpmp-rev_ | 1.25 µL         |                 |    0.25 µM   |
+|  Water          | 32.0 µL         |                 |              |
+|  **Add last**   |                 |                 |              |
+|  HF Phusion Taq | 0.5 µL          |                 |    1 unit    |
+|  **TOTAL**      | **46.0 µL**     |                 |              |
+|  **Add**        |                 |                 |              |
+|  Template DNA   | 4.0 µL per well |                 |              |
+|  **TOTAL**      | **50.0 µL**     |                 | 50 - 250 ng  |
 
->Primers (5'to 3'):
-
->_mars_cpmp-fwd_: _GTCATTAAAATTTATGGATTATATATGG_
-
+>Primers (5'to 3'):<br />
+>_mars_cpmp-fwd_: _GTCATTAAAATTTATGGATTATATATGG_<br />
 >_mars_cpmp-rev_:_GTTACTATCCAAGATCGTTAATATC_
 
-**Thermocyclying conditions for _cpmp_**:
+**Thermocyclying conditions for _cpmp_; <ins> Primers at 10 µM**:
 
-For 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 98&deg;C       | 3:00          |      
-
-Then, for 30 cycles:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| **98&deg;C**   | **0:30**      |        
-| **54&deg;C**   | **0:30**      |        
-| **65&deg;C**   | **5:00**      |
-
-Then, for 1 cycle:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 65&deg;C       | 10:00         |        
-
-Lastly, hold:
-
-| Temperature    | Time (min)    |
-|----            |----           |
-| 4&deg;C       | Infinity              |
+| Step   | Temperature                                   | Time (min) |
+| :--:   |:----:                                         | :----:     |
+| 1      | 98&deg;C                                      | 3:00       |  
+|        |                                               |            |
+| **2**  | **98&deg;C**                                  | **0:30**   |      
+| **3**  | **54&deg;C**                                  | **0:30**   |      
+| **4**  | **65&deg;C**                                  | **5:00**   |    
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
+|        |                                               |            | 
+| 5      | 65&deg;C                                      | 10:00      | 
+| 6      | 4&deg;C                                       | Infinity   |
 
 
 **SAFE STOPPING POINT**
@@ -929,14 +770,14 @@ Of the 25% total samples, ensure to select representative samples of varying par
 | --- | --- | --- |
 | **Agarose** | 1g (for a 1% gel) | Room temperature |
 | **1x solution of 10X TBE Buffer and deionized water** | 100 mL (for a 1% gel) | Room temperature |
-| **Nucleic Acid Gel Stain** | 5 uL per 100mL of buffer | Room temperature |
-| **Orange Dye** | 2 uL per 8 uL PCR product | Room temperature |
+| **Nucleic Acid Gel Stain** | 5 µL per 100 mL of buffer | Room temperature |
+| **Orange Dye** | 2 µL per 8 µL PCR product | Room temperature |
 
 **Preparation**
 
  * Create a 1X solution of 10X TBE Buffer and deionized water before you start.
- * For a 1% agarose gel, 1.0 gram of agarose + 100mL of buffer will fill a medium gel chamber
- * For a 1.5% agarose gel, 1.5 gram of agarose + 100mL of buffer will fill a medium gel chamber
+ * For a 1% agarose gel, 1.0 gram of agarose + 100 mL of buffer will fill a medium gel chamber
+ * For a 1.5% agarose gel, 1.5 gram of agarose + 100 mL of buffer will fill a medium gel chamber
 
 **Procedure**
 
@@ -954,15 +795,15 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 7. Allow the solution to cool on a stirring plate until you can comfortably hold the flask with your hands.
 
-8. Using a 10 uL pipette, add nucleic acid gel stain to the solution. For every 100 mL of buffer, add 5 uL of gel stain. Swirl solution to mix, making sure as little bubbles as possible are created.
+8. Using a 10 µL pipette, add nucleic acid gel stain to the solution. For every 100 mL of buffer, add 5 µL of gel stain. Swirl solution to mix, making sure as little bubbles as possible are created.
 
 9. Pour the cooled solution into the gel device and ensure no bubbles are present. Place the comb into the gel and allow the gel to sit undisturbed for at least 15 minutes or until the gel has become firm (the color will change from clear to slightly milky in color).
 
 10. When gel has solidified, ensure the wells are aligned with the black (negative) nodes on the electrophoresis chamber and fill with buffer until it covers about a centimeter above the gel. Remove the comb by pulling it gently into an upward direction.
 
-11. Combine a mixture of 2 uL of orange dye and 8 uL of each sample and load 8uL of that mixture into each well.
+11. Combine a mixture of 2 µL of orange dye and 8 µL of each sample and load 8 µL of that mixture into each well.
 
-12. Be sure to include a 1kb and 100bp reference dye ladders, one on each side of the gel (no orange dye necessary).
+12. Be sure to include a 1 kb and 100 bp reference dye ladders, one on each side of the gel (no orange dye necessary).
 
 13. Place the lid on the chamber box and connect the black node to the negative terminal and the red node to the positive terminal. Turn on the power supply and adjust the voltage to 100-130 volts.
 
@@ -972,28 +813,14 @@ Of the 25% total samples, ensure to select representative samples of varying par
 
 16. Remove the gel from the chamber and take to the gel reading station for analysis.
 
-17. Once amplification is confirmed. If only working with one gene proceed to [PCR amplicon Clean-Up](#pcr_cleanup). However, if working with multiple genes go to the next step.
+17. Once amplification is confirmed, the samples can proceed to [PCR amplicon Clean-Up](#pcr_cleanup).
 
-18. Using **table 7b** below combine (pool) each PCR gene amplicon based on number of genes. Importantly, we know the PCR efficiency for each of the genes varies (k13 > dhfr > dhps > mdr1 > crt; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel, use the [gel analyzer](http://www.gelanalyzer.com/?i=1) to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5uL* from each gene PCR amplicon to the final pool.
-
-19. Vortex briefly the pooled PCR gene amplicons before proceeding to PCR amplicon clean up.
-
-**Table 7b. Amounts for pooling PCR amplicons**
-
-| Item            | **Quantity**         | Storage    |
-| ---             | ---                  | ---        |
-| 2 genes         | combine 25 uL each   | 2° to 8°C  |
-| 3 genes         | combine 16 uL each   | 2° to 8°C  |
-| 4 genes         | combine 12.5 uL each | 2° to 8°C  |
-| 5 or more genes | combine 10 uL each   | 2° to 8°C  |
-
-> This should yield a total of 50 uL of combined PCR gene product for subsequent clean up.
 
  * * *
 
 <a id="pcr_cleanup"></a>
 
-## Gene clean up ##
+## PCR Amplicon Clean-Up ##
 
 This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). You can locate Agencourt AMPure XP PCR Purification Instructions for Use. **PLEASE SEE VENDOR PROTOCOL [HERE](https://www.beckman.com/search#q=A63881&t=coveo-tab-techdocs).**
 
@@ -1003,82 +830,106 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 | Item                                | **Quantity**               | Storage           |
 | ---                                 | ---                        | ---               |
-| AMPure XP beads                     | 90 uL per 50 uL of sample  | 2&deg;C to 8&deg;C|
-| Freshly Prepared 70% Ethanol (EtOH) | 400 uL per sample          | Room temperature  |
-| Nuclease free water; # 25-055-CM    | 40 uL per sample           | Room temperature  |
-| 96‐well 0.2 ml PCR plate            | 1 plate                    |                   |
+| AMPure XP beads                     | 90 µL per 50 µL of sample  | 2&deg;C to 8&deg;C|
+| Freshly Prepared 70% Ethanol (EtOH) | 400 µL per sample          | Room temperature  |
+| Nuclease free water; # 25-055-CM    | 40 µL per sample           | Room temperature  |
+| 96‐well 0.2 mL PCR plate            | 1 plate                    |                   |
 | [Optional] Microseal 'B' film       |                            |                   |
 | 96‐well MIDI plate                  | 1 plate                    |                   |
 
 
 **Preparation**
 
-- Determine whether or not a plate transfer is necessary.  If the PCR reaction volume multiplied by 2.8 exceeds the volume of the PCR plate, a transfer to a 300 uL round bottom plate or a 1.2 mL deep-well plate is required.
+- Determine whether or not a plate transfer is necessary.  If the PCR reaction volume multiplied by 2.8 exceeds the volume of the PCR plate, a transfer to a 300 µL round bottom plate or a 1.2 mL deep-well plate is required.
 
 - Bring the AMPure XP beads to room temperature- **wait at least 30 minutes**.
 
 - Once at room temperature, shake the Agencourt AMPure XP bottle to re-suspend any magnetic particles that may have settled. Ensure magnetic beads are well (evenly) distributed before adding them to samples.
 
+- **_Thaw RSB at room temperature._**
+
 - **NOTE**: Proceed very cautiously during this procedure and take your time.
 
 - **NOTE**: 70% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 70% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
 
-- **NOTE:** Transfer the sample to a 96‐well MIDI plate if planning to use a shaker for mixing. If mixing by pipette, the sample can remain in the 96‐well PCR plate.
-
-- **NOTE** To maximize recovery of smaller fragments from the bead cleanup step, use the following conditions (AMPure XP volume calculations in the table below are based on 50 uL sample volume):
-
-| Input Size (bp) | AMPure XP Recommendation  | AMPure XP Volume (uL)  |
-| ---             | ---                       | ---                    |
-| < 300           | 1.8x AMPure XP            | 90.0                   |
-| 300 - 500       | 1.8x AMPure XP            | 90.0                   |
-| 500             | 0.6x AMPure XP            | 30.0                   |
-| gDNA            | 0.6x AMPure XP            | 30.0                   |
-
 
 **Procedure**
 
-1. Centrifuge the Library Amplification plate at 1,000 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
+1. Centrifuge the Library Amplification plates at 1,000 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
 
-2. Using a multichannel pipette, transfer the entire 50 uL of PCR product from the Library Amplification plate to the MIDI plate. Change tips between samples.
+2. Combine (pool) each PCR gene amplicon into a new MIDI plate using **table 7b** below.
 
-3. Gently shake the AMPure XP beads for 30 seconds to make sure that the beads are evenly dispersed. Add an appropriate volume of beads to a trough depending on the number of samples being processed and desired fragment selection. The Illumina DNA Prep library kits typically yield insert sizes around the 500 bp range.
+    **Note:** The PCR efficiency for each of the genes varies (_k13_ > _dhfr_ > _dhps_ > _mdr1_ > _crt_; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel from [QC by Electrophoresis](#electrophoresis), use the [gel analyzer](http://www.gelanalyzer.com/?i=1) program to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5 µL* from each gene PCR amplicon to the final pool.
 
-4. Using a multichannel pipette, add an appropriate volume of beads per sample based on your input size. Change tips between columns.
+**Table 7b. Amounts for pooling PCR amplicons**
 
-5. Gently pipette entire volume up and down 10 times if using a 96‐well PCR plate, or seal plate and shake at 1800 for 2 minutes if using a MIDI plate. Change tips after each column. The mixture should appear homogeneous.
+| Item            | **Quantity**         | Storage    |
+| ---             | ---                  | ---        |
+| 2 genes         | combine 25 µL each   | 2° to 8°C  |
+| 3 genes         | combine 16 µL each   | 2° to 8°C  |
+| 4 genes         | combine 12.5 µL each | 2° to 8°C  |
+| 5 or more genes | combine 10 µL each   | 2° to 8°C  |
 
-6. Incubate the mixed samples at room temperature without shaking for 5 minutes.
+> This should yield a total of 50 µL of combined PCR gene product.
 
-7. Place the Library amplification plate on a magnetic stand for 2 minutes. WAIT for the solution to clear before proceeding.
 
-8. With the Amplicon PCR plate on the magnetic stand, use a multichannel pipette to _carefully_ remove and discard all the supernatant. Change tips between samples. **DO NOT disturb the ring of separated magnetic beads.**
+3. Gently shake the AMPure XP beads for 30 seconds to make sure that the beads are evenly dispersed. Add an appropriate volume of beads to a trough depending on the number of samples being processed and desired fragment selection. **The Illumina DNA Prep library kits typically yield <ins>insert sizes around the 500 bp range.</ins>**
 
-9. With the Library amplification plate on the magnetic stand, wash the beads with freshly prepared 70% ethanol as follows:
+   **NOTE** To maximize recovery of smaller fragments from the bead cleanup step, use the following conditions (AMPure XP volume calculations in the table below are based on 50 µL sample volume):
 
-10. Using a multichannel pipette, add 200 uL of freshly prepared 70% ethanol to each sample well.
+| Input Size (bp)    | AMPure XP Recommendation      | AMPure XP Volume (µL)  |
+| ---                | ---                           | ---                    |
+| < 300              | 1.8x AMPure XP                | 90.0                   |
+| 300 - 500          | 1.8x AMPure XP                | 90.0                   |
+| <ins>**500**</ins> | <ins>**0.6x AMPure XP**</ins> | <ins>**30.0**</ins>    |
+| gDNA               | 0.6x AMPure XP                | 30.0                   |
 
-11. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
+4. Using a multichannel pipette, add an appropriate volume of beads per sample based on your input size. While adding the beads to the samples, gently pipette the entire volume up and down 10 times. Change tips between columns.
 
-12. Carefully remove excess ethanol using a P20 multichannel pipette. **NOTE: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.**
+5. Incubate the mixed samples at room temperature for 5 minutes.
 
-13. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. **NOTE: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.**
+6. Place the library amplification plate on a magnetic stand for 2 minutes. WAIT for the solution to clear before proceeding.
 
-14. Remove the Amplicon PCR plate from the magnetic stand. Using a multichannel pipette, add 40 uL nuclease free H20 (# 25-055-CM, Cell Culture Grade Water, Sterile) to each well of the Amplicon PCR plate.
+7. With the library amplification plate on the magnetic stand, use a multichannel pipette to _carefully_ remove and discard all the supernatant. Change tips between samples. 
 
-15. Gently pipette mix up and down 10 times, or seal plate and shake at 1800 for 2 minutes if using a MIDI plate. Change tips after each column.
+    **DO NOT disturb the magnetic beads.**
 
-16. Incubate at room temperature for 2 minutes.
+8. With the library amplification plate on the magnetic stand, wash the beads with freshly prepared 70% ethanol as follows:
 
-17. Place the plate back on the magnetic stand for 2 minutes or until the supernatant has cleared.
+    - A. Using a multichannel pipette, add 200 µL of freshly prepared 70% ethanol to each sample well.
 
-18. Using a multichannel pipette, carefully transfer 38 uL of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
+    - B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
 
-19. Pool each drug resistance gene (purified PCR amplicon) for each sample in equal volumes until the volume reaches at least 30 ul. For example, if you pool 5 ul of each amplicon (cytob, k13, md1, dhfr, dhps, crt, pfs47, and cpmp), you will have 40 ul of pooled, purified amplicon product ready to complete the tagmentation step.
+    - C. Carefully remove excess ethanol using a P20 multichannel pipette. 
+
+      **NOTE: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.**
+
+9. With the library amplification plate still on the magnetic stand, perform a second ethanol was as follows:
+
+    - A. Using a multichannel pipette, add 180 µL of freshly prepared 70% ethanol to each sample well.
+
+    - B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
+
+    - C. Carefully remove excess ethanol using a P20 multichannel pipette. 
+
+    - D. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol. 
+
+10. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. 
+
+    **NOTE: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.**
+
+11. Remove the library amplification plate from the magnetic stand. Using a multichannel pipette, add 32 µL nuclease free water (# 25-055-CM, Cell Culture Grade Water, Sterile) to each well of the library amplification plate. While adding the nuclease free water to the beads, gently pippete mix the beads and water up and down 10 times. Change tips after each column.
+
+12. Incubate at room temperature for 2 minutes.
+
+13. Place the plate back on the magnetic stand for 2 minutes or until the supernatant has cleared.
+
+14. Using a multichannel pipette, carefully transfer 30 µL of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
 
 
 **SAFE STOPPING POINT**
 
-If you do not plan to proceed to *Tagment Genomic DNA and Tagmentation Clean-Up*, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
+If you do not plan to proceed to *Tagment Genomic DNA*, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
 
   * * *
 
@@ -1086,7 +937,7 @@ If you do not plan to proceed to *Tagment Genomic DNA and Tagmentation Clean-Up*
 
 #### [I: Tagment Genomic DNA](#tagmentation) ####
 #### [II: Post Tagmentation Clean-Up](#tag_cleanup) ####
-#### [III: Amplification of Tagmented DNA (Index PCR)](#lib_indexing) ####
+#### [III: Amplification of Tagmented DNA (Library Indexing)](#lib_indexing) ####
 #### [IV: NGS Library Clean‐Up](#lib_cleanup") ####
 
 <a id="tagmentation"></a>
@@ -1102,19 +953,19 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 | Item                               | Quantity           | Storage                |
 | ---                                | ---                | ---                    |
-| **TB1 (Tagmentation Buffer 1)**    | 10 uL per sample   | -15&deg;C to -25&deg;C |
-| **BLT (Bead -Linked Transposome)** | 10 uL per sample   | 2&deg;C to 8&deg;C     |
-| **TSB (Tagment Stop Buffer)**      | 10 uL per sample   | 15&deg;C to 30&deg;C   |
-| **TWB (Tagment Wash Buffer)**      | 300 uL per sample  | 15&deg;C to 30&deg;C   |
+| **TB1 (Tagmentation Buffer 1)**    | 10 µL per sample   | -15&deg;C to -25&deg;C |
+| **BLT (Bead -Linked Transposome)** | 10 µL per sample   | 2&deg;C to 8&deg;C     |
+| **TSB (Tagment Stop Buffer)**      | 10 µL per sample   | 15&deg;C to 30&deg;C   |
+| **TWB (Tagment Wash Buffer)**      | 300 µL per sample  | 15&deg;C to 30&deg;C   |
 | **1.7 mL microcentrifuge tubes**   | Varies             | Room temperature       |
-| **96-well 0.2 ml PCR plate**       | Varies             | Room temperature       |
+| **96-well 0.2 mL PCR plate**       | Varies             | Room temperature       |
 | **Microseal "A" and "B" film**     | Varies             | Room temperature       |
 
 **Preparation**
 
-- If not completed already, **carefully** pool an equal amount of each gene's corresponding sample into the same well of a half skirt plate to reach a total of 30 uL before continuing
+- If not completed already, **carefully** pool an equal amount of each gene's corresponding sample into the same well of a half skirt plate to reach a total of 30 µL before continuing
 
-- Add appropriate volume of DNA as obtained from gDNA dilution calculator to each well of a 96-well PCR plate so that the total input amount (100 - 1000 ng) is within the desired range. If DNA volume <30 uL, add nuclease-free molecular grade water to the DNA samples to bring the total volume to 30 uL. Add DNA to the molecular-grade water and mix well by gently pipetting approximately 5-10 times
+- Add appropriate volume of DNA as obtained from gDNA dilution calculator to each well of a 96-well PCR plate so that the total input amount (100 - 1000 ng) is within the desired range. If DNA volume <30 µL, add nuclease-free molecular grade water to the DNA samples to bring the total volume to 30 µL. Add DNA to the molecular-grade water and mix well by gently pipetting approximately 5-10 times
 
 - Vortex BLT for a minimum of 10 seconds and ensure proper suspension of beads, repeat if necessary. Do not centrifuge
 
@@ -1122,7 +973,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 - Bring BLT (from refrigerator) and TB1 (from freezer) to room temperature.
 
-**NOTE:** _Ensure that BLT is stored upright at all times, so that the beads remain submerged in the buffer. BLT must be stored at temperatures above 2°C. Do not use BLT that has been stored below 2°C and ensure that it is never frozen._
+- **NOTE:** _Ensure that BLT is stored upright at all times, so that the beads remain submerged in the buffer. BLT must be stored at temperatures above 2°C. Do not use BLT that has been stored below 2°C and ensure that it is never frozen._
 
 - Label a 96-well PCR plate, or equivalent, with Run ID
 
@@ -1130,10 +981,10 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 **Thermocycler Program: "Flex 1" with reaction volume set to 50ul and choose the preheat lid option set to 100°C**
 
-| Flex 1             |
-| ---                |
-|55&deg;C for 15 min |
-|10&deg;C for Infinity      |
+| Flex 1                 |
+| :---:                  |
+|55&deg;C for 15 min     |
+|10&deg;C for Infinity   |
 
 - Check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature
 
@@ -1141,38 +992,36 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 **Thermocycler Program: "Flex 2" with reaction volume set to 60ul and choose the preheat lid option set to 100°C**
 
-| Flex 2             |
-| ---                |
-|37&deg;C for 15 min |
-|10&deg;C for Infinity      |
+| Flex 2                 |
+| :---:                  |
+|37&deg;C for 15 min     |
+|10&deg;C for Infinity   |
 
 
-**PCR Tagmentation Master Mix Table 9a**
+**Table 9a. PCR Tagmentation Master Mix Table 9a**
 
-| **Reagent** | **Volume (uL) per sample** |
+| **Reagent** | **Volume (µL) per sample** |
 | ---         | ---                        |
-| TB1         | 10 uL                      |
-| BLT         | 10 uL                      |
+| TB1         | 10 µL                      |
+| BLT         | 10 µL                      |
 
 
 **Procedure: Tagment Genomic DNA**
 
 1. Prepare tagmentation master mix based on Table 9a above.
 
-2. Vortex the tagmentation master mix well.
+2. Vortex the tagmentation master mix well. If the master mix was set up in a trough, pipette mix instead.
 
-3. Add 20 uL of master mix to each sample well.
+3. Add 20 µL of master mix to each sample well and mix well by resuspending the beads 10 times. **Do not spin the plate.**
 
-4. Mix well, resuspending the beads 10 times with multichannel pipet set to 40 uL. **Do not spin the plate.**
+5. Seal the plate with Microseal B (or equivalent) and incubate the plate on the pre-programmed thermal cycler setting "Flex 1" with volume set to 50 µL and lid heated option at 100°C:
 
-5. Seal the plate with Microseal B (or equivalent) and incubate the plate on the pre-programmed thermal cycler setting "Flex 1" with volume set to 50 uL and lid heated option at 100°C:
+| Flex 1                 |
+| :---:                  |
+|55&deg;C for 15 min     |
+|10&deg;C for Infinity   |
 
-| Flex 1             |
-| ---                |
-|55&deg;C for 15 min |
-|10&deg;C for Infinity      |
-
-- **NOTE:** **PLEASE PROCEED TO NEXT PROCEDURE** This is **not** a safe stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
+- **NOTE:** **PLEASE PROCEED TO NEXT PROCEDURE (Post Tagmentation Clean-Up)** This is **NOT** a safe stopping point in the procedure and post tagmentation clean up should be commenced once the samples have reached 10°C.
 
 <a id="tag_cleanup"></a>
 
@@ -1180,59 +1029,59 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 1. Again, check TSB for precipitate (if present, warm at 37°C for up to 10 minutes and vortex) and ensure it is at room temperature.
 
-2. Add 10 uL of TSB to each sample with a multichannel pipet.
+2. Add 10 µL of TSB to each sample with a multichannel pipet and pipet gently 10 times to mix and re-suspend the beads.
 
-3. Pipet gently 10 times to mix and re-suspend the beads using a multichannel pipet set at 40 uL.
+4. Seal the plate with Microseal A (or equivalent) and incubate the plate on the pre-programmed thermal cycler setting "Flex 2" with volume set to 60 µL and lid heated option at 100°C:
 
-4. Seal the plate with Microseal A (or equivalent) and incubate the plate on the pre-programmed thermal cycler setting "Flex 2" with volume set to 60 uL and lid heated option at 100°C:
-
-| Flex 2                |
-| ---                   |
-|37&deg;C for 15:00 min |
-|10&deg;C for Infinity         |
+| Flex 2                 |
+| :---:                  |
+|37&deg;C for 15 min     |
+|10&deg;C for Infinity   |
 
 - **NOTE:** **PLEASE PROCEED TO NEXT STEPS** This is **not** a safe stopping point in the procedure and it is recommended to proceed to the washing steps after samples have reached 10°C.
 
-1. While samples are incubating, thaw EPM on ice and thaw indices at room temperature.
+4. While samples are incubating, thaw EPM on ice and thaw indices at room temperature.
 
-2. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
+5. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and transfer the 60 µL sample volumes to a new MIDI plate, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
 
-3. Using a multichannel pipette set at 100 uL, remove and discard supernatant.
+6. Using a multichannel pipette set at 100 µL, remove and discard supernatant.
 
-4. Complete steps **A** - **D** below two times:
+7. Complete steps **A** - **D** below two times:
 
-5. Remove the sample plate from the magnetic stand and add 100 uL TWB directly onto the beads.
+    - A. Remove the sample plate from the magnetic stand and add 100 µL TWB directly onto the beads.
 
-6. Set multichannel pipet to 90 uL and pipette slowly until beads are fully resuspended. If necessary, scrape the side of the well with the pipette tips to re-suspend the beads.
+    - B. Set multichannel pipet to 90 µL and pipette slowly until beads are fully resuspended. If necessary, scrape the side of the well with the pipette tips to re-suspend the beads.
 
-7. Place the plate on the magnetic stand and wait until the solution is clear (~3 minutes).
+    - C. Place the plate on the magnetic stand and wait until the solution is clear (~3 minutes).
 
-8. Using a multichannel pipette set at 110 uL, remove and discard supernatant. **NOTE:** _To minimize the potential of TWB foaming during the tagmentation wash, use a deliberately slow pipetting technique to avoid incorrect volume aspirauion and incomplete mixing._
+    - D. Using a multichannel pipette set at 110 µL, remove and discard supernatant. 
 
-9. Remove the plate from the magnetic stand and add 100 uL TWB.
+- **NOTE:** _To minimize the potential of TWB foaming during the tagmentation wash, use a deliberately slow pipetting technique to avoid incorrect volume aspirauion and incomplete mixing._
 
-10. Pipette each sample well slowly to resuspend the beads.
+8. Remove the plate from the magnetic stand and add 100 µL TWB.
 
-11. Seal the plate and place on the magnetic stand until the solution is clear (~3 minutes). Allow TWB to remain in the wells (to prevent drying of beads) and proceed to amplification steps.
+9. Pipette each sample well slowly to resuspend the beads.
 
-**PLEASE PROCEED TO NEXT PROCEDURE (Amplification of Tagmented DNA). THIS IS NOT A RECOMMENDED SAFE STOPPING POINT.**
+10. Place on the magnetic stand until the solution is clear (~3 minutes). Allow TWB to remain in the wells (to prevent drying of beads) and proceed to amplification steps.
+
+**PLEASE PROCEED TO NEXT PROCEDURE (Amplification of Tagmented DNA (Library Indexing)). <ins>THIS IS NOT A RECOMMENDED SAFE STOPPING POINT.</ins>**
 
 
 <a id="lib_indexing"></a>
 
-#### III: Amplification of Tagmented DNA (Index PCR) ####
+#### III: Amplification of Tagmented DNA (Library Indexing) ####
 
 This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR step adds Index 1 (i7) adapters, Index 2 (i5) adapters, and sequences required for sequencing cluster generation.
 
 **Consumables**
 
-**Table 10. Amplification of Tagmented DNA (Index PCR) Consumables**
+**Table 10. Amplification of Tagmented DNA (Library Indexing) Consumables**
 
 | Item                            | Quantity         | Storage               |
 | ---                             | ---              | ---                   |
-| **EPM (Enhanced PCR Mix)**      | 20 uL per sample | -15&deg;C to -25&deg;C|
-| **Index 1 adapters (plate)**    | 10 uL per sample | -15&deg;C to -25&deg;C|
-| **Nuclease-free water**         | 20 uL per sample | Room temperature      |
+| **EPM (Enhanced PCR Mix)**      | 20 µL per sample | -15&deg;C to -25&deg;C|
+| **Index 1 adapters (plate)**    | 10 µL per sample | -15&deg;C to -25&deg;C|
+| **Nuclease-free water**         | 20 µL per sample | Room temperature      |
 | **1.7 mL microcentrifuge tube** | Varies           | Room temperature      |
 | **Microseal "A" film**          | Varies           | Room temperature      |
 
@@ -1240,67 +1089,59 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 **Preparation**
 
-- Using the samples suspended in the 100 uL of TWB from the Post Tagmentation Clean-Up step, follow the procedure outlined below.
+- Using the samples suspended in the 100 µL of TWB from the Post Tagmentation Clean-Up step, follow the procedure outlined below.
 
 - Set up thermal cycler and choose preheat lid option:
 
 **Thermocycler Program: "Flex 3" with reaction volume set to 50ul and choose the preheat lid option set to 100°C:**
 
-For 1 cycle:
-
-| Temperature              | Time (min)   |
-|---                       |--            |
-|68&deg;C                  |  3:00        |
-|98&deg;C                  |  3:00        |
-
-Then, for 5 cycles:
-
-| Step 2                   | Time (min)   |  
-|---                       | --           |
-|98&deg;C                | 0:45         |
-|62&deg;C                | 0:30         |
-|68&deg;C                | 2:00         |
-
-Then, for 1 cycle:
-
-| Step 3                   | Time (min)   |  
-|---                       | --           |
-|68&deg;C                  | 1:00         |
-
-Lastly, hold:
-
-| Step 3                   | Time (min)   |  
-|---                       | --           |
-|10&deg;C                  |  Infinity            |
+| Step   | Temperature                                 | Time (min) |
+| :--:   |:----:                                       | :----:     |
+| 1      | 68&deg;C                                    | 3:00       |  
+| 2      | 98&deg;C                                    | 3:00       |  
+|        |                                             |            |
+| **3**  | **98&deg;C**                                | **0:45**   |      
+| **4**  | **62&deg;C**                                | **0:30**   |      
+| **5**  | **68&deg;C**                                | **2:00**   |    
+|        | **Repeat Steps 2-4 for 4 cycles</br> (5 total)** |            |  
+|        |                                             |            | 
+| 6      | 68&deg;C                                    | 1:00       |
+| 7      | 4&deg;C                                     | Infinity   |
 
 **Table 10. PCR Master Mix**
 
-| **Reagent**           | **Volume (uL) per sample** |
+| **Reagent**           | **Volume (µL) per sample** |
 | ---                   | ---                        |
-| EPM                   | 20 uL                      |
-| Molecular Grade Water | 20 uL                      |
+| EPM                   | 20 µL                      |
+| Molecular Grade Water | 20 µL                      |
 
 **Procedure**
 
 1. Briefly vortex the thawed EPM immediately before use.
 
-2. Prepare the PCR master mix based on **Table 10** above. **NOTE:** _It is recommended to increase number of samples during master mix calculation by 1-2 to ensure sufficient master mix volume_.
+2. Prepare the PCR master mix based on **Table 10** above. 
+    
+    **NOTE:** _It is recommended to increase the number of samples during master mix calculation by 10% to ensure sufficient master mix volume_.
 
 3. Vortex and quick spin the PCR master mix.
 
-4. Using a multichannel pipette set at 200 uL remove TWB from beads. Use a small volume pipette to ensure removal of residual TWB before proceeding. **NOTE:** _Removal of TWB is crucial, as it can impede PCR. However, any foam remaining on the wells will not negatively impact the library._
+4. Using a multichannel pipette set at 200 µL remove TWB from beads. Use a small volume pipette to ensure removal of residual TWB before proceeding.
 
-5. Remove from the magnet and immediately add 40 uL of PCR master mix to each sample.
+    **NOTE:** _Removal of TWB is crucial, as it can impede PCR. However, any foam remaining on the wells will not negatively impact the library._
 
-6. Using a multichannel pipette set at 30 uL gently pipet to mix, re-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads
+5. Remove from the magnet and immediately add 40 µL of PCR master mix to each sample and gently pipet to mix, res-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads
 
-10. Add 10 uL of appropriate index pair from indices plate to each sample well. **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 uL pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use. Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate. **NOTE:** Index should be added as next available down the columns
+6. Add 10 µL of appropriate index pair from indices plate to each sample well. 
 
-11. Using a multichannel pipette set at 40 uL mix by pipetting a minimum of 10 times1
+    **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 µL pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use. Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate. 
 
-12. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 uL and lid heated option at 100°C.
+     **NOTE:** Index should be added as next available down the columns
 
-13. Centrifuge plate for at 280 x g for 1 minute.
+7. Using a multichannel pipette set at 40 µL mix by pipetting a minimum of 10 times1
+
+8. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 µL and lid heated option at 100°C.
+
+9. Centrifuge plate for at 280 x g for 1 minute.
 
 **SAFE STOPPING POINT**
 
@@ -1320,15 +1161,15 @@ This step uses Sample purification beads to clean up the final library before qu
 
 | Item | Quantity | Storage |
 | --- | --- | --- |
-| **RSB (Resuspension Buffer)** | 32 uL per sample | -15° to -25°C (after initial thaw, can keep at 2° to 8°C |
-| **SPB (Sample Purification Beads)** | 40.8 uL per sample | 2° to 8°C |
-| **Freshly Prepared 80% Ethanol (EtOH)** | 44.2 uL per sample | Room temperature |
-| **96‐well 0.2 ml PCR plate** | Varies | Room temperature |
+| **RSB (Resuspension Buffer)** | 32 µL per sample | -15° to -25°C (after initial thaw, can keep at 2° to 8°C |
+| **SPB (Sample Purification Beads)** | 40.8 µL per sample | 2° to 8°C |
+| **Freshly Prepared 80% Ethanol (EtOH)** | 44.2 µL per sample | Room temperature |
+| **96‐well 0.2 mL PCR plate** | Varies | Room temperature |
 | **Nuclease-free water** | Varies | Room temperature |
 | **Microseal 'B' film and 'F' foil** | Varies | Room temperature |
 | **96‐well MIDI plate** | Varies | Room temperature |
-| **96-well 0.2 ml PCR plate** | Varies | Room temperature |
-| **1.7mL microcentrifuge tube** | Varies | Room temperature |
+| **96-well 0.2 mL PCR plate** | Varies | Room temperature |
+| **1.7 mL microcentrifuge tube** | Varies | Room temperature |
 
 **Preparation**
 
@@ -1342,19 +1183,19 @@ This step uses Sample purification beads to clean up the final library before qu
 
 | **Reagent**                | **Volume (ml) per sample** | **Example: 20 samples** |
 | ---                        | ---                        | ---                     |
-| **100% ethanol**           | 0.4                        | 8ml                     |
-| **Molecular grade water**  | 0.1                        | 2ml                     |
+| **100% ethanol**           | 0.4                        | 8 mL                     |
+| **Molecular grade water**  | 0.1                        | 2 mL                     |
 
 - **NOTE:** 80% ethanol is hygroscopic. That is, when opened the ethanol will both evaporate and absorb water over time. Re-use eventually will be at a lower concentration. There is also miscibility involved with ethanol and water. For example, measuring out 80 mL of ethanol and topping off to 100 mL with water will generate ~65% ethanol. Measuring 80 mL ethanol and 20 mL water separately, then combining them will generate ~95 mL of 80% ethanol. Make sure to use molecular biology grade water (DNAse, RNase and Protease free).
 
 **Table 11. SPB Master Mix**
 
-| **Reagent**               | **Volume (uL) per sample** |
+| **Reagent**               | **Volume (µL) per sample** |
 | ---                       | ---                        |
 | **SPB**                   | 40.8                       |
 | **Molecular grade water** | 44.2                       |
 
-**NOTE:** _It is recommended to increase the number of samples 3-4 to ensure sufficient volume of master mix._
+- **NOTE:** _It is recommended to increase the number of samples by 10% to ensure sufficient volume of master mix._
 
 
 **Procedure**
@@ -1365,55 +1206,55 @@ This step uses Sample purification beads to clean up the final library before qu
 
 3. Place sample plate on the magnet for 5 minutes (or until beads have formed a tight pellet).
 
-4. Transfer 45 uL of supernatant (now containing the DNA) to new deep well plate.
+4. Transfer 45 µL of supernatant (now containing the DNA) to new deep well plate.
 
 5. Remove sample plate from the magnet.
 
 6. Vortex SPB master mix thoroughly.
 
-7. Using a multichannel pipette mix briefly and add 85 uL of SPB master mix to each sample.
+7. Using a multichannel pipette mix briefly and add 85 µL of SPB master mix to each sample and pipette mix a minimum of 10 times. 
 
-8. Pipet to mix a minimum of 10 times using a multichannel pipet. **NOTE:** _Use caution when mixing as the volume will be >100 uL._
+   **NOTE:** _Use caution when mixing as the volume will be >100 µL._
 
-9. Incubate at room temperature for 5 minutes **.**
+8. Incubate at room temperature for 5 minutes **.**
 
-10. Place on the magnet for 3-5 minutes (or until beads form a tight pellet).
+9. Place on the magnet for 3-5 minutes (or until beads form a tight pellet).
 
-11. During incubation re-vortex the stock SPB.
+10. During incubation re-vortex the stock SPB.
 
-12. After incubation, while keeping the plate still on the magnet, transfer 105 uL of supernatant - which now contains the library DNA - to new wells. _If desired, up to 125 uL of supernatant can be transferred_
+11. After incubation, while keeping the plate still on the magnet, transfer 120 µL of supernatant - which now contains the library DNA - to new wells. _If desired, up to 125 µL of supernatant can be transferred_
 
-13. Remove the plate from the magnet and add 12.6 uL of stock SPB solution to the supernatant. If volume other than 105 uL was used, then maintain a bead ratio of 0.12x
+12. Remove the plate from the magnet and add 14.4 µL of stock SPB solution to the supernatant. If volume other than 105 µL was used, then maintain a bead ratio of 0.12x.
 
-14. With multichannel pipette set to 100 uL, gently pipet 10 times to mix.
+13. With multichannel pipette set to 100 µL, gently pipet 10 times to mix.
 
-15. Incubate at room temperature for 5 minutes.
+14. Incubate at room temperature for 5 minutes.
 
-16. Place on magnet for 3-5 minutes (or until beads form a tight pellet and supernatant clears).
+15. Place on magnet for 3-5 minutes (or until beads form a tight pellet and supernatant clears).
 
-17. With multichannel pipette set to 200 uL, remove and discard supernatant (DNA is now bound to the beads).
+16. With multichannel pipette set to 200 µL, remove and discard supernatant (DNA is now bound to the beads).
 
-18. With the Library amplification plate on the magnetic stand, perform steps 19-21 below **twice (for a total of two washes)**:
+17. With the Library amplification plate on the magnetic stand, perform steps **A** - **C** below **twice (for a total of two washes)**:
 
-19. **Add 170 uL of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix)**
+    A. Add 170 µL of fresh 80% ethanol. (DO NOT add directly to the bead, and DO NOT mix).
 
-20. **Incubate the plate on the magnetic stand for 30 seconds.**
+    B. Incubate the plate on the magnetic stand for 30 seconds.
 
-21. **Carefully remove and discard all the ethanol.**
+    C. Carefully remove and discard all the ethanol.
 
-22. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
+18. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
-23. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes. **NOTE**: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried. If cracking is observed, immediately re-suspend beads as described below regardless of drying time.
+19. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes. 
 
-24. Remove the plate from the magnetic stand and add 32 uL RSB to each well of the plate.
+    **NOTE**: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried. If cracking is observed, immediately re-suspend beads as described below regardless of drying time.
 
-25. With a multichannel pipette set at 25 uL, gently pipet a minimum of 10 times to thoroughly mix.
+20. Remove the plate from the magnetic stand and add 32 µL RSB to each well of the plate and gently pipet a minimum of 10 times to thoroughly mix.
 
-26. Incubate at room temperature for 2-5 minutes.
+21. Incubate at room temperature for 2-5 minutes.
 
-27. Place the plate back on the magnetic stand for 3 minutes or until the supernatant has cleared.
+22. Place the plate back on the magnetic stand for 3 minutes or until the supernatant has cleared.
 
-28. Using a multichannel pipette, carefully transfer 25 uL of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
+23. Using a multichannel pipette, carefully transfer 25 µL of the supernatant from the Library amplification plate to a new 96‐well PCR plate. Change tips between samples to avoid cross‐contamination.
 
 **SAFE STOPPING POINT**
 > If you do plan to stop here, seal the plate with Microseal "B" adhesive seal. Store the plate at ‐15° to ‐25°C for up to a week.
@@ -1435,9 +1276,9 @@ It is important to consider library size when preparing samples for cluster gene
 
 |Average Library Size | Conversion Factor    |  DNA Concentration for Cluster Generation  |
 |---                  | --                   |--                                          |
-| 250 bp              |  1 ng/uL = 6.0 nM    |      6 - 12 pM                             |
-| 500 bp              |  1 ng/uL = 3.0 nM    |      6 - 12 pM                             |
-| 1,000 bp - 1,500 bp |  1 ng/uL = 1.5 nM    |      6 - 12 pM                             |
+| 250 bp              |  1 ng/µL = 6.0 nM    |      6 - 12 pM                             |
+| 500 bp              |  1 ng/µL = 3.0 nM    |      6 - 12 pM                             |
+| 1,000 bp - 1,500 bp |  1 ng/µL = 1.5 nM    |      6 - 12 pM                             |
 
 >The values presented here are approximations, and exact vallues determined for each experiiment may differ from these guidelines.
 
@@ -1448,7 +1289,7 @@ It is important to consider library size when preparing samples for cluster gene
 
 #### Part I: Library Pooling ####
 
-1. Aliquot 5 uL of diluted DNA from each library into a 1.5 microcentrifuge tube and mix aliquots for pooling libraries with unique indices. Depending on coverage needs, up to 384 libraries can be pooled for one MiSeq run.
+1. Aliquot 5 µL of diluted DNA from each library into a 1.5 microcentrifuge tube and mix aliquots for pooling libraries with unique indices. Depending on coverage needs, up to 384 libraries can be pooled for one MiSeq run.
 
 
 <a id="lib_quant"></a>
@@ -1465,10 +1306,10 @@ Quantification of fragment size and concentration to determine library concentra
 
 After determining the fragment size and concentration of your pooled product, you will calculate the DNA concentration in nM, based on the size of DNA amplicons as determined by an Agilent Technologies 2100 Bioanalyzer trace and concentration by Qubit as follows:
 
-(concentration in ng/uL)(10^6) / (660g/mol)(average library size) = concentration in nM
+(concentration in ng/µL)(10^6) / (660 g/mol)(average library size) = concentration in nM
 
 For example:
-(15 ng/uL)(10^6) / (660g/mol)(500bp) = 45 nM
+(15 ng/µL)(10^6) / (660 g/mol)(500 bp) = 45 nM
 
 **Agilent Technologies Agilent D5000 ScreenTape System**
 
@@ -1480,8 +1321,8 @@ This SOP format was adapted from the Agilent D5000 ScreenTape System Quick Guide
 
 | Item              | Quantity                  | Storage   |
 | ---               | ---                       | ---       |
-| **Sample Buffer** | 10 uL per sample          | 2° to 8°C |
-| **D5000 Ladder**  | 1 uL                      | 2° to 8°C |
+| **Sample Buffer** | 10 µL per sample          | 2° to 8°C |
+| **D5000 Ladder**  | 1 µL                      | 2° to 8°C |
 | **ScreenTape**    | Holds 16 samples per tape | 2° to 8°C |
 
 **Prepare TapeStation System D5000**
@@ -1498,9 +1339,9 @@ This SOP format was adapted from the Agilent D5000 ScreenTape System Quick Guide
 
 2. Vortex mix before use.
 
-3. Prepare ladder by mixing 2 uL D5000 Sample Buffer (green lid) with 2 uL D5000 Ladder (yellow lid) in a tube strip.
+3. Prepare ladder by mixing 2 µL D5000 Sample Buffer (green lid) with 2 µL D5000 Ladder (yellow lid) in a tube strip.
 
-4. Prepare sample by mixing 10 uL D5000 Sample Buffer (green lid) with 1 uL DNA sample in different tube strips.
+4. Prepare sample by mixing 10 µL D5000 Sample Buffer (green lid) with 1 µL DNA sample in different tube strips.
 
 5. Spin down, then vortex using IKA vortexer and adaptor at 2000 rpm for 1 minute.
 
@@ -1528,53 +1369,59 @@ This SOP format was adapted from the Qubit® dsDNA HS Assay Kits [protocol](http
 
 | Item                      | Quantity                               | Storage          |
 | ---                       | ---                                    | ---              |
-| **Qubit dsDNA HS Buffer** | 199 uL per sample for working solution | Room temperature |
-| **Qubit dsDNA HS Reagent**| 1 uL per 199 uL of HS Buffer           | Room temperature |
-| **Standard #1**           | 10 uL per use                          | 2° to 8°C        |
-| **Standard #2**           | 10 uL per use                          | 2° to 8°C        |
+| **Qubit dsDNA HS Buffer** | 199 µL per sample for working solution | Room temperature |
+| **Qubit dsDNA HS Reagent**| 1 µL per 199 µL of HS Buffer           | Room temperature |
+| **Standard #1**           | 10 µL per use                          | 2° to 8°C        |
+| **Standard #2**           | 10 µL per use                          | 2° to 8°C        |
 | **Qubit™ Assay Tubes**    | 1 per sample and 1 for each ladder     | Room temperature |
 
 **Before you begin**
 
-- The final volume in each tube must be 200 uL.
+- The final volume in each tube must be 200 µL.
 
-- Each standard tube requires 190 uL of Qubit working solution + 10 uL of the standard
+- Each standard tube requires 190 µL of Qubit working solution + 10 µL of the standard.
 
-- Each sample tube requires anywhere from 180–199 uL + the corresponding volume to complete the necessary 200 uL
-  - This laboratory uses 195 uL working solution + 5 uL of sample
+- Each sample tube requires anywhere from 180–199 µL + the corresponding volume to complete the necessary 200 µL.
+  - This laboratory uses 195 µL working solution + 5 µL of sample.
 
-- Careful pipetting is critical to ensure that the exact volume is added to the working solution—work SLOWLY
+- Careful pipetting is critical to ensure that the exact volume is added to the working solution—work SLOWLY.
 
-- Be sure to use a clean plastic tube each time you prepare Qubit working solution. Do not mix the working solution in a glass container
+- Be sure to use a clean plastic tube each time you prepare Qubit working solution. Do not mix the working solution in a glass container.
 
 **Procedure:** _Determine library concentration_
 
 Standard and Sample Preparation
 
-1. Prepare the tubes: Set up two 0.5-mL tubes for standards, and the required number of tubes for samples. **Note** Use only the thin-wall, clear, 0.5-mL PCR tubes (described in **Table 2** User‐Supplied Consumables)
+1. Prepare the tubes: Set up two 0.5-mL tubes for standards, and the required number of tubes for samples. 
+
+- **Note** Use only the thin-wall, clear, 0.5-mL PCR tubes (described in **Table 2** User‐Supplied Consumables).
 
 2. Label the tube lids. _Do not label the side of the tube as this could interfere with the sample read._
 
-3. Prepare sufficient Qubit working solution to accommodate all standards and samples by diluting the Qubit dsDNA HS Reagent 1:200 in Qubit dsDNA HS Buffer. 1 uL Qubit dsDNA HS Reagent + 199 uL Qubit dsDNA HS Buffer. For example, for 8 samples, prepare enough working solution for the samples and two standards: ~200 uL per tube in 10 tubes yields 2 mL of working solution (10 uL of Qubit reagent plus 1990 uL of Qubit buffer).
+3. Prepare sufficient Qubit working solution to accommodate all standards and samples by diluting the Qubit dsDNA HS Reagent 1:200 in Qubit dsDNA HS Buffer. 1 µL Qubit dsDNA HS Reagent + 199 µL Qubit dsDNA HS Buffer. For example, for 8 samples, prepare enough working solution for the samples and two standards: ~200 µL per tube in 10 tubes yields 2 mL of working solution (10 µL of Qubit reagent plus 1990 µL of Qubit buffer).
 
-3. Prepare the standards by adding 190 uL of Qubit working solution to each of the tubes used for standards. Add 10 uL of each Qubit standard to the appropriate tube, then mix by vortexing 2–3 seconds. Be careful not to create bubbles.
+3. Prepare the standards by adding 190 µL of Qubit working solution to each of the tubes used for standards. Add 10 µL of each Qubit standard to the appropriate tube, then mix by vortexing 2–3 seconds. Be careful not to create bubbles.
 
-4. Prepare the samples by adding Qubit working solution to individual assay tubes so that the final volume in each tube after adding the sample is 200 uL. **NOTE:** Your sample added should be between 1–20 uL and Qubit working solution between 180–199 uL (**See Table 13a** below).
+4. Prepare the samples by adding Qubit working solution to individual assay tubes so that the final volume in each tube after adding the sample is 200 µL. 
 
-5. Add each sample to the assay tubes containing the correct volume of Qubit working solution, then mix by vortexing 2–3 seconds. The final volume in each tube should be 200 uL.
+- **NOTE:** Your sample added should be between 1–20 µL and Qubit working solution between 180–199 µL (**See Table 13a** below).
+
+5. Add each sample to the assay tubes containing the correct volume of Qubit working solution, then mix by vortexing 2–3 seconds. The final volume in each tube should be 200 µL.
 
 6. Allow all tubes to incubate at room temperature for 2 minutes.
 
 **Table 13: Sample and Quibit Working Solution**  
 
-| Working Solution Volume | 199 uL | 195 uL | 190 uL | 185 uL | 180 uL |
+| Working Solution Volume | 199 µL | 195 µL | 190 µL | 185 µL | 180 µL |
 | ---                     | ---    | ---    | ---    | ---    | ---    |
-| Sample Volume           | 1 uL   | 5 uL   | 10 uL  | 15 uL  | 20 uL  |
+| Sample Volume           | 1 µL   | 5 µL   | 10 µL  | 15 µL  | 20 µL  |
 
 
 **Standard and Sample Reading**
 
-1. On the home screen of the Qubit 3.0 Fluorometer, select "**dsDNA**", then "**High Sensitivity**", and then "**Read Standards**." **NOTE:** If you have already performed a calibration for the selected assay, the instrument prompts you to choose between reading new standards and running samples using the previous calibration. If you wish to use the previous calibration, disregard step 3 in the Standard and Sample Preparation step, and skip to step 4 below. Otherwise, continue with step 2 below.
+1. On the home screen of the Qubit 3.0 Fluorometer, select "**dsDNA**", then "**High Sensitivity**", and then "**Read Standards**." 
+
+- **NOTE:** If you have already performed a calibration for the selected assay, the instrument prompts you to choose between reading new standards and running samples using the previous calibration. If you wish to use the previous calibration, disregard step 3 in the Standard and Sample Preparation step, and skip to step 4 below. Otherwise, continue with step 2 below.
 
 2. Insert the tube containing Standard #1 into the sample chamber, close the lid, and then press **Read standard**. When the reading is complete (~3 seconds), remove Standard #1.
 
@@ -1582,9 +1429,9 @@ Standard and Sample Preparation
 
 4. Press **Run samples**.
 
-5. On the assay screen, select the sample volume and units using the + or – buttons on the wheel to select the sample volume added to the assay tube (from 1–20 uL).
+5. On the assay screen, select the sample volume and units using the + or – buttons on the wheel to select the sample volume added to the assay tube (from 1–20 µL).
 
-6. From the dropdown menu, select the units for the output sample concentration (ng/uL).
+6. From the dropdown menu, select the units for the output sample concentration (ng/µL).
 
 7. Insert a sample tube into the sample chamber, close the lid, and press Read tube. When the reading is complete (~3 seconds), remove the sample tube and repeat until all samples have been read.
 
@@ -1598,8 +1445,8 @@ Dilute concentrated final library using Resuspension Buffer (RSB) or fresh 10 mM
 For example:
 Given a calculated concentration of 45nM, use (C1)(V1) = (C2)(V2) to calculate how much RSB and sample to mix to create a 4nM concentration:
 
-45nM(V1) = 4nM(20 uL)
-V1 = 1.78 uL of sample + 18.22 uL of RSB = 20ul of a 4nM concentration
+45nM(V1) = 4nM(20 µL)
+V1 = 1.78 µL of sample + 18.22 µL of RSB = 20ul of a 4nM concentration
 
 **SAFE STOPPING POINT**
 >If you do not plan to proceed to _Library Denaturing and MiSeq Sample Loading_, leave your sample in 4°C for a maximum of one week.
@@ -1621,13 +1468,13 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 | Item                                  | Quantity         | Storage          |
 | ---                                   | ---              | ---              |
-| **RSB (Resuspension Buffer)**         | 6 uL             | -15° to -25°C    |
-| **HT1 (Hybridization Buffer)**        | 1540 uL          | -15° to -25°C    |
-| **0.2 N NaOH (less than a week old)** | 10 uL            | Room temperature |
-| **200mM Tris-HCl pH7.0**              | 5 uL             | Room temperature |
-| **PhiX Control Kit v3 (FC‐110‐3001)** | 2 uL             | -15° to -25°C    |
+| **RSB (Resuspension Buffer)**         | 6 µL             | -15° to -25°C    |
+| **HT1 (Hybridization Buffer)**        | 1540 µL          | -15° to -25°C    |
+| **0.2 N NaOH (less than a week old)** | 10 µL            | Room temperature |
+| **200 mM Tris-HCl pH7.0**              | 5 µL             | Room temperature |
+| **PhiX Control Kit v3 (FC‐110‐3001)** | 2 µL             | -15° to -25°C    |
 | **MiSeq v2 reagent cartridge**        | 1 cartridge      | -15° to -25°C    |
-| **1.7 ml microcentrifuge tubes (screw cap recommended)** | 3 tubes          |
+| **1.7 mL microcentrifuge tubes (screw cap recommended)** | 3 tubes          |
 | **2.5 L ice bucket**                  |                  |                  |
 
 **Preparation**
@@ -1638,22 +1485,30 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 3. Obtain an ice bucket for your thawed cartridge, freshly made reagents, and sample.
 
-4. Check pH of the stock 1.0N NaOH and the resulting 0.2N NaOH dilution using pH reader. **NOTE:** CO2 in the room will acidify NaOH over time. It is absolutely **critical** that the NaOH has a minimum pH of 12.5.
+4. Check pH of the stock 1.0N NaOH and the resulting 0.2N NaOH dilution using pH reader. 
 
-5. Prepare a fresh dilution of 0.2 N NaOH. **NOTE: this is a critical step; NaOH must be prepared fresh every time.**
+- **NOTE:** CO2 in the room will acidify NaOH over time. It is absolutely **critical** that the NaOH has a minimum pH of 12.5.
 
-6. Using a 1000 ul pipette, measure out 800uL of laboratory-grade water.
+5. Prepare a fresh dilution of 0.2 N NaOH. 
 
-7. In a separate microcentrifuge tube, measure 200uL of stock 1.0N NaOH.
+- **NOTE: this is a critical step; NaOH must be prepared fresh every time.**
 
-8. Combine the two volumes and then invert several times to mix. **NOTE:** This results in a 1mL of 0.2N NaOH solution; the resulting solution cannot be stored and must be used within 6 hours. **NOTE:** The final concentration of NaOH cannot exceed 0.001 (1mM). _Higher NaOH concentrations will inhibit library hybridization to the flow cell and result in very low cluster density._
+6. Using a 1000 µL pipette, measure out 800 µL of laboratory-grade water.
 
-9. If you have not already done so, prepare a 200mM stock of Tris-HCl pH7.0 by combining 800 uL of Laboratory-grade water and 200 uL of Tris-HCl 1M.
+7. In a separate microcentrifuge tube, measure 200 µL of stock 1.0N NaOH.
+
+8. Combine the two volumes and then invert several times to mix. 
+
+- **NOTE:** This results in a 1 mL of 0.2N NaOH solution; the resulting solution cannot be stored and must be used within 6 hours. 
+
+- **NOTE:** The final concentration of NaOH cannot exceed 0.001 (1 mM). _Higher NaOH concentrations will inhibit library hybridization to the flow cell and result in very low cluster density._
+
+9. If you have not already done so, prepare a 200 mM stock of Tris-HCl pH7.0 by combining 800 µL of Laboratory-grade water and 200 µL of Tris-HCl 1M.
 
 
 **Denature DNA**
 
-1. Combine the 4nM pooled library (5 uL) and 0.2N NaOH (5 uL) in a microcentrifuge tube:
+1. Combine the 4nM pooled library (5 µL) and 0.2N NaOH (5 µL) in a microcentrifuge tube:
 
 2. Set aside the remaining dilution of 0.2 N NaOH to prepare a PhiX control within the next 12 hours.
 
@@ -1661,9 +1516,9 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 4. Incubate for 5 minutes at room temperature to denature the DNA into single strands.
 
-5. To the 10 uL of denatured library, add 5 uL of 200mM Tris-HCl pH7.0 to neutralize the NaOH.
+5. To the 10 µL of denatured library, add 5 µL of 200 mM Tris-HCl pH7.0 to neutralize the NaOH.
 
-6.  Add pre-chilled HT1 (985 uL) to the denatured DNA + Tris-HCl (15 uL). Adding the HT1 results in a 20 pM denatured library in 1 mM NaOH.
+6.  Add pre-chilled HT1 (985 µL) to the denatured DNA + Tris-HCl (15 µL). Adding the HT1 results in a 20 pM denatured library in 1 mM NaOH.
 
 7. Place the denatured DNA on ice until you are ready to proceed to final dilution.
 
@@ -1671,13 +1526,13 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 |    Quick Review/Guide for denaturing 4nM library                             |                                    
 | :---:                                                                        |
 | **_Step 1_**                                                                 |  
-| **5 uL of 4 nM library + 5 uL of 0.2N NaOH + 5 uL of 200mM Tris-HCl pH 7.0** |
+| **5 µL of 4 nM library + 5 µL of 0.2N NaOH + 5 µL of 200 mM Tris-HCl pH 7.0** |
 |  **=**                                                                       |
-| 15 uL of 1.30 nM library 0.067N NaOH + 66.7mM Tris-HCl pH 7.0                |
+| 15 µL of 1.30 nM library 0.067N NaOH + 66.7 mM Tris-HCl pH 7.0                |
 | **_Step 2_**                                                                 |  
-|  **Add 985 uL of chilled HT1**                                               |  
+|  **Add 985 µL of chilled HT1**                                               |  
 |  **=**                                                                       |
-| 1mL of **0.001N NaOH** and 20pM denatured library + 1mM Tris-HCl pH 7.0      |
+| 1 mL of **0.001N NaOH** and 20 pM denatured library + 1 mM Tris-HCl pH 7.0      |
 
 
 **NOTE: If you have to start with a lower concentration library, follow the below protocol for denaturing a 2nM library.**
@@ -1686,25 +1541,25 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 |    Quick Review/Guide for denaturing 2nM library                             |                                    
 | :---:                                                                        |
 | **_Step 1_**                                                                 |  
-| **5 uL of 2 nM library + 5 uL of 0.2N NaOH + 5 uL of 200mM Tris-HCl pH 7.0** |
+| **5 µL of 2 nM library + 5 µL of 0.2N NaOH + 5 µL of 200 mM Tris-HCl pH 7.0** |
 |  **=**                                                                       |
-| 15 uL of 0.67 nM library 0.067N NaOH + 66.7mM Tris-HCl pH 7.0                |
+| 15 µL of 0.67 nM library 0.067N NaOH + 66.7 mM Tris-HCl pH 7.0                |
 |  **_Step 2_**                                                                |
-|  **Add 985 uL of chilled HT1**                                               |  
+|  **Add 985 µL of chilled HT1**                                               |  
 |  **=**                                                                       |
-| 1mL of **0.0005N NaOH** and 10pM denatured library + 1mM Tris-HCl pH 7.0     |
+| 1 mL of **0.0005N NaOH** and 10pM denatured library + 1 mM Tris-HCl pH 7.0     |
 
 
 **Dilution chart for 10pM library:**
 
 | **Final Concentration**     | 6pM     | 8pM    |10pM    |
 |---                          |---      |---     |---     |
-| **10pM denatured library**  | 360 uL  |	480 uL | 600 uL	|
-| **Pre-chilled HTI** |240 uL |	120 uL  |	0 uL   |        |
+| **10pM denatured library**  | 360 µL  |	480 µL | 600 µL	|
+| **Pre-chilled HTI** |240 µL |	120 µL  |	0 µL   |        |
 
 **Dilute Denatured DNA**
 
-  **NOTE:** Illumina recommends targeting 1000–1200 K/mm² raw cluster densities using MiSeq v2 reagents.
+ - **NOTE:** Illumina recommends targeting 1000–1200 K/mm² raw cluster densities using MiSeq v2 reagents.
 
 1. Dilute the denatured DNA to the desired concentration using the following example:
 
@@ -1716,17 +1571,17 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 Use the following instructions to denature and dilute the 10 nM PhiX library to the same loading concentration as the Amplicon library. The final library mixture must contain at least 5% PhiX.
 
-1. Combine 10 nM PhiX library (2 uL) and RSB (3 uL) to dilute the PhiX library to 4 nM:
+1. Combine 10 nM PhiX library (2 µL) and RSB (3 µL) to dilute the PhiX library to 4 nM:
 
-2. Combine 4 nM PhiX library (5 uL) and 0.2 N NaOH (5 uL) of 4 nM PhiX and 0.2 N NaOH in a microcentrifuge tube.
+2. Combine 4 nM PhiX library (5 µL) and 0.2 N NaOH (5 µL) of 4 nM PhiX and 0.2 N NaOH in a microcentrifuge tube.
 
 3. Vortex briefly to mix the 2 nM PhiX library solution.
 
 4. Incubate for 5 minutes at room temperature to denature the PhiX library into single strands.
 
-5. To the 10 uL of denatured library, add 5 uL of 200mM Tris-HCl pH7.0 to neutralize the NaOH.
+5. To the 10 µL of denatured library, add 5 µL of 200 mM Tris-HCl pH7.0 to neutralize the NaOH.
 
-6. Add denatured PhiX library (15 uL) and Pre‐chilled HT1 (985 uL) to make a 20 pM PhiX library:
+6. Add denatured PhiX library (15 µL) and Pre‐chilled HT1 (985 µL) to make a 20 pM PhiX library:
 
 7. Dilute the denatured 20 pM PhiX library to the same loading concentration as the Amplicon library as shown in **Table 14a** below.  
 
@@ -1738,23 +1593,23 @@ Use the following instructions to denature and dilute the 10 nM PhiX library to 
 
 | **Final Concentration**     | 2pM     | 4pM    | 6 pM   | 8 pM   |
 |---                          |---      |---     |---     |---     |
-| **10pM denatured library**  | 60 uL  |	120 uL | 180 uL	| 240 uL |
-| **Pre-chilled HTI**         | 540 uL |	480 uL | 420 uL | 360 uL |    
+| **10pM denatured library**  | 60 µL  |	120 µL | 180 µL	| 240 µL |
+| **Pre-chilled HTI**         | 540 µL |	480 µL | 420 µL | 360 µL |    
 
 **Table 14b: Clustering Library Table continued**
 
 | **Final Concentration**     | 10pM     | 12pM    | 15pM   | 20pM   |
 |---                          |---       |---      |---     |---     |
-| **10pM denatured library**  | 300 uL   |	360 uL | 450 uL	| 600 uL |
-| **Pre-chilled HTI**         | 300 uL   |	240 uL | 150 uL | 0 uL   |  
+| **10pM denatured library**  | 300 µL   |	360 µL | 450 µL	| 600 µL |
+| **Pre-chilled HTI**         | 300 µL   |	240 µL | 150 µL | 0 µL   |  
 
 
 
 **Combine Amplicon Library and PhiX Control**
 
-**NOTE:** The recommended PhiX control spike‐in of greater than 5% for low diversity libraries is possible with RTA v1.17.28 or later, which is bundled with MCS v2.2. For optimal performance, update to v3 software (MCS 2.3). If you are using an older version of the MiSeq software or sequencing these libraries on the GA or HiSeq, Illumina recommends using greater than 25% PhiX control spike‐in.
+- **NOTE:** The recommended PhiX control spike‐in of greater than 5% for low diversity libraries is possible with RTA v1.17.28 or later, which is bundled with MCS v2.2. For optimal performance, update to v3 software (MCS 2.3). If you are using an older version of the MiSeq software or sequencing these libraries on the GA or HiSeq, Illumina recommends using greater than 25% PhiX control spike‐in.
 
-1. Combine denatured and diluted PhiX control (30 uL) and denatured and diluted amplicon library (570 uL). This will result in a 5% PhiX spike-in.  
+1. Combine denatured and diluted PhiX control (30 µL) and denatured and diluted amplicon library (570 µL). This will result in a 5% PhiX spike-in.  
 
 2. Set the combined sample library and PhiX control aside on ice until you are ready to load the mixture into the MiSeq v2 reagent cartridge.
 
@@ -1777,60 +1632,9 @@ The protocols described in this guide assume that you are familiar with the cont
 | **Primer** | A strand of short nucleic acid sequences that serves as a starting point for DNA synthesis during PCR |
 | **Amplicon** | A piece of amplified DNA that is the product of a PCR reaction |
 
-**Dual Indexing Principle**
+## Illumina DNA/RNA UD Indexes
 
-The dual indexing strategy uses two 8 base indices, Index 1 (i7) adjacent to the P7 sequence, and Index 2 (i5) adjacent to the P5 sequence. Dual indexing is enabled by adding a unique Index 1 (i7) and Index 2 (i5) to each sample. The 96 sample Nextera XT Index Kit (FC‐131–1002) use 12 different Index 1 (i7) adapters (N701–N712) and 8 different Index 2 (i5) adapters (S501–S508). The 24 sample Nextera XT Index Kit (FC‐131–1001) uses 6 different Index 1 (i7) adapters (N701–N706) and 4 different Index 2 (i5) adapters (S501–S504). In the Index adapter name, the N or S refers to Nextera XT sample preparation, 7 or 5 refers to Index 1 (i7) or Index 2 (i5), respectively. The 01–12 refers to the Index number. A list of index sequences is provided for generating sample sheets to demultiplex the samples:
-
-| _**Index 1 (i7)**_ |  **Sequence**  | **Index 2 (i5)** |  **Sequence** |
-| --- | --- | --- | --- |
-| N701 | TAAGGCGA | S501 | TAGATCGC |
-| N702 | CGTACTAG | S502 | CTCTCTAT |
-| N703 | AGGCAGAA | S503 | TATCCTCT |
-| N704 | TCCTGAGC | S504 | AGAGTAGA |
-| N705 | GGACTCCT | S505 | GTAAGGAG |
-| N706 | TAGGCATG | S506 | ACTGCATA |
-| N707 | CTCTCTAC | S507 | AAGGAGTA |
-| N708 | CAGAGAGG | S508 | CTAAGCCT |
-| N719 | GCTACGCT |
-| N710 | CGAGGCTG |
-| N711 | AAGAGGCA |
-| N712 | GTAGAGGA |
-
-
-**Low Plexity Pooling Guidelines**
-
-Illumina uses a green laser or LED to sequence G/T and a red laser or LED to sequence A/C. At each cycle, at least one of two nucleotides for each color channel are read to ensure proper registration. It is important to maintain color balance for each base of the index read being sequenced, otherwise index read sequencing could fail due to registration failure. If you choose the dual‐indexed sequencing workflow, always use at least two unique and compatible barcodes for each index (index 1 and index 2). The following tables illustrate possible pooling strategies:
-
-**Table 16. Libraries Pooled: 6 or fewer; Sequencing Workflow: Single Index**
-
-| _Plex_ | _Index 1 (i7) Selection_ | _Index 2 (i5) Selection_ |
-| --- | --- | --- |
-| **1‐plex (no pooling)** | Any Index 1 adapter | Any Index 2 adapter |
-| **2‐plex** | • [option 1] N702 and N701
- | |• [option 2] N702 and N704 |
- | | |
-| **3‐plex** | • [option 1] N701, N702, and N704 |
-| |• [option 2] N703, N705, and N706 |
- | | |
-| **4‐ or 5‐plex** | • [option 1] N701, N702, N704, and any other Index 1 adapter
-| |• [option 2] N703, N705, N706, and any other Index 1 adapter |
- | | |
-| **6‐plex** | N701, N702, N703, N704, N705, and N706 |
-
-**Table 17. Sequencing Workflow: Single or Dual Index**<br>
-Below options from index 1 can be used in various combinations with options from index 2.
-
-| _Plex_ | _Index 1 (i7) Selection_ | _Index 2 (i5) Selection_ |
-| --- | --- | --- |
-| **7–12 plex, Dual Index** | • [option 1] N701, N702, N704, and any other Index 1 adapter (as needed)| • [option 1] S501 and S502 |
-| | • [option 2] N703, N705, N706, and any other Index 1 adapter (as needed) | • [option 2] S503 and S504
-| | |• [option 3] S505 and S506
-| **7–12 plex, Single Index (96 sample Nextera Index adapter kit)** | • N701–N706 and any other Index 1 adapter (as needed) | • Any Index 2 (i5) adapter |
-| **Greater than 12‐plex** | N701, N702, N703, N704, N705,N706, and any other Index 1 adapter | • [option 1] S501, S502, and any other Index 2 adapter (as needed)  |
-| | | • [option 2] S503, S504, and any other Index 2 adapter (as needed)|
-| | | • [option 3] S505, S506, and any other Index 2 adapter (as needed) |
-
-These strategies represent only some of the acceptable combinations. Alternatively, check the real sequences of each index in the tables to make sure that each base position has a signal in both color channels for the index read. Please see [Index Adapters Pooling Guide](https://support.illumina.com/downloads/index-adapters-pooling-guide-1000000041074.html).
+Each sample processed during library preparation will be identified post-sequencing by the unique index that is molecularly attached to that sample during the [**Amplification of Tagmented DNA (Library Indexing)**](#lib_indexing) steps. The indexes used in this protocol are the [IDT for Illumina DNA/RNA UD Indexes](https://support.illumina.com/sequencing/sequencing_kits/idt-nextera-dna-udi/product-files.html) and for each sequence of the 384 indexes there is a [Kit Definition File](https://support.illumina.com/documents/downloads/productfiles/unique-dual-indexes/nextera-dna-udi/nextera-dna-udi-lrm-library-kit-definition-iSeq-MiSeq-nextera-dna-flex-set-a-b-c-d-2x151-384-samples.zip) and [Sample Sheet File](https://support.illumina.com/documents/downloads/productfiles/unique-dual-indexes/nextera-dna-udi/nextera-dna-udi-lrm-samplesheet-iSeq-MiSeq-nextera-dna-flex-set-a-b-c-d-2x151-384-samples.zip) available. 
 
 
 ## Prevent PCR Contamination ##
@@ -1900,7 +1704,7 @@ When preparing libraries for sequencing, always adhere to good molecular biology
 **Handling Liquids**<br>
 Good liquid handling measures are essential, particularly when quantifying libraries or diluting concentrated libraries for making clusters.
 
-  * Small differences in volumes (±0.5 uL) can sometimes cause large differences in cluster numbers (~100,000).
+  * Small differences in volumes (±0.5 µL) can sometimes cause large differences in cluster numbers (~100,000).
   * Small volume pipetting can be a source of potential error in protocols requiring the generation of standard curves, such as qPCR, or small but precise volumes, such as the Agilent Bioanalyzer.
   * If small volumes are unavoidable, use due diligence to make sure that pipettes are correctly calibrated.
   * Make sure that pipettes are not used at the volume extremes of their performance specifications.
@@ -1919,9 +1723,9 @@ Good liquid handling measures are essential, particularly when quantifying libra
   * Let the mixed samples incubate at room temperature for the time indicated in the protocol for maximum recovery.
   * When removing and discarding supernatant from the wells, use a single channel or multichannel pipette and take care not to disturb the beads
   * When aspirating the cleared solution from the reaction plate and wash step, it is important to keep the plate on the magnetic stand and not disturb the separated magnetic beads. Aspirate slowly to prevent the beads from sliding down the sides of the wells and into the pipette tips.
-  * To prevent the carryover of beads after elution, approximately 2.5 uL of supernatant is left when the eluates are removed from the bead pellet.
+  * To prevent the carryover of beads after elution, approximately 2.5 µL of supernatant is left when the eluates are removed from the bead pellet.
   * Be sure to remove all of the ethanol from the bottom of the wells, as it can contain residual contaminants.
-  * Keep the reaction plate on the magnetic stand and let it air‐dry at room temperature to prevent potential bead loss due to electrostatic forces. Allow for the complete evaporation of residual ethanol, because the presence of ethanol affects the performance of the subsequent reactions. Illumina recommends at least minutes drying time, but a longer drying time can be required. Remaining ethanol can be removed with a 10 uL pipette.
+  * Keep the reaction plate on the magnetic stand and let it air‐dry at room temperature to prevent potential bead loss due to electrostatic forces. Allow for the complete evaporation of residual ethanol, because the presence of ethanol affects the performance of the subsequent reactions. Illumina recommends at least minutes drying time, but a longer drying time can be required. Remaining ethanol can be removed with a 10 µL pipette.
   * Avoid over drying the beads, which can impact final yields.
   * Do not scrape the beads from the edge of the well using the pipette tip.
   * To maximize sample recovery during elution, incubate the sample/bead mix for 2 minutes at room temperature before placing the samples onto the magnet.
