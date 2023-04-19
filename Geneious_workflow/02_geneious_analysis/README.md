@@ -1,10 +1,11 @@
-April 17th, 2023. Version 1.1.0; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
+April 19th, 2023. Version 1.1.0; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
 
 > _Version 1.1: Updates made in the gene naming, delivery, and explanation of the Geneious workflow file "MaRS_Geneious_workflow_V1.geneiousWorkflow" and the reference files "MaRS_ReferenceGenes.geneious"
 
   * * *
+# Analyzing NGS Sequences with Geneious Using the MaRS Workflow and Annotated Reference Files
 
-**Table of contents**  
+## Table of contents ## 
 
 
 * [Introduction](#intro)
@@ -112,8 +113,6 @@ If you plan to use test data, please download the [Test data directory](https://
     - Download it from Github using the link and right clicking the "Raw" button and choosing "Save Link As..." option and a location on your computer and clicking "Save".
     - Find the file on your computer.
     - Drag and drop it into the Geneious application.
-<br />
-<br />
 
 2. The MaRS_Geneious_workflow_V1 worklfow can be viewed and edited within Geneious by navigating to it via "Workflows" > "Manage Workflows...". 
 
@@ -124,9 +123,10 @@ If you plan to use test data, please download the [Test data directory](https://
     - Find the file on your computer.
     - Drag and drop it into the Geneious application into a specific folder.
         - Alternatively, you can import it into Geneious trhough File > Import > Documents
-<br />
-<br />
-5.  To run the MaRS_Geneious_workflow_V1 worklfow, select the fastq files you would like to analyze and choose "Workflows" > "MaRS_Geneious_workflow_V1"
+
+5. The MaRS_Geneious_workflow_V1 worklfow utilizes Bowtie2 for alignment. This aligner is not installed in Geneious by default. Before the workflow can be run this plugin must be installed. This can be done by navigating through this menu in Geneious: Tools > Plugins. Click the "Install" button on the right side of the Bowtie option under "Available Plugins". Once done, the option "Bowtie short read mapper: Run bowtie plugin" should appear under the "Installed Plugins" section. Once this is done, the workflow can be run without issue.
+
+6. To run the MaRS_Geneious_workflow_V1 worklfow, select the fastq files you would like to analyze and choose "Workflows" > "MaRS_Geneious_workflow_V1"
     - A prompt will ask for the maximum memory to use
         - Choose an appropriate value based on the amount of RAM available on the computer and how many other processes need to be run besides Geneious.
     - After pressing "OK", the workflow will run all the steps (from A to D) as outlined in the "III. Procedural Steps of the MaRS Geneious Workflow" section.
@@ -139,7 +139,7 @@ If you plan to use test data, please download the [Test data directory](https://
 
 ### **A. Trim using BBDuk (Discard low quality reads that would create noise and uncertainty in the results)** ###
 - Geneious uses BBduk for trimming raw sequences. The settings are
-- **NOTE:** This step is the only step that is known to be able to kill the workflow and produce no outputs. This occurs if at least one of the selected files to be analyzed by the worfklow contains 100% low-quality reads (no reads with minimum quality of 35 or higher and mininmum lenght of 150 bp or more). If this occurs and the "BBDuk produced no results" error is encountered there is an approach for how to identify which files are creating the error. However, this approach can only identify the low-quality files one at a time, so it might need to be repeated until each problematic file is identified. To do this, simply select all the files and only run the "Trim using BBDuk" operation on them, using the parameters described in this step of the workflow. If this is done, Geneious will create outputs for all the files that passed the trimming step and will quit the operation once it encounters a problematic file. At this point, note and exclude that file from analysis by the Workflow. Continue the BBDuk check with any files that followed the problematic file (order will depend on how the folder is sorted: name, Description, Modified, etc.). Once the files have been checked and all problematic files have been excluded from selection, then the remainng files can be analyzed by the Workflow.
+- **NOTE:** This step is the only step that is known to be able to stop the workflow and produce no outputs. This occurs if at least one of the selected files to be analyzed by the worfklow contains 100% low-quality reads (no reads with minimum quality of 35 or higher and mininmum lenght of 150 bp or more). If this occurs and the "BBDuk produced no results" error is encountered there is an approach for how to identify which files are creating the error. The most likely candidate files that caused the error are those with low read amounts, such as a file with 200 reads or fewer. This information can be seen for each file in the "# Sequences" column. Excluding these samples will allow the workflow to be run without issue. Alternatively, each file can be run individually through the workflow and for any file that fails to run the workflow must be excluded as that file has insufficient reads of high quality.
 
 1. Trim Adapters: All Truseq, Nextera and PhilX adapters<br />
     ✓ Trim Right End<br />
@@ -162,8 +162,9 @@ If you plan to use test data, please download the [Test data directory](https://
 Reference sequence: MaRS_ReferenceGenes (6 sequences) - MaRS<br />
     ✓ Assemble each sequence list separately
 2. Method:<br />
-    ✓ Geneious<br />
-    ✓ Sensitivity: Medium Sensitivity/Fast
+    ✓ Mapper: Geneious<br />
+    ✓ Alignment Type: End to End<br />
+    ✓ Use Preset: High Sensitivity/Medium
 3. Do not trim (discard trim annotations)
 4. Save contigs
 
@@ -207,12 +208,8 @@ Reference sequence: MaRS_ReferenceGenes (6 sequences) - MaRS<br />
      4. Click "Export table".
      5. Select a location where to save the file and click "Save".
         * **Under "Files of Type:" choose "Comma Separated Values (*.csv)".**
-<br />
-<br />
-<br />
-<br />
-<br />
-***
+
+ * * *
 
 <a id="Supplemental"></a>
 # Supplemental: Python scripts for Geneious raw input

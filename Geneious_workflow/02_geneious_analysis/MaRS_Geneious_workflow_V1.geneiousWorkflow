@@ -1,5 +1,5 @@
 <geneiousWorkflows>
-  <XMLSerialisableRootElement name="MaRS_Geneious_workflow_V1" author="Dhruviben_S_Patel" geneiousVersion="2023.1.1" uniqueId="ab07b9de-6ef9-4050-a622-8f998ac29f11" revisionNumber="32" description="" bundledIconName="plugin">
+  <XMLSerialisableRootElement name="MaRS_Geneious_workflow_V1" author="Dhruviben_S_Patel" geneiousVersion="2023.1.1" uniqueId="1f1e13fb-7dc6-491c-8127-bf19e7a53d89" revisionNumber="33" description="" bundledIconName="plugin">
     <workflowElement type="com.biomatters.plugins.workflows.WorkflowElementForEach" />
     <workflowElement id="BBDuk" exposeNoOptions="false" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
       <Options>
@@ -55,8 +55,8 @@
     <workflowElement id="com.biomatters.plugins.alignment.AssemblyOperation_Reference" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
       <Options>
         <option name="displayForCloningValidation">false</option>
-        <option name="assemblerId">Geneious.reference</option>
-        <option name="assemblerVersion">2023.1.1</option>
+        <option name="assemblerId">bowtie2</option>
+        <option name="assemblerVersion">7.2.2</option>
         <option name="assemblyNamePrefixOrFolder">&lt;font color='red'&gt;No Documents&lt;/font&gt; assembled to MaRS_ReferenceGenes </option>
         <childOption name="data">
           <option name="reassemble">true</option>
@@ -76,10 +76,49 @@
           <childOption name="algorithm">
             <option name="deNovoAssembly">dummy</option>
             <option name="customComponent1"></option>
-            <option name="referenceAssembly">Geneious.reference</option>
+            <option name="referenceAssembly">bowtie2</option>
             <option name="customComponent2"></option>
           </childOption>
           <childOption name="StarRnaSeqAligner" />
+          <childOption name="bowtie2">
+            <option name="type">global</option>
+            <option name="preset">true</option>
+            <option name="sensitivity">sensitive</option>
+            <childOption name="normal">
+              <option name="packRef">false</option>
+              <option name="commandLine"></option>
+              <option name="customComponent1"></option>
+            </childOption>
+            <childOption name="algorithmOptions">
+              <option name="multiThreading">true</option>
+              <option name="misMatchSeed">0</option>
+              <option name="seedLength">22</option>
+              <option name="minInsertMatch">0</option>
+              <option name="maxInsertMatch">800</option>
+            </childOption>
+            <childOption name="reporting">
+              <option name="reporting">best</option>
+              <option name="reportUpTo">5</option>
+            </childOption>
+          </childOption>
+          <childOption name="bowtie">
+            <childOption name="normal">
+              <option name="packRef">false</option>
+              <option name="commandLine"></option>
+              <option name="customComponent1"></option>
+            </childOption>
+            <childOption name="algorithmOptions">
+              <option name="multiThreading">true</option>
+              <option name="misMatchSeed">2</option>
+              <option name="seedLength">28</option>
+              <option name="minInsertMatch">0</option>
+              <option name="maxInsertMatch">800</option>
+            </childOption>
+            <childOption name="reporting">
+              <option name="reporting">best</option>
+              <option name="reportUpTo">5</option>
+            </childOption>
+          </childOption>
           <childOption name="Geneious.reference">
             <option name="sensitivity">medium</option>
             <option name="customComponent1"></option>
