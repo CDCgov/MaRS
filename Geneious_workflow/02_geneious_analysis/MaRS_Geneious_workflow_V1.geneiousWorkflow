@@ -1,7 +1,7 @@
 <geneiousWorkflows>
-  <XMLSerialisableRootElement name="MaRS_Geneious_workflow_V1" author="Dhruviben_S_Patel" geneiousVersion="2023.1.1" uniqueId="1f1e13fb-7dc6-491c-8127-bf19e7a53d89" revisionNumber="33" description="" bundledIconName="plugin">
+  <XMLSerialisableRootElement name="MaRS_Geneious_workflow_V1" author="Dhruviben_S_Patel" geneiousVersion="2023.1.1" uniqueId="dde7ede8-338b-483e-827d-fea4dd4badfe" revisionNumber="39" description="" bundledIconName="plugin">
     <workflowElement type="com.biomatters.plugins.workflows.WorkflowElementForEach" />
-    <workflowElement id="BBDuk" exposeNoOptions="false" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+    <workflowElement id="BBDuk" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="true" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
       <Options>
         <option name="trimAdapters">true</option>
         <option name="qualityTrim">true</option>
@@ -10,11 +10,11 @@
         <option name="discardShortReads">true</option>
         <option name="keepOrder">true</option>
         <option name="memoryToAllocate">1000</option>
-        <option name="additionalOptions" />
-        <option name="customComponent1" />
+        <option name="additionalOptions"></option>
+        <option name="customComponent1"></option>
         <childOption name="adapterTrimming">
           <option name="adapters">inMemoryDocument__|urn:local:BBDukOptions:adapters.fa|All Truseq, Nextera and PhiX adapters___</option>
-          <option name="customComponent1" />
+          <option name="customComponent1"></option>
           <option name="adapterTrimDirection">r</option>
           <option name="adapterKMer">27</option>
           <option name="maximumSubstitutions">1</option>
@@ -52,11 +52,11 @@
       </options>
     </workflowElement>
     <workflowElement type="com.biomatters.plugins.workflows.WorkflowElementForEach" />
-    <workflowElement id="com.biomatters.plugins.alignment.AssemblyOperation_Reference" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+    <workflowElement id="com.biomatters.plugins.alignment.AssemblyOperation_Reference" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="true" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
       <Options>
         <option name="displayForCloningValidation">false</option>
         <option name="assemblerId">bowtie2</option>
-        <option name="assemblerVersion">7.2.2</option>
+        <option name="assemblerVersion">7.2.1</option>
         <option name="assemblyNamePrefixOrFolder">&lt;font color='red'&gt;No Documents&lt;/font&gt; assembled to MaRS_ReferenceGenes </option>
         <childOption name="data">
           <option name="reassemble">true</option>
@@ -70,7 +70,7 @@
           <option name="namePart">0</option>
           <option name="nameSeparator" extra="">- (Hyphen)</option>
           <option name="customComponent4"></option>
-          <option name="assembleListsSeparately">true</option>
+          <option name="assembleListsSeparately">false</option>
         </childOption>
         <childOption name="method">
           <childOption name="algorithm">
@@ -336,7 +336,7 @@
       </Options>
       <optionToExpose optionName="data.reassemble" label="" />
     </workflowElement>
-    <workflowElement id="Operation_com.biomatters.plugins.mutationFinder.MutationFinderAnnotationGenerator" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="false" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
+    <workflowElement id="Operation_com.biomatters.plugins.mutationFinder.MutationFinderAnnotationGenerator" exposeNoOptions="true" exposeAllOptions="false" suppressErrors="true" showButtonForExposedGroup="false" groupNameForExposedOptions="" type="com.biomatters.plugins.workflows.DocumentOperationWorkflowElement">
       <Options>
         <option name="ignoreTrims">true</option>
         <option name="calculatePValues">false</option>
@@ -347,16 +347,16 @@
           <option name="applyMinimumFrequency">true</option>
           <option name="minimumFrequency">0.05</option>
           <option name="maximumPValueApply">false</option>
-          <option name="customComponent1" />
+          <option name="customComponent1"></option>
           <option name="maximumPValue">6</option>
-          <option name="customComponent2" />
-          <option name="customComponent3" />
+          <option name="customComponent2"></option>
+          <option name="customComponent3"></option>
           <option name="standBiasMinimumValueApply">false</option>
-          <option name="customComponent4" />
+          <option name="customComponent4"></option>
           <option name="standBiasMinimumValue">5</option>
-          <option name="customComponent5" />
+          <option name="customComponent5"></option>
           <option name="threshold">65</option>
-          <option name="customComponent6" />
+          <option name="customComponent6"></option>
           <option name="findWhere">everywhere</option>
           <option name="findInSelectedRegionOnly">false</option>
         </childOption>
@@ -385,7 +385,7 @@
           <option name="pValueMethod">pValueMethodApproximate</option>
           <option name="applyHomoPolymerQualityReductionPercentage">false</option>
           <option name="homoPolymerQualityReductionPercentage">30</option>
-          <option name="customComponent1" />
+          <option name="customComponent1"></option>
         </childOption>
       </Options>
       <optionToExpose optionName="calculatePValues" label="" />

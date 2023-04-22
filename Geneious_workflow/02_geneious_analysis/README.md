@@ -172,7 +172,6 @@ If you plan to use test data, please download the [Test data directory](https://
 
 ### **A. Trim using BBDuk (Discard low quality reads that would create noise and uncertainty in the results)** ###
 - Geneious uses BBduk for trimming raw sequences. The settings are
-- **NOTE:** This step is the only step that is known to be able to stop the workflow and produce no outputs. This occurs if at least one of the selected files to be analyzed by the worfklow contains 100% low-quality reads (no reads with minimum quality of 35 or higher and mininmum lenght of 150 bp or more). If this occurs and the "BBDuk produced no results" error is encountered there is an approach for how to identify which files are creating the error. The most likely candidate files that caused the error are those with low read amounts, such as a file with 200 reads or fewer. This information can be seen for each file in the "# Sequences" column. Excluding these samples will allow the workflow to be run without issue. Alternatively, each file can be run individually through the workflow and for any file that fails to run the workflow must be excluded as that file has insufficient reads of high quality.
 
 1. Trim Adapters: All Truseq, Nextera and PhilX adapters<br />
     ✓ Trim Right End<br />
