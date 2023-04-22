@@ -23,11 +23,6 @@
 
 
 
-April 21st, 2023. Version 1.1.1; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
-
-> _Version 1.1: Updates made in the gene naming, delivery, and explanation of the Geneious workflow file "MaRS_Geneious_workflow_V1.geneiousWorkflow" and the reference files "MaRS_ReferenceGenes.geneious". Additionally, clarification about Bowtie2 version 2.3.0 was highlighted. The Supplemental section was updated to provide useful information for which step in the workflow to go to next, how to check the validity of positive and negative controls, and how to check the quality of the sequencing run using read numbers in the imported files, trimmed files, and alignment files.
-
-  * * *
 # Analyzing NGS Sequences with Geneious Using the MaRS Workflow and Annotated Reference Files
 
 ## Table of contents ## 
@@ -79,6 +74,7 @@ The information presented here is organized into steps and associated files cont
 The analysis steps relevant to Geneious are demonstrated in the yellow outline in **Figure 1**.
 
 **Figure 1. MaRS Analysis Workflow**
+
 <img
   src="/images/MaRS_analysis_workflow.png"
   width="600">
