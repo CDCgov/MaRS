@@ -1,3 +1,21 @@
+
+<details>
+  <summary><strong>Updates Over Time</strong></summary>
+
+> Author: @ET 4/5/22 :goat:  
+>> Edited: @MB 4/21/23 
+----
+>#### To Do ####
+
+
+>#### Completed Activity ✓ ####
+
+- [x] Added MaRS GitHub Folder Structure diagram to readme
+
+------
+</details>
+
+
 ## MaRS (Malaria Resistance Surveillance) Project :rocket: ##
 
 ### Vision ###
@@ -16,13 +34,22 @@ This projects aims to:
 
 ### Lab Protocols :microscope: ###
 
-Please see the Illumina TADS [Lab Protocol](https://cdcgov.github.io/MaRS/) for the most up to date standard operating procedures (SOPs).
+Please see the Illumina Targeted Amplicon Deep Sequencing (TADS) [Lab Protocol](https://cdcgov.github.io/MaRS/) for the most up to date standard operating procedures (SOPs).
 
 ### Data Analysis :computer: ###
 
 Two analysis workflows are available and actively being developed:  
 * [Beginner/Intermediate Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/)
 * [Advanced Bioinformaticans and Data Scientists](https://github.com/CDCgov/MaRS/blob/master/Nextflow_workflow/)
+
+### Organization of Repository ###
+
+This MaRS repo is organized into the structure shown in **Figure 1**.
+
+**Figure 1. MaRS Project GitHub Folder Structure**
+<img
+  src="/images/MaRS_github_overview.png"
+  width="600">
 
 ### Data Sharing ###
 

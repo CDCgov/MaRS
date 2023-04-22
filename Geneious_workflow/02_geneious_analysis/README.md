@@ -1,6 +1,31 @@
-April 19th, 2023. Version 1.1.0; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
+<details>
+  <summary><strong>Updates Over Time</strong></summary>
 
-> _Version 1.1: Updates made in the gene naming, delivery, and explanation of the Geneious workflow file "MaRS_Geneious_workflow_V1.geneiousWorkflow" and the reference files "MaRS_ReferenceGenes.geneious"
+> Author: @ET 4/5/22 :goat:  
+>> Edited: @[MB]((mailto:mbajic@cdc.gov)) 4/21/23 
+----
+>#### To Do ####
+
+>#### Completed Activity ✓ ####
+
+- [x] Updated readme to include Table of Contents
+- [x] Reformated readme to read easier with clear sections and steps
+- [x] Specified two potential errors that can disrupt the workflow and how to address this
+- [x] Added the current version of the MaRS Geneious workflow to the directory
+- [x] Added the current version of the MaRS reference genes to the directory
+- [x] Added the stable version of the Bowtie2 plugin to the directory for ease of access
+- [x] Added a table listing the SNPs and haplotypes observed in commonly used _Plasmodium falciparum_ strains 
+- [x] Added MaRS analysis workflow diagram to readme
+- [x] Removed old Supplemental section and added new one that outlines what to do with the output from Geneious and how to evaluate the quality of the results
+
+------
+</details>
+
+
+
+April 21st, 2023. Version 1.1.1; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
+
+> _Version 1.1: Updates made in the gene naming, delivery, and explanation of the Geneious workflow file "MaRS_Geneious_workflow_V1.geneiousWorkflow" and the reference files "MaRS_ReferenceGenes.geneious". Additionally, clarification about Bowtie2 version 2.3.0 was highlighted. The Supplemental section was updated to provide useful information for which step in the workflow to go to next, how to check the validity of positive and negative controls, and how to check the quality of the sequencing run using read numbers in the imported files, trimmed files, and alignment files.
 
   * * *
 # Analyzing NGS Sequences with Geneious Using the MaRS Workflow and Annotated Reference Files
@@ -23,8 +48,12 @@ April 19th, 2023. Version 1.1.0; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
         * [C. Find Variations/SNPs](#FindingSNPs)
         * [D. Find High/Low Coverage](#FindingCoverage)
         * [E. Export findings to a csv raw output](#ExportingGeneiousResults)
-* [Supplemental: Python scripts for Geneious raw input](#Supplemental)
-
+* [Supplemental](#Supplemental)
+    * [Next Steps](#NextgSteps)
+    * [Evaluating Positive and Negative Controls](#Controls)
+    * [Evaluating Quality of the Sequencing Run](#SeqQuality)
+       * [Sequencing Quality Assessment Rationale](#SeqQRationale)
+       * [Sequencing Quality Assessment Protocol](#SeqQProtocol)
 
  * * *
 
@@ -47,9 +76,16 @@ The instructions outlined below are for setting up the two required files, the M
 
 The information presented here is organized into steps and associated files contained within [02_geneious_analysis](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis). These steps follow after [01_sampleID_QC](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/01_sample_ID_QC) and precede [03_summary_tatbles](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_tables). All of these procedural steps are organized within [Geneious_workflow](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow).
 
+The analysis steps relevant to Geneious are demonstrated in the yellow outline in **Figure 1**.
+
+**Figure 1. MaRS Analysis Workflow**
+<img
+  src="/images/MaRS_analysis_workflow.png"
+  width="600">
 
 
 <a id="Set-up"></a>
+
 ## Set-up ##
 
 * Required: [Geneious Prime](https://www.geneious.com/prime/)
@@ -60,6 +96,7 @@ The information presented here is organized into steps and associated files cont
 * Target audience are biologist or beginner bioinformaticans
 
 <a id="Contribution_guidelines"></a>
+
 ## Contribution guidelines ##
 
 * Further improvement of any of our workflows are _very_ encouraged :thumbsup:
@@ -124,7 +161,7 @@ If you plan to use test data, please download the [Test data directory](https://
     - Drag and drop it into the Geneious application into a specific folder.
         - Alternatively, you can import it into Geneious trhough File > Import > Documents
 
-5. The MaRS_Geneious_workflow_V1 worklfow utilizes Bowtie2 for alignment. This aligner is not installed in Geneious by default. Before the workflow can be run this plugin must be installed. This can be done by navigating through this menu in Geneious: Tools > Plugins. Click the "Install" button on the right side of the Bowtie option under "Available Plugins". Once done, the option "Bowtie short read mapper: Run bowtie plugin" should appear under the "Installed Plugins" section. Once this is done, the workflow can be run without issue.
+5. The MaRS_Geneious_workflow_V1 worklfow utilizes Bowtie2 for alignment. This aligner is not installed in Geneious by default. **Before the workflow can be run this plugin must be installed**. While this can be done through the Geneious Tools **some versions of Bowtie2 are not fully compatible with the MaRS workflow, or for aligning some files in Geneious in general**. For this reason, we provided the Bowtie2 version that works without issue with the workflow. This file is called [Bowtie_7_2_1.gplugin](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis/Bowtie_7_2_1.gplugin) and is found in the [02_geneious_analysis](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis/) folder; it was originally downloaded from [Geneious's plugins Download section](https://www.geneious.com/plugins/bowtie-plugin/#history). This plugin can be downloaded from GitHub to the user's computer. To install it in Geneious simply drag and drop the file into a Geneious window. A prompt will appear notifying that the plugin has been installed. Since the workflow is defined to use Bowtie2, as long as it is present as a plugin there is nothing that needs to be done to run the workflow. To specify, once the plugin has been installed by dragging and dropping it into Geneious the Workflow will be ready to run. The full list of all installed plugins can be seen in Geneious by navigating to Tools > Plugins. A notification from Geneious will pop up in the future with the notification that "A new plugin update is availble for download" but this should not be done. Instead click the "Don't check for new plugin updates" option and then choose "Don't Install".
 
 6. To run the MaRS_Geneious_workflow_V1 worklfow, select the fastq files you would like to analyze and choose "Workflows" > "MaRS_Geneious_workflow_V1"
     - A prompt will ask for the maximum memory to use
@@ -152,7 +189,7 @@ If you plan to use test data, please download the [Test data directory](https://
 3. Trim Adapters based on paired read overhangs: <br />
     ✓Minimum Overlap: 24
 4. Discard Short Reads:<br />
-    ✓Minimum Length: 150 bp
+    ✓Minimum Length: 100 bp
 
 <a id="Aligning"></a>
 
@@ -162,7 +199,7 @@ If you plan to use test data, please download the [Test data directory](https://
 Reference sequence: MaRS_ReferenceGenes (6 sequences) - MaRS<br />
     ✓ Assemble each sequence list separately
 2. Method:<br />
-    ✓ Mapper: Geneious<br />
+    ✓ Mapper: Bowtie2<br />
     ✓ Alignment Type: End to End<br />
     ✓ Use Preset: High Sensitivity/Medium
 3. Do not trim (discard trim annotations)
@@ -212,56 +249,81 @@ Reference sequence: MaRS_ReferenceGenes (6 sequences) - MaRS<br />
  * * *
 
 <a id="Supplemental"></a>
-# Supplemental: Python scripts for Geneious raw input
 
-## A. Read Annotations.csv file and process
-1. Python script has with open function to open file and read each lines from the file
-2. Each jupyter note script will process Geneious raw output for different purposes.
-
-## B. File1: DF_Analysis1.ipynb/DF_Analysis1_EP.ipynb
-1. There are two versions one for lab and another one for EPI
-2. This version is written using pandas dataframe.
-3. The output gives information such as SITE,Sequence Name,G_Annotation,SNP,Mutation,WildType,VAF
-
-##  C. Test run  samples
-1. Naming schemia contains information  such as year, site, treatmentday, and pooled in order.
-2. First two number is year. Next two letter is country. Two letters after is site. The two numbers next means the treatment day.  
-3. The xp means it is pooled sample and not individual samples.
-4. List of example data for Angola with output from Geneious workflow.
-5. AN means angola, Be means Benguela, LS means Lunda Sul, Za means zaire
-
-       
-        Sample	Pooled	Year	SITE	TreatmentDay	GENE	G_annotation	COVERAGE	VAF	VF	SNP	Type	PooledSize	PooledGroup	PooledGroup
-        1. 19ANBe00xp004PfF1152	pooled	19	Benguela	0	DHFR	S108N	1200	    100.00%	1200	108N	mutation	10	4	4
-        2. 19ANBe00xp005PfF1152	pooled	19	Benguela	0	DHFR	C59R	782	85.    40%	668	59R	mutation	10	5	5
-        3. 19ANBe00xp012PfF1152	pooled	19	Benguela	0	DHPS_437Corrected 	    A437G	1072	100.00%	1072	437G	mutation	10	12	12
-        4. 19ANBe00xp018PfF1152	pooled	19	Benguela	0	DHPS_437Corrected 	    A437G	199	100.00%	199	437G	mutation	6	18	18
-        5. 19ANLS00xp004PfF1152	pooled	19	Lunda Sul	0	DHPS_437Corrected 	    S436A	1184	6.40%	76	436A	mutation	10	4	4
-        6. 19ANLS00xp005PfF1152	pooled	19	Lunda Sul	0	DHFR	S108N	954	100.    00%	954	108N	mutation	10	5	5
-        7. 19ANLS00xp005PfF1152	pooled	19	Lunda Sul	0	DHFR	S108N	954	100.    00%	954	108N	mutation	10	5	5
-        8. 19ANLS00xp006PfF1152	pooled	19	Lunda Sul	0	DHFR	S108N	433	100.    00%	433	108N	mutation	10	6	6
-        9. 19ANZa00xp008PfF1152	pooled	19	Zaire	0	DHFR	C59R	485	96.50%	    468	59R	mutation	10	8	8
-        10. 19ANZa00xp009PfF1152	pooled	19	Zaire	0	PfCRT	I356T	122	15.    60%	19	356T	mutation	10	9	9
-
-6. The link to the naming schema is: https://cdc.sharepoint.com/:p:/r/teams/CGH-DPDM-AMD/Shared%20Documents/SOPs%20-%20Lab/Sample%20Naming/Sample%20Naming%20Standardization_20211207.pptx?d=w0e0c338aa3a840e19a36e4684065345b&csf=1&web=1&e=pspDgd
+# Supplemental #
 
 
-----
-<details>
-  <summary><strong>TODO</strong></summary>
+<a id="NextgSteps"></a>
+
+## Next Steps ##
+
+After finishing the export of information from Geneious, the next step would be to navigate to [03_summary_reports](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/03_summary_reports) and follow the directions from there. This step would take the Geneious output and summarize and annotate it so that only the most essential information would be present for each SNP. This includes metadata information for the SNP based on which sample it originates from, but more importantly it identifies whether the SNP site is a mutation, to what degree (amount of reads that had the mutation), or whether the site is wild type and how much coverage was present at that site to identify this site as wild type. This is an important metric because not observing a mutation at a SNP site is not the same as observing that site as wild type; absence of reads does not mean that site is wild type, it just means that the site was not observed and cannot be identified as either mutant or wild type.
 
 
-> Author: :baby_chick: JH @ 04/7/22 
->> Edited & Reviewed: :tiger: DP & :goat: @ET 11/30/22 
-----
->#### TODO ####
->#### Activity Name ####
+<a id="Controls"></a>
 
-  - [ ] template action @XX  
+## Evaluating Positive and Negative Controls ##
 
->#### Completed Activity ✓ ####
-  - [x] Update readme to point to new example fastq (external) @ET
-   - [x] Add directions on how to download from SRA @DP
+There are a variety of [_Plasmodium falciparum_ control strains](https://www.beiresources.org/Catalog.aspx?f_instockflag=In+Stock&q=plasmodium+falciparum&page=1&f_displaysearchname=Nucleic%2bAcids) that can be ordered through [BEI](https://www.beiresources.org/) and used in the MaRS work. These strains will have specific mutations for each of the MaRS genes that are indicative of that strain. Typically, during the MaRS work, at least two different positive controls and one negative control are used per plate during PCR amplification, and therefore all downstream steps (amplicon combination, library preparation, library pooling, and sequencing). Whichever controls are chosen, they are replicated on different plates, but not on the same plate. The results of the replicates among the different plates for a given strain are expected to be the same. The aniticipated results for eight different _Plasmodium falciparum_ control strains are outlined in the file [SNPs_and_Haplotypes_ControlStrains.xlsx](https://github.com/CDCgov/MaRS/tree/master/Geneious_workflow/02_geneious_analysis/SNPs_and_Haplotypes_ControlStrains.xlsx). For negative controls, water is used instead of a DNA sample during PCR amplification of the amplicons. It is not uncommon to get some reads in these samples, but it is uncommon for the number to be above 100 reads. Furthermore, these reads are not expected to be of high quality and often cannot pass the BBDuk read trimming step because the output is empty. This is what is expected. Any reads that are of high quality are a source of contamination, but if the laboratory protocol is followed as described and special care is taken to prepare the PCR amplification mixtures in a separate hood from where DNA is added the potential for contamination is smaller than 1%. The expected amount of noise, low quality reads found in negative control samples, from all the negative control samples in a libray make up about 0.000006% of the library's reads on average. We will continue to monitor this number in the future to provide a more accurate estimation of this value.
 
-------
-</details>
+
+<a id="SeqQuality"></a>
+
+## Evaluating Quality of the Sequencing Run ##
+
+
+<a id="SeqQRationale"></a>
+
+### Sequencing Quality Assessment Rationale ###
+
+Within Geneious, for any file that contains reads, the amount of reads present within the file can be identified in the column titled "# Sequences". This information is extremely important for evaluating the quality of the lab work as well as the sequencing run. The entire MaRS laboratory SOP can be evaluating by looking at the number of reads at these different stages of the Geneious analysis: 
+ * Starting reads (RawReads: reads obtained for each sample during sequencing)
+ * Reads after trimming (HQreads: high quality reads that remain after trimming by BBDuk)
+ * Aligned reads (TotalAligned: amount of high quality reads that align to the MaRS genes). This can be further broken down to see how the distribution of each gene compares among the amplicons:
+    * Reads that align to gene 1
+    * Reads that align to gene 2
+    * Reads that align to gene 3
+    * Reads that align to gene 4
+    * Reads that align to gene 5
+    * Reads that align to gene 6
+
+Overall, this information would look, for example, as shown in Table 1:
+
+**Table 1. Read Metrics for Assessing Quality of Lab Work and Sequencing Run**
+
+| AMDID                | RawReads | HQreads | PfdhpsReads | Pfk13Reads | Pfmdr1Reads | TotalAligned |
+| ---                  | ---      | ---     | ---         | ---        | ---         | ---          |
+| 21BFGO00A2015PfF3361 | 146932   | 86686   | 14619       | 38075      | 28452       | 20138        |
+| 21BFGO00A2017PfF3361 | 130994   | 69916   | 13064       | 32726      | 20685       | 909          |
+| 21BFGO00A2028PfF3361 | 131244   | 54454   | 21191       | 3727       | 26086       | 48188        |
+| 21BFGO00A2034PfF3361 | 136766   | 70640   | 16240       | 35726      | 17120       | 56636        |
+| 21BFGO00A2065PfF3361 | 109852   | 42170   | 10822       | 17472      | 12937       | 8821         |
+| 21BFGO00A2066PfF3361 | 103812   | 54680   | 15471       | 23133      | 15088       | 39944        |
+| 21BFGO00A2071PfF3361 | 145936   | 85380   | 21758       | 41076      | 20457       | 18257        |
+| 21BFGO00A2087PfF3361 | 38166    | 12058   | 3304        | 8650       | 24          | 18138        |
+| 21BFGO00A2089PfF3361 | 158818   | 44952   | 11768       | 22046      | 9927        | 77180        |
+| 21BFGO00A2114PfF3361 | 144504   | 77286   | 20599       | 34546      | 20365       | 8430         |
+
+ 
+Using the information from the RawReads column, the sum of these values for a sequencing run should give a number that is around the expected amount of reads afforded by the Illumina sequencing kits used for that library. For a V2 Regular kit, the expected amount of reads is 20 million, and for a V2 Nano kit the amount is 1 million reads. For the parameters set by the Geneious Workflow, there will be on average about 50% hiqh quality reads in the sequenced reads, and out of these around 97% will align to the MaRS genes that were amplified. As the sample data in Table 1 demonstrates, some MaRS genes will amplify with higher efficiency compared to other genes. In Table 1, these samples had about 45% of their high quality reads align to _Pfk13_ compared to 28% and 27% high quality reads that aligned to _Pfdhps_ and _Pfmdr1_, respectively. Further testing is needed to determine the overall amplification efficiencies for all six MaRS genes, but in general it is known that _Pfk13_ with better efficency. The amplification efficiency can be confirmed with gel electrophoresis and the GelAnalyzer software. If there is consistent amplification of one amplicon over the others, or the levels of amplification can be quanitified consistently among the different targets, then this can be used to determine at what level the amplicons should be combined before library purification: more amplified targets contribute a smaller volume during the combination of amplicons than targets that did not amplify as efficiently.
+
+
+<a id="SeqQProtocol"></a>
+
+### Sequencing Quality Assessment Protocol ###
+
+To obtain the read numbers for each sample at the different stages of the Geneious workflow this process needs to be followed for all the files found in the three folders of interest, which are: 1) the starting folder where the files were imported, 2) the "Trimmed" folder where the BBDuk trimmed files are, and 3) the "Final_annotation" folder where the aligned files are located. The protocol for extracting the number of sequences (reads) in these files is:
+1. At the top menu bar click File.
+2. Navigate to Extract and click the "Documents..." option.
+3. In the new prompt, select a location where to save the file to be exported.
+4. Give the file to be exported a name, such as "{country name and year}RawReads.
+5. For Files of Type choose "TSV tab-separated table (*.tsv).
+6. Click Export.
+7. In the new prompt, click "Proceed".
+8. In the new prompt, select "Name" and "# Sequences".
+9. Click "OK".
+
+Currently, the exported information needs to be organized by hand using Excel, but we plan to write Python code to facilitate this proces in the future. 
+
+
+
