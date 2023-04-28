@@ -38,12 +38,13 @@ This step uses the [Geneious_output_summary_and_visualization.ipynb](https://git
 * The first step users need to edit the code based on their dataset.First edit the name of csv file if it not named as “Annotations.csv”. 
 * Next, the user needs to edit the site information based on the state or province of the corresponding data.  For example, as given in the Jupyter notebook, the two letter code in AMDID from digit 4:6 is AM, and it represents site name ‘Amhara’. If you have more sites, copy and paste the if statement highlighted below and add more rows depending on the number of sites present in the data being annotated.
 
-<span style="color:red">
-     def site(row):                               
-         if row['Document Name'][4:6]=="Am": 
-           return 'Amhara'
-
-</span> 
+<img
+  src="/images/Site.png"
+  width="600">
+  
+  <img
+  src="/images/Site2.png"
+  width="600">
 
 * Edit the name of the output files to make it specific to the country that the data corresponds to. For example, if the country is Burkina Faso, then default output file should be changed from “ET_individual_EPI_VOI.csv” to “BF_individual_EPI_VOI.csv”. Rename all other output files to their specific country code digits.  
 
