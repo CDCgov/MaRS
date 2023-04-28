@@ -1,4 +1,4 @@
-February 13th, 2022; version 5.4.0; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
+April 10th, 2023; version 5.4.1; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
 
 > _Version 5.0: Major update made in library prep from NexteraXT to Flex protocol._
 
@@ -33,12 +33,12 @@ This document provides information for an application for Illumina technology th
 
 **Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes associated with antimalarial resistance on the Illumina MiSeq.**
 
-* kelch 13 (_k13_)
-* chloroquine resistant transporter (_crt_)
-* multidrug resistant protein 1 (_mdr1_)
-* bifunctional dihydrofolate reductase-thymidylate synthase (_dhfr_)
-* dihydropteroate synthase (_dhps_)
-* cytochrome b (_cytb_)
+* _Plasmodium falciparum_ kelch 13 (_Pfk13_)
+* _Plasmodium falciparum_ chloroquine resistant transporter (_Pfcrt_)
+* _Plasmodium falciparum_ multidrug resistant protein 1 (_Pfmdr1_)
+* _Plasmodium falciparum_ bifunctional dihydrofolate reductase-thymidylate synthase (_Pfdhfr_)
+* _Plasmodium falciparum_ dihydropteroate synthase (_Pfdhps_)
+* _Plasmodium falciparum_ cytochrome b (_Pfcytb_)
 
 Human malaria is caused by six _Plasmodium_ species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. malariae (Pm), P. ovale (Po) (P.o. curtisi and P.o. wallikeri)* and *P. knowlesi (Pk)*, which although zoonotic, can cause human infections in several South East Asian countries. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2021, there were an estimated 247 million malaria cases in 84 malaria endemic countries, causing an estimated 619,000 deaths. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
 
@@ -52,13 +52,13 @@ Below is a table of the major antimalarials and their associated with resistance
 
 |Antimalarial                            | Molecular Marker (Gene)  | Location     |
 |----                                    |----                      |----          |
-| Chloroquine                            | _crt_                    | Chr 7        |
-| Artemisinin                            | _k13_                    | Chr 13       |
-| Atovaquone                             | _cytb_                   | Mitochondria |
-| Amodiaquine, lumefantrine, quinine     | _mdr1_                   | Chr 5        |
-| Pyrimethamine                          | _dhfr_                   | Chr 4        |
-| Sulfadoxine                            | _dhps_                   | Chr 8        |
-> Chr = chromosome; _crt_ = chloroquine resistance transporter; _k13_ = kelch 13; _cytb_ = cytochrome b; _mdr1_ = multidrug resistance protein 1; _dhfr_ = bifunctional dihydrofolate reductase thymidylate synthase; _dhps_ = dydroxymethyldihydropterin pyrophosphokinase-dihydropteroate synthase;
+| Chloroquine                            | _Pfcrt_                    | Chr 7        |
+| Artemisinin                            | _Pfk13_                    | Chr 13       |
+| Atovaquone                             | _Pfcytb_                   | Mitochondria |
+| Amodiaquine, lumefantrine, quinine     | _Pfmdr1_                   | Chr 5        |
+| Pyrimethamine                          | _Pfdhfr_                   | Chr 4        |
+| Sulfadoxine                            | _Pfdhps_                   | Chr 8        |
+> Chr = chromosome; _Pfcrt_ = _Plasmodium falicparum_ chloroquine resistance transporter; _Pfk13_ = _Plasmodium falicparum_ kelch 13; _Pfcytb_ = _Plasmodium falicparum_ cytochrome b; _Pfmdr1_ = _Plasmodium falicparum_ multidrug resistance protein 1; _Pfdhfr_ = _Plasmodium falicparum_ bifunctional dihydrofolate reductase thymidylate synthase; _Pfdhps_ = _Plasmodium falicparum_ dydroxymethyldihydropterin pyrophosphokinase-dihydropteroate synthase;
 
 
   * * *
@@ -349,14 +349,14 @@ We highly recommend using at least **three positive controls** with known SNP pr
 
 We routinely use the following controls:
 
-| Control strain | _crt_         | _mdr1_        | _dhfr_        | _dhps_    | _k13_       |
+| Control strain | _Pfcrt_         | _Pfmdr1_        | _Pfdhfr_        | _Pfdhps_    | _Pfk13_       |
 | ---            | ---           | ---           | ---           | ---       | ---         |
 | 7G8            | **S**VMN**T** | NED**FCDY**   | C**I**C**N**I | S**G**KAA | _wild type_ |
 | DD2            | CV**IET**     | **Y/F**EDFCDY | C**IRN**I     | S**G**KAA | _wild type_ |
 | HB3            | CVMNK         | **Y/F**EDFCDY | C**I**C**T**I | S**G**KAA | _wild type_ |
 
 > **BOLD** indicates codon position with mutations<br />
-> Codon positions:_crt_ :72-76; _mdr1_ :86,130, 144, 184, 1034, 1042, 1109, 1246; _dhfr_ : 50, 51, 59, 108, 164; _k13_ : 18 - 715
+> Codon positions:_Pfcrt_ :72-76; _Pfmdr1_ :86,130, 144, 184, 1034, 1042, 1109, 1246; _Pfdhfr_ : 50, 51, 59, 108, 164; _Pfk13_ : 18 - 715
 
 Controls can be ordered directly through BEI: https://www.beiresources.org/
 
@@ -409,12 +409,12 @@ User‐defined forward and reverse primers are used to amplify templates from ge
 
 **Primers and PCR Conditions**
 
-The tables below show primers and PCR conditions for the following antimalarial drug resistance associated genes: _crt_ [6.1](#6.1), _k13_ [6.2](#6.2), _mitochondria_ [6.3](#6.3), _cytb_ [6.3a](#6.3a), _dhps_ [6.4](#6.4), _dhfr_ [6.5](#6.5), _mdr1_ [6.6](#6.6). Genes for parasite fingerprinting: _pfs47_ [6.7](#6.7), and _cpmp_ [6.8](#6.8)
+The tables below show primers and PCR conditions for the following antimalarial drug resistance associated genes: _Pfcrt_ [6.1](#6.1), _Pfk13_ [6.2](#6.2), _mitochondria_ [6.3](#6.3), _Pfcytb_ [6.3a](#6.3a), _Pfdhps_ [6.4](#6.4), _Pfdhfr_ [6.5](#6.5), _Pfmdr1_ [6.6](#6.6). Genes for parasite fingerprinting: _Pfs47_ [6.7](#6.7), and _Pfcpmp_ [6.8](#6.8)
 
 **IMPORTANT**: While the master mix conditions will be the same for all genes, the thermocycling conditions will differ, specifically the annealing temperatures.  
 
 <a id="6.1"></a>
-**Table 6.1. Gene: _crt_ (3,109 bp); <ins>Primers at 10 µM</ins>**
+**Table 6.1. Gene: _Pfcrt_ (3,109 bp); <ins>Primers at 10 µM</ins>**
 
 | Master mix      | Reaction volume | x samples + 10% | Final [conc] |
 |----             |----             |----             |----          |
@@ -434,7 +434,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_crt-fwd_: _TTACATATAACAAAATGAAATTCGC_<br />
 >_mars_crt-rev_: _TATTGTGTAATAATTGAATCGACG_
 
-**Thermocyclying conditions for _crt_; <ins> Primers at 10 µM</ins>**:
+**Thermocyclying conditions for _Pfcrt_; <ins> Primers at 10 µM</ins>**:
 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
@@ -449,7 +449,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | 6      | 4&deg;C                            | Infinity   |
 
 <a id="6.2"></a>
-**Table 6.2.  _k13_ (2,181 bp); <ins> Primers at 10 µM</ins>**
+**Table 6.2.  _Pfk13_ (2,181 bp); <ins> Primers at 10 µM</ins>**
 
 | Master mix      | Reaction volume | x samples + 10% | Final [conc] |
 |----             |----             |----             |----          |
@@ -469,7 +469,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_k13-fwd_: _CTATGACGTATGATAGGGAATCTGG_<br />
 >_mars_k13-rev_: _CTGGGAACTAATAAAGATGGGCC_
 
-**Thermocyclying conditions for _k13_; <ins> Primers at 10 µM</ins>**:
+**Thermocyclying conditions for _Pfk13_; <ins> Primers at 10 µM</ins>**:
 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
@@ -515,7 +515,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 |        |                                    |            |
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **50&deg;C**                       | **0:30**   |      
-| **4**  | **65&deg;C**                       | **5:00**   |    
+| **4**  | **65&deg;C**                       | **6:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
 |        |                                    |            | 
 | 5      | 65&deg;C                           | 10:00      |
@@ -551,7 +551,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 |        |                                    |            |
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **60&deg;C**                       | **0:30**   |      
-| **4**  | **65&deg;C**                       | **5:00**   |    
+| **4**  | **65&deg;C**                       | **3:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
 |        |                                    |            | 
 | 5      | 65&deg;C                           | 10:00      |
@@ -559,7 +559,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 
 <a id="6.4"></a>
-**Table 6.4. _mdr1_ (4,155 bp); <ins> Primers at 10 µM</ins>**
+**Table 6.4. _Pfmdr1_ (4,155 bp); <ins> Primers at 10 µM</ins>**
 
 | Master mix       | Reaction volume | x samples + 10% | Final [conc] |
 |----              |----             |----             |----          |
@@ -579,7 +579,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_mdr1-fwd_: _TGGTAACCTCAGTATCAAAG_<br />
 >_mars_mdr1-rev_: _CATCTTGTGCTGATAATAATTC_
 
-**Thermocyclying conditions for _mdr1_; <ins> Primers at 10 µM**:
+**Thermocyclying conditions for _Pfmdr1_; <ins> Primers at 10 µM**:
 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
@@ -595,7 +595,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 
 <a id="6.5"></a>
-**Table 6.5. _dhfr_ (2,067 bp); <ins> Primers at 10 µM</ins>**
+**Table 6.5. _Pfdhfr_ (2,067 bp); <ins> Primers at 10 µM</ins>**
 
 | Master mix       | Reaction volume | x samples + 10% | Final [conc] |
 |----              |----             |----             |----          |
@@ -615,14 +615,14 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_dhfr-fwd_: _TTTTTACTAGCCATTTTTGTATTCC_<br />
 >_mars_dhfr-rev_: _TTAACCGTTCAGGTAATTTTGTCA_
 
-**Thermocyclying conditions for _dhfr_; <ins> Primers at 10 µM**:
+**Thermocyclying conditions for _Pfdhfr_; <ins> Primers at 10 µM**:
 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
 | 1      | 98&deg;C                           | 3:00       |  
 |        |                                    |            |
 | **2**  | **98&deg;C**                       | **0:30**   |      
-| **3**  | **60&deg;C**                       | **0:30**   |      
+| **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
 |        |                                    |            | 
@@ -634,7 +634,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 
 <a id="6.6"></a>
-**Table 6.6. _dhps_ (2,817 bp); <ins> Primers at 10 µM</ins>**
+**Table 6.6. _Pfdhps_ (2,817 bp); <ins> Primers at 10 µM</ins>**
 
 | Master mix       | Reaction volume | x samples + 10% | Final [conc] |
 |----              |----             |----             |----          |
@@ -654,14 +654,14 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_dhps-fwd_: _AATATTTGCGCCAAACTTTTTA_<br />
 >_mars_dhps-rev_: _TTTATTTCGTAATAGTCCACTTTTGAT_
 
-**Thermocyclying conditions for _dhps_; <ins> Primers at 10 µM**:
+**Thermocyclying conditions for _Pfdhps_; <ins> Primers at 10 µM**:
 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
 | 1      | 98&deg;C                           | 3:00       |  
 |        |                                    |            |
 | **2**  | **98&deg;C**                       | **0:30**   |      
-| **3**  | **60&deg;C**                       | **0:30**   |      
+| **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
 |        |                                    |            | 
@@ -693,7 +693,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_pfs47-fwd_: _ATGTGTATGGGAAGAATGATCAG_<br />
 >_mars_pfs47-rev_: _TCATATGCTAACATACATGTAAAAAATTAC_
 
-**Thermocyclying conditions for _pfs47_; <ins> Primers at 10 µM**:
+**Thermocyclying conditions for _Pfs47_; <ins> Primers at 10 µM**:
 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
@@ -709,7 +709,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 
 <a id="6.8"></a>
-**Table 6.8. _Cpmp_ (805 bp); <ins> Primers at 10 µM</ins>**
+**Table 6.8. _Pfcpmp_ (805 bp); <ins> Primers at 10 µM</ins>**
 
 | Master mix      | Reaction volume | x samples + 10% | Final [conc] |
 |----             |----             |----             |----          |
@@ -729,7 +729,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 >_mars_cpmp-fwd_: _GTCATTAAAATTTATGGATTATATATGG_<br />
 >_mars_cpmp-rev_:_GTTACTATCCAAGATCGTTAATATC_
 
-**Thermocyclying conditions for _cpmp_; <ins> Primers at 10 µM**:
+**Thermocyclying conditions for _Pfcpmp_; <ins> Primers at 10 µM**:
 
 | Step   | Temperature                                   | Time (min) |
 | :--:   |:----:                                         | :----:     |
@@ -859,7 +859,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 2. Combine (pool) each PCR gene amplicon into a new MIDI plate using **table 7b** below.
 
-    **Note:** The PCR efficiency for each of the genes varies (_k13_ > _dhfr_ > _dhps_ > _mdr1_ > _crt_; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel from [QC by Electrophoresis](#electrophoresis), use the [gel analyzer](http://www.gelanalyzer.com/?i=1) program to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5 µL* from each gene PCR amplicon to the final pool.
+    **Note:** The PCR efficiency for each of the genes varies (_Pfk13_ > _Pfdhfr_ > _Pfdhps_ > _Pfmdr1_ > _Pfcrt_; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel from [QC by Electrophoresis](#electrophoresis), use the [gel analyzer](http://www.gelanalyzer.com/?i=1) program to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5 µL* from each gene PCR amplicon to the final pool.
 
 **Table 7b. Amounts for pooling PCR amplicons**
 
