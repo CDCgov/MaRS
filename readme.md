@@ -1,3 +1,21 @@
+
+<details>
+  <summary><strong>Updates Over Time</strong></summary>
+
+> Author: @ET 4/5/22 :goat:  
+>> Edited: @MB 4/21/23 
+----
+>#### To Do ####
+
+
+>#### Completed Activity ✓ ####
+
+- [x] Added MaRS GitHub Folder Structure diagram to readme
+
+------
+</details>
+
+
 ## MaRS (Malaria Resistance Surveillance) Project :rocket: ##
 
 ### Vision ###
@@ -16,13 +34,22 @@ This projects aims to:
 
 ### Lab Protocols :microscope: ###
 
-Please see the Illumina TADS [Lab Protocol](https://github.com/CDCgov/MaRS/blob/master/SOPs/MaRSsop.md) for the most up to date standard operating procedures (SOPs).
+Please see the Illumina Targeted Amplicon Deep Sequencing (TADS) [Lab Protocol](https://cdcgov.github.io/MaRS/) for the most up to date standard operating procedures (SOPs).
 
 ### Data Analysis :computer: ###
 
 Two analysis workflows are available and actively being developed:  
 * [Beginner/Intermediate Bioinformaticans and Biologists](https://github.com/CDCgov/MaRS/blob/master/Geneious_workflow/)
 * [Advanced Bioinformaticans and Data Scientists](https://github.com/CDCgov/MaRS/blob/master/Nextflow_workflow/)
+
+### Organization of Repository ###
+
+This MaRS repo is organized into the structure shown in **Figure 1**.
+
+**Figure 1. MaRS Project GitHub Folder Structure**
+<img
+  src="/images/MaRS_github_overview.png"
+  width="600">
 
 ### Data Sharing ###
 
@@ -42,3 +69,31 @@ If you would like to contribute to this project, please [Contact Us](mailto:wrj5
 > Antimicrob Agents Chemother. 2018 Mar 27;62(4). pii: e02474-17. doi: 10.1128/AAC.02474-17. Print 2018 April
 
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+
+----
+<details>
+  <summary><strong>Legal Notices</strong></summary>
+
+#### License
+
+The repository utilizes code licensed under the terms of the Apache Software License and therefore is licensed under ASL v2 or later.
+
+This source code in this repository is free: you can redistribute it and/or modify it under the terms of the Apache Software License version 2, or (at your option) any later version.
+
+This source code in this repository is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the Apache Software License for more details.
+
+The source code forked from other open source projects will inherit its license.
+
+#### Public Domain
+
+This repository constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105. This repository is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/). All contributions to this repository will be released under the CC0 dedication. By submitting a pull request you are agreeing to comply with this waiver of copyright interest.
+
+#### Records Management
+
+This repository is not a source of government records, but is a copy to increase collaboration and collaborative potential. All government records will be published through the [CDC web site](https://www.cdc.gov/).
+
+#### Privacy
+
+This repository contains only non-sensitive, publicly available data and information. All material and community participation is covered by the [Disclaimer](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md) and [Code of Conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md). For more information about CDC's privacy policy, please visit http://www.cdc.gov/other/privacy.html.
+</details>
