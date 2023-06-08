@@ -1,4 +1,4 @@
-April 10th, 2023; version 5.4.1; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
+June 8th, 2023; version 5.4.2; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
 
 > _Version 5.0: Major update made in library prep from NexteraXT to Flex protocol._
 
@@ -33,12 +33,12 @@ This document provides information for an application for Illumina technology th
 
 **Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes associated with antimalarial resistance on the Illumina MiSeq.**
 
-* _Plasmodium falciparum_ kelch 13 (_Pfk13_)
-* _Plasmodium falciparum_ chloroquine resistant transporter (_Pfcrt_)
-* _Plasmodium falciparum_ multidrug resistant protein 1 (_Pfmdr1_)
-* _Plasmodium falciparum_ bifunctional dihydrofolate reductase-thymidylate synthase (_Pfdhfr_)
-* _Plasmodium falciparum_ dihydropteroate synthase (_Pfdhps_)
-* _Plasmodium falciparum_ cytochrome b (_Pfcytb_)
+* [_Plasmodium falciparum_ kelch 13 (_Pfk13_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_1343700)
+* [_Plasmodium falciparum_ chloroquine resistant transporter (_Pfcrt_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0709000)
+* [_Plasmodium falciparum_ multidrug resistant protein 1 (_Pfmdr1_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0523000)
+* [_Plasmodium falciparum_ bifunctional dihydrofolate reductase-thymidylate synthase (_Pfdhfr_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0417200)
+* [_Plasmodium falciparum_ dihydropteroate synthase (_Pfdhps_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0810800)
+* [_Plasmodium falciparum_ cytochrome b (_Pfcytb_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_MIT02300)
 
 Human malaria is caused by six _Plasmodium_ species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. malariae (Pm), P. ovale (Po) (P.o. curtisi and P.o. wallikeri)* and *P. knowlesi (Pk)*, which although zoonotic, can cause human infections in several South East Asian countries. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2021, there were an estimated 247 million malaria cases in 84 malaria endemic countries, causing an estimated 619,000 deaths. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
 
@@ -115,7 +115,7 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 | **200 Proof Ethanol** | Decon Labs, Inc. Catalog #2716 |
 | **AlumaSeal II aluminum seals** | Excel Scientific, Inc. Catalog #AF100 |
 | **Clear, 8-strip PCR tubes domed caps** | LabSource, Catalog #T54-203-CS/10PK MFG# - 321-10-062 |
-| **[Optional] 96‐well storage plates, round well, 300 µL ("MIDI" plate)** | Fisher Scientific, Catalog #AB‐0859 |
+| **96‐well U-Shaped-Bottom Microplate** | Fisher Scientific, Catalog #7-200-720 |
 | **Qubit® dsDNA HS Assay Kit** | Life Technologies Corporation Catalog #Q32854 |
 | **Qubit™ Assay Tubes** | Thermo Fisher Scientific Catalog #Q32856 |
 | **Agilent High Sensitivity D5000 ScreenTape** | Agilent Technologies, Catalog #5067-5592 |
@@ -835,7 +835,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 | Nuclease free water; # 25-055-CM    | 40 µL per sample           | Room temperature  |
 | 96‐well 0.2 mL PCR plate            | 1 plate                    |                   |
 | [Optional] Microseal 'B' film       |                            |                   |
-| 96‐well MIDI plate                  | 1 plate                    |                   |
+| 96‐well U-Shaped-Bottom Microplate  | 1 plate                    |                   |
 
 
 **Preparation**
@@ -857,7 +857,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 1. Centrifuge the Library Amplification plates at 1,000 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
 
-2. Combine (pool) each PCR gene amplicon into a new MIDI plate using **table 7b** below.
+2. Combine (pool) each PCR gene amplicon into a new 96‐well U-Shaped-Bottom Microplate using **table 7b** below.
 
     **Note:** The PCR efficiency for each of the genes varies (_Pfk13_ > _Pfdhfr_ > _Pfdhps_ > _Pfmdr1_ > _Pfcrt_; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel from [QC by Electrophoresis](#electrophoresis), use the [gel analyzer](http://www.gelanalyzer.com/?i=1) program to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5 µL* from each gene PCR amplicon to the final pool.
 
@@ -1042,7 +1042,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 4. While samples are incubating, thaw EPM on ice and thaw indices at room temperature.
 
-5. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and transfer the 60 µL sample volumes to a new MIDI plate, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
+5. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and transfer the 60 µL sample volumes to a new 96‐well U-Shaped-Bottom Microplate, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
 
 6. Using a multichannel pipette set at 100 µL, remove and discard supernatant.
 
@@ -1129,19 +1129,17 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
     **NOTE:** _Removal of TWB is crucial, as it can impede PCR. However, any foam remaining on the wells will not negatively impact the library._
 
-5. Remove from the magnet and immediately add 40 µL of PCR master mix to each sample and gently pipet to mix, res-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads
+5. Remove from the magnet and immediately add 40 µL of PCR master mix to each sample and gently pipet to mix, re-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads. Transfer the 40 µL sample volumes to a new PCR plate.
 
 6. Add 10 µL of appropriate index pair from indices plate to each sample well. 
 
     **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 µL pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use. Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate. 
 
-     **NOTE:** Index should be added as next available down the columns
+     **NOTE:** Index should be added as next available down the columns.
 
-7. Using a multichannel pipette set at 40 µL mix by pipetting a minimum of 10 times1
+7. Using a multichannel pipette set at 40 µL mix by pipetting a minimum of 10 times.
 
 8. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 µL and lid heated option at 100°C.
-
-9. Centrifuge plate for at 280 x g for 1 minute.
 
 **SAFE STOPPING POINT**
 
@@ -1167,7 +1165,7 @@ This step uses Sample purification beads to clean up the final library before qu
 | **96‐well 0.2 mL PCR plate** | Varies | Room temperature |
 | **Nuclease-free water** | Varies | Room temperature |
 | **Microseal 'B' film and 'F' foil** | Varies | Room temperature |
-| **96‐well MIDI plate** | Varies | Room temperature |
+| **96‐well U-Shaped-Bottom Microplate** | Varies | Room temperature |
 | **96-well 0.2 mL PCR plate** | Varies | Room temperature |
 | **1.7 mL microcentrifuge tube** | Varies | Room temperature |
 
@@ -1204,7 +1202,7 @@ This step uses Sample purification beads to clean up the final library before qu
 
 2. Prepare SPB master mix in a 2 mL tube based on **Table 11a** above.
 
-3. Place sample plate on the magnet for 5 minutes (or until beads have formed a tight pellet).
+3. Transfer the 50 µL sample volumes to a new 96‐well U-Shaped-Bottom Microplate. Place sample plate on the magnet for 5 minutes (or until beads have formed a tight pellet).
 
 4. Transfer 45 µL of supernatant (now containing the DNA) to new deep well plate.
 
