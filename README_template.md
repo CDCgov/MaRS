@@ -15,6 +15,7 @@
 
 * Quick summary
 * Version
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
@@ -35,10 +36,3 @@
 
 * Repo owner or admin
 * Other community or team contact
-
-<details>
-  <summary> Other resources </summary>
-
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-</details>   
