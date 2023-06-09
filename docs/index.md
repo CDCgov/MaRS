@@ -1,4 +1,4 @@
-April 10th, 2023; version 5.4.1; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
+June 8th, 2023; version 5.4.2; updated by [Marko Bajic](mailto:mbajic@cdc.gov)
 
 > _Version 5.0: Major update made in library prep from NexteraXT to Flex protocol._
 
@@ -33,12 +33,12 @@ This document provides information for an application for Illumina technology th
 
 **Standard Operating Procedure (SOP) describing how to prepare and sequence the full length _P. falciparum_ genes associated with antimalarial resistance on the Illumina MiSeq.**
 
-* _Plasmodium falciparum_ kelch 13 (_Pfk13_)
-* _Plasmodium falciparum_ chloroquine resistant transporter (_Pfcrt_)
-* _Plasmodium falciparum_ multidrug resistant protein 1 (_Pfmdr1_)
-* _Plasmodium falciparum_ bifunctional dihydrofolate reductase-thymidylate synthase (_Pfdhfr_)
-* _Plasmodium falciparum_ dihydropteroate synthase (_Pfdhps_)
-* _Plasmodium falciparum_ cytochrome b (_Pfcytb_)
+* [_Plasmodium falciparum_ kelch 13 (_Pfk13_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_1343700)
+* [_Plasmodium falciparum_ chloroquine resistant transporter (_Pfcrt_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0709000)
+* [_Plasmodium falciparum_ multidrug resistant protein 1 (_Pfmdr1_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0523000)
+* [_Plasmodium falciparum_ bifunctional dihydrofolate reductase-thymidylate synthase (_Pfdhfr_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0417200)
+* [_Plasmodium falciparum_ dihydropteroate synthase (_Pfdhps_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_0810800)
+* [_Plasmodium falciparum_ cytochrome b (_Pfcytb_)](https://plasmodb.org/plasmo/app/record/gene/PF3D7_MIT02300)
 
 Human malaria is caused by six _Plasmodium_ species: *Plasmodium falciparum (Pf), P. vivax (Pv), P. malariae (Pm), P. ovale (Po) (P.o. curtisi and P.o. wallikeri)* and *P. knowlesi (Pk)*, which although zoonotic, can cause human infections in several South East Asian countries. Two of these, *Pf* and *Pv*, pose the greatest threat to global public health. About 3.2 billion people, half of the world's population, are at risk for malaria. In 2021, there were an estimated 247 million malaria cases in 84 malaria endemic countries, causing an estimated 619,000 deaths. In the U.S., an estimated 1,500 - 2,000 cases of malaria are imported annually. One of the greatest public health challenges for malaria control and elimination is the threat of drug resistant *Pf* parasites.
 
@@ -115,7 +115,7 @@ Please ensure all the necessary user‐supplied consumables and equipment are av
 | **200 Proof Ethanol** | Decon Labs, Inc. Catalog #2716 |
 | **AlumaSeal II aluminum seals** | Excel Scientific, Inc. Catalog #AF100 |
 | **Clear, 8-strip PCR tubes domed caps** | LabSource, Catalog #T54-203-CS/10PK MFG# - 321-10-062 |
-| **[Optional] 96‐well storage plates, round well, 300 µL ("MIDI" plate)** | Fisher Scientific, Catalog #AB‐0859 |
+| **96‐well U-Shaped-Bottom Microplate** | Fisher Scientific, Catalog #7-200-720 |
 | **Qubit® dsDNA HS Assay Kit** | Life Technologies Corporation Catalog #Q32854 |
 | **Qubit™ Assay Tubes** | Thermo Fisher Scientific Catalog #Q32856 |
 | **Agilent High Sensitivity D5000 ScreenTape** | Agilent Technologies, Catalog #5067-5592 |
@@ -200,7 +200,7 @@ Reagents: Resuspension Buffer, HT1, 0.2N NaOH, PhiX Control Kit v3, 200 mM Tris-
 Hands on time 5 min / 96 samples; Total time 15-25 min / 96 samples<br />
 Method: [MaRS analysis pipeline](github.com/CDCgov/MaRS/tree/master/Geneious_workflow)
 
-11. **Standardized SNPs Reports Generated** 
+11. **Standardized SNPs Reports Generated**
 
 
 
@@ -280,7 +280,7 @@ The table below shows the Genus and _P. falciparum_ primers and PCR conditions f
 | **3**  | **63&deg;C**                       | **0:40**   |      
 | **4**  | **72&deg;C**                       | **0:30**   |    
 |        | **Repeat Steps 2-4 for 44 cycles<br /> (45 total)** |            |  
-|        |                                    |            | 
+|        |                                    |            |
 | 5      | 4&deg;C                            | Infinity   |
 
 **Adding the DNA Samples**
@@ -443,8 +443,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **62&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
-|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
-|        |                                    |            | 
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -478,8 +478,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
-|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
-|        |                                    |            | 
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -516,8 +516,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **50&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **6:00**   |    
-|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
-|        |                                    |            | 
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -552,8 +552,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **60&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **3:00**   |    
-|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
-|        |                                    |            | 
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -589,7 +589,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **3**  | **60&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
-|        |                                    |            | 
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -624,8 +624,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
-|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
-|        |                                    |            | 
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -663,8 +663,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
-|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            | 
-|        |                                    |            | 
+|        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -703,7 +703,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
-|        |                                    |            | 
+|        |                                    |            |
 | 5      | 65&deg;C                           | 10:00      |
 | 6      | 4&deg;C                            | Infinity   |
 
@@ -739,8 +739,8 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | **3**  | **54&deg;C**                                  | **0:30**   |      
 | **4**  | **65&deg;C**                                  | **5:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
-|        |                                               |            | 
-| 5      | 65&deg;C                                      | 10:00      | 
+|        |                                               |            |
+| 5      | 65&deg;C                                      | 10:00      |
 | 6      | 4&deg;C                                       | Infinity   |
 
 
@@ -835,7 +835,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 | Nuclease free water; # 25-055-CM    | 40 µL per sample           | Room temperature  |
 | 96‐well 0.2 mL PCR plate            | 1 plate                    |                   |
 | [Optional] Microseal 'B' film       |                            |                   |
-| 96‐well MIDI plate                  | 1 plate                    |                   |
+| 96‐well U-Shaped-Bottom Microplate  | 1 plate                    |                   |
 
 
 **Preparation**
@@ -857,7 +857,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 1. Centrifuge the Library Amplification plates at 1,000 × g at 20°C for 1 minute to collect condensation, carefully remove seal.
 
-2. Combine (pool) each PCR gene amplicon into a new MIDI plate using **table 7b** below.
+2. Combine (pool) each PCR gene amplicon into a new 96‐well U-Shaped-Bottom Microplate using **table 7b** below.
 
     **Note:** The PCR efficiency for each of the genes varies (_Pfk13_ > _Pfdhfr_ > _Pfdhps_ > _Pfmdr1_ > _Pfcrt_; highest to lowest PCR efficiency). Thus, its important to add approximately the same total concentration of each PCR gene amplicon to each pool of gene amplicons. Using the gel from [QC by Electrophoresis](#electrophoresis), use the [gel analyzer](http://www.gelanalyzer.com/?i=1) program to determine estimated concentration of your genes. Based on this analysis, adjust the total volume added of each gene, making sure to *always add at minimum 5 µL* from each gene PCR amplicon to the final pool.
 
@@ -890,7 +890,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
 6. Place the library amplification plate on a magnetic stand for 2 minutes. WAIT for the solution to clear before proceeding.
 
-7. With the library amplification plate on the magnetic stand, use a multichannel pipette to _carefully_ remove and discard all the supernatant. Change tips between samples. 
+7. With the library amplification plate on the magnetic stand, use a multichannel pipette to _carefully_ remove and discard all the supernatant. Change tips between samples.
 
     **DO NOT disturb the magnetic beads.**
 
@@ -900,7 +900,7 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
     - B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
 
-    - C. Carefully remove excess ethanol using a P20 multichannel pipette. 
+    - C. Carefully remove excess ethanol using a P20 multichannel pipette.
 
       **NOTE: The beads are not drawn out easily when in alcohol, so it is not necessary to leave any supernatant behind.**
 
@@ -910,11 +910,11 @@ This step uses AMPure XP beads to clean up your PCR amplicon gene product(s). Yo
 
     - B. Incubate the plate on the magnetic stand for 30 seconds at room temperature.
 
-    - C. Carefully remove excess ethanol using a P20 multichannel pipette. 
+    - C. Carefully remove excess ethanol using a P20 multichannel pipette.
 
-    - D. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol. 
+    - D. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
-10. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains. 
+10. With the library amplification plate still on the magnetic stand, allow the beads to air-dry for at least 3 minutes, then check every 2 minutes until no ethanol remains.
 
     **NOTE: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried.**
 
@@ -1042,7 +1042,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
 4. While samples are incubating, thaw EPM on ice and thaw indices at room temperature.
 
-5. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and transfer the 60 µL sample volumes to a new MIDI plate, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
+5. After incubation, remove from thermal cycler, quick spin the plate, remove microseal, and transfer the 60 µL sample volumes to a new 96‐well U-Shaped-Bottom Microplate, and place on a magnet for 3 minutes until solution is clear (or until beads form a tight pellet).
 
 6. Using a multichannel pipette set at 100 µL, remove and discard supernatant.
 
@@ -1054,7 +1054,7 @@ The tagmentation step uses the Bead-Linked Transposomes (BLT) to tagment DNA. Th
 
     - C. Place the plate on the magnetic stand and wait until the solution is clear (~3 minutes).
 
-    - D. Using a multichannel pipette set at 110 µL, remove and discard supernatant. 
+    - D. Using a multichannel pipette set at 110 µL, remove and discard supernatant.
 
 - **NOTE:** _To minimize the potential of TWB foaming during the tagmentation wash, use a deliberately slow pipetting technique to avoid incorrect volume aspirauion and incomplete mixing._
 
@@ -1104,7 +1104,7 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 | **4**  | **62&deg;C**                                | **0:30**   |      
 | **5**  | **68&deg;C**                                | **2:00**   |    
 |        | **Repeat Steps 2-4 for 4 cycles</br> (5 total)** |            |  
-|        |                                             |            | 
+|        |                                             |            |
 | 6      | 68&deg;C                                    | 1:00       |
 | 7      | 4&deg;C                                     | Infinity   |
 
@@ -1119,8 +1119,8 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
 1. Briefly vortex the thawed EPM immediately before use.
 
-2. Prepare the PCR master mix based on **Table 10** above. 
-    
+2. Prepare the PCR master mix based on **Table 10** above.
+
     **NOTE:** _It is recommended to increase the number of samples during master mix calculation by 10% to ensure sufficient master mix volume_.
 
 3. Vortex and quick spin the PCR master mix.
@@ -1129,19 +1129,17 @@ This step amplifies the tagmented DNA using a limited-cycle PCR program. The PCR
 
     **NOTE:** _Removal of TWB is crucial, as it can impede PCR. However, any foam remaining on the wells will not negatively impact the library._
 
-5. Remove from the magnet and immediately add 40 µL of PCR master mix to each sample and gently pipet to mix, res-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads
+5. Remove from the magnet and immediately add 40 µL of PCR master mix to each sample and gently pipet to mix, re-suspending the pellet. If necessary, scrape the side of the well with the pipette tips to resuspend the beads. Transfer the 40 µL sample volumes to a new PCR plate.
 
-6. Add 10 µL of appropriate index pair from indices plate to each sample well. 
+6. Add 10 µL of appropriate index pair from indices plate to each sample well.
 
-    **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 µL pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use. Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate. 
+    **NOTE:** It is recommended to pierce the foil of the desired well on the index plate with a new 200 µL pipet tip, then to use a fresh pipette tip to withdraw the indices from the wells, followed by re- sealing the index plate with a new foil cover (i.e. Microseal F) after each use. Make sure that the index is oriented correctly. Handle plate gently to maintain index at the bottom of the plate. If not, spin plate to make sure that index is towards bottom of the plate.
 
-     **NOTE:** Index should be added as next available down the columns
+     **NOTE:** Index should be added as next available down the columns.
 
-7. Using a multichannel pipette set at 40 µL mix by pipetting a minimum of 10 times1
+7. Using a multichannel pipette set at 40 µL mix by pipetting a minimum of 10 times.
 
 8. Seal the plate with Microseal A (or equivalent) and place the plate on the pre-programmed thermal cycler setting "Flex 3" with volume set to 50 µL and lid heated option at 100°C.
-
-9. Centrifuge plate for at 280 x g for 1 minute.
 
 **SAFE STOPPING POINT**
 
@@ -1167,7 +1165,7 @@ This step uses Sample purification beads to clean up the final library before qu
 | **96‐well 0.2 mL PCR plate** | Varies | Room temperature |
 | **Nuclease-free water** | Varies | Room temperature |
 | **Microseal 'B' film and 'F' foil** | Varies | Room temperature |
-| **96‐well MIDI plate** | Varies | Room temperature |
+| **96‐well U-Shaped-Bottom Microplate** | Varies | Room temperature |
 | **96-well 0.2 mL PCR plate** | Varies | Room temperature |
 | **1.7 mL microcentrifuge tube** | Varies | Room temperature |
 
@@ -1204,7 +1202,7 @@ This step uses Sample purification beads to clean up the final library before qu
 
 2. Prepare SPB master mix in a 2 mL tube based on **Table 11a** above.
 
-3. Place sample plate on the magnet for 5 minutes (or until beads have formed a tight pellet).
+3. Transfer the 50 µL sample volumes to a new 96‐well U-Shaped-Bottom Microplate. Place sample plate on the magnet for 5 minutes (or until beads have formed a tight pellet).
 
 4. Transfer 45 µL of supernatant (now containing the DNA) to new deep well plate.
 
@@ -1212,7 +1210,7 @@ This step uses Sample purification beads to clean up the final library before qu
 
 6. Vortex SPB master mix thoroughly.
 
-7. Using a multichannel pipette mix briefly and add 85 µL of SPB master mix to each sample and pipette mix a minimum of 10 times. 
+7. Using a multichannel pipette mix briefly and add 85 µL of SPB master mix to each sample and pipette mix a minimum of 10 times.
 
    **NOTE:** _Use caution when mixing as the volume will be >100 µL._
 
@@ -1244,7 +1242,7 @@ This step uses Sample purification beads to clean up the final library before qu
 
 18. Use a P20 multichannel pipette with fine pipette tips to remove excess ethanol.
 
-19. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes. 
+19. With the Library amplification plate still on the magnetic stand, allow the beads to air‐dry for 3-5 minutes.
 
     **NOTE**: Make sure not to over dry the beads. Bead pellets will appear cracked if over dried. If cracking is observed, immediately re-suspend beads as described below regardless of drying time.
 
@@ -1392,7 +1390,7 @@ This SOP format was adapted from the Qubit® dsDNA HS Assay Kits [protocol](http
 
 Standard and Sample Preparation
 
-1. Prepare the tubes: Set up two 0.5-mL tubes for standards, and the required number of tubes for samples. 
+1. Prepare the tubes: Set up two 0.5-mL tubes for standards, and the required number of tubes for samples.
 
 - **Note** Use only the thin-wall, clear, 0.5-mL PCR tubes (described in **Table 2** User‐Supplied Consumables).
 
@@ -1402,7 +1400,7 @@ Standard and Sample Preparation
 
 3. Prepare the standards by adding 190 µL of Qubit working solution to each of the tubes used for standards. Add 10 µL of each Qubit standard to the appropriate tube, then mix by vortexing 2–3 seconds. Be careful not to create bubbles.
 
-4. Prepare the samples by adding Qubit working solution to individual assay tubes so that the final volume in each tube after adding the sample is 200 µL. 
+4. Prepare the samples by adding Qubit working solution to individual assay tubes so that the final volume in each tube after adding the sample is 200 µL.
 
 - **NOTE:** Your sample added should be between 1–20 µL and Qubit working solution between 180–199 µL (**See Table 13a** below).
 
@@ -1419,7 +1417,7 @@ Standard and Sample Preparation
 
 **Standard and Sample Reading**
 
-1. On the home screen of the Qubit 3.0 Fluorometer, select "**dsDNA**", then "**High Sensitivity**", and then "**Read Standards**." 
+1. On the home screen of the Qubit 3.0 Fluorometer, select "**dsDNA**", then "**High Sensitivity**", and then "**Read Standards**."
 
 - **NOTE:** If you have already performed a calibration for the selected assay, the instrument prompts you to choose between reading new standards and running samples using the previous calibration. If you wish to use the previous calibration, disregard step 3 in the Standard and Sample Preparation step, and skip to step 4 below. Otherwise, continue with step 2 below.
 
@@ -1485,11 +1483,11 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 3. Obtain an ice bucket for your thawed cartridge, freshly made reagents, and sample.
 
-4. Check pH of the stock 1.0N NaOH and the resulting 0.2N NaOH dilution using pH reader. 
+4. Check pH of the stock 1.0N NaOH and the resulting 0.2N NaOH dilution using pH reader.
 
 - **NOTE:** CO2 in the room will acidify NaOH over time. It is absolutely **critical** that the NaOH has a minimum pH of 12.5.
 
-5. Prepare a fresh dilution of 0.2 N NaOH. 
+5. Prepare a fresh dilution of 0.2 N NaOH.
 
 - **NOTE: this is a critical step; NaOH must be prepared fresh every time.**
 
@@ -1497,9 +1495,9 @@ In preparation for cluster generation and sequencing, pooled libraries are denat
 
 7. In a separate microcentrifuge tube, measure 200 µL of stock 1.0N NaOH.
 
-8. Combine the two volumes and then invert several times to mix. 
+8. Combine the two volumes and then invert several times to mix.
 
-- **NOTE:** This results in a 1 mL of 0.2N NaOH solution; the resulting solution cannot be stored and must be used within 6 hours. 
+- **NOTE:** This results in a 1 mL of 0.2N NaOH solution; the resulting solution cannot be stored and must be used within 6 hours.
 
 - **NOTE:** The final concentration of NaOH cannot exceed 0.001 (1 mM). _Higher NaOH concentrations will inhibit library hybridization to the flow cell and result in very low cluster density._
 
@@ -1634,7 +1632,7 @@ The protocols described in this guide assume that you are familiar with the cont
 
 ## Illumina DNA/RNA UD Indexes
 
-Each sample processed during library preparation will be identified post-sequencing by the unique index that is molecularly attached to that sample during the [**Amplification of Tagmented DNA (Library Indexing)**](#lib_indexing) steps. The indexes used in this protocol are the [IDT for Illumina DNA/RNA UD Indexes](https://support.illumina.com/sequencing/sequencing_kits/idt-nextera-dna-udi/product-files.html) and for each sequence of the 384 indexes there is a [Kit Definition File](https://support.illumina.com/documents/downloads/productfiles/unique-dual-indexes/nextera-dna-udi/nextera-dna-udi-lrm-library-kit-definition-iSeq-MiSeq-nextera-dna-flex-set-a-b-c-d-2x151-384-samples.zip) and [Sample Sheet File](https://support.illumina.com/documents/downloads/productfiles/unique-dual-indexes/nextera-dna-udi/nextera-dna-udi-lrm-samplesheet-iSeq-MiSeq-nextera-dna-flex-set-a-b-c-d-2x151-384-samples.zip) available. 
+Each sample processed during library preparation will be identified post-sequencing by the unique index that is molecularly attached to that sample during the [**Amplification of Tagmented DNA (Library Indexing)**](#lib_indexing) steps. The indexes used in this protocol are the [IDT for Illumina DNA/RNA UD Indexes](https://support.illumina.com/sequencing/sequencing_kits/idt-nextera-dna-udi/product-files.html) and for each sequence of the 384 indexes there is a [Kit Definition File](https://support.illumina.com/documents/downloads/productfiles/unique-dual-indexes/nextera-dna-udi/nextera-dna-udi-lrm-library-kit-definition-iSeq-MiSeq-nextera-dna-flex-set-a-b-c-d-2x151-384-samples.zip) and [Sample Sheet File](https://support.illumina.com/documents/downloads/productfiles/unique-dual-indexes/nextera-dna-udi/nextera-dna-udi-lrm-samplesheet-iSeq-MiSeq-nextera-dna-flex-set-a-b-c-d-2x151-384-samples.zip) available.
 
 
 ## Prevent PCR Contamination ##

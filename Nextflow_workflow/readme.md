@@ -1,3 +1,5 @@
+> Author: @ ET updated 4/4/22 :goat:  
+> version 0.2
 
 ## Background ##
 
@@ -59,18 +61,3 @@ Head over to [nf-NeST](https://github.com/CDCgov/Nf-NeST) and try to run it.
 
 :back: [To main page](https://github.com/CDCgov/MaRS)
 > [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-
-----
-<details>
-  <summary><strong>TODO</strong></summary>
-
-> Author: @ET 4/5/22 v 1.0.1 :goat:  
->> Edited: @ET 11/30/22
-----
->#### TODO ####
->#### Activity Name ####
-
->#### Completed Activity ✓ ####
-
-- [x] Add readme to each of the steps @ET :goat:
