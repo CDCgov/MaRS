@@ -727,7 +727,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 >Primers (5'to 3'):<br />
 >_mars_cpmp-fwd_: _GTCATTAAAATTTATGGATTATATATGG_<br />
->_mars_cpmp-rev_:_GTTACTATCCAAGATCGTTAATATC_
+>_mars_cpmp-rev_:_GTTACTATCAAGATCGTTAATATC_
 
 **Thermocyclying conditions for _Pfcpmp_; <ins> Primers at 10 µM**:
 
