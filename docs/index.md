@@ -698,8 +698,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 | Step   | Temperature                        | Time (min) |
 | :--:   |:----:                              | :----:     |
 | 1      | 98&deg;C                           | 3:00       |  
-|        |                                    |            |
-| **2**  | **98&deg;C**                       | **0:30**   |      
+|        |                                    |            | **2**  | **98&deg;C**                       | **0:30**   |      
 | **3**  | **58&deg;C**                       | **0:30**   |      
 | **4**  | **65&deg;C**                       | **5:00**   |    
 |        | **Repeat Steps 2-4 for 29 cycles <br />(30 total)** |            |  
@@ -709,7 +708,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 
 <a id="6.8"></a>
-**Table 6.8. _Pfcpmp_ (805 bp); <ins> Primers at 10 µM</ins>**
+**Table 6.8. _Pfcpmp_ (425 bp); <ins> Primers at 10 µM</ins>**
 
 | Master mix      | Reaction volume | x samples + 10% | Final [conc] |
 |----             |----             |----             |----          |
@@ -727,7 +726,7 @@ The tables below show primers and PCR conditions for the following antimalarial 
 
 >Primers (5'to 3'):<br />
 >_mars_cpmp-fwd_: _GTCATTAAAATTTATGGATTATATATGG_<br />
->_mars_cpmp-rev_:_GTTACTATCAAGATCGTTAATATC_
+>_mars_cpmp-rev_v2:_GTTACTATCAAGATCGTTAATATC_
 
 **Thermocyclying conditions for _Pfcpmp_; <ins> Primers at 10 µM**:
 
